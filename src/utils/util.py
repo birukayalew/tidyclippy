@@ -8,3 +8,6 @@ def read_lines_from_file(filepath):
     except FileNotFoundError:
         print(f"❌ File not found: {filepath}")
         return None
+
+def extract_program_name(file_path):
+    return file_path.split("-")[0] 
