@@ -17,7 +17,7 @@ def categorize_clippy(message):
 
 # Parses clippy output and organizes issues by file and category.
 def parse_clippy_output(lines):
-    issues_by_file = defaultdict(lambda: defaultdict(list)) # Dictionary to store issues organized by file and category.
+    issues_by_program = defaultdict(list) 
     current_file = None
     current_line = None
 
@@ -54,6 +54,6 @@ def parse_clippy_output(lines):
                 'level': level,
                 'message': message
             }
-            issues_by_file[current_file][category].append(current_issue)
+            issues_by_program[category].append(current_issue)
 
-    return issues_by_file, uncategorized_log
+    return issues_by_program, uncategorized_log

@@ -1,7 +1,7 @@
 import sys
 from parsers.clang_parser import parse_clang_output
 from parsers.clippy_parser import parse_clippy_output
-from utils.io import read_lines_from_file
+from utils.util import read_lines_from_file, extract_program_name
 
 
 def main():
@@ -24,10 +24,10 @@ def main():
         print("❌ Tool type must be either 'clang' or 'clippy'")
         sys.exit(1)
 
-    for file, issue_dict in issues.items():
-        print(f"\n📄 File: {file}")
-        for category, msgs in issue_dict.items():
-            print(f"  🔹 {category}: {len(msgs)} issues")
+    program = extract_program_name(file_path)
+    print(f"\n📄 Program: {program}")
+    for category, msgs in issues.items():
+        print(f"  🔹 {category}: {len(msgs)} issues")
 
     if uncategorized:
         print("\n⚠️  Uncategorized messages:")
