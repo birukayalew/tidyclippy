@@ -2,6 +2,7 @@ import sys
 from parsers.clang_parser import parse_clang_output
 from parsers.clippy_parser import parse_clippy_output
 from utils.util import read_lines_from_file, extract_program_name
+from utils.batch_runner import run_batch_analysis
 
 
 def main():

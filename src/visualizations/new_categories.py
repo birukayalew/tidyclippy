@@ -30,7 +30,7 @@ def plot_real_new_categories(df):
 
     result_df = pd.DataFrame(data)
 
-    # Plot
+    # Plot.
     result_df.set_index("Program")["New Categories in Rust"].plot(
         kind="bar", figsize=(10, 5), color="green"
     )
@@ -39,7 +39,5 @@ def plot_real_new_categories(df):
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.show()
-
-    result_df.to_excel("new_categories_actual.xlsx", index=False)
 
 plot_real_new_categories(df)

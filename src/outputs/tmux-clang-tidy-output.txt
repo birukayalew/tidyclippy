@@ -1,0 +1,463 @@
+[1/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/alerts.c.
+20 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/alerts.c.
+[2/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/arguments.c.
+40 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/arguments.c.
+[3/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/attributes.c.
+60 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/attributes.c.
+[4/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cfg.c.
+80 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cfg.c.
+[5/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/client.c.
+3 warnings and 100 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/client.c.
+[6/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-attach-session.c.
+3 warnings and 120 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-attach-session.c.
+[7/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-bind-key.c.
+3 warnings and 140 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-bind-key.c.
+[8/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-break-pane.c.
+3 warnings and 160 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-break-pane.c.
+[9/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-capture-pane.c.
+3 warnings and 180 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-capture-pane.c.
+[10/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-choose-tree.c.
+3 warnings and 200 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-choose-tree.c.
+[11/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-command-prompt.c.
+3 warnings and 220 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-command-prompt.c.
+[12/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-confirm-before.c.
+3 warnings and 240 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-confirm-before.c.
+[13/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-copy-mode.c.
+3 warnings and 260 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-copy-mode.c.
+[14/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-detach-client.c.
+3 warnings and 280 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-detach-client.c.
+[15/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-display-message.c.
+3 warnings and 300 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-display-message.c.
+[16/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-display-panes.c.
+3 warnings and 320 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-display-panes.c.
+[17/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-find-window.c.
+3 warnings and 340 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-find-window.c.
+[18/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-find.c.
+3 warnings and 360 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-find.c.
+[19/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-if-shell.c.
+3 warnings and 380 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-if-shell.c.
+[20/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-join-pane.c.
+3 warnings and 400 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-join-pane.c.
+[21/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-kill-pane.c.
+3 warnings and 420 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-kill-pane.c.
+[22/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-kill-server.c.
+3 warnings and 440 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-kill-server.c.
+[23/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-kill-session.c.
+3 warnings and 460 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-kill-session.c.
+[24/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-kill-window.c.
+3 warnings and 480 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-kill-window.c.
+[25/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-buffers.c.
+3 warnings and 500 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-buffers.c.
+[26/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-clients.c.
+3 warnings and 520 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-clients.c.
+[27/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-keys.c.
+3 warnings and 540 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-keys.c.
+[28/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-panes.c.
+3 warnings and 560 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-panes.c.
+[29/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-sessions.c.
+3 warnings and 580 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-sessions.c.
+[30/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-windows.c.
+3 warnings and 600 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list-windows.c.
+[31/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list.c.
+3 warnings and 620 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-list.c.
+[32/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-load-buffer.c.
+3 warnings and 640 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-load-buffer.c.
+[33/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-lock-server.c.
+3 warnings and 660 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-lock-server.c.
+[34/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-move-window.c.
+3 warnings and 680 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-move-window.c.
+[35/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-new-session.c.
+3 warnings and 700 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-new-session.c.
+[36/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-new-window.c.
+3 warnings and 720 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-new-window.c.
+[37/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-paste-buffer.c.
+3 warnings and 740 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-paste-buffer.c.
+[38/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-pipe-pane.c.
+3 warnings and 760 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-pipe-pane.c.
+[39/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-queue.c.
+3 warnings and 780 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-queue.c.
+[40/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-refresh-client.c.
+3 warnings and 800 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-refresh-client.c.
+[41/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-rename-session.c.
+3 warnings and 820 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-rename-session.c.
+[42/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-rename-window.c.
+3 warnings and 840 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-rename-window.c.
+[43/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-resize-pane.c.
+3 warnings and 860 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-resize-pane.c.
+[44/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-respawn-pane.c.
+3 warnings and 880 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-respawn-pane.c.
+[45/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-respawn-window.c.
+3 warnings and 900 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-respawn-window.c.
+[46/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-rotate-window.c.
+3 warnings and 920 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-rotate-window.c.
+[47/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-run-shell.c.
+3 warnings and 940 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-run-shell.c.
+[48/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-save-buffer.c.
+3 warnings and 960 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-save-buffer.c.
+[49/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-select-layout.c.
+3 warnings and 980 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-select-layout.c.
+[50/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-select-pane.c.
+3 warnings and 1000 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-select-pane.c.
+[51/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-select-window.c.
+3 warnings and 1020 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-select-window.c.
+[52/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-send-keys.c.
+3 warnings and 1040 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-send-keys.c.
+[53/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-set-buffer.c.
+3 warnings and 1060 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-set-buffer.c.
+[54/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-set-environment.c.
+3 warnings and 1080 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-set-environment.c.
+[55/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-set-hook.c.
+3 warnings and 1100 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-set-hook.c.
+[56/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-set-option.c.
+3 warnings and 1120 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-set-option.c.
+[57/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-show-environment.c.
+3 warnings and 1140 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-show-environment.c.
+[58/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-show-messages.c.
+3 warnings and 1160 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-show-messages.c.
+[59/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-show-options.c.
+3 warnings and 1180 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-show-options.c.
+[60/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-source-file.c.
+3 warnings and 1200 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-source-file.c.
+[61/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-split-window.c.
+3 warnings and 1220 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-split-window.c.
+[62/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-string.c.
+3 warnings and 1240 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-string.c.
+[63/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-swap-pane.c.
+3 warnings and 1260 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-swap-pane.c.
+[64/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-swap-window.c.
+3 warnings and 1280 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-swap-window.c.
+[65/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-switch-client.c.
+3 warnings and 1300 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-switch-client.c.
+[66/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-unbind-key.c.
+3 warnings and 1320 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-unbind-key.c.
+[67/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-wait-for.c.
+3 warnings and 1340 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd-wait-for.c.
+[68/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd.c.
+3 warnings and 1360 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/cmd.c.
+[69/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/colour.c.
+3 warnings and 1380 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/colour.c.
+[70/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/control-notify.c.
+3 warnings and 1400 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/control-notify.c.
+[71/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/control.c.
+3 warnings and 1420 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/control.c.
+[72/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/environ.c.
+3 warnings and 1440 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/environ.c.
+[73/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/format.c.
+3 warnings and 1460 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/format.c.
+[74/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/grid-view.c.
+3 warnings and 1480 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/grid-view.c.
+[75/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/grid.c.
+3 warnings and 1500 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/grid.c.
+[76/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/hooks.c.
+3 warnings and 1520 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/hooks.c.
+[77/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/input-keys.c.
+3 warnings and 1540 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/input-keys.c.
+[78/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/input.c.
+3 warnings and 1560 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/input.c.
+[79/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/job.c.
+3 warnings and 1580 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/job.c.
+[80/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/key-bindings.c.
+3 warnings and 1600 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/key-bindings.c.
+[81/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/key-string.c.
+3 warnings and 1620 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/key-string.c.
+[82/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/layout-custom.c.
+3 warnings and 1640 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/layout-custom.c.
+[83/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/layout-set.c.
+3 warnings and 1660 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/layout-set.c.
+[84/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/layout.c.
+3 warnings and 1680 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/layout.c.
+[85/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/log.c.
+3 warnings and 1700 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/log.c.
+[86/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/mode-tree.c.
+3 warnings and 1720 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/mode-tree.c.
+[87/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/names.c.
+3 warnings and 1740 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/names.c.
+[88/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/notify.c.
+3 warnings and 1760 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/notify.c.
+[89/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/options-table.c.
+3 warnings and 1780 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/options-table.c.
+[90/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/options.c.
+3 warnings and 1800 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/options.c.
+[91/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-aix.c.
+3 warnings and 1820 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-aix.c.
+[92/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-cygwin.c.
+3 warnings and 1840 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-cygwin.c.
+[93/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-darwin.c.
+3 warnings and 1841 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-darwin.c.
+[94/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-dragonfly.c.
+3 warnings and 1842 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-dragonfly.c.
+[95/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-freebsd.c.
+3 warnings and 1843 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-freebsd.c.
+[96/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-hpux.c.
+3 warnings and 1863 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-hpux.c.
+[97/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-linux.c.
+3 warnings and 1883 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-linux.c.
+[98/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-netbsd.c.
+3 warnings and 1884 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-netbsd.c.
+[99/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-openbsd.c.
+3 warnings and 1885 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-openbsd.c.
+[100/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-sunos.c.
+3 warnings and 1886 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-sunos.c.
+[101/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-unknown.c.
+3 warnings and 1906 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-unknown.c.
+[102/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/paste.c.
+3 warnings and 1926 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/paste.c.
+[103/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/proc.c.
+3 warnings and 1946 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/proc.c.
+[104/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/resize.c.
+3 warnings and 1966 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/resize.c.
+[105/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/screen-redraw.c.
+3 warnings and 1986 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/screen-redraw.c.
+[106/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/screen-write.c.
+3 warnings and 2006 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/screen-write.c.
+[107/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/screen.c.
+3 warnings and 2026 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/screen.c.
+[108/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/server-client.c.
+3 warnings and 2046 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/server-client.c.
+[109/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/server-fn.c.
+3 warnings and 2066 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/server-fn.c.
+[110/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/server.c.
+3 warnings and 2086 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/server.c.
+[111/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/session.c.
+3 warnings and 2106 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/session.c.
+[112/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/status.c.
+3 warnings and 2126 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/status.c.
+[113/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/style.c.
+3 warnings and 2146 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/style.c.
+[114/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.c.
+3 warnings and 2166 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.c.
+[115/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tty-acs.c.
+3 warnings and 2186 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tty-acs.c.
+[116/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tty-keys.c.
+3 warnings and 2206 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tty-keys.c.
+[117/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tty-term.c.
+3 warnings and 2226 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tty-term.c.
+[118/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tty.c.
+3 warnings and 2246 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tty.c.
+[119/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/utf8.c.
+3 warnings and 2266 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/utf8.c.
+[120/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/variadic.c.
+3 warnings and 2286 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/variadic.c.
+[121/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-buffer.c.
+3 warnings and 2306 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-buffer.c.
+[122/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-client.c.
+3 warnings and 2326 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-client.c.
+[123/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-clock.c.
+3 warnings and 2346 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-clock.c.
+[124/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-copy.c.
+3 warnings and 2366 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-copy.c.
+[125/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-tree.c.
+3 warnings and 2386 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window-tree.c.
+[126/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window.c.
+3 warnings and 2406 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/window.c.
+[127/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/xmalloc.c.
+3 warnings and 2426 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/xmalloc.c.
+[128/128] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/xterm-keys.c.
+3 warnings and 2446 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/xterm-keys.c.
+error: too many errors emitted, stopping now [clang-diagnostic-error]
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/compat.h:289:30: error: unknown type name 'u_char' [clang-diagnostic-error]
+  289 | int              b64_pton(const char *, u_char *, size_t);
+      |                                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/compat/imsg.h:30:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+   30 |         u_char                  *buf;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/compat/imsg.h:45:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+   45 |         u_char                   buf[IBUF_READ_SIZE];
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/compat/imsg.h:46:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+   46 |         u_char                  *rptr;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-darwin.c:20:10: error: 'sys/sysctl.h' file not found [clang-diagnostic-error]
+   20 | #include <sys/sysctl.h>
+      |          ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-dragonfly.c:21:10: error: 'sys/sysctl.h' file not found [clang-diagnostic-error]
+   21 | #include <sys/sysctl.h>
+      |          ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-freebsd.c:20:10: error: 'sys/proc.h' file not found [clang-diagnostic-error]
+   20 | #include <sys/proc.h>
+      |          ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-netbsd.c:20:10: error: 'sys/proc.h' file not found [clang-diagnostic-error]
+   20 | #include <sys/proc.h>
+      |          ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-openbsd.c:21:10: error: 'sys/proc.h' file not found [clang-diagnostic-error]
+   21 | #include <sys/proc.h>
+      |          ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/osdep-sunos.c:24:10: error: 'procfs.h' file not found [clang-diagnostic-error]
+   24 | #include <procfs.h>
+      |          ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:519:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+  519 |         u_char  data[UTF8_SIZE];
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:521:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+  521 |         u_char  have;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:522:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+  522 |         u_char  size;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:524:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+  524 |         u_char  width;  /* 0xff if invalid */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:562:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+  562 |         u_char                  flags;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:563:2: error: unknown type name 'u_short' [clang-diagnostic-error]
+  563 |         u_short                 attr;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:569:2: error: unknown type name 'u_char' [clang-diagnostic-error]
+  569 |         u_char                  flags;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:571:3: error: unknown type name 'u_int' [clang-diagnostic-error]
+  571 |                 u_int           offset;
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:573:4: error: unknown type name 'u_char' [clang-diagnostic-error]
+  573 |                         u_char  attr;
+      |                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:574:4: error: unknown type name 'u_char' [clang-diagnostic-error]
+  574 |                         u_char  fg;
+      |                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:575:4: error: unknown type name 'u_char' [clang-diagnostic-error]
+  575 |                         u_char  bg;
+      |                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:576:4: error: unknown type name 'u_char' [clang-diagnostic-error]
+  576 |                         u_char  data;
+      |                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:583:2: error: unknown type name 'u_int' [clang-diagnostic-error]
+  583 |         u_int                    cellused;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:584:2: error: unknown type name 'u_int' [clang-diagnostic-error]
+  584 |         u_int                    cellsize;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/tmux/repo/tmux.h:587:2: error: unknown type name 'u_int' [clang-diagnostic-error]
+  587 |         u_int                    extdsize;
+      |         ^
+Suppressed 3 warnings (3 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

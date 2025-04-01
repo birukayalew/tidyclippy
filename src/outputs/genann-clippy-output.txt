@@ -1,0 +1,2001 @@
+    Checking genann_clippy v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/3-Rust-Clippy-Analysis/genann_clippy)
+error: extern blocks must be unsafe
+  --> src/genann.rs:11:1
+   |
+11 | / extern "C" {
+12 | |     pub type _IO_wide_data;
+13 | |     pub type _IO_codecvt;
+14 | |     pub type _IO_marker;
+...  |
+33 | |     ) -> *mut libc::c_void;
+34 | | }
+   | |_^
+
+error: unsafe attribute used without unsafe
+  --> src/genann.rs:91:3
+   |
+91 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+91 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:101:3
+    |
+101 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+101 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:132:3
+    |
+132 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+132 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:136:3
+    |
+136 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+136 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:140:3
+    |
+140 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+140 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:209:3
+    |
+209 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+209 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:249:3
+    |
+249 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+249 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:272:3
+    |
+272 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+272 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:284:3
+    |
+284 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+284 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:288:3
+    |
+288 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+288 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:424:3
+    |
+424 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+424 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/genann.rs:647:3
+    |
+647 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+647 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error[E0658]: extern types are experimental
+  --> src/genann.rs:12:5
+   |
+12 |     pub type _IO_wide_data;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+  --> src/genann.rs:13:5
+   |
+13 |     pub type _IO_codecvt;
+   |     ^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+  --> src/genann.rs:14:5
+   |
+14 |     pub type _IO_marker;
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+warning: unused label
+   --> src/genann.rs:373:5
+    |
+373 |     'c_1500: {
+    |     ^^^^^^^
+    |
+    = note: `#[warn(unused_labels)]` on by default
+
+warning: unused label
+   --> src/genann.rs:405:5
+    |
+405 |     'c_1435: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/genann.rs:576:5
+    |
+576 |     'c_1988: {
+    |     ^^^^^^^
+
+warning: crate-level attribute should be in the root module
+  --> src/genann.rs:10:1
+   |
+10 | #![feature(extern_types, label_break_value)]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_attributes)]` on by default
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:15:40
+   |
+15 |     fn fprintf(_: *mut FILE, _: *const libc::c_char, _: ...) -> libc::c_int;
+   |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:15:65
+   |
+15 |     fn fprintf(_: *mut FILE, _: *const libc::c_char, _: ...) -> libc::c_int;
+   |                                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:16:39
+   |
+16 |     fn fscanf(_: *mut FILE, _: *const libc::c_char, _: ...) -> libc::c_int;
+   |                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:16:64
+   |
+16 |     fn fscanf(_: *mut FILE, _: *const libc::c_char, _: ...) -> libc::c_int;
+   |                                                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:17:27
+   |
+17 |     fn perror(__s: *const libc::c_char);
+   |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:19:29
+   |
+19 |         __assertion: *const libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:20:24
+   |
+20 |         __file: *const libc::c_char,
+   |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:21:17
+   |
+21 |         __line: libc::c_uint,
+   |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:22:28
+   |
+22 |         __function: *const libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:24:35
+   |
+24 |     fn __errno_location() -> *mut libc::c_int;
+   |                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:25:15
+   |
+25 |     fn exp(_: libc::c_double) -> libc::c_double;
+   |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:25:34
+   |
+25 |     fn exp(_: libc::c_double) -> libc::c_double;
+   |                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:26:18
+   |
+26 |     fn rand() -> libc::c_int;
+   |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:27:18
+   |
+27 |     fn malloc(_: libc::c_ulong) -> *mut libc::c_void;
+   |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:27:41
+   |
+27 |     fn malloc(_: libc::c_ulong) -> *mut libc::c_void;
+   |                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:28:21
+   |
+28 |     fn free(_: *mut libc::c_void);
+   |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:30:17
+   |
+30 |         _: *mut libc::c_void,
+   |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:31:19
+   |
+31 |         _: *const libc::c_void,
+   |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:32:12
+   |
+32 |         _: libc::c_ulong,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:33:15
+   |
+33 |     ) -> *mut libc::c_void;
+   |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:35:19
+   |
+35 | pub type size_t = libc::c_ulong;
+   |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:36:20
+   |
+36 | pub type __off_t = libc::c_long;
+   |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:37:22
+   |
+37 | pub type __off64_t = libc::c_long;
+   |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:41:17
+   |
+41 |     pub _flags: libc::c_int,
+   |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:42:28
+   |
+42 |     pub _IO_read_ptr: *mut libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:43:28
+   |
+43 |     pub _IO_read_end: *mut libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:44:29
+   |
+44 |     pub _IO_read_base: *mut libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:45:30
+   |
+45 |     pub _IO_write_base: *mut libc::c_char,
+   |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:46:29
+   |
+46 |     pub _IO_write_ptr: *mut libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:47:29
+   |
+47 |     pub _IO_write_end: *mut libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:48:28
+   |
+48 |     pub _IO_buf_base: *mut libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:49:27
+   |
+49 |     pub _IO_buf_end: *mut libc::c_char,
+   |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:50:29
+   |
+50 |     pub _IO_save_base: *mut libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:51:31
+   |
+51 |     pub _IO_backup_base: *mut libc::c_char,
+   |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:52:28
+   |
+52 |     pub _IO_save_end: *mut libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:55:18
+   |
+55 |     pub _fileno: libc::c_int,
+   |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:56:18
+   |
+56 |     pub _flags2: libc::c_int,
+   |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:58:22
+   |
+58 |     pub _cur_column: libc::c_ushort,
+   |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:59:25
+   |
+59 |     pub _vtable_offset: libc::c_schar,
+   |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:60:21
+   |
+60 |     pub _shortbuf: [libc::c_char; 1],
+   |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:61:21
+   |
+61 |     pub _lock: *mut libc::c_void,
+   |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:66:28
+   |
+66 |     pub _freeres_buf: *mut libc::c_void,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:68:16
+   |
+68 |     pub _mode: libc::c_int,
+   |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:69:20
+   |
+69 |     pub _unused2: [libc::c_char; 20],
+   |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:74:26
+   |
+74 |     unsafe extern "C" fn(libc::c_double) -> libc::c_double,
+   |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:74:45
+   |
+74 |     unsafe extern "C" fn(libc::c_double) -> libc::c_double,
+   |                                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:79:17
+   |
+79 |     pub inputs: libc::c_int,
+   |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:80:24
+   |
+80 |     pub hidden_layers: libc::c_int,
+   |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:81:17
+   |
+81 |     pub hidden: libc::c_int,
+   |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:82:18
+   |
+82 |     pub outputs: libc::c_int,
+   |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:85:24
+   |
+85 |     pub total_weights: libc::c_int,
+   |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:86:24
+   |
+86 |     pub total_neurons: libc::c_int,
+   |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:87:22
+   |
+87 |     pub weight: *mut libc::c_double,
+   |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:88:22
+   |
+88 |     pub output: *mut libc::c_double,
+   |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:89:21
+   |
+89 |     pub delta: *mut libc::c_double,
+   |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:92:52
+   |
+92 | pub unsafe extern "C" fn genann_act_sigmoid(mut a: libc::c_double) -> libc::c_double {
+   |                                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:92:71
+   |
+92 | pub unsafe extern "C" fn genann_act_sigmoid(mut a: libc::c_double) -> libc::c_double {
+   |                                                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:94:21
+   |
+94 |         return 0 as libc::c_int as libc::c_double;
+   |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:94:36
+   |
+94 |         return 0 as libc::c_int as libc::c_double;
+   |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:97:21
+   |
+97 |         return 1 as libc::c_int as libc::c_double;
+   |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:97:36
+   |
+97 |         return 1 as libc::c_int as libc::c_double;
+   |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:99:27
+   |
+99 |     return 1.0f64 / (1 as libc::c_int as libc::c_double + exp(-a));
+   |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/genann.rs:99:42
+   |
+99 |     return 1.0f64 / (1 as libc::c_int as libc::c_double + exp(-a));
+   |                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:103:12
+    |
+103 |     mut a: libc::c_double,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:104:6
+    |
+104 | ) -> libc::c_double {
+    |      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:105:14
+    |
+105 |     let min: libc::c_double = -15.0f64;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:106:14
+    |
+106 |     let max: libc::c_double = 15.0f64;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:107:26
+    |
+107 |     static mut interval: libc::c_double = 0.;
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:108:29
+    |
+108 |     static mut initialized: libc::c_int = 0 as libc::c_int;
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:108:48
+    |
+108 |     static mut initialized: libc::c_int = 0 as libc::c_int;
+    |                                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:109:25
+    |
+109 |     static mut lookup: [libc::c_double; 4096] = [0.; 4096];
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:111:42
+    |
+111 |         interval = (max - min) / 4096 as libc::c_int as libc::c_double;
+    |                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:111:57
+    |
+111 |         interval = (max - min) / 4096 as libc::c_int as libc::c_double;
+    |                                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:112:20
+    |
+112 |         let mut i: libc::c_int = 0;
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:113:18
+    |
+113 |         i = 0 as libc::c_int;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:114:27
+    |
+114 |         while i < 4096 as libc::c_int {
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:116:70
+    |
+116 |                 as usize] = genann_act_sigmoid(min + interval * i as libc::c_double);
+    |                                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:120:28
+    |
+120 |         initialized = 1 as libc::c_int;
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:122:18
+    |
+122 |     let mut i_0: libc::c_int = 0;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:123:46
+    |
+123 |     i_0 = ((a - min) / interval + 0.5f64) as libc::c_int;
+    |                                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:124:20
+    |
+124 |     if i_0 <= 0 as libc::c_int {
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:125:28
+    |
+125 |         return lookup[0 as libc::c_int as usize];
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:127:23
+    |
+127 |     if i_0 >= 4096 as libc::c_int {
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:128:32
+    |
+128 |         return lookup[(4096 as libc::c_int - 1 as libc::c_int) as usize];
+    |                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:128:51
+    |
+128 |         return lookup[(4096 as libc::c_int - 1 as libc::c_int) as usize];
+    |                                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:133:54
+    |
+133 | pub unsafe extern "C" fn genann_act_threshold(mut a: libc::c_double) -> libc::c_double {
+    |                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:133:73
+    |
+133 | pub unsafe extern "C" fn genann_act_threshold(mut a: libc::c_double) -> libc::c_double {
+    |                                                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:134:22
+    |
+134 |     return (a > 0 as libc::c_int as libc::c_double) as libc::c_int as libc::c_double;
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:134:37
+    |
+134 |     return (a > 0 as libc::c_int as libc::c_double) as libc::c_int as libc::c_double;
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:134:56
+    |
+134 |     return (a > 0 as libc::c_int as libc::c_double) as libc::c_int as libc::c_double;
+    |                                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:134:71
+    |
+134 |     return (a > 0 as libc::c_int as libc::c_double) as libc::c_int as libc::c_double;
+    |                                                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:137:51
+    |
+137 | pub unsafe extern "C" fn genann_act_linear(mut a: libc::c_double) -> libc::c_double {
+    |                                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:137:70
+    |
+137 | pub unsafe extern "C" fn genann_act_linear(mut a: libc::c_double) -> libc::c_double {
+    |                                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:142:17
+    |
+142 |     mut inputs: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:143:24
+    |
+143 |     mut hidden_layers: libc::c_int,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:144:17
+    |
+144 |     mut hidden: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:145:18
+    |
+145 |     mut outputs: libc::c_int,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:147:29
+    |
+147 |     if hidden_layers < 0 as libc::c_int {
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:150:22
+    |
+150 |     if inputs < 1 as libc::c_int {
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:153:23
+    |
+153 |     if outputs < 1 as libc::c_int {
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:156:29
+    |
+156 |     if hidden_layers > 0 as libc::c_int && hidden < 1 as libc::c_int {
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:156:58
+    |
+156 |     if hidden_layers > 0 as libc::c_int && hidden < 1 as libc::c_int {
+    |                                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:159:25
+    |
+159 |     let hidden_weights: libc::c_int = if hidden_layers != 0 {
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:160:24
+    |
+160 |         (inputs + 1 as libc::c_int) * hidden
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:161:37
+    |
+161 |             + (hidden_layers - 1 as libc::c_int) * (hidden + 1 as libc::c_int) * hidden
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:161:67
+    |
+161 |             + (hidden_layers - 1 as libc::c_int) * (hidden + 1 as libc::c_int) * hidden
+    |                                                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:163:14
+    |
+163 |         0 as libc::c_int
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:165:25
+    |
+165 |     let output_weights: libc::c_int = (if hidden_layers != 0 {
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:166:23
+    |
+166 |         hidden + 1 as libc::c_int
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:168:23
+    |
+168 |         inputs + 1 as libc::c_int
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:170:24
+    |
+170 |     let total_weights: libc::c_int = hidden_weights + output_weights;
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:171:24
+    |
+171 |     let total_neurons: libc::c_int = inputs + hidden * hidden_layers + outputs;
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:172:15
+    |
+172 |     let size: libc::c_int = (::core::mem::size_of::<genann>() as libc::c_ulong)
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:172:66
+    |
+172 |     let size: libc::c_int = (::core::mem::size_of::<genann>() as libc::c_ulong)
+    |                                                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:174:37
+    |
+174 |             (::core::mem::size_of::<libc::c_double>() as libc::c_ulong)
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:174:58
+    |
+174 |             (::core::mem::size_of::<libc::c_double>() as libc::c_ulong)
+    |                                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:177:28
+    |
+177 |                         as libc::c_ulong,
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:179:14
+    |
+179 |         ) as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:180:47
+    |
+180 |     let mut ret: *mut genann = malloc(size as libc::c_ulong) as *mut genann;
+    |                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:191:32
+    |
+191 |         .weight = (ret as *mut libc::c_char)
+    |                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:192:53
+    |
+192 |         .offset(::core::mem::size_of::<genann>() as libc::c_ulong as isize)
+    |                                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:193:17
+    |
+193 |         as *mut libc::c_double;
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:200:37
+    |
+200 |             as unsafe extern "C" fn(libc::c_double) -> libc::c_double,
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:200:56
+    |
+200 |             as unsafe extern "C" fn(libc::c_double) -> libc::c_double,
+    |                                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:205:37
+    |
+205 |             as unsafe extern "C" fn(libc::c_double) -> libc::c_double,
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:205:56
+    |
+205 |             as unsafe extern "C" fn(libc::c_double) -> libc::c_double,
+    |                                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:211:21
+    |
+211 |     let mut inputs: libc::c_int = 0;
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:212:28
+    |
+212 |     let mut hidden_layers: libc::c_int = 0;
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:213:21
+    |
+213 |     let mut hidden: libc::c_int = 0;
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:214:22
+    |
+214 |     let mut outputs: libc::c_int = 0;
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:215:17
+    |
+215 |     let mut rc: libc::c_int = 0;
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:216:32
+    |
+216 |     *__errno_location() = 0 as libc::c_int;
+    |                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:219:49
+    |
+219 |         b"%d %d %d %d\0" as *const u8 as *const libc::c_char,
+    |                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:220:29
+    |
+220 |         &mut inputs as *mut libc::c_int,
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:221:36
+    |
+221 |         &mut hidden_layers as *mut libc::c_int,
+    |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:222:29
+    |
+222 |         &mut hidden as *mut libc::c_int,
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:223:30
+    |
+223 |         &mut outputs as *mut libc::c_int,
+    |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:225:18
+    |
+225 |     if rc < 4 as libc::c_int || *__errno_location() != 0 as libc::c_int {
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:225:61
+    |
+225 |     if rc < 4 as libc::c_int || *__errno_location() != 0 as libc::c_int {
+    |                                                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:226:51
+    |
+226 |         perror(b"fscanf\0" as *const u8 as *const libc::c_char);
+    |                                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:230:16
+    |
+230 |     let mut i: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:231:14
+    |
+231 |     i = 0 as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:233:36
+    |
+233 |         *__errno_location() = 0 as libc::c_int;
+    |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:236:46
+    |
+236 |             b" %le\0" as *const u8 as *const libc::c_char,
+    |                                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:239:22
+    |
+239 |         if rc < 1 as libc::c_int || *__errno_location() != 0 as libc::c_int {
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:239:65
+    |
+239 |         if rc < 1 as libc::c_int || *__errno_location() != 0 as libc::c_int {
+    |                                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:240:55
+    |
+240 |             perror(b"fscanf\0" as *const u8 as *const libc::c_char);
+    |                                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:251:15
+    |
+251 |     let size: libc::c_int = (::core::mem::size_of::<genann>() as libc::c_ulong)
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:251:66
+    |
+251 |     let size: libc::c_int = (::core::mem::size_of::<genann>() as libc::c_ulong)
+    |                                                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:253:37
+    |
+253 |             (::core::mem::size_of::<libc::c_double>() as libc::c_ulong)
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:253:58
+    |
+253 |             (::core::mem::size_of::<libc::c_double>() as libc::c_ulong)
+    |                                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:256:70
+    |
+256 |                         + ((*ann).total_neurons - (*ann).inputs)) as libc::c_ulong,
+    |                                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:258:14
+    |
+258 |         ) as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:259:47
+    |
+259 |     let mut ret: *mut genann = malloc(size as libc::c_ulong) as *mut genann;
+    |                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:263:24
+    |
+263 |     memcpy(ret as *mut libc::c_void, ann as *const libc::c_void, size as libc::c_ulong);
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:263:52
+    |
+263 |     memcpy(ret as *mut libc::c_void, ann as *const libc::c_void, size as libc::c_ulong);
+    |                                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:263:74
+    |
+263 |     memcpy(ret as *mut libc::c_void, ann as *const libc::c_void, size as libc::c_ulong);
+    |                                                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:265:32
+    |
+265 |         .weight = (ret as *mut libc::c_char)
+    |                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:266:53
+    |
+266 |         .offset(::core::mem::size_of::<genann>() as libc::c_ulong as isize)
+    |                                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:267:17
+    |
+267 |         as *mut libc::c_double;
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:274:16
+    |
+274 |     let mut i: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:275:14
+    |
+275 |     i = 0 as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:277:20
+    |
+277 |         let mut r: libc::c_double = rand() as libc::c_double
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:277:47
+    |
+277 |         let mut r: libc::c_double = rand() as libc::c_double
+    |                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:278:29
+    |
+278 |             / 2147483647 as libc::c_int as libc::c_double;
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:278:44
+    |
+278 |             / 2147483647 as libc::c_int as libc::c_double;
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:286:22
+    |
+286 |     free(ann as *mut libc::c_void);
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:291:24
+    |
+291 |     mut inputs: *const libc::c_double,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:292:13
+    |
+292 | ) -> *const libc::c_double {
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:293:23
+    |
+293 |     let mut w: *const libc::c_double = (*ann).weight;
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:294:21
+    |
+294 |     let mut o: *mut libc::c_double = ((*ann).output).offset((*ann).inputs as isize);
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:295:23
+    |
+295 |     let mut i: *const libc::c_double = (*ann).output;
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:297:31
+    |
+297 |         (*ann).output as *mut libc::c_void,
+    |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:298:26
+    |
+298 |         inputs as *const libc::c_void,
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:299:33
+    |
+299 |         (::core::mem::size_of::<libc::c_double>() as libc::c_ulong)
+    |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:299:54
+    |
+299 |         (::core::mem::size_of::<libc::c_double>() as libc::c_ulong)
+    |                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:300:44
+    |
+300 |             .wrapping_mul((*ann).inputs as libc::c_ulong),
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:302:16
+    |
+302 |     let mut h: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:303:16
+    |
+303 |     let mut j: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:304:16
+    |
+304 |     let mut k: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:307:14
+    |
+307 |     h = 0 as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:309:18
+    |
+309 |         j = 0 as libc::c_int;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:313:26
+    |
+313 |             let mut sum: libc::c_double = *fresh0 * -1.0f64;
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:314:22
+    |
+314 |             k = 0 as libc::c_int;
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:315:37
+    |
+315 |             while k < (if h == 0 as libc::c_int { (*ann).inputs } else { (*ann).hidden })
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:331:31
+    |
+331 |                 (if h == 0 as libc::c_int { (*ann).inputs } else { (*ann).hidden })
+    |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:337:25
+    |
+337 |     let mut ret: *const libc::c_double = o;
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:338:14
+    |
+338 |     j = 0 as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:342:24
+    |
+342 |         let mut sum_0: libc::c_double = *fresh3 * -1.0f64;
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:343:18
+    |
+343 |         k = 0 as libc::c_int;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:358:40
+    |
+358 |     if w.offset_from((*ann).weight) as libc::c_long
+    |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:359:36
+    |
+359 |         == (*ann).total_weights as libc::c_long
+    |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:363:27
+    |
+363 |                 as *const libc::c_char,
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:364:50
+    |
+364 |             b"genann.c\0" as *const u8 as *const libc::c_char,
+    |                                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:365:20
+    |
+365 |             225 as libc::c_int as libc::c_uint,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:365:35
+    |
+365 |             225 as libc::c_int as libc::c_uint,
+    |                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:368:19
+    |
+368 |                 &[libc::c_char; 57],
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:374:44
+    |
+374 |         if w.offset_from((*ann).weight) as libc::c_long
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:375:40
+    |
+375 |             == (*ann).total_weights as libc::c_long
+    |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:379:31
+    |
+379 |                     as *const libc::c_char,
+    |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:380:54
+    |
+380 |                 b"genann.c\0" as *const u8 as *const libc::c_char,
+    |                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:381:24
+    |
+381 |                 225 as libc::c_int as libc::c_uint,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:381:39
+    |
+381 |                 225 as libc::c_int as libc::c_uint,
+    |                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:384:23
+    |
+384 |                     &[libc::c_char; 57],
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:390:40
+    |
+390 |     if o.offset_from((*ann).output) as libc::c_long
+    |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:391:36
+    |
+391 |         == (*ann).total_neurons as libc::c_long
+    |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:395:27
+    |
+395 |                 as *const libc::c_char,
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:396:50
+    |
+396 |             b"genann.c\0" as *const u8 as *const libc::c_char,
+    |                                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:397:20
+    |
+397 |             226 as libc::c_int as libc::c_uint,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:397:35
+    |
+397 |             226 as libc::c_int as libc::c_uint,
+    |                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:400:19
+    |
+400 |                 &[libc::c_char; 57],
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:406:44
+    |
+406 |         if o.offset_from((*ann).output) as libc::c_long
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:407:40
+    |
+407 |             == (*ann).total_neurons as libc::c_long
+    |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:411:31
+    |
+411 |                     as *const libc::c_char,
+    |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:412:54
+    |
+412 |                 b"genann.c\0" as *const u8 as *const libc::c_char,
+    |                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:413:24
+    |
+413 |                 226 as libc::c_int as libc::c_uint,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:413:39
+    |
+413 |                 226 as libc::c_int as libc::c_uint,
+    |                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:416:23
+    |
+416 |                     &[libc::c_char; 57],
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:427:24
+    |
+427 |     mut inputs: *const libc::c_double,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:428:33
+    |
+428 |     mut desired_outputs: *const libc::c_double,
+    |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:429:24
+    |
+429 |     mut learning_rate: libc::c_double,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:432:16
+    |
+432 |     let mut h: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:433:16
+    |
+433 |     let mut j: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:434:16
+    |
+434 |     let mut k: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:435:23
+    |
+435 |     let mut o: *const libc::c_double = ((*ann).output)
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:438:21
+    |
+438 |     let mut d: *mut libc::c_double = ((*ann).delta)
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:440:23
+    |
+440 |     let mut t: *const libc::c_double = desired_outputs;
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:443:55
+    |
+443 |             genann_act_linear as unsafe extern "C" fn(libc::c_double) -> libc::c_double,
+    |                                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:443:74
+    |
+443 |             genann_act_linear as unsafe extern "C" fn(libc::c_double) -> libc::c_double,
+    |                                                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:446:18
+    |
+446 |         j = 0 as libc::c_int;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:459:18
+    |
+459 |         j = 0 as libc::c_int;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:472:37
+    |
+472 |     h = (*ann).hidden_layers - 1 as libc::c_int;
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:473:21
+    |
+473 |     while h >= 0 as libc::c_int {
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:474:29
+    |
+474 |         let mut o_0: *const libc::c_double = ((*ann).output)
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:477:27
+    |
+477 |         let mut d_0: *mut libc::c_double = ((*ann).delta)
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:479:24
+    |
+479 |         let dd: *const libc::c_double = ((*ann).delta)
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:480:32
+    |
+480 |             .offset(((h + 1 as libc::c_int) * (*ann).hidden) as isize);
+    |                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:481:24
+    |
+481 |         let ww: *const libc::c_double = ((*ann).weight)
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:482:44
+    |
+482 |             .offset((((*ann).inputs + 1 as libc::c_int) * (*ann).hidden) as isize)
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:483:44
+    |
+483 |             .offset((((*ann).hidden + 1 as libc::c_int) * (*ann).hidden * h) as isize);
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:484:18
+    |
+484 |         j = 0 as libc::c_int;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:486:28
+    |
+486 |             let mut delta: libc::c_double = 0 as libc::c_int as libc::c_double;
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:486:50
+    |
+486 |             let mut delta: libc::c_double = 0 as libc::c_int as libc::c_double;
+    |                                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:486:65
+    |
+486 |             let mut delta: libc::c_double = 0 as libc::c_int as libc::c_double;
+    |                                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:487:22
+    |
+487 |             k = 0 as libc::c_int;
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:489:56
+    |
+489 |                 < (if h == (*ann).hidden_layers - 1 as libc::c_int {
+    |                                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:495:36
+    |
+495 |                 let forward_delta: libc::c_double = *dd.offset(k as isize);
+    |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:496:29
+    |
+496 |                 let windex: libc::c_int = k * ((*ann).hidden + 1 as libc::c_int)
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:496:69
+    |
+496 |                 let windex: libc::c_int = k * ((*ann).hidden + 1 as libc::c_int)
+    |                                                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:497:33
+    |
+497 |                     + (j + 1 as libc::c_int);
+    |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:498:37
+    |
+498 |                 let forward_weight: libc::c_double = *ww.offset(windex as isize);
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:514:25
+    |
+514 |     let mut d_1: *const libc::c_double = ((*ann).delta)
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:516:21
+    |
+516 |     let mut w: *mut libc::c_double = ((*ann).weight)
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:519:39
+    |
+519 |                 ((*ann).inputs + 1 as libc::c_int) * (*ann).hidden
+    |                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:520:45
+    |
+520 |                     + ((*ann).hidden + 1 as libc::c_int) * (*ann).hidden
+    |                                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:521:56
+    |
+521 |                         * ((*ann).hidden_layers - 1 as libc::c_int)
+    |                                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:523:22
+    |
+523 |                 0 as libc::c_int
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:526:19
+    |
+526 |     let i: *const libc::c_double = ((*ann).output)
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:529:78
+    |
+529 |                 (*ann).inputs + (*ann).hidden * ((*ann).hidden_layers - 1 as libc::c_int)
+    |                                                                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:531:22
+    |
+531 |                 0 as libc::c_int
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:534:14
+    |
+534 |     j = 0 as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:536:18
+    |
+536 |         k = 0 as libc::c_int;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:539:24
+    |
+539 |                 + 1 as libc::c_int
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:541:26
+    |
+541 |             if k == 0 as libc::c_int {
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:549:67
+    |
+549 |                     += *d_1 * learning_rate * *i.offset((k - 1 as libc::c_int) as isize);
+    |                                                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:559:40
+    |
+559 |     if w.offset_from((*ann).weight) as libc::c_long
+    |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:560:36
+    |
+560 |         == (*ann).total_weights as libc::c_long
+    |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:564:27
+    |
+564 |                 as *const libc::c_char,
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:565:50
+    |
+565 |             b"genann.c\0" as *const u8 as *const libc::c_char,
+    |                                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:566:20
+    |
+566 |             318 as libc::c_int as libc::c_uint,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:566:35
+    |
+566 |             318 as libc::c_int as libc::c_uint,
+    |                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:569:19
+    |
+569 |                 &[libc::c_char; 74],
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:577:44
+    |
+577 |         if w.offset_from((*ann).weight) as libc::c_long
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:578:40
+    |
+578 |             == (*ann).total_weights as libc::c_long
+    |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:582:31
+    |
+582 |                     as *const libc::c_char,
+    |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:583:54
+    |
+583 |                 b"genann.c\0" as *const u8 as *const libc::c_char,
+    |                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:584:24
+    |
+584 |                 318 as libc::c_int as libc::c_uint,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:584:39
+    |
+584 |                 318 as libc::c_int as libc::c_uint,
+    |                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:587:23
+    |
+587 |                     &[libc::c_char; 74],
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:595:37
+    |
+595 |     h = (*ann).hidden_layers - 1 as libc::c_int;
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:596:21
+    |
+596 |     while h >= 0 as libc::c_int {
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:597:29
+    |
+597 |         let mut d_2: *const libc::c_double = ((*ann).delta)
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:599:29
+    |
+599 |         let mut i_0: *const libc::c_double = ((*ann).output)
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:602:63
+    |
+602 |                     (*ann).inputs + (*ann).hidden * (h - 1 as libc::c_int)
+    |                                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:604:26
+    |
+604 |                     0 as libc::c_int
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:607:27
+    |
+607 |         let mut w_0: *mut libc::c_double = ((*ann).weight)
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:610:43
+    |
+610 |                     ((*ann).inputs + 1 as libc::c_int) * (*ann).hidden
+    |                                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:611:49
+    |
+611 |                         + ((*ann).hidden + 1 as libc::c_int) * (*ann).hidden
+    |                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:612:41
+    |
+612 | ...                   * (h - 1 as libc::c_int)
+    |                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:614:26
+    |
+614 |                     0 as libc::c_int
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:617:18
+    |
+617 |         j = 0 as libc::c_int;
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:619:22
+    |
+619 |             k = 0 as libc::c_int;
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:621:33
+    |
+621 |                 < (if h == 0 as libc::c_int { (*ann).inputs } else { (*ann).hidden })
+    |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:622:28
+    |
+622 |                     + 1 as libc::c_int
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:624:30
+    |
+624 |                 if k == 0 as libc::c_int {
+    |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:633:53
+    |
+633 | ...                   * *i_0.offset((k - 1 as libc::c_int) as isize);
+    |                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:651:49
+    |
+651 |         b"%d %d %d %d\0" as *const u8 as *const libc::c_char,
+    |                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:657:16
+    |
+657 |     let mut i: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:658:14
+    |
+658 |     i = 0 as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/genann.rs:662:48
+    |
+662 |             b" %.20e\0" as *const u8 as *const libc::c_char,
+    |                                                ^^^^ use of undeclared crate or module `libc`
+
+Some errors have detailed explanations: E0433, E0658.
+For more information about an error, try `rustc --explain E0433`.
+warning: `genann_clippy` (bin "genann_clippy") generated 4 warnings
+error: could not compile `genann_clippy` (bin "genann_clippy") due to 316 previous errors; 4 warnings emitted

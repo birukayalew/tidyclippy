@@ -1,0 +1,349 @@
+[1/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/blocksort.c.
+[2/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c.
+20 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c.
+[3/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c.
+4 warnings and 20 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c.
+[4/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.c.
+4 warnings and 22 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.c.
+[5/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c.
+7 warnings and 22 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c.
+[6/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/crctable.c.
+7 warnings and 22 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/crctable.c.
+[7/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/decompress.c.
+7 warnings and 22 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/decompress.c.
+[8/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/dlltest.c.
+7 warnings and 24 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/dlltest.c.
+[9/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/huffman.c.
+7 warnings and 24 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/huffman.c.
+[10/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/mk251.c.
+7 warnings and 24 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/mk251.c.
+[11/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/randtable.c.
+7 warnings and 24 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/randtable.c.
+[12/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/spewG.c.
+7 warnings and 27 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/spewG.c.
+[13/13] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/unzcrash.c.
+13 warnings and 27 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/unzcrash.c.
+error: too many errors emitted, stopping now [clang-diagnostic-error]
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:196:54: error: expected function body after function declarator [clang-diagnostic-error]
+  196 | static void    panic                 ( const Char* ) NORETURN;
+      |                                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:197:54: error: expected function body after function declarator [clang-diagnostic-error]
+  197 | static void    ioError               ( void )        NORETURN;
+      |                                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:198:54: error: expected function body after function declarator [clang-diagnostic-error]
+  198 | static void    outOfMemory           ( void )        NORETURN;
+      |                                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:199:54: error: expected function body after function declarator [clang-diagnostic-error]
+  199 | static void    configError           ( void )        NORETURN;
+      |                                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:200:54: error: expected function body after function declarator [clang-diagnostic-error]
+  200 | static void    crcError              ( void )        NORETURN;
+      |                                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:201:54: error: expected function body after function declarator [clang-diagnostic-error]
+  201 | static void    cleanUpAndFail        ( Int32 )       NORETURN;
+      |                                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:202:54: error: expected function body after function declarator [clang-diagnostic-error]
+  202 | static void    compressedStreamEOF   ( void )        NORETURN;
+      |                                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:321:4: error: call to undeclared function 'SET_BINARY_MODE'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  321 |    SET_BINARY_MODE(stream);
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:352:18: error: call to undeclared function 'fileno'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  352 |       Int32 fd = fileno ( zStream );
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:398:10: error: call to undeclared function 'configError'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  398 |          configError(); break;
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:400:10: error: call to undeclared function 'outOfMemory'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  400 |          outOfMemory (); break;
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:403:10: error: call to undeclared function 'ioError'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  403 |          ioError(); break;
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:405:10: error: call to undeclared function 'panic'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  405 |          panic ( "compress:unexpected error" );
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:408:4: error: call to undeclared function 'panic'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  408 |    panic ( "compress:end" );
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:429:4: error: call to undeclared function 'SET_BINARY_MODE'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  429 |    SET_BINARY_MODE(stream);
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:454:27: error: call to undeclared function 'panic'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  454 |       if (bzerr != BZ_OK) panic ( "decompress:bzReadGetUnused" );
+      |                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:468:18: error: call to undeclared function 'fileno'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  468 |       Int32 fd = fileno ( stream );
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:504:10: error: call to undeclared function 'configError'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  504 |          configError(); break;
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2.c:507:10: error: call to undeclared function 'ioError'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  507 |          ioError(); break;
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c:378:4: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+  378 |    strcpy ( inFileName, argv[1] );
+      |    ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c:378:4: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+  378 |    strcpy ( inFileName, argv[1] );
+      |    ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c:501:10: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+  501 |          strcpy (outFileName, inFileName);
+      |          ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c:501:10: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+  501 |          strcpy (outFileName, inFileName);
+      |          ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c:512:10: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+  512 |          strcat (outFileName, inFileName + ofs);
+      |          ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c:512:10: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+  512 |          strcat (outFileName, inFileName + ofs);
+      |          ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c:514:40: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+  514 |          if ( !endsInBz2(outFileName)) strcat ( outFileName, ".bz2" );
+      |                                        ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzip2recover.c:514:40: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+  514 |          if ( !endsInBz2(outFileName)) strcat ( outFileName, ".bz2" );
+      |                                        ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.c:1439:10: error: incompatible integer to pointer conversion assigning to 'FILE *' (aka 'struct _IO_FILE *') from 'int' [clang-diagnostic-int-conversion]
+ 1439 |       fp = fdopen(fd,mode2);
+      |          ^ ~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.c:1439:12: error: call to undeclared function 'fdopen'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+ 1439 |       fp = fdopen(fd,mode2);
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.c:1439:12: note: did you mean 'fopen'?
+/usr/include/stdio.h:264:14: note: 'fopen' declared here
+  264 | extern FILE *fopen (const char *__restrict __filename,
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:170:17: warning: The left operand of '==' is a garbage value [clang-analyzer-core.UndefinedBinaryOperatorResult]
+  170 |       if (yy[0] == ll_i) {
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:603:8: note: Assuming field 'nblock' is > 0
+  603 |    if (s->nblock > 0) {
+      |        ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:603:4: note: Taking true branch
+  603 |    if (s->nblock > 0) {
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:608:11: note: Assuming field 'blockNo' is <= 1
+  608 |       if (s->blockNo > 1) s->numZ = 0;
+      |           ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:608:7: note: Taking false branch
+  608 |       if (s->blockNo > 1) s->numZ = 0;
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:610:11: note: Assuming field 'verbosity' is < 2
+  610 |       if (s->verbosity >= 2)
+      |           ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:610:7: note: Taking false branch
+  610 |       if (s->verbosity >= 2)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:621:8: note: Assuming field 'blockNo' is not equal to 1
+  621 |    if (s->blockNo == 1) {
+      |        ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:621:4: note: Taking false branch
+  621 |    if (s->blockNo == 1) {
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:629:8: note: Assuming field 'nblock' is > 0
+  629 |    if (s->nblock > 0) {
+      |        ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:629:4: note: Taking true branch
+  629 |    if (s->nblock > 0) {
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:650:7: note: Calling 'generateMTFValues'
+  650 |       generateMTFValues ( s );
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:16: note: Assuming 'i' is > 'EOB'
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |                ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:4: note: Loop condition is false. Execution continues on line 159
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:161:16: note: Assuming 'i' is >= field 'nInUse'
+  161 |    for (i = 0; i < s->nInUse; i++) yy[i] = (UChar) i;
+      |                ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:161:4: note: Loop condition is false. Execution continues on line 163
+  161 |    for (i = 0; i < s->nInUse; i++) yy[i] = (UChar) i;
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:163:16: note: Assuming 'i' is < field 'nblock'
+  163 |    for (i = 0; i < s->nblock; i++) {
+      |                ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:163:4: note: Loop condition is true.  Entering loop body
+  163 |    for (i = 0; i < s->nblock; i++) {
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:166:25: note: Assuming 'j' is >= 0
+  166 |       j = ptr[i]-1; if (j < 0) j += s->nblock;
+      |                         ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:166:21: note: Taking false branch
+  166 |       j = ptr[i]-1; if (j < 0) j += s->nblock;
+      |                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:170:17: note: The left operand of '==' is a garbage value
+  170 |       if (yy[0] == ll_i) {
+      |           ~~~~~ ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:193:19: warning: Assigned value is garbage or undefined [clang-analyzer-core.uninitialized.Assign]
+  193 |             rtmp  = yy[1];
+      |                   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:603:8: note: Assuming field 'nblock' is > 0
+  603 |    if (s->nblock > 0) {
+      |        ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:603:4: note: Taking true branch
+  603 |    if (s->nblock > 0) {
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:608:11: note: Assuming field 'blockNo' is <= 1
+  608 |       if (s->blockNo > 1) s->numZ = 0;
+      |           ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:608:7: note: Taking false branch
+  608 |       if (s->blockNo > 1) s->numZ = 0;
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:610:11: note: Assuming field 'verbosity' is < 2
+  610 |       if (s->verbosity >= 2)
+      |           ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:610:7: note: Taking false branch
+  610 |       if (s->verbosity >= 2)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:621:8: note: Assuming field 'blockNo' is not equal to 1
+  621 |    if (s->blockNo == 1) {
+      |        ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:621:4: note: Taking false branch
+  621 |    if (s->blockNo == 1) {
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:629:8: note: Assuming field 'nblock' is > 0
+  629 |    if (s->nblock > 0) {
+      |        ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:629:4: note: Taking true branch
+  629 |    if (s->nblock > 0) {
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:650:7: note: Calling 'generateMTFValues'
+  650 |       generateMTFValues ( s );
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:16: note: Assuming 'i' is <= 'EOB'
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |                ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:4: note: Loop condition is true.  Entering loop body
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:16: note: Assuming 'i' is <= 'EOB'
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |                ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:4: note: Loop condition is true.  Entering loop body
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:16: note: Assuming 'i' is <= 'EOB'
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |                ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:4: note: Loop condition is true.  Entering loop body
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:16: note: Assuming 'i' is > 'EOB'
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |                ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:157:4: note: Loop condition is false. Execution continues on line 159
+  157 |    for (i = 0; i <= EOB; i++) s->mtfFreq[i] = 0;
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:161:4: note: Loop condition is true.  Entering loop body
+  161 |    for (i = 0; i < s->nInUse; i++) yy[i] = (UChar) i;
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:161:4: note: Loop condition is false. Execution continues on line 163
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:163:16: note: Assuming 'i' is < field 'nblock'
+  163 |    for (i = 0; i < s->nblock; i++) {
+      |                ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:163:4: note: Loop condition is true.  Entering loop body
+  163 |    for (i = 0; i < s->nblock; i++) {
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:166:25: note: Assuming 'j' is >= 0
+  166 |       j = ptr[i]-1; if (j < 0) j += s->nblock;
+      |                         ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:166:21: note: Taking false branch
+  166 |       j = ptr[i]-1; if (j < 0) j += s->nblock;
+      |                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:170:11: note: Assuming the condition is false
+  170 |       if (yy[0] == ll_i) {
+      |           ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:170:7: note: Taking false branch
+  170 |       if (yy[0] == ll_i) {
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:174:14: note: 'zPend' is <= 0
+  174 |          if (zPend > 0) {
+      |              ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:174:10: note: Taking false branch
+  174 |          if (zPend > 0) {
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:193:19: note: Assigned value is garbage or undefined
+  193 |             rtmp  = yy[1];
+      |                   ^ ~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:225:7: warning: Value stored to 'zPend' is never read [clang-analyzer-deadcode.DeadStores]
+  225 |       zPend = 0;
+      |       ^       ~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/compress.c:225:7: note: Value stored to 'zPend' is never read
+  225 |       zPend = 0;
+      |       ^       ~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/dlltest.c:132:53: error: call to undeclared function 'fileno'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  132 |          if((fn_r == NULL && (BZ2fp_r = BZ2_bzdopen(fileno(stdin),"rb"))==NULL)
+      |                                                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/dlltest.c:159:53: error: call to undeclared function 'fileno'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  159 |          if((fn_w == NULL && (BZ2fp_w = BZ2_bzdopen(fileno(stdout),mode))==NULL)
+      |                                                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/spewG.c:41:4: error: call to undeclared function 'srandom'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   41 |    srandom(1);
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/spewG.c:41:4: note: did you mean 'srand'?
+/usr/include/stdlib.h:575:13: note: 'srand' declared here
+  575 | extern void srand (unsigned int __seed) __THROW;
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/spewG.c:42:4: error: call to undeclared function 'setbuffer'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   42 |    setbuffer ( stdout, buf, N_BUF );
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/spewG.c:42:4: note: did you mean 'setbuf'?
+/usr/include/stdio.h:334:13: note: 'setbuf' declared here
+  334 | extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) __THROW
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/spewG.c:44:14: error: call to undeclared function 'random'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   44 |       p = 25+random()%50;
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/unzcrash.c:97:10: warning: passing 'uchar[1010600]' (aka 'unsigned char[1010600]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [clang-diagnostic-pointer-sign]
+   97 |          zbuf, &nZ, inbuf, nIn, 9, 0, 30 );
+      |          ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.h:210:21: note: passing argument to parameter 'dest' here
+  210 |       char*         dest,
+      |                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/unzcrash.c:97:16: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [clang-diagnostic-pointer-sign]
+   97 |          zbuf, &nZ, inbuf, nIn, 9, 0, 30 );
+      |                ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.h:211:21: note: passing argument to parameter 'destLen' here
+  211 |       unsigned int* destLen,
+      |                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/unzcrash.c:97:21: warning: passing 'uchar[1000000]' (aka 'unsigned char[1000000]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [clang-diagnostic-pointer-sign]
+   97 |          zbuf, &nZ, inbuf, nIn, 9, 0, 30 );
+      |                     ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.h:212:21: note: passing argument to parameter 'source' here
+  212 |       char*         source,
+      |                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/unzcrash.c:107:13: warning: passing 'uchar[2000000]' (aka 'unsigned char[2000000]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [clang-diagnostic-pointer-sign]
+  107 |             outbuf, &nOut, zbuf, nZ, 0, 0 );
+      |             ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.h:220:21: note: passing argument to parameter 'dest' here
+  220 |       char*         dest,
+      |                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/unzcrash.c:107:21: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [clang-diagnostic-pointer-sign]
+  107 |             outbuf, &nOut, zbuf, nZ, 0, 0 );
+      |                     ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.h:221:21: note: passing argument to parameter 'destLen' here
+  221 |       unsigned int* destLen,
+      |                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/unzcrash.c:107:28: warning: passing 'uchar[1010600]' (aka 'unsigned char[1010600]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [clang-diagnostic-pointer-sign]
+  107 |             outbuf, &nOut, zbuf, nZ, 0, 0 );
+      |                            ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/bzip2/bzlib.h:222:21: note: passing argument to parameter 'source' here
+  222 |       char*         source,
+      |                     ^
+Found compiler error(s).

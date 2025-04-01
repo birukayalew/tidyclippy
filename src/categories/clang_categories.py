@@ -14,8 +14,6 @@ CLANG_CATEGORY_MAP = {
         "uninitialized",
         "assigned value is garbage",
         "allocation size of 0 bytes",
-        "unwrap",
-        "expect",
         "unsafe",
     ],
     "Arithmetic Issues": [
@@ -40,9 +38,13 @@ CLANG_CATEGORY_MAP = {
         "null pointer",
     ],
     "Type Safety": [
+        "type name",
         "incompatible integer to pointer conversion",
         "converts between pointers to integer types",
         "passing argument to parameter",
         "incompatible pointer types passing",
-    ]
+    ], 
+    "Code Smells": [
+        "deprecated",
+    ],
 }

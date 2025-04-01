@@ -47,6 +47,7 @@ CLIPPY_CATEGORY_MAP = {
     ],
     "Build Configuration Error": [
         "#![feature]",
+        "linkage",
         "function not found in crate",
         "has been stable",
         "inner attribute",
