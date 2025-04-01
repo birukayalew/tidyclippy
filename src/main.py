@@ -35,4 +35,9 @@ def main():
             print("   -", msg)
 
 if __name__ == "__main__":
-    main()
+    run_batch_analysis(
+        output_dir="outputs",
+        long_file="analysis_long.xlsx",
+        wide_file="analysis_wide.xlsx"
+    )
+    # main()
