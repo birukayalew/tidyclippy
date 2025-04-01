@@ -11,3 +11,10 @@ def read_lines_from_file(filepath):
 
 def extract_program_name(file_path):
     return file_path.split("-")[0] 
+
+def detect_tool_type(file_name):
+    if "clippy" in file_name:
+        return "clippy"
+    elif "clang" in file_name:
+        return "clang"
+    return None
