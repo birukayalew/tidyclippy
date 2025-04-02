@@ -1,0 +1,41 @@
+[1/4] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c.
+1 warning generated.
+[2/4] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-zrand.c.
+1 warning generated.
+[3/4] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark.c.
+1 warning generated.
+[4/4] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/util.c.
+1 warning generated.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:67:13: warning: Division by zero [clang-analyzer-core.DivideZero]
+   67 |         return tot / (n - m * X);
+      |                    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:233:1: note: Loop condition is false. Execution continues on line 233
+  233 | LIST_1D_FUNCTIONS
+      | ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:161:2: note: expanded from macro 'LIST_1D_FUNCTIONS'
+  161 |         X(zsetu,            FAST1D(),          zsetu(temp, 1000000000ULL),)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:232:27: note: expanded from macro 'X'
+  232 | #define X(FN, A, F1, F2)  FUNCTION_1D(bench_##FN, F1, F2)
+      |                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:102:3: note: expanded from macro 'FUNCTION_1D'
+  102 |                 while (i--) {\
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:233:1: note: Calling 'gettime'
+  233 | LIST_1D_FUNCTIONS
+      | ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:161:2: note: expanded from macro 'LIST_1D_FUNCTIONS'
+  161 |         X(zsetu,            FAST1D(),          zsetu(temp, 1000000000ULL),)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:232:27: note: expanded from macro 'X'
+  232 | #define X(FN, A, F1, F2)  FUNCTION_1D(bench_##FN, F1, F2)
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:113:20: note: expanded from macro 'FUNCTION_1D'
+  113 |                 printf("%llu\n", gettime(f->measurements));\
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:65:2: note: Loop condition is false. Execution continues on line 67
+   65 |         for (; i < n; i++)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/bench/benchmark-func.c:67:13: note: Division by zero
+   67 |         return tot / (n - m * X);
+      |                ~~~~^~~~~~~~~~~~~

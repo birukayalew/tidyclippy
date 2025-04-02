@@ -1,0 +1,1497 @@
+[1/2] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c.
+16 warnings generated.
+[2/2] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/main.c.
+17 warnings generated.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:886:12: warning: Potential leak of memory pointed to by 'w' [clang-analyzer-unix.Malloc]
+  886 |     while (lil->head < lil->clen && !ateol(lil) && !lil->error) {
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3416:9: note: Assuming 'argc' is >= 2
+ 3416 |     if (argc < 2) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3416:5: note: Taking false branch
+ 3416 |     if (argc < 2) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3417:12: note: Calling 'lil_subst_to_list'
+ 3417 |     list = lil_subst_to_list(lil, argv[0]);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:919:13: note: Calling 'substitute'
+  919 |     words = substitute(lil);
+      |             ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:886:17: note: Field 'head' is < field 'clen'
+  886 |     while (lil->head < lil->clen && !ateol(lil) && !lil->error) {
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:886:12: note: Left side of '&&' is true
+  886 |     while (lil->head < lil->clen && !ateol(lil) && !lil->error) {
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:886:12: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:886:52: note: Assuming field 'error' is 0
+  886 |     while (lil->head < lil->clen && !ateol(lil) && !lil->error) {
+      |                                                    ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:886:5: note: Loop condition is true.  Entering loop body
+  886 |     while (lil->head < lil->clen && !ateol(lil) && !lil->error) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:887:25: note: Calling 'alloc_value'
+  887 |         lil_value_t w = alloc_value(NULL);
+      |                         ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: 'str' is null
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |                                 ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Calling 'alloc_value_len'
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:275:23: note: Memory is allocated
+  275 |     lil_value_t val = calloc(1, sizeof(struct _lil_value_t));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:9: note: Assuming 'val' is non-null
+  277 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:5: note: Taking false branch
+  277 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:9: note: 'str' is null
+  278 |     if (str) {
+      |         ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:5: note: Taking false branch
+  278 |     if (str) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Returned allocated memory
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:887:25: note: Returned allocated memory
+  887 |         lil_value_t w = alloc_value(NULL);
+      |                         ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:891:17: note: Assuming 'head' is not equal to field 'head'
+  891 |             if (head == lil->head) { /* something wrong, the parser can't proceed */
+      |                 ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:891:13: note: Taking false branch
+  891 |             if (head == lil->head) { /* something wrong, the parser can't proceed */
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:897:13: note: Calling 'lil_append_val'
+  897 |             lil_append_val(w, wp);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:386:9: note: Assuming 'v' is non-null
+  386 |     if (!v || !v->l) return 1;
+      |         ^~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:386:9: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:386:15: note: Assuming field 'l' is not equal to 0
+  386 |     if (!v || !v->l) return 1;
+      |               ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:386:5: note: Taking false branch
+  386 |     if (!v || !v->l) return 1;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:392:9: note: Assuming 'new' is null
+  392 |     if (!new) return 0;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:392:5: note: Taking true branch
+  392 |     if (!new) return 0;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:392:15: note: Returning without deallocating memory or storing the pointer for later deallocation
+  392 |     if (!new) return 0;
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:897:13: note: Returning from 'lil_append_val'
+  897 |             lil_append_val(w, wp);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:899:18: note: Assuming field 'head' is >= field 'clen'
+  899 |         } while (lil->head < lil->clen && !ateol(lil) && !isspace(lil->code[lil->head]) && !lil->error);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:899:40: note: Left side of '&&' is false
+  899 |         } while (lil->head < lil->clen && !ateol(lil) && !isspace(lil->code[lil->head]) && !lil->error);
+      |                                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:888:9: note: Loop condition is false.  Exiting loop
+  888 |         do {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:902:9: note: Calling 'lil_list_append'
+  902 |         lil_list_append(words, w);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:902:9: note: Returning from 'lil_list_append'
+  902 |         lil_list_append(words, w);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:886:12: note: Potential leak of memory pointed to by 'w'
+  886 |     while (lil->head < lil->clen && !ateol(lil) && !lil->error) {
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1071:35: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+ 1071 |                 for (i=0; i<argc; i++)
+      |                                   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1061:9: note: Assuming 'cmd' is non-null
+ 1061 |     if (cmd) {
+      |         ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1061:5: note: Taking true branch
+ 1061 |     if (cmd) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1062:13: note: Assuming field 'proc' is null
+ 1062 |         if (cmd->proc)
+      |             ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1062:9: note: Taking false branch
+ 1062 |         if (cmd->proc)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1068:17: note: Assuming field 'c' is equal to 1
+ 1068 |             if (cmd->argnames->c == 1 && !strcmp(lil_to_string(cmd->argnames->v[0]), "args")) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1068:17: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1068:13: note: Taking true branch
+ 1068 |             if (cmd->argnames->c == 1 && !strcmp(lil_to_string(cmd->argnames->v[0]), "args")) {
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1071:27: note: Assuming 'i' is < 'argc'
+ 1071 |                 for (i=0; i<argc; i++)
+      |                           ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1071:17: note: Loop condition is true.  Entering loop body
+ 1071 |                 for (i=0; i<argc; i++)
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1072:43: note: Calling 'lil_clone_value'
+ 1072 |                     lil_list_append(args, lil_clone_value(argv[i]));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:9: note: Assuming 'src' is non-null
+  311 |     if (!src) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:5: note: Taking false branch
+  311 |     if (!src) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:315:11: note: Memory is allocated
+  315 |     val = calloc(1, sizeof(struct _lil_value_t));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:9: note: Assuming 'val' is non-null
+  317 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:5: note: Taking false branch
+  317 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:9: note: Assuming field 'l' is 0
+  319 |     if (src->l) {
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:5: note: Taking false branch
+  319 |     if (src->l) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1072:43: note: Returned allocated memory
+ 1072 |                     lil_list_append(args, lil_clone_value(argv[i]));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1072:21: note: Calling 'lil_list_append'
+ 1072 |                     lil_list_append(args, lil_clone_value(argv[i]));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1072:21: note: Returning from 'lil_list_append'
+ 1072 |                     lil_list_append(args, lil_clone_value(argv[i]));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1071:35: note: Potential memory leak
+ 1071 |                 for (i=0; i<argc; i++)
+      |                                   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2461:32: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+ 2461 |         for (i=0; i<lil->cmds; i++)
+      |                                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2439:9: note: Assuming 'argc' is not equal to 0
+ 2439 |     if (!argc) return NULL;
+      |         ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2439:5: note: Taking false branch
+ 2439 |     if (!argc) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2441:9: note: Assuming the condition is false
+ 2441 |     if (!strcmp(type, "version")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2441:5: note: Taking false branch
+ 2441 |     if (!strcmp(type, "version")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2444:9: note: Assuming the condition is false
+ 2444 |     if (!strcmp(type, "args")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2444:5: note: Taking false branch
+ 2444 |     if (!strcmp(type, "args")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2450:9: note: Assuming the condition is false
+ 2450 |     if (!strcmp(type, "body")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2450:5: note: Taking false branch
+ 2450 |     if (!strcmp(type, "body")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2456:9: note: Assuming the condition is false
+ 2456 |     if (!strcmp(type, "func-count")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2456:5: note: Taking false branch
+ 2456 |     if (!strcmp(type, "func-count")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2459:5: note: Taking true branch
+ 2459 |     if (!strcmp(type, "funcs")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2461:19: note: Assuming 'i' is < field 'cmds'
+ 2461 |         for (i=0; i<lil->cmds; i++)
+      |                   ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2461:9: note: Loop condition is true.  Entering loop body
+ 2461 |         for (i=0; i<lil->cmds; i++)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2462:36: note: Calling 'lil_alloc_string'
+ 2462 |             lil_list_append(funcs, lil_alloc_string(lil->cmd[i]->name));
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2268:12: note: Calling 'alloc_value'
+ 2268 |     return alloc_value(str);
+      |            ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: Assuming 'str' is null
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |                                 ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Calling 'alloc_value_len'
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:275:23: note: Memory is allocated
+  275 |     lil_value_t val = calloc(1, sizeof(struct _lil_value_t));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:9: note: Assuming 'val' is non-null
+  277 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:5: note: Taking false branch
+  277 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:9: note: 'str' is null
+  278 |     if (str) {
+      |         ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:5: note: Taking false branch
+  278 |     if (str) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Returned allocated memory
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2268:12: note: Returned allocated memory
+ 2268 |     return alloc_value(str);
+      |            ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2462:36: note: Returned allocated memory
+ 2462 |             lil_list_append(funcs, lil_alloc_string(lil->cmd[i]->name));
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2462:13: note: Calling 'lil_list_append'
+ 2462 |             lil_list_append(funcs, lil_alloc_string(lil->cmd[i]->name));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2462:13: note: Returning from 'lil_list_append'
+ 2462 |             lil_list_append(funcs, lil_alloc_string(lil->cmd[i]->name));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2461:32: note: Potential memory leak
+ 2461 |         for (i=0; i<lil->cmds; i++)
+      |                                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2471:36: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+ 2471 |             for (i=0; i<env->vars; i++)
+      |                                    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2439:9: note: Assuming 'argc' is not equal to 0
+ 2439 |     if (!argc) return NULL;
+      |         ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2439:5: note: Taking false branch
+ 2439 |     if (!argc) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2441:9: note: Assuming the condition is false
+ 2441 |     if (!strcmp(type, "version")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2441:5: note: Taking false branch
+ 2441 |     if (!strcmp(type, "version")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2444:9: note: Assuming the condition is false
+ 2444 |     if (!strcmp(type, "args")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2444:5: note: Taking false branch
+ 2444 |     if (!strcmp(type, "args")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2450:9: note: Assuming the condition is false
+ 2450 |     if (!strcmp(type, "body")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2450:5: note: Taking false branch
+ 2450 |     if (!strcmp(type, "body")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2456:9: note: Assuming the condition is false
+ 2456 |     if (!strcmp(type, "func-count")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2456:5: note: Taking false branch
+ 2456 |     if (!strcmp(type, "func-count")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2459:9: note: Assuming the condition is false
+ 2459 |     if (!strcmp(type, "funcs")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2459:5: note: Taking false branch
+ 2459 |     if (!strcmp(type, "funcs")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2467:5: note: Taking true branch
+ 2467 |     if (!strcmp(type, "vars")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2470:9: note: Loop condition is true.  Entering loop body
+ 2470 |         while (env) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2471:23: note: Assuming 'i' is < field 'vars'
+ 2471 |             for (i=0; i<env->vars; i++)
+      |                       ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2471:13: note: Loop condition is true.  Entering loop body
+ 2471 |             for (i=0; i<env->vars; i++)
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2472:39: note: Calling 'lil_alloc_string'
+ 2472 |                 lil_list_append(vars, lil_alloc_string(env->var[i]->n));
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2268:12: note: Calling 'alloc_value'
+ 2268 |     return alloc_value(str);
+      |            ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: Assuming 'str' is null
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |                                 ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Calling 'alloc_value_len'
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:275:23: note: Memory is allocated
+  275 |     lil_value_t val = calloc(1, sizeof(struct _lil_value_t));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:9: note: Assuming 'val' is non-null
+  277 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:5: note: Taking false branch
+  277 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:9: note: 'str' is null
+  278 |     if (str) {
+      |         ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:5: note: Taking false branch
+  278 |     if (str) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Returned allocated memory
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2268:12: note: Returned allocated memory
+ 2268 |     return alloc_value(str);
+      |            ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2472:39: note: Returned allocated memory
+ 2472 |                 lil_list_append(vars, lil_alloc_string(env->var[i]->n));
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2472:17: note: Calling 'lil_list_append'
+ 2472 |                 lil_list_append(vars, lil_alloc_string(env->var[i]->n));
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2472:17: note: Returning from 'lil_list_append'
+ 2472 |                 lil_list_append(vars, lil_alloc_string(env->var[i]->n));
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2471:36: note: Potential memory leak
+ 2471 |             for (i=0; i<env->vars; i++)
+      |                                    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2481:41: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+ 2481 |         for (i=0; i<lil->rootenv->vars; i++)
+      |                                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2439:9: note: Assuming 'argc' is not equal to 0
+ 2439 |     if (!argc) return NULL;
+      |         ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2439:5: note: Taking false branch
+ 2439 |     if (!argc) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2441:9: note: Assuming the condition is false
+ 2441 |     if (!strcmp(type, "version")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2441:5: note: Taking false branch
+ 2441 |     if (!strcmp(type, "version")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2444:9: note: Assuming the condition is false
+ 2444 |     if (!strcmp(type, "args")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2444:5: note: Taking false branch
+ 2444 |     if (!strcmp(type, "args")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2450:9: note: Assuming the condition is false
+ 2450 |     if (!strcmp(type, "body")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2450:5: note: Taking false branch
+ 2450 |     if (!strcmp(type, "body")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2456:9: note: Assuming the condition is false
+ 2456 |     if (!strcmp(type, "func-count")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2456:5: note: Taking false branch
+ 2456 |     if (!strcmp(type, "func-count")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2459:9: note: Assuming the condition is false
+ 2459 |     if (!strcmp(type, "funcs")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2459:5: note: Taking false branch
+ 2459 |     if (!strcmp(type, "funcs")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2467:9: note: Assuming the condition is false
+ 2467 |     if (!strcmp(type, "vars")) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2467:5: note: Taking false branch
+ 2467 |     if (!strcmp(type, "vars")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2479:5: note: Taking true branch
+ 2479 |     if (!strcmp(type, "globals")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2481:19: note: Assuming 'i' is < field 'vars'
+ 2481 |         for (i=0; i<lil->rootenv->vars; i++)
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2481:9: note: Loop condition is true.  Entering loop body
+ 2481 |         for (i=0; i<lil->rootenv->vars; i++)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2482:35: note: Calling 'lil_alloc_string'
+ 2482 |             lil_list_append(vars, lil_alloc_string(lil->rootenv->var[i]->n));
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2268:12: note: Calling 'alloc_value'
+ 2268 |     return alloc_value(str);
+      |            ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: Assuming 'str' is null
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |                                 ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Calling 'alloc_value_len'
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:275:23: note: Memory is allocated
+  275 |     lil_value_t val = calloc(1, sizeof(struct _lil_value_t));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:9: note: Assuming 'val' is non-null
+  277 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:5: note: Taking false branch
+  277 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:9: note: 'str' is null
+  278 |     if (str) {
+      |         ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:5: note: Taking false branch
+  278 |     if (str) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Returned allocated memory
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2268:12: note: Returned allocated memory
+ 2268 |     return alloc_value(str);
+      |            ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2482:35: note: Returned allocated memory
+ 2482 |             lil_list_append(vars, lil_alloc_string(lil->rootenv->var[i]->n));
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2482:13: note: Calling 'lil_list_append'
+ 2482 |             lil_list_append(vars, lil_alloc_string(lil->rootenv->var[i]->n));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2482:13: note: Returning from 'lil_list_append'
+ 2482 |             lil_list_append(vars, lil_alloc_string(lil->rootenv->var[i]->n));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2481:41: note: Potential memory leak
+ 2481 |         for (i=0; i<lil->rootenv->vars; i++)
+      |                                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2737:21: warning: Call to 'malloc' has an allocation size of 0 bytes [clang-analyzer-optin.portability.UnixAPI]
+ 2737 |         varvalues = malloc(sizeof(lil_value_t)*lil_list_size(invars));
+      |                     ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2733:9: note: Assuming 'argc' is >= 1
+ 2733 |     if (argc < 1) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2733:5: note: Taking false branch
+ 2733 |     if (argc < 1) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2734:9: note: Assuming 'argc' is not equal to 1
+ 2734 |     if (argc == 1) codeindex = 0;
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2734:5: note: Taking false branch
+ 2734 |     if (argc == 1) codeindex = 0;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2735:14: note: 'argc' is >= 2
+ 2735 |     else if (argc >= 2) {
+      |              ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2735:10: note: Taking true branch
+ 2735 |     else if (argc >= 2) {
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2736:18: note: Calling 'lil_subst_to_list'
+ 2736 |         invars = lil_subst_to_list(lil, argv[0]);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:9: note: Assuming 'words' is null
+  920 |     if (!words) words = lil_alloc_list();
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:5: note: Taking true branch
+  920 |     if (!words) words = lil_alloc_list();
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:25: note: Calling 'lil_alloc_list'
+  920 |     if (!words) words = lil_alloc_list();
+      |                         ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:418:12: note: The value 0 is assigned to field 'c'
+  418 |     list = calloc(1, sizeof(struct _lil_list_t));
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:25: note: Returning from 'lil_alloc_list'
+  920 |     if (!words) words = lil_alloc_list();
+      |                         ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2736:18: note: Returning from 'lil_subst_to_list'
+ 2736 |         invars = lil_subst_to_list(lil, argv[0]);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2737:48: note: Calling 'lil_list_size'
+ 2737 |         varvalues = malloc(sizeof(lil_value_t)*lil_list_size(invars));
+      |                                                ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:455:5: note: Returning without writing to 'list->c'
+  455 |     return list->c;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:455:5: note: Returning zero
+  455 |     return list->c;
+      |     ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2737:48: note: Returning from 'lil_list_size'
+ 2737 |         varvalues = malloc(sizeof(lil_value_t)*lil_list_size(invars));
+      |                                                ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2737:21: note: Call to 'malloc' has an allocation size of 0 bytes
+ 2737 |         varvalues = malloc(sizeof(lil_value_t)*lil_list_size(invars));
+      |                     ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2757:25: warning: Call to 'realloc' has an allocation size of 0 bytes [clang-analyzer-optin.portability.UnixAPI]
+ 2757 |             varvalues = realloc(varvalues, sizeof(lil_value_t)*lil_list_size(outvars));
+      |                         ^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2733:9: note: Assuming 'argc' is >= 1
+ 2733 |     if (argc < 1) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2733:5: note: Taking false branch
+ 2733 |     if (argc < 1) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2734:9: note: Assuming 'argc' is not equal to 1
+ 2734 |     if (argc == 1) codeindex = 0;
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2734:5: note: Taking false branch
+ 2734 |     if (argc == 1) codeindex = 0;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2735:14: note: 'argc' is >= 2
+ 2735 |     else if (argc >= 2) {
+      |              ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2735:10: note: Taking true branch
+ 2735 |     else if (argc >= 2) {
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2736:18: note: Calling 'lil_subst_to_list'
+ 2736 |         invars = lil_subst_to_list(lil, argv[0]);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:9: note: Assuming 'words' is non-null, which participates in a condition later
+  920 |     if (!words) words = lil_alloc_list();
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:5: note: Taking false branch
+  920 |     if (!words) words = lil_alloc_list();
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:925:5: note: Returning pointer (loaded from 'words'), which participates in a condition later
+  925 |     return words;
+      |     ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2736:18: note: Returning from 'lil_subst_to_list'
+ 2736 |         invars = lil_subst_to_list(lil, argv[0]);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2738:19: note: Assuming the condition is true
+ 2738 |         for (i=0; i<lil_list_size(invars); i++)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2738:9: note: Loop condition is true.  Entering loop body
+ 2738 |         for (i=0; i<lil_list_size(invars); i++)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2738:19: note: Assuming the condition is false
+ 2738 |         for (i=0; i<lil_list_size(invars); i++)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2738:9: note: Loop condition is false. Execution continues on line 2740
+ 2738 |         for (i=0; i<lil_list_size(invars); i++)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2740:13: note: Assuming 'argc' is > 2
+ 2740 |         if (argc > 2) {
+      |             ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2740:9: note: Taking true branch
+ 2740 |         if (argc > 2) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2742:23: note: Calling 'lil_subst_to_list'
+ 2742 |             outvars = lil_subst_to_list(lil, argv[1]);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:9: note: Assuming 'words' is null, which participates in a condition later
+  920 |     if (!words) words = lil_alloc_list();
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:5: note: Taking true branch
+  920 |     if (!words) words = lil_alloc_list();
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:25: note: Calling 'lil_alloc_list'
+  920 |     if (!words) words = lil_alloc_list();
+      |                         ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:418:12: note: The value 0 is assigned to field 'c'
+  418 |     list = calloc(1, sizeof(struct _lil_list_t));
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:420:5: note: Returning pointer (loaded from 'list'), which participates in a condition later
+  420 |     return list;
+      |     ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:25: note: Returning from 'lil_alloc_list'
+  920 |     if (!words) words = lil_alloc_list();
+      |                         ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:925:5: note: Returning pointer (loaded from 'words'), which participates in a condition later
+  925 |     return words;
+      |     ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2742:23: note: Returning from 'lil_subst_to_list'
+ 2742 |             outvars = lil_subst_to_list(lil, argv[1]);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2748:9: note: 'invars' is non-null
+ 2748 |     if (invars) {
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2748:5: note: Taking true branch
+ 2748 |     if (invars) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2749:9: note: Loop condition is true.  Entering loop body
+ 2749 |         for (i=0; i<lil_list_size(invars); i++) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2749:9: note: Loop condition is false. Execution continues on line 2754
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2755:9: note: 'invars' is non-null
+ 2755 |     if (invars || outvars) {
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2755:16: note: Left side of '||' is true
+ 2755 |     if (invars || outvars) {
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2756:13: note: 'outvars' is non-null
+ 2756 |         if (outvars) {
+      |             ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2756:9: note: Taking true branch
+ 2756 |         if (outvars) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2757:64: note: Calling 'lil_list_size'
+ 2757 |             varvalues = realloc(varvalues, sizeof(lil_value_t)*lil_list_size(outvars));
+      |                                                                ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:455:5: note: Returning without writing to 'list->c'
+  455 |     return list->c;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:455:5: note: Returning zero
+  455 |     return list->c;
+      |     ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2757:64: note: Returning from 'lil_list_size'
+ 2757 |             varvalues = realloc(varvalues, sizeof(lil_value_t)*lil_list_size(outvars));
+      |                                                                ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2757:25: note: Call to 'realloc' has an allocation size of 0 bytes
+ 2757 |             varvalues = realloc(varvalues, sizeof(lil_value_t)*lil_list_size(outvars));
+      |                         ^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2868:26: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+ 2868 |     for (i=base; i<argc; i++)
+      |                          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2859:9: note: Assuming 'argc' is >= 2
+ 2859 |     if (argc < 2) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2859:5: note: Taking false branch
+ 2859 |     if (argc < 2) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2861:5: note: Taking false branch
+ 2861 |     if (!strcmp(varname, "global")) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2868:18: note: 'i' is < 'argc'
+ 2868 |     for (i=base; i<argc; i++)
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2868:5: note: Loop condition is true.  Entering loop body
+ 2868 |     for (i=base; i<argc; i++)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2869:31: note: Calling 'lil_clone_value'
+ 2869 |         lil_list_append(list, lil_clone_value(argv[i]));
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:9: note: Assuming 'src' is non-null
+  311 |     if (!src) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:5: note: Taking false branch
+  311 |     if (!src) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:315:11: note: Memory is allocated
+  315 |     val = calloc(1, sizeof(struct _lil_value_t));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:9: note: Assuming 'val' is non-null
+  317 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:5: note: Taking false branch
+  317 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:9: note: Assuming field 'l' is 0
+  319 |     if (src->l) {
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:5: note: Taking false branch
+  319 |     if (src->l) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2869:31: note: Returned allocated memory
+ 2869 |         lil_list_append(list, lil_clone_value(argv[i]));
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2869:9: note: Calling 'lil_list_append'
+ 2869 |         lil_list_append(list, lil_clone_value(argv[i]));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:9: note: Assuming field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |         ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: Assuming field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2869:9: note: Returning from 'lil_list_append'
+ 2869 |         lil_list_append(list, lil_clone_value(argv[i]));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2868:26: note: Potential memory leak
+ 2868 |     for (i=base; i<argc; i++)
+      |                          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2891:40: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+ 2891 |     for (i=(size_t)from; i<(size_t)to; i++)
+      |                                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2882:9: note: Assuming 'argc' is >= 1
+ 2882 |     if (argc < 1) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2882:5: note: Taking false branch
+ 2882 |     if (argc < 1) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2883:9: note: Assuming 'argc' is >= 2
+ 2883 |     if (argc < 2) return lil_clone_value(argv[0]);
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2883:5: note: Taking false branch
+ 2883 |     if (argc < 2) return lil_clone_value(argv[0]);
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2885:9: note: Assuming 'from' is >= 0
+ 2885 |     if (from < 0) from = 0;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2885:5: note: Taking false branch
+ 2885 |     if (from < 0) from = 0;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2887:10: note: Assuming 'argc' is <= 2
+ 2887 |     to = argc > 2 ? lil_to_integer(argv[2]) : (lilint_t)list->c;
+      |          ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2887:10: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2888:9: note: 'to' is <= field 'c'
+ 2888 |     if (to > (lilint_t)list->c) to = list->c;
+      |         ^~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2888:5: note: Taking false branch
+ 2888 |     if (to > (lilint_t)list->c) to = list->c;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2889:9: note: Assuming 'to' is >= 'from'
+ 2889 |     if (to < from) to = from;
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2889:5: note: Taking false branch
+ 2889 |     if (to < from) to = from;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2891:26: note: Assuming 'i' is < 'to'
+ 2891 |     for (i=(size_t)from; i<(size_t)to; i++)
+      |                          ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2891:5: note: Loop condition is true.  Entering loop body
+ 2891 |     for (i=(size_t)from; i<(size_t)to; i++)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2892:32: note: Calling 'lil_clone_value'
+ 2892 |         lil_list_append(slice, lil_clone_value(list->v[i]));
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:9: note: Assuming 'src' is non-null
+  311 |     if (!src) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:5: note: Taking false branch
+  311 |     if (!src) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:315:11: note: Memory is allocated
+  315 |     val = calloc(1, sizeof(struct _lil_value_t));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:9: note: Assuming 'val' is non-null
+  317 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:5: note: Taking false branch
+  317 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:9: note: Assuming field 'l' is 0
+  319 |     if (src->l) {
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:5: note: Taking false branch
+  319 |     if (src->l) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2892:32: note: Returned allocated memory
+ 2892 |         lil_list_append(slice, lil_clone_value(list->v[i]));
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2892:9: note: Calling 'lil_list_append'
+ 2892 |         lil_list_append(slice, lil_clone_value(list->v[i]));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2892:9: note: Returning from 'lil_list_append'
+ 2892 |         lil_list_append(slice, lil_clone_value(list->v[i]));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2891:40: note: Potential memory leak
+ 2891 |     for (i=(size_t)from; i<(size_t)to; i++)
+      |                                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2892:48: warning: Array access (via field 'v') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+ 2892 |         lil_list_append(slice, lil_clone_value(list->v[i]));
+      |                                                ^     ~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2882:9: note: Assuming 'argc' is >= 1
+ 2882 |     if (argc < 1) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2882:5: note: Taking false branch
+ 2882 |     if (argc < 1) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2883:9: note: Assuming 'argc' is >= 2
+ 2883 |     if (argc < 2) return lil_clone_value(argv[0]);
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2883:5: note: Taking false branch
+ 2883 |     if (argc < 2) return lil_clone_value(argv[0]);
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2885:9: note: Assuming 'from' is >= 0
+ 2885 |     if (from < 0) from = 0;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2885:5: note: Taking false branch
+ 2885 |     if (from < 0) from = 0;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2886:12: note: Calling 'lil_subst_to_list'
+ 2886 |     list = lil_subst_to_list(lil, argv[0]);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:9: note: Assuming 'words' is null
+  920 |     if (!words) words = lil_alloc_list();
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:5: note: Taking true branch
+  920 |     if (!words) words = lil_alloc_list();
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:25: note: Calling 'lil_alloc_list'
+  920 |     if (!words) words = lil_alloc_list();
+      |                         ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:419:5: note: Null pointer value stored to field 'v'
+  419 |     list->v = NULL;
+      |     ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:920:25: note: Returning from 'lil_alloc_list'
+  920 |     if (!words) words = lil_alloc_list();
+      |                         ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2886:12: note: Returning from 'lil_subst_to_list'
+ 2886 |     list = lil_subst_to_list(lil, argv[0]);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2887:10: note: Assuming 'argc' is > 2
+ 2887 |     to = argc > 2 ? lil_to_integer(argv[2]) : (lilint_t)list->c;
+      |          ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2887:10: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2888:9: note: Assuming 'to' is <= field 'c'
+ 2888 |     if (to > (lilint_t)list->c) to = list->c;
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2888:5: note: Taking false branch
+ 2888 |     if (to > (lilint_t)list->c) to = list->c;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2889:9: note: Assuming 'to' is >= 'from'
+ 2889 |     if (to < from) to = from;
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2889:5: note: Taking false branch
+ 2889 |     if (to < from) to = from;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2891:26: note: Assuming 'i' is < 'to'
+ 2891 |     for (i=(size_t)from; i<(size_t)to; i++)
+      |                          ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2891:5: note: Loop condition is true.  Entering loop body
+ 2891 |     for (i=(size_t)from; i<(size_t)to; i++)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2892:48: note: Array access (via field 'v') results in a null pointer dereference
+ 2892 |         lil_list_append(slice, lil_clone_value(list->v[i]));
+      |                                                ^     ~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2919:9: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+ 2919 |         lil_free_value(r);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2906:9: note: Assuming 'argc' is >= 1
+ 2906 |     if (argc < 1) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2906:5: note: Taking false branch
+ 2906 |     if (argc < 1) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2907:9: note: Assuming 'argc' is >= 2
+ 2907 |     if (argc < 2) return lil_clone_value(argv[0]);
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2907:5: note: Taking false branch
+ 2907 |     if (argc < 2) return lil_clone_value(argv[0]);
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2908:9: note: Assuming 'argc' is <= 2
+ 2908 |     if (argc > 2) {
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2908:5: note: Taking false branch
+ 2908 |     if (argc > 2) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2914:15: note: Assuming 'i' is < field 'c'
+ 2914 |     for (i=0; i<list->c && !lil->env->breakrun; i++) {
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2914:15: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2914:28: note: Assuming field 'breakrun' is 0
+ 2914 |     for (i=0; i<list->c && !lil->env->breakrun; i++) {
+      |                            ^~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2914:5: note: Loop condition is true.  Entering loop body
+ 2914 |     for (i=0; i<list->c && !lil->env->breakrun; i++) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2917:13: note: Assuming the condition is true
+ 2917 |         if (lil_to_boolean(r))
+      |             ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2917:9: note: Taking true branch
+ 2917 |         if (lil_to_boolean(r))
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2918:39: note: Calling 'lil_clone_value'
+ 2918 |             lil_list_append(filtered, lil_clone_value(list->v[i]));
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:9: note: Assuming 'src' is non-null
+  311 |     if (!src) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:5: note: Taking false branch
+  311 |     if (!src) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:315:11: note: Memory is allocated
+  315 |     val = calloc(1, sizeof(struct _lil_value_t));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:9: note: Assuming 'val' is non-null
+  317 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:5: note: Taking false branch
+  317 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:9: note: Assuming field 'l' is 0
+  319 |     if (src->l) {
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:5: note: Taking false branch
+  319 |     if (src->l) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2918:39: note: Returned allocated memory
+ 2918 |             lil_list_append(filtered, lil_clone_value(list->v[i]));
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2918:13: note: Calling 'lil_list_append'
+ 2918 |             lil_list_append(filtered, lil_clone_value(list->v[i]));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2918:13: note: Returning from 'lil_list_append'
+ 2918 |             lil_list_append(filtered, lil_clone_value(list->v[i]));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2919:9: note: Potential memory leak
+ 2919 |         lil_free_value(r);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2932:23: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+ 2932 |     for (i=0; i<argc; i++)
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2932:15: note: Assuming 'i' is < 'argc'
+ 2932 |     for (i=0; i<argc; i++)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2932:5: note: Loop condition is true.  Entering loop body
+ 2932 |     for (i=0; i<argc; i++)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2933:31: note: Calling 'lil_clone_value'
+ 2933 |         lil_list_append(list, lil_clone_value(argv[i]));
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:9: note: Assuming 'src' is non-null
+  311 |     if (!src) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:311:5: note: Taking false branch
+  311 |     if (!src) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:315:11: note: Memory is allocated
+  315 |     val = calloc(1, sizeof(struct _lil_value_t));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:9: note: Assuming 'val' is non-null
+  317 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:317:5: note: Taking false branch
+  317 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:9: note: Assuming field 'l' is 0
+  319 |     if (src->l) {
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:319:5: note: Taking false branch
+  319 |     if (src->l) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2933:31: note: Returned allocated memory
+ 2933 |         lil_list_append(list, lil_clone_value(argv[i]));
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2933:9: note: Calling 'lil_list_append'
+ 2933 |         lil_list_append(list, lil_clone_value(argv[i]));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2933:9: note: Returning from 'lil_list_append'
+ 2933 |         lil_list_append(list, lil_clone_value(argv[i]));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2932:23: note: Potential memory leak
+ 2932 |     for (i=0; i<argc; i++)
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3123:40: warning: Potential leak of memory pointed to by 'r' [clang-analyzer-unix.Malloc]
+ 3123 |         if (!val || lil->error) return NULL;
+      |                                        ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3118:9: note: Assuming 'argc' is >= 1
+ 3118 |     if (argc < 1) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3118:5: note: Taking false branch
+ 3118 |     if (argc < 1) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3119:5: note: Taking false branch
+ 3119 |     if (!strcmp(lil_to_string(argv[0]), "not")) base = not = 1;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3120:9: note: Assuming the condition is false
+ 3120 |     if (argc < (size_t)base + 2) return NULL;
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3120:5: note: Taking false branch
+ 3120 |     if (argc < (size_t)base + 2) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3121:12: note: Assuming field 'error' is 0
+ 3121 |     while (!lil->error && !lil->env->breakrun) {
+      |            ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3121:12: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3121:27: note: Assuming field 'breakrun' is 0
+ 3121 |     while (!lil->error && !lil->env->breakrun) {
+      |                           ^~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3121:5: note: Loop condition is true.  Entering loop body
+ 3121 |     while (!lil->error && !lil->env->breakrun) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3123:13: note: Assuming 'val' is non-null
+ 3123 |         if (!val || lil->error) return NULL;
+      |             ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3123:13: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3123:21: note: Assuming field 'error' is 0
+ 3123 |         if (!val || lil->error) return NULL;
+      |                     ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3123:9: note: Taking false branch
+ 3123 |         if (!val || lil->error) return NULL;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3125:13: note: 'not' is 0
+ 3125 |         if (not) v = !v;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3125:9: note: Taking false branch
+ 3125 |         if (not) v = !v;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3126:13: note: Assuming 'v' is not equal to 0
+ 3126 |         if (!v) {
+      |             ^~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3126:9: note: Taking false branch
+ 3126 |         if (!v) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3130:13: note: 'r' is null
+ 3130 |         if (r) lil_free_value(r);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3130:9: note: Taking false branch
+ 3130 |         if (r) lil_free_value(r);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3131:13: note: Calling 'lil_parse_value'
+ 3131 |         r = lil_parse_value(lil, argv[base + 1], 0);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:9: note: Assuming 'val' is null
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:14: note: Left side of '||' is true
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:44: note: Calling 'alloc_value'
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |                                            ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: 'str' is null
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |                                 ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Calling 'alloc_value_len'
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:275:23: note: Memory is allocated
+  275 |     lil_value_t val = calloc(1, sizeof(struct _lil_value_t));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:9: note: Assuming 'val' is non-null
+  277 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:5: note: Taking false branch
+  277 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:9: note: 'str' is null
+  278 |     if (str) {
+      |         ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:5: note: Taking false branch
+  278 |     if (str) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Returned allocated memory
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:44: note: Returned allocated memory
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |                                            ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3131:13: note: Returned allocated memory
+ 3131 |         r = lil_parse_value(lil, argv[base + 1], 0);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3121:18: note: Field 'error' is 0
+ 3121 |     while (!lil->error && !lil->env->breakrun) {
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3121:12: note: Left side of '&&' is true
+ 3121 |     while (!lil->error && !lil->env->breakrun) {
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3121:27: note: Assuming field 'breakrun' is 0
+ 3121 |     while (!lil->error && !lil->env->breakrun) {
+      |                           ^~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3121:5: note: Loop condition is true.  Entering loop body
+ 3121 |     while (!lil->error && !lil->env->breakrun) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3123:13: note: Assuming 'val' is null
+ 3123 |         if (!val || lil->error) return NULL;
+      |             ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3123:18: note: Left side of '||' is true
+ 3123 |         if (!val || lil->error) return NULL;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3123:40: note: Potential leak of memory pointed to by 'r'
+ 3123 |         if (!val || lil->error) return NULL;
+      |                                        ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3144:40: warning: Potential leak of memory pointed to by 'r' [clang-analyzer-unix.Malloc]
+ 3144 |         if (!val || lil->error) return NULL;
+      |                                        ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3140:9: note: Assuming 'argc' is >= 4
+ 3140 |     if (argc < 4) return NULL;
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3140:5: note: Taking false branch
+ 3140 |     if (argc < 4) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3142:12: note: Assuming field 'error' is 0
+ 3142 |     while (!lil->error && !lil->env->breakrun) {
+      |            ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3142:12: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3142:27: note: Assuming field 'breakrun' is 0
+ 3142 |     while (!lil->error && !lil->env->breakrun) {
+      |                           ^~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3142:5: note: Loop condition is true.  Entering loop body
+ 3142 |     while (!lil->error && !lil->env->breakrun) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3144:14: note: 'val' is non-null
+ 3144 |         if (!val || lil->error) return NULL;
+      |              ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3144:13: note: Left side of '||' is false
+ 3144 |         if (!val || lil->error) return NULL;
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3144:26: note: Field 'error' is 0
+ 3144 |         if (!val || lil->error) return NULL;
+      |                          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3144:9: note: Taking false branch
+ 3144 |         if (!val || lil->error) return NULL;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3145:9: note: Taking false branch
+ 3145 |         if (!lil_to_boolean(val)) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3149:13: note: 'r' is null
+ 3149 |         if (r) lil_free_value(r);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3149:9: note: Taking false branch
+ 3149 |         if (r) lil_free_value(r);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3150:13: note: Calling 'lil_parse_value'
+ 3150 |         r = lil_parse_value(lil, argv[3], 0);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:9: note: Assuming 'val' is non-null
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:9: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:17: note: Assuming field 'd' is non-null
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |                 ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:9: note: Left side of '||' is false
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:28: note: Assuming field 'l' is 0
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |                            ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:5: note: Taking true branch
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:44: note: Calling 'alloc_value'
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |                                            ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: 'str' is null
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |                                 ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Calling 'alloc_value_len'
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:275:23: note: Memory is allocated
+  275 |     lil_value_t val = calloc(1, sizeof(struct _lil_value_t));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:9: note: Assuming 'val' is non-null
+  277 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:5: note: Taking false branch
+  277 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:9: note: 'str' is null
+  278 |     if (str) {
+      |         ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:5: note: Taking false branch
+  278 |     if (str) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Returned allocated memory
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:1053:44: note: Returned allocated memory
+ 1053 |     if (!val || !val->d || !val->l) return alloc_value(NULL);
+      |                                            ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3150:13: note: Returned allocated memory
+ 3150 |         r = lil_parse_value(lil, argv[3], 0);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3142:12: note: Assuming field 'error' is 0
+ 3142 |     while (!lil->error && !lil->env->breakrun) {
+      |            ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3142:12: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3142:27: note: Assuming field 'breakrun' is 0
+ 3142 |     while (!lil->error && !lil->env->breakrun) {
+      |                           ^~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3142:5: note: Loop condition is true.  Entering loop body
+ 3142 |     while (!lil->error && !lil->env->breakrun) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3144:14: note: 'val' is null
+ 3144 |         if (!val || lil->error) return NULL;
+      |              ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3144:18: note: Left side of '||' is true
+ 3144 |         if (!val || lil->error) return NULL;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3144:40: note: Potential leak of memory pointed to by 'r'
+ 3144 |         if (!val || lil->error) return NULL;
+      |                                        ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3349:5: warning: Potential leak of memory pointed to by 'val' [clang-analyzer-unix.Malloc]
+ 3349 |     lil_free_list(list);
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3331:9: note: Assuming 'argc' is not equal to 0
+ 3331 |     if (argc == 0) return NULL;
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3331:5: note: Taking false branch
+ 3331 |     if (argc == 0) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3332:9: note: Assuming 'argc' is <= 1
+ 3332 |     if (argc > 1) {
+      |         ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3332:5: note: Taking false branch
+ 3332 |     if (argc > 1) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3336:11: note: Calling 'lil_alloc_string'
+ 3336 |     val = lil_alloc_string("");
+      |           ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2268:12: note: Calling 'alloc_value'
+ 2268 |     return alloc_value(str);
+      |            ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: 'str' is non-null
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |                                 ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:33: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Calling 'alloc_value_len'
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:275:23: note: Memory is allocated
+  275 |     lil_value_t val = calloc(1, sizeof(struct _lil_value_t));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:9: note: Assuming 'val' is non-null
+  277 |     if (!val) return NULL;
+      |         ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:277:5: note: Taking false branch
+  277 |     if (!val) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:9: note: 'str' is non-null
+  278 |     if (str) {
+      |         ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:278:5: note: Taking true branch
+  278 |     if (str) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:284:13: note: Assuming field 'd' is non-null
+  284 |         if (!val->d) {
+      |             ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:284:9: note: Taking false branch
+  284 |         if (!val->d) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:305:12: note: Returned allocated memory
+  305 |     return alloc_value_len(str, str ? strlen(str) : 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:2268:12: note: Returned allocated memory
+ 2268 |     return alloc_value(str);
+      |            ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3336:11: note: Returned allocated memory
+ 3336 |     val = lil_alloc_string("");
+      |           ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3339:5: note: Loop condition is false. Execution continues on line 3347
+ 3339 |     for (i=0; str[i]; i++) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3347:5: note: Calling 'lil_list_append'
+ 3347 |     lil_list_append(list, val);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:15: note: Field 'c' is equal to field 'cap'
+  443 |     if (list->c == list->cap) {
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:443:5: note: Taking true branch
+  443 |     if (list->c == list->cap) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:28: note: Field 'cap' is 0
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:444:22: note: '?' condition is false
+  444 |         size_t cap = list->cap ? (list->cap + list->cap / 2) : 32;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:13: note: Assuming 'nv' is null
+  446 |         if (!nv) return;
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:9: note: Taking true branch
+  446 |         if (!nv) return;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:446:18: note: Returning without deallocating memory or storing the pointer for later deallocation
+  446 |         if (!nv) return;
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3347:5: note: Returning from 'lil_list_append'
+ 3347 |     lil_list_append(list, val);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/lil.c:3349:5: note: Potential leak of memory pointed to by 'val'
+ 3349 |     lil_free_list(list);
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/main.c:103:27: warning: Potential leak of memory pointed to by 'sargv' [clang-analyzer-unix.Malloc]
+  103 |     if (argc == 0) return NULL;
+      |                           ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/main.c:99:26: note: Memory is allocated
+   99 |     const char** sargv = malloc(sizeof(char*)*(argc + 1));
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/main.c:103:9: note: Assuming 'argc' is equal to 0
+  103 |     if (argc == 0) return NULL;
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/main.c:103:5: note: Taking true branch
+  103 |     if (argc == 0) return NULL;
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/lil/repo/main.c:103:27: note: Potential leak of memory pointed to by 'sargv'
+  103 |     if (argc == 0) return NULL;
+      |                           ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^

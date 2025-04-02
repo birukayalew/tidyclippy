@@ -1,0 +1,3 @@
+mod grabc;
+
+fn main() {}

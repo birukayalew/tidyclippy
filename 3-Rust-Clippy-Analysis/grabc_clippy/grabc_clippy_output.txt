@@ -1,0 +1,2912 @@
+    Checking grabc_clippy v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/3-Rust-Clippy-Analysis/grabc_clippy)
+error: extern blocks must be unsafe
+  --> src/grabc.rs:11:1
+   |
+11 | / extern "C" {
+12 | |     pub type _IO_wide_data;
+13 | |     pub type _IO_codecvt;
+14 | |     pub type _IO_marker;
+...  |
+74 | |     ) -> libc::c_int;
+75 | | }
+   | |_^
+
+error: unsafe attribute used without unsafe
+    --> src/grabc.rs:1070:33
+     |
+1070 | #[cfg_attr(target_os = "linux", link_section = ".init_array")]
+     |                                 ^^^^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1070 | #[cfg_attr(target_os = "linux", unsafe(link_section = ".init_array"))]
+     |                                 +++++++                            +
+
+error[E0658]: extern types are experimental
+  --> src/grabc.rs:12:5
+   |
+12 |     pub type _IO_wide_data;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+  --> src/grabc.rs:13:5
+   |
+13 |     pub type _IO_codecvt;
+   |     ^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+  --> src/grabc.rs:14:5
+   |
+14 |     pub type _IO_marker;
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+  --> src/grabc.rs:15:5
+   |
+15 |     pub type _XGC;
+   |     ^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+  --> src/grabc.rs:16:5
+   |
+16 |     pub type _XDisplay;
+   |     ^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+  --> src/grabc.rs:17:5
+   |
+17 |     pub type _XPrivate;
+   |     ^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+  --> src/grabc.rs:18:5
+   |
+18 |     pub type _XrmHashBucketRec;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+warning: crate-level attribute should be in the root module
+  --> src/grabc.rs:10:1
+   |
+10 | #![feature(extern_types)]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_attributes)]` on by default
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:21:39
+   |
+21 |     fn fflush(__stream: *mut FILE) -> libc::c_int;
+   |                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:22:40
+   |
+22 |     fn fprintf(_: *mut FILE, _: *const libc::c_char, _: ...) -> libc::c_int;
+   |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:22:65
+   |
+22 |     fn fprintf(_: *mut FILE, _: *const libc::c_char, _: ...) -> libc::c_int;
+   |                                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:23:16
+   |
+23 |     fn exit(_: libc::c_int) -> !;
+   |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:25:19
+   |
+25 |         _: *const libc::c_char,
+   |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:26:19
+   |
+26 |         _: *const libc::c_char,
+   |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:27:12
+   |
+27 |         _: libc::c_ulong,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:28:10
+   |
+28 |     ) -> libc::c_int;
+   |          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:32:12
+   |
+32 |         _: libc::c_int,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:33:12
+   |
+33 |         _: libc::c_int,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:34:12
+   |
+34 |         _: libc::c_uint,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:35:12
+   |
+35 |         _: libc::c_uint,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:36:12
+   |
+36 |         _: libc::c_ulong,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:37:12
+   |
+37 |         _: libc::c_int,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:39:31
+   |
+39 |     fn XOpenDisplay(_: *const libc::c_char) -> *mut Display;
+   |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:40:46
+   |
+40 |     fn XCreateFontCursor(_: *mut Display, _: libc::c_uint) -> Cursor;
+   |                                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:41:40
+   |
+41 |     fn XRootWindow(_: *mut Display, _: libc::c_int) -> Window;
+   |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:43:41
+   |
+43 |     fn XAllowEvents(_: *mut Display, _: libc::c_int, _: Time) -> libc::c_int;
+   |                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:43:66
+   |
+43 |     fn XAllowEvents(_: *mut Display, _: libc::c_int, _: Time) -> libc::c_int;
+   |                                                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:44:43
+   |
+44 |     fn XDefaultScreen(_: *mut Display) -> libc::c_int;
+   |                                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:45:51
+   |
+45 |     fn XFreeCursor(_: *mut Display, _: Cursor) -> libc::c_int;
+   |                                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:49:12
+   |
+49 |         _: libc::c_int,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:50:12
+   |
+50 |         _: libc::c_uint,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:51:12
+   |
+51 |         _: libc::c_int,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:52:12
+   |
+52 |         _: libc::c_int,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:56:10
+   |
+56 |     ) -> libc::c_int;
+   |          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:57:69
+   |
+57 |     fn XQueryColor(_: *mut Display, _: Colormap, _: *mut XColor) -> libc::c_int;
+   |                                                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:62:12
+   |
+62 |         _: libc::c_int,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:63:12
+   |
+63 |         _: libc::c_int,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:64:17
+   |
+64 |         _: *mut libc::c_int,
+   |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:65:17
+   |
+65 |         _: *mut libc::c_int,
+   |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:67:10
+   |
+67 |     ) -> libc::c_int;
+   |          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:68:52
+   |
+68 |     fn XUngrabPointer(_: *mut Display, _: Time) -> libc::c_int;
+   |                                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:72:12
+   |
+72 |         _: libc::c_long,
+   |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:74:10
+   |
+74 |     ) -> libc::c_int;
+   |          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:76:19
+   |
+76 | pub type size_t = libc::c_ulong;
+   |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:77:20
+   |
+77 | pub type __off_t = libc::c_long;
+   |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:78:22
+   |
+78 | pub type __off64_t = libc::c_long;
+   |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:82:17
+   |
+82 |     pub _flags: libc::c_int,
+   |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:83:28
+   |
+83 |     pub _IO_read_ptr: *mut libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:84:28
+   |
+84 |     pub _IO_read_end: *mut libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:85:29
+   |
+85 |     pub _IO_read_base: *mut libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:86:30
+   |
+86 |     pub _IO_write_base: *mut libc::c_char,
+   |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:87:29
+   |
+87 |     pub _IO_write_ptr: *mut libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:88:29
+   |
+88 |     pub _IO_write_end: *mut libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:89:28
+   |
+89 |     pub _IO_buf_base: *mut libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:90:27
+   |
+90 |     pub _IO_buf_end: *mut libc::c_char,
+   |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:91:29
+   |
+91 |     pub _IO_save_base: *mut libc::c_char,
+   |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:92:31
+   |
+92 |     pub _IO_backup_base: *mut libc::c_char,
+   |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:93:28
+   |
+93 |     pub _IO_save_end: *mut libc::c_char,
+   |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:96:18
+   |
+96 |     pub _fileno: libc::c_int,
+   |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:97:18
+   |
+97 |     pub _flags2: libc::c_int,
+   |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> src/grabc.rs:99:22
+   |
+99 |     pub _cur_column: libc::c_ushort,
+   |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:100:25
+    |
+100 |     pub _vtable_offset: libc::c_schar,
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:101:21
+    |
+101 |     pub _shortbuf: [libc::c_char; 1],
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:102:21
+    |
+102 |     pub _lock: *mut libc::c_void,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:107:28
+    |
+107 |     pub _freeres_buf: *mut libc::c_void,
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:109:16
+    |
+109 |     pub _mode: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:110:20
+    |
+110 |     pub _unused2: [libc::c_char; 20],
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:114:16
+    |
+114 | pub type XID = libc::c_ulong;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:115:17
+    |
+115 | pub type Atom = libc::c_ulong;
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:116:21
+    |
+116 | pub type VisualID = libc::c_ulong;
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:117:17
+    |
+117 | pub type Time = libc::c_ulong;
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:122:26
+    |
+122 | pub type XPointer = *mut libc::c_char;
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:126:17
+    |
+126 |     pub number: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:128:72
+    |
+128 |     pub free_private: Option::<unsafe extern "C" fn(*mut _XExtData) -> libc::c_int>,
+    |                                                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:138:16
+    |
+138 |     pub class: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:139:19
+    |
+139 |     pub red_mask: libc::c_ulong,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:140:21
+    |
+140 |     pub green_mask: libc::c_ulong,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:141:20
+    |
+141 |     pub blue_mask: libc::c_ulong,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:142:23
+    |
+142 |     pub bits_per_rgb: libc::c_int,
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:143:22
+    |
+143 |     pub map_entries: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:148:16
+    |
+148 |     pub depth: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:149:19
+    |
+149 |     pub nvisuals: libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:158:16
+    |
+158 |     pub width: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:159:17
+    |
+159 |     pub height: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:160:17
+    |
+160 |     pub mwidth: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:161:18
+    |
+161 |     pub mheight: libc::c_int,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:162:18
+    |
+162 |     pub ndepths: libc::c_int,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:164:21
+    |
+164 |     pub root_depth: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:168:22
+    |
+168 |     pub white_pixel: libc::c_ulong,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:169:22
+    |
+169 |     pub black_pixel: libc::c_ulong,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:170:19
+    |
+170 |     pub max_maps: libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:171:19
+    |
+171 |     pub min_maps: libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:172:24
+    |
+172 |     pub backing_store: libc::c_int,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:173:22
+    |
+173 |     pub save_unders: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:174:26
+    |
+174 |     pub root_input_mask: libc::c_long,
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:180:16
+    |
+180 |     pub depth: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:181:25
+    |
+181 |     pub bits_per_pixel: libc::c_int,
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:182:23
+    |
+182 |     pub scanline_pad: libc::c_int,
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:187:16
+    |
+187 |     pub width: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:188:17
+    |
+188 |     pub height: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:189:18
+    |
+189 |     pub xoffset: libc::c_int,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:190:17
+    |
+190 |     pub format: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:191:20
+    |
+191 |     pub data: *mut libc::c_char,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:192:21
+    |
+192 |     pub byte_order: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:193:22
+    |
+193 |     pub bitmap_unit: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:194:27
+    |
+194 |     pub bitmap_bit_order: libc::c_int,
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:195:21
+    |
+195 |     pub bitmap_pad: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:196:16
+    |
+196 |     pub depth: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:197:25
+    |
+197 |     pub bytes_per_line: libc::c_int,
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:198:25
+    |
+198 |     pub bits_per_pixel: libc::c_int,
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:199:19
+    |
+199 |     pub red_mask: libc::c_ulong,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:200:21
+    |
+200 |     pub green_mask: libc::c_ulong,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:201:20
+    |
+201 |     pub blue_mask: libc::c_ulong,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:212:13
+    |
+212 |             libc::c_uint,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:213:13
+    |
+213 |             libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:214:13
+    |
+214 |             libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:215:18
+    |
+215 |             *mut libc::c_char,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:216:13
+    |
+216 |             libc::c_uint,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:217:13
+    |
+217 |             libc::c_uint,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:218:13
+    |
+218 |             libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:219:13
+    |
+219 |             libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:222:71
+    |
+222 |     pub destroy_image: Option::<unsafe extern "C" fn(*mut _XImage) -> libc::c_int>,
+    |                                                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:224:44
+    |
+224 |         unsafe extern "C" fn(*mut _XImage, libc::c_int, libc::c_int) -> libc::c_ulong,
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:224:57
+    |
+224 |         unsafe extern "C" fn(*mut _XImage, libc::c_int, libc::c_int) -> libc::c_ulong,
+    |                                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:224:73
+    |
+224 |         unsafe extern "C" fn(*mut _XImage, libc::c_int, libc::c_int) -> libc::c_ulong,
+    |                                                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:229:13
+    |
+229 |             libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:230:13
+    |
+230 |             libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:231:13
+    |
+231 |             libc::c_ulong,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:232:14
+    |
+232 |         ) -> libc::c_int,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:237:13
+    |
+237 |             libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:238:13
+    |
+238 |             libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:239:13
+    |
+239 |             libc::c_uint,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:240:13
+    |
+240 |             libc::c_uint,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:244:44
+    |
+244 |         unsafe extern "C" fn(*mut _XImage, libc::c_long) -> libc::c_int,
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:244:61
+    |
+244 |         unsafe extern "C" fn(*mut _XImage, libc::c_long) -> libc::c_int,
+    |                                                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:251:16
+    |
+251 |     pub pixel: libc::c_ulong,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:252:14
+    |
+252 |     pub red: libc::c_ushort,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:253:16
+    |
+253 |     pub green: libc::c_ushort,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:254:15
+    |
+254 |     pub blue: libc::c_ushort,
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:255:16
+    |
+255 |     pub flags: libc::c_char,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:256:14
+    |
+256 |     pub pad: libc::c_char,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:264:13
+    |
+264 |     pub fd: libc::c_int,
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:265:19
+    |
+265 |     pub private2: libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:266:30
+    |
+266 |     pub proto_major_version: libc::c_int,
+    |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:267:30
+    |
+267 |     pub proto_minor_version: libc::c_int,
+    |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:268:22
+    |
+268 |     pub vendor: *mut libc::c_char,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:272:19
+    |
+272 |     pub private6: libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:274:21
+    |
+274 |     pub byte_order: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:275:22
+    |
+275 |     pub bitmap_unit: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:276:21
+    |
+276 |     pub bitmap_pad: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:277:27
+    |
+277 |     pub bitmap_bit_order: libc::c_int,
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:278:19
+    |
+278 |     pub nformats: libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:280:19
+    |
+280 |     pub private8: libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:281:18
+    |
+281 |     pub release: libc::c_int,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:284:15
+    |
+284 |     pub qlen: libc::c_int,
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:285:28
+    |
+285 |     pub last_request_read: libc::c_ulong,
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:286:18
+    |
+286 |     pub request: libc::c_ulong,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:291:27
+    |
+291 |     pub max_request_size: libc::c_uint,
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:293:69
+    |
+293 |     pub private15: Option::<unsafe extern "C" fn(*mut _XDisplay) -> libc::c_int>,
+    |                                                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:294:28
+    |
+294 |     pub display_name: *mut libc::c_char,
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:295:25
+    |
+295 |     pub default_screen: libc::c_int,
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:296:19
+    |
+296 |     pub nscreens: libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:298:24
+    |
+298 |     pub motion_buffer: libc::c_ulong,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:299:20
+    |
+299 |     pub private16: libc::c_ulong,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:300:22
+    |
+300 |     pub min_keycode: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:301:22
+    |
+301 |     pub max_keycode: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:304:20
+    |
+304 |     pub private19: libc::c_int,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:305:25
+    |
+305 |     pub xdefaults: *mut libc::c_char,
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:311:17
+    |
+311 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:312:17
+    |
+312 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:313:21
+    |
+313 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:319:12
+    |
+319 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:320:12
+    |
+320 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:321:17
+    |
+321 |     pub x_root: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:322:17
+    |
+322 |     pub y_root: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:323:16
+    |
+323 |     pub state: libc::c_uint,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:324:18
+    |
+324 |     pub keycode: libc::c_uint,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:325:22
+    |
+325 |     pub same_screen: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:330:17
+    |
+330 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:331:17
+    |
+331 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:332:21
+    |
+332 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:338:12
+    |
+338 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:339:12
+    |
+339 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:340:17
+    |
+340 |     pub x_root: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:341:17
+    |
+341 |     pub y_root: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:342:16
+    |
+342 |     pub state: libc::c_uint,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:343:17
+    |
+343 |     pub button: libc::c_uint,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:344:22
+    |
+344 |     pub same_screen: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:349:17
+    |
+349 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:350:17
+    |
+350 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:351:21
+    |
+351 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:357:12
+    |
+357 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:358:12
+    |
+358 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:359:17
+    |
+359 |     pub x_root: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:360:17
+    |
+360 |     pub y_root: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:361:16
+    |
+361 |     pub state: libc::c_uint,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:362:18
+    |
+362 |     pub is_hint: libc::c_char,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:363:22
+    |
+363 |     pub same_screen: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:368:17
+    |
+368 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:369:17
+    |
+369 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:370:21
+    |
+370 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:376:12
+    |
+376 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:377:12
+    |
+377 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:378:17
+    |
+378 |     pub x_root: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:379:17
+    |
+379 |     pub y_root: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:380:15
+    |
+380 |     pub mode: libc::c_int,
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:381:17
+    |
+381 |     pub detail: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:382:22
+    |
+382 |     pub same_screen: libc::c_int,
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:383:16
+    |
+383 |     pub focus: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:384:16
+    |
+384 |     pub state: libc::c_uint,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:389:17
+    |
+389 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:390:17
+    |
+390 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:391:21
+    |
+391 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:394:15
+    |
+394 |     pub mode: libc::c_int,
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:395:17
+    |
+395 |     pub detail: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:400:17
+    |
+400 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:401:17
+    |
+401 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:402:21
+    |
+402 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:405:22
+    |
+405 |     pub key_vector: [libc::c_char; 32],
+    |                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:410:17
+    |
+410 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:411:17
+    |
+411 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:412:21
+    |
+412 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:415:12
+    |
+415 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:416:12
+    |
+416 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:417:16
+    |
+417 |     pub width: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:418:17
+    |
+418 |     pub height: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:419:16
+    |
+419 |     pub count: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:424:17
+    |
+424 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:425:17
+    |
+425 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:426:21
+    |
+426 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:429:12
+    |
+429 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:430:12
+    |
+430 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:431:16
+    |
+431 |     pub width: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:432:17
+    |
+432 |     pub height: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:433:16
+    |
+433 |     pub count: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:434:21
+    |
+434 |     pub major_code: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:435:21
+    |
+435 |     pub minor_code: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:440:17
+    |
+440 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:441:17
+    |
+441 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:442:21
+    |
+442 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:445:21
+    |
+445 |     pub major_code: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:446:21
+    |
+446 |     pub minor_code: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:451:17
+    |
+451 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:452:17
+    |
+452 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:453:21
+    |
+453 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:456:16
+    |
+456 |     pub state: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:461:17
+    |
+461 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:462:17
+    |
+462 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:463:21
+    |
+463 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:467:12
+    |
+467 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:468:12
+    |
+468 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:469:16
+    |
+469 |     pub width: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:470:17
+    |
+470 |     pub height: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:471:23
+    |
+471 |     pub border_width: libc::c_int,
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:472:28
+    |
+472 |     pub override_redirect: libc::c_int,
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:477:17
+    |
+477 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:478:17
+    |
+478 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:479:21
+    |
+479 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:487:17
+    |
+487 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:488:17
+    |
+488 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:489:21
+    |
+489 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:493:25
+    |
+493 |     pub from_configure: libc::c_int,
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:498:17
+    |
+498 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:499:17
+    |
+499 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:500:21
+    |
+500 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:504:28
+    |
+504 |     pub override_redirect: libc::c_int,
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:509:17
+    |
+509 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:510:17
+    |
+510 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:511:21
+    |
+511 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:519:17
+    |
+519 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:520:17
+    |
+520 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:521:21
+    |
+521 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:526:12
+    |
+526 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:527:12
+    |
+527 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:528:28
+    |
+528 |     pub override_redirect: libc::c_int,
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:533:17
+    |
+533 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:534:17
+    |
+534 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:535:21
+    |
+535 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:539:12
+    |
+539 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:540:12
+    |
+540 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:541:16
+    |
+541 |     pub width: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:542:17
+    |
+542 |     pub height: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:543:23
+    |
+543 |     pub border_width: libc::c_int,
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:545:28
+    |
+545 |     pub override_redirect: libc::c_int,
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:550:17
+    |
+550 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:551:17
+    |
+551 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:552:21
+    |
+552 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:556:12
+    |
+556 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:557:12
+    |
+557 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:562:17
+    |
+562 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:563:17
+    |
+563 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:564:21
+    |
+564 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:567:16
+    |
+567 |     pub width: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:568:17
+    |
+568 |     pub height: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:573:17
+    |
+573 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:574:17
+    |
+574 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:575:21
+    |
+575 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:579:12
+    |
+579 |     pub x: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:580:12
+    |
+580 |     pub y: libc::c_int,
+    |            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:581:16
+    |
+581 |     pub width: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:582:17
+    |
+582 |     pub height: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:583:23
+    |
+583 |     pub border_width: libc::c_int,
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:585:17
+    |
+585 |     pub detail: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:586:21
+    |
+586 |     pub value_mask: libc::c_ulong,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:591:17
+    |
+591 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:592:17
+    |
+592 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:593:21
+    |
+593 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:597:16
+    |
+597 |     pub place: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:602:17
+    |
+602 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:603:17
+    |
+603 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:604:21
+    |
+604 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:608:16
+    |
+608 |     pub place: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:613:17
+    |
+613 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:614:17
+    |
+614 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:615:21
+    |
+615 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:620:16
+    |
+620 |     pub state: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:625:17
+    |
+625 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:626:17
+    |
+626 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:627:21
+    |
+627 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:636:17
+    |
+636 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:637:17
+    |
+637 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:638:21
+    |
+638 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:650:17
+    |
+650 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:651:17
+    |
+651 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:652:21
+    |
+652 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:663:17
+    |
+663 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:664:17
+    |
+664 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:665:21
+    |
+665 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:669:14
+    |
+669 |     pub new: libc::c_int,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:670:16
+    |
+670 |     pub state: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:675:17
+    |
+675 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:676:17
+    |
+676 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:677:21
+    |
+677 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:681:17
+    |
+681 |     pub format: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:687:13
+    |
+687 |     pub b: [libc::c_char; 20],
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:688:13
+    |
+688 |     pub s: [libc::c_short; 10],
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:689:13
+    |
+689 |     pub l: [libc::c_long; 5],
+    |             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:694:17
+    |
+694 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:695:17
+    |
+695 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:696:21
+    |
+696 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:699:18
+    |
+699 |     pub request: libc::c_int,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:700:24
+    |
+700 |     pub first_keycode: libc::c_int,
+    |                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:701:16
+    |
+701 |     pub count: libc::c_int,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:706:17
+    |
+706 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:709:17
+    |
+709 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:710:21
+    |
+710 |     pub error_code: libc::c_uchar,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:711:23
+    |
+711 |     pub request_code: libc::c_uchar,
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:712:21
+    |
+712 |     pub minor_code: libc::c_uchar,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:717:17
+    |
+717 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:718:17
+    |
+718 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:719:21
+    |
+719 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:726:17
+    |
+726 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:727:17
+    |
+727 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:728:21
+    |
+728 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:730:20
+    |
+730 |     pub extension: libc::c_int,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:731:17
+    |
+731 |     pub evtype: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:736:17
+    |
+736 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:737:17
+    |
+737 |     pub serial: libc::c_ulong,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:738:21
+    |
+738 |     pub send_event: libc::c_int,
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:740:20
+    |
+740 |     pub extension: libc::c_int,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:741:17
+    |
+741 |     pub evtype: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:742:17
+    |
+742 |     pub cookie: libc::c_uint,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:743:20
+    |
+743 |     pub data: *mut libc::c_void,
+    |                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:748:17
+    |
+748 |     pub type_0: libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:782:15
+    |
+782 |     pub pad: [libc::c_long; 24],
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:786:61
+    |
+786 |     unsafe extern "C" fn(*mut Display, *mut XErrorEvent) -> libc::c_int,
+    |                                                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:789:15
+    |
+789 |     mut argc: libc::c_int,
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:790:25
+    |
+790 |     mut argv: *mut *mut libc::c_char,
+    |                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:791:6
+    |
+791 | ) -> libc::c_int {
+    |      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:793:21
+    |
+793 |     let mut status: libc::c_int = 0;
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:803:16
+    |
+803 |     let mut i: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:804:16
+    |
+804 |     let mut r: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:805:16
+    |
+805 |     let mut g: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:806:16
+    |
+806 |     let mut b: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:807:14
+    |
+807 |     i = 1 as libc::c_int;
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:811:44
+    |
+811 |             b"-h\0" as *const u8 as *const libc::c_char,
+    |                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:812:18
+    |
+812 |             2 as libc::c_int as libc::c_ulong,
+    |                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:812:33
+    |
+812 |             2 as libc::c_int as libc::c_ulong,
+    |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:813:19
+    |
+813 |         ) == 0 as libc::c_int
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:817:78
+    |
+817 |                 b"grabc 1.1 by Muhammad A Muquit\n\0" as *const u8 as *const libc::c_char,
+    |                                                                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:819:23
+    |
+819 |             exit(1 as libc::c_int);
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:824:38
+    |
+824 |     display = XOpenDisplay(0 as *mut libc::c_void as *mut libc::c_char);
+    |                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:824:59
+    |
+824 |     display = XOpenDisplay(0 as *mut libc::c_void as *mut libc::c_char);
+    |                                                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:831:76
+    |
+831 |                 as unsafe extern "C" fn(*mut Display, *mut XErrorEvent) -> libc::c_int,
+    |                                                                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:837:73
+    |
+837 |             b"Failed to open local DISPLAY!'n\0" as *const u8 as *const libc::c_char,
+    |                                                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:839:19
+    |
+839 |         exit(1 as libc::c_int);
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:842:23
+    |
+842 |     if status == 1 as libc::c_int {
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:844:26
+    |
+844 |         r = color.red as libc::c_int >> 8 as libc::c_int;
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:844:46
+    |
+844 |         r = color.red as libc::c_int >> 8 as libc::c_int;
+    |                                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:845:28
+    |
+845 |         g = color.green as libc::c_int >> 8 as libc::c_int;
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:845:48
+    |
+845 |         g = color.green as libc::c_int >> 8 as libc::c_int;
+    |                                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:846:27
+    |
+846 |         b = color.blue as libc::c_int >> 8 as libc::c_int;
+    |                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:846:47
+    |
+846 |         b = color.blue as libc::c_int >> 8 as libc::c_int;
+    |                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:849:57
+    |
+849 |             b"#%02x%02x%02x\n\0" as *const u8 as *const libc::c_char,
+    |                                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:855:64
+    |
+855 |         fprintf(stderr, b"%d,%d,%d\n\0" as *const u8 as *const libc::c_char, r, g, b);
+    |                                                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:859:65
+    |
+859 |             b"Failed to grab color!\n\0" as *const u8 as *const libc::c_char,
+    |                                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:862:17
+    |
+862 |     return 0 as libc::c_int;
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:867:17
+    |
+867 |     mut x: *mut libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:868:17
+    |
+868 |     mut y: *mut libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:871:21
+    |
+871 |     let mut status: libc::c_int = 0;
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:875:31
+    |
+875 |     target_window = 0 as *mut libc::c_void as Window;
+    |                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:876:34
+    |
+876 |     if cross_cursor == 0 as *mut libc::c_void as Cursor {
+    |                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:877:58
+    |
+877 |         cross_cursor = XCreateFontCursor(display, 130 as libc::c_int as libc::c_uint);
+    |                                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:877:73
+    |
+877 |         cross_cursor = XCreateFontCursor(display, 130 as libc::c_int as libc::c_uint);
+    |                                                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:878:38
+    |
+878 |         if cross_cursor == 0 as *mut libc::c_void as Cursor {
+    |                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:881:78
+    |
+881 |                 b"Failed to create Cross Cursor!\n\0" as *const u8 as *const libc::c_char,
+    |                                                                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:883:30
+    |
+883 |             return 0 as *mut libc::c_void as Window;
+    |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:891:14
+    |
+891 |         0 as libc::c_int,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:892:16
+    |
+892 |         ((1 as libc::c_long) << 2 as libc::c_int) as libc::c_uint,
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:892:38
+    |
+892 |         ((1 as libc::c_long) << 2 as libc::c_int) as libc::c_uint,
+    |                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:892:54
+    |
+892 |         ((1 as libc::c_long) << 2 as libc::c_int) as libc::c_uint,
+    |                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:893:14
+    |
+893 |         0 as libc::c_int,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:894:14
+    |
+894 |         1 as libc::c_int,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:897:14
+    |
+897 |         0 as libc::c_long as Time,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:899:23
+    |
+899 |     if status == 0 as libc::c_int {
+    |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:900:36
+    |
+900 |         XAllowEvents(display, 1 as libc::c_int, 0 as libc::c_long as Time);
+    |                                    ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:900:54
+    |
+900 |         XAllowEvents(display, 1 as libc::c_int, 0 as libc::c_long as Time);
+    |                                                      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:904:19
+    |
+904 |             (1 as libc::c_long) << 2 as libc::c_int,
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:904:41
+    |
+904 |             (1 as libc::c_long) << 2 as libc::c_int,
+    |                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:907:33
+    |
+907 |         if event.type_0 == 4 as libc::c_int {
+    |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:915:43
+    |
+915 |             if target_window == 0 as *mut libc::c_void as Window {
+    |                                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:919:35
+    |
+919 |                         as *const libc::c_char,
+    |                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:923:42
+    |
+923 |             XUngrabPointer(display, 0 as libc::c_long as Time);
+    |                                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:928:65
+    |
+928 |             b"Failed to grab mouse!\n\0" as *const u8 as *const libc::c_char,
+    |                                                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:930:19
+    |
+930 |         exit(1 as libc::c_int);
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:941:17
+    |
+941 |     mut x: *mut libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:942:17
+    |
+942 |     mut y: *mut libc::c_int,
+    |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:944:19
+    |
+944 |     let mut newx: libc::c_int = 0;
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:945:19
+    |
+945 |     let mut newy: libc::c_int = 0;
+    |                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:947:32
+    |
+947 |     if top_window == 0 as *mut libc::c_void as Window {
+    |                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:948:26
+    |
+948 |         return 0 as *mut libc::c_void as Window;
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:950:37
+    |
+950 |     if window_to_check == 0 as *mut libc::c_void as Window {
+    |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:951:26
+    |
+951 |         return 0 as *mut libc::c_void as Window;
+    |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:963:15
+    |
+963 |     ) != 0 as libc::c_int && window != 0 as *mut libc::c_void as Window
+    |               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:963:50
+    |
+963 |     ) != 0 as libc::c_int && window != 0 as *mut libc::c_void as Window
+    |                                                  ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:965:32
+    |
+965 |         if window != 0 as *mut libc::c_void as Window {
+    |                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:972:28
+    |
+972 |     if window == 0 as *mut libc::c_void as Window {
+    |                            ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:982:6
+    |
+982 | ) -> libc::c_int {
+    |      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:986:16
+    |
+986 |     let mut x: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:987:16
+    |
+987 |     let mut y: libc::c_int = 0;
+    |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:988:21
+    |
+988 |     let mut status: libc::c_int = 0;
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:991:35
+    |
+991 |     if target_window == 0 as *mut libc::c_void as Window {
+    |                                   ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:992:21
+    |
+992 |         return 0 as libc::c_int;
+    |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:999:14
+    |
+999 |         1 as libc::c_int as libc::c_uint,
+    |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+   --> src/grabc.rs:999:29
+    |
+999 |         1 as libc::c_int as libc::c_uint,
+    |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1000:14
+     |
+1000 |         1 as libc::c_int as libc::c_uint,
+     |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1000:29
+     |
+1000 |         1 as libc::c_int as libc::c_uint,
+     |                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1001:16
+     |
+1001 |         !(0 as libc::c_long) as libc::c_ulong,
+     |                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1001:33
+     |
+1001 |         !(0 as libc::c_long) as libc::c_ulong,
+     |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1002:14
+     |
+1002 |         2 as libc::c_int,
+     |              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1005:21
+     |
+1005 |         return 0 as libc::c_int;
+     |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1009:59
+     |
+1009 |         .expect("non-null function pointer")(ximage, 0 as libc::c_int, 0 as libc::c_int);
+     |                                                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1009:77
+     |
+1009 |         .expect("non-null function pointer")(ximage, 0 as libc::c_int, 0 as libc::c_int);
+     |                                                                             ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1012:17
+     |
+1012 |     return 1 as libc::c_int;
+     |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1017:6
+     |
+1017 | ) -> libc::c_int {
+     |      ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1018:23
+     |
+1018 |     let mut xerrcode: libc::c_int = 0;
+     |                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1019:39
+     |
+1019 |     xerrcode = (*error).error_code as libc::c_int;
+     |                                       ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1020:26
+     |
+1020 |     if xerrcode == 11 as libc::c_int
+     |                          ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1021:30
+     |
+1021 |         || xerrcode == 10 as libc::c_int
+     |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1022:41
+     |
+1022 |             && (*error).request_code as libc::c_int == 88 as libc::c_int
+     |                                         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1022:62
+     |
+1022 |             && (*error).request_code as libc::c_int == 88 as libc::c_int
+     |                                                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1024:21
+     |
+1024 |         return 0 as libc::c_int
+     |                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1026:40
+     |
+1026 |         match (*error).request_code as libc::c_int {
+     |                                        ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1028:43
+     |
+1028 |                 if (*error).error_code as libc::c_int == 9 as libc::c_int {
+     |                                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1028:63
+     |
+1028 |                 if (*error).error_code as libc::c_int == 9 as libc::c_int {
+     |                                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1029:33
+     |
+1029 |                     return 0 as libc::c_int;
+     |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1033:43
+     |
+1033 |                 if (*error).error_code as libc::c_int == 3 as libc::c_int {
+     |                                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1033:63
+     |
+1033 |                 if (*error).error_code as libc::c_int == 3 as libc::c_int {
+     |                                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1034:33
+     |
+1034 |                     return 0 as libc::c_int;
+     |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1038:43
+     |
+1038 |                 if (*error).error_code as libc::c_int == 2 as libc::c_int {
+     |                                           ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1038:63
+     |
+1038 |                 if (*error).error_code as libc::c_int == 2 as libc::c_int {
+     |                                                               ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1039:33
+     |
+1039 |                     return 0 as libc::c_int;
+     |                                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1045:17
+     |
+1045 |     return 1 as libc::c_int;
+     |                 ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1048:30
+     |
+1048 |     let mut args: Vec::<*mut libc::c_char> = Vec::new();
+     |                              ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1060:37
+     |
+1060 |                 (args.len() - 1) as libc::c_int,
+     |                                     ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1061:48
+     |
+1061 |                 args.as_mut_ptr() as *mut *mut libc::c_char,
+     |                                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1067:32
+     |
+1067 |     cross_cursor = 0 as *const libc::c_void as *mut libc::c_void as Cursor;
+     |                                ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+    --> src/grabc.rs:1067:53
+     |
+1067 |     cross_cursor = 0 as *const libc::c_void as *mut libc::c_void as Cursor;
+     |                                                     ^^^^ use of undeclared crate or module `libc`
+
+Some errors have detailed explanations: E0433, E0658.
+For more information about an error, try `rustc --explain E0433`.
+warning: `grabc_clippy` (bin "grabc_clippy") generated 1 warning
+error: could not compile `grabc_clippy` (bin "grabc_clippy") due to 479 previous errors; 1 warning emitted

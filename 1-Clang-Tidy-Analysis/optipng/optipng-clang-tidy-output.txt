@@ -1,0 +1,865 @@
+[1/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c.
+4 warnings generated.
+[2/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/minitiff/tiffread.c.
+4 warnings generated.
+[3/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/minitiff/tiffutil.c.
+4 warnings generated.
+[4/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/minitiff/tiffwrite.c.
+4 warnings generated.
+[5/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c.
+7 warnings generated.
+[6/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/bitset.c.
+7 warnings generated.
+[7/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ioutil.c.
+7 warnings and 4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ioutil.c.
+[8/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/optim.c.
+7 warnings and 5 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/optim.c.
+[9/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/optipng.c.
+7 warnings and 6 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/optipng.c.
+[10/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ratio.c.
+8 warnings and 6 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ratio.c.
+[11/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/wildargs.c.
+8 warnings and 6 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/wildargs.c.
+[12/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxio.c.
+8 warnings and 6 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxio.c.
+[13/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxmem.c.
+8 warnings and 6 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxmem.c.
+[14/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrbmp.c.
+8 warnings and 6 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrbmp.c.
+[15/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxread.c.
+8 warnings and 6 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxread.c.
+[16/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrgif.c.
+8 warnings and 7 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrgif.c.
+[17/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrjpg.c.
+8 warnings and 7 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrjpg.c.
+[18/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrpnm.c.
+8 warnings and 8 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrpnm.c.
+[19/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrtif.c.
+8 warnings and 9 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrtif.c.
+[20/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxset.c.
+8 warnings and 9 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxset.c.
+[21/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pnmio/pnmin.c.
+8 warnings and 9 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pnmio/pnmin.c.
+[22/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pnmio/pnmout.c.
+8 warnings and 9 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pnmio/pnmout.c.
+[23/23] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pnmio/pnmutil.c.
+8 warnings and 9 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pnmio/pnmutil.c.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:397:24: warning: Right operand is negative in left shift [clang-analyzer-core.BitwiseShift]
+  397 |         clear_code = 1 << set_code_size;
+      |                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:142:5: note: Loop condition is true.  Entering loop body
+  142 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:145:9: note: Control jumps to 'case 44:'  at line 147
+  145 |         switch (ch)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:148:13: note: Calling 'GIFReadNextImage'
+  148 |             GIFReadNextImage(image, stream);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:173:9: note: Assuming 'image' is not equal to NULL
+  173 |     if (image == NULL)
+      |         ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:173:5: note: Taking false branch
+  173 |     if (image == NULL)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:183:30: note: Assuming the condition is false
+  183 |     image->LocalColorFlag = (buffer[8] & 0x80) ? 1 : 0;
+      |                              ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:183:29: note: '?' condition is false
+  183 |     image->LocalColorFlag = (buffer[8] & 0x80) ? 1 : 0;
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:184:30: note: Assuming the condition is false
+  184 |     image->InterlaceFlag  = (buffer[8] & 0x40) ? 1 : 0;
+      |                              ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:184:29: note: '?' condition is false
+  184 |     image->InterlaceFlag  = (buffer[8] & 0x40) ? 1 : 0;
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:185:30: note: Assuming the condition is false
+  185 |     image->SortFlag       = (buffer[8] & 0x20) ? 1 : 0;
+      |                              ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:185:29: note: '?' condition is false
+  185 |     image->SortFlag       = (buffer[8] & 0x20) ? 1 : 0;
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:186:36: note: Field 'LocalColorFlag' is 0
+  186 |     image->LocalNumColors = image->LocalColorFlag ?
+      |                                    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:186:29: note: '?' condition is false
+  186 |     image->LocalNumColors = image->LocalColorFlag ?
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:189:16: note: Field 'LocalColorFlag' is 0
+  189 |     if (image->LocalColorFlag)
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:189:5: note: Taking false branch
+  189 |     if (image->LocalColorFlag)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:198:9: note: Assuming field 'Width' is not equal to 0
+  198 |     if (image->Width == 0 || image->Height == 0 ||
+      |         ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:198:9: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:198:30: note: Assuming field 'Height' is not equal to 0
+  198 |     if (image->Width == 0 || image->Height == 0 ||
+      |                              ^~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:198:9: note: Left side of '||' is false
+  198 |     if (image->Width == 0 || image->Height == 0 ||
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:199:13: note: Assuming the condition is false
+  199 |             image->LeftPos + image->Width > screen->Width ||
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:198:9: note: Left side of '||' is false
+  198 |     if (image->Width == 0 || image->Height == 0 ||
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:200:13: note: Assuming the condition is false
+  200 |             image->TopPos + image->Height > screen->Height)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:198:5: note: Taking false branch
+  198 |     if (image->Width == 0 || image->Height == 0 ||
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:203:5: note: Calling 'GIFReadImageData'
+  203 |     GIFReadImageData(image, stream);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:219:19: note: Calling 'GetByte'
+  219 |     minCodeSize = GetByte(stream);
+      |                   ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:10: note: Value assigned to 'ch'
+  674 |     if ((ch = getc(stream)) == EOF)
+      |          ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:9: note: Assuming the condition is true
+  674 |     if ((ch = getc(stream)) == EOF)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:5: note: Taking true branch
+  674 |     if ((ch = getc(stream)) == EOF)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:676:5: note: Returning the value -1 (loaded from 'ch')
+  676 |     return ch;
+      |     ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:219:19: note: Returning from 'GetByte'
+  219 |     minCodeSize = GetByte(stream);
+      |                   ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:219:5: note: The value -1 is assigned to 'minCodeSize'
+  219 |     minCodeSize = GetByte(stream);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:220:9: note: 'minCodeSize' is < LZW_BITS_MAX
+  220 |     if (minCodeSize >= LZW_BITS_MAX)
+      |         ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:220:5: note: Taking false branch
+  220 |     if (minCodeSize >= LZW_BITS_MAX)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:223:33: note: Passing the value -1 via 2nd parameter 'input_code_size'
+  223 |     if (LZWDecodeByte(LZW_TRUE, minCodeSize, stream) < 0)
+      |                                 ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:223:9: note: Calling 'LZWDecodeByte'
+  223 |     if (LZWDecodeByte(LZW_TRUE, minCodeSize, stream) < 0)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:392:9: note: 'init_flag' is 1
+  392 |     if (init_flag)
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:392:5: note: Taking true branch
+  392 |     if (init_flag)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:395:9: note: The value -1 is assigned to 'set_code_size'
+  395 |         set_code_size = input_code_size;
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:397:24: note: The result of left shift is undefined because the right operand is negative
+  397 |         clear_code = 1 << set_code_size;
+      |                      ~~^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:684:9: warning: The 1st argument to 'fread' is NULL but should not be NULL [clang-analyzer-unix.StdCLibraryFunctions]
+  684 |     if (fread(buffer, count, 1, stream) != 1)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:142:5: note: Loop condition is true.  Entering loop body
+  142 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:145:9: note: Control jumps to 'case 33:'  at line 150
+  145 |         switch (ch)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:151:13: note: Calling 'GIFReadNextExtension'
+  151 |             GIFReadNextExtension(ext, stream);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:609:9: note: Assuming 'ext' is not equal to NULL
+  609 |     if (ext == NULL)
+      |         ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:609:5: note: Taking false branch
+  609 |     if (ext == NULL)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:618:5: note: Loop condition is true.  Entering loop body
+  618 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:13: note: Assuming 'len' is < 255
+  620 |         if (len < 255)
+      |             ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:9: note: Taking true branch
+  620 |         if (len < 255)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:623:13: note: Value assigned to 'newBuffer'
+  623 |             newBuffer = (unsigned char *)realloc(ext->Buffer, newBufferSize);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:624:17: note: Assuming 'newBuffer' is equal to NULL
+  624 |             if (newBuffer == NULL)
+      |                 ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:624:13: note: Taking true branch
+  624 |             if (newBuffer == NULL)
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:627:13: note: Null pointer value stored to field 'Buffer'
+  627 |             ext->Buffer = newBuffer;
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:630:34: note: Passing null pointer value via 1st parameter 'buffer'
+  630 |         count = GIFReadDataBlock(ext->Buffer + offset, stream);
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:630:17: note: Calling 'GIFReadDataBlock'
+  630 |         count = GIFReadDataBlock(ext->Buffer + offset, stream);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:312:9: note: Assuming 'count' is > 0
+  312 |     if (count > 0)
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:312:5: note: Taking true branch
+  312 |     if (count > 0)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:313:19: note: Passing null pointer value via 1st parameter 'buffer'
+  313 |         ReadBytes(buffer, count, stream);
+      |                   ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:313:9: note: Calling 'ReadBytes'
+  313 |         ReadBytes(buffer, count, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:684:9: note: The 1st argument to 'fread' is NULL but should not be NULL
+  684 |     if (fread(buffer, count, 1, stream) != 1)
+      |         ^     ~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:684:9: warning: The 1st argument to 'fread' is a buffer with size -4294966271 but should be a buffer with size equal to or greater than the value of the 2nd argument times the 3rd argument (which is 1) [clang-analyzer-unix.StdCLibraryFunctions]
+  684 |     if (fread(buffer, count, 1, stream) != 1)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:142:5: note: Loop condition is true.  Entering loop body
+  142 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:145:9: note: Control jumps to 'case 33:'  at line 150
+  145 |         switch (ch)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:151:13: note: Calling 'GIFReadNextExtension'
+  151 |             GIFReadNextExtension(ext, stream);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:609:9: note: Assuming 'ext' is not equal to NULL
+  609 |     if (ext == NULL)
+      |         ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:609:5: note: Taking false branch
+  609 |     if (ext == NULL)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:618:5: note: Loop condition is true.  Entering loop body
+  618 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:13: note: Assuming 'len' is >= 255
+  620 |         if (len < 255)
+      |             ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:9: note: Taking false branch
+  620 |         if (len < 255)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:631:13: note: 'count' is not equal to 0
+  631 |         if (count == 0)
+      |             ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:631:9: note: Taking false branch
+  631 |         if (count == 0)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:618:5: note: Loop condition is true.  Entering loop body
+  618 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:13: note: Assuming 'len' is < 255
+  620 |         if (len < 255)
+      |             ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:9: note: Taking true branch
+  620 |         if (len < 255)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:623:13: note: Value assigned to 'newBuffer'
+  623 |             newBuffer = (unsigned char *)realloc(ext->Buffer, newBufferSize);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:624:17: note: Assuming 'newBuffer' is not equal to NULL
+  624 |             if (newBuffer == NULL)
+      |                 ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:624:13: note: Taking false branch
+  624 |             if (newBuffer == NULL)
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:627:13: note: The value of 'newBuffer' is assigned to field 'Buffer'
+  627 |             ext->Buffer = newBuffer;
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:631:13: note: 'count' is not equal to 0
+  631 |         if (count == 0)
+      |             ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:631:9: note: Taking false branch
+  631 |         if (count == 0)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:618:5: note: Loop condition is true.  Entering loop body
+  618 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:13: note: 'len' is >= 255
+  620 |         if (len < 255)
+      |             ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:9: note: Taking false branch
+  620 |         if (len < 255)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:630:34: note: Passing value via 1st parameter 'buffer'
+  630 |         count = GIFReadDataBlock(ext->Buffer + offset, stream);
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:630:17: note: Calling 'GIFReadDataBlock'
+  630 |         count = GIFReadDataBlock(ext->Buffer + offset, stream);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:310:13: note: Calling 'GetByte'
+  310 |     count = GetByte(stream);
+      |             ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:10: note: Value assigned to 'ch'
+  674 |     if ((ch = getc(stream)) == EOF)
+      |          ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:9: note: Assuming the condition is false
+  674 |     if ((ch = getc(stream)) == EOF)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:5: note: Taking false branch
+  674 |     if ((ch = getc(stream)) == EOF)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:676:5: note: Returning value (loaded from 'ch')
+  676 |     return ch;
+      |     ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:310:13: note: Returning from 'GetByte'
+  310 |     count = GetByte(stream);
+      |             ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:310:5: note: Value assigned to 'count'
+  310 |     count = GetByte(stream);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:312:9: note: Assuming 'count' is > 0
+  312 |     if (count > 0)
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:312:5: note: Taking true branch
+  312 |     if (count > 0)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:313:27: note: Passing value via 2nd parameter 'count'
+  313 |         ReadBytes(buffer, count, stream);
+      |                           ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:313:19: note: Passing value via 1st parameter 'buffer'
+  313 |         ReadBytes(buffer, count, stream);
+      |                   ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:313:9: note: Calling 'ReadBytes'
+  313 |         ReadBytes(buffer, count, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:684:9: note: The 1st argument to 'fread' is a buffer with size -4294966271 but should be a buffer with size equal to or greater than the value of the 2nd argument times the 3rd argument (which is 1)
+  684 |     if (fread(buffer, count, 1, stream) != 1)
+      |         ^     ~~~~~~  ~~~~~  ~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:684:9: warning: The 1st argument to 'fread' is a buffer with size -4294966272 but should be a buffer with size equal to or greater than the value of the 2nd argument times the 3rd argument (which is 1) [clang-analyzer-unix.StdCLibraryFunctions]
+  684 |     if (fread(buffer, count, 1, stream) != 1)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:142:5: note: Loop condition is true.  Entering loop body
+  142 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:145:9: note: Control jumps to 'case 33:'  at line 150
+  145 |         switch (ch)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:151:13: note: Calling 'GIFReadNextExtension'
+  151 |             GIFReadNextExtension(ext, stream);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:609:9: note: Assuming 'ext' is not equal to NULL
+  609 |     if (ext == NULL)
+      |         ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:609:5: note: Taking false branch
+  609 |     if (ext == NULL)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:618:5: note: Loop condition is true.  Entering loop body
+  618 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:13: note: Assuming 'len' is >= 255
+  620 |         if (len < 255)
+      |             ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:9: note: Taking false branch
+  620 |         if (len < 255)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:631:13: note: 'count' is not equal to 0
+  631 |         if (count == 0)
+      |             ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:631:9: note: Taking false branch
+  631 |         if (count == 0)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:618:5: note: Loop condition is true.  Entering loop body
+  618 |     for ( ; ; )
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:13: note: Assuming 'len' is < 255
+  620 |         if (len < 255)
+      |             ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:620:9: note: Taking true branch
+  620 |         if (len < 255)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:623:13: note: Value assigned to 'newBuffer'
+  623 |             newBuffer = (unsigned char *)realloc(ext->Buffer, newBufferSize);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:624:17: note: Assuming 'newBuffer' is not equal to NULL
+  624 |             if (newBuffer == NULL)
+      |                 ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:624:13: note: Taking false branch
+  624 |             if (newBuffer == NULL)
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:627:13: note: The value of 'newBuffer' is assigned to field 'Buffer'
+  627 |             ext->Buffer = newBuffer;
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:630:34: note: Passing value via 1st parameter 'buffer'
+  630 |         count = GIFReadDataBlock(ext->Buffer + offset, stream);
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:630:17: note: Calling 'GIFReadDataBlock'
+  630 |         count = GIFReadDataBlock(ext->Buffer + offset, stream);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:310:13: note: Calling 'GetByte'
+  310 |     count = GetByte(stream);
+      |             ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:10: note: Value assigned to 'ch'
+  674 |     if ((ch = getc(stream)) == EOF)
+      |          ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:9: note: Assuming the condition is false
+  674 |     if ((ch = getc(stream)) == EOF)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:674:5: note: Taking false branch
+  674 |     if ((ch = getc(stream)) == EOF)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:676:5: note: Returning value (loaded from 'ch')
+  676 |     return ch;
+      |     ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:310:13: note: Returning from 'GetByte'
+  310 |     count = GetByte(stream);
+      |             ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:310:5: note: Value assigned to 'count'
+  310 |     count = GetByte(stream);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:312:9: note: Assuming 'count' is > 0
+  312 |     if (count > 0)
+      |         ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:312:5: note: Taking true branch
+  312 |     if (count > 0)
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:313:27: note: Passing value via 2nd parameter 'count'
+  313 |         ReadBytes(buffer, count, stream);
+      |                           ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:313:19: note: Passing value via 1st parameter 'buffer'
+  313 |         ReadBytes(buffer, count, stream);
+      |                   ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:313:9: note: Calling 'ReadBytes'
+  313 |         ReadBytes(buffer, count, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/gifread/gifread.c:684:9: note: The 1st argument to 'fread' is a buffer with size -4294966272 but should be a buffer with size equal to or greater than the value of the 2nd argument times the 3rd argument (which is 1)
+  684 |     if (fread(buffer, count, 1, stream) != 1)
+      |         ^     ~~~~~~  ~~~~~  ~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:591:27: warning: Array subscript is undefined [clang-analyzer-core.uninitialized.ArraySubscript]
+  591 |             dest_ptr[k] = src_ptr[tran_tbl[k]];
+      |                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1341:4: note: Taking false branch
+ 1341 |    if (!opng_validate_image(png_ptr, info_ptr))
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1353:13: note: Calling 'opng_reduce_bits'
+ 1353 |    result = opng_reduce_bits(png_ptr, info_ptr, reductions);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:530:8: note: Assuming 'reductions' is not equal to OPNG_REDUCE_NONE
+  530 |    if (reductions == OPNG_REDUCE_NONE)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:530:4: note: Taking false branch
+  530 |    if (reductions == OPNG_REDUCE_NONE)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:538:16: note: Assuming 'src_bit_depth' is >= 8
+  538 |    OPNG_ASSERT(src_bit_depth >= 8);
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:34: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                                  ^~~~
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:538:4: note: '?' condition is true
+  538 |    OPNG_ASSERT(src_bit_depth >= 8);
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:27: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                           ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:539:8: note: Assuming the condition is false
+  539 |    if (reductions & OPNG_REDUCE_16_TO_8)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:539:4: note: Taking false branch
+  539 |    if (reductions & OPNG_REDUCE_16_TO_8)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:551:8: note: Assuming the condition is false
+  551 |    if (reductions & OPNG_REDUCE_RGB_TO_GRAY)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:551:4: note: Taking false branch
+  551 |    if (reductions & OPNG_REDUCE_RGB_TO_GRAY)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:556:8: note: Assuming the condition is false
+  556 |    if (reductions & OPNG_REDUCE_STRIP_ALPHA)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:556:4: note: Taking false branch
+  556 |    if (reductions & OPNG_REDUCE_STRIP_ALPHA)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:564:9: note: Assuming the condition is false
+  564 |       ((dest_color_type & PNG_COLOR_MASK_COLOR) ? 3 : 1) +
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:564:8: note: '?' condition is false
+  564 |       ((dest_color_type & PNG_COLOR_MASK_COLOR) ? 3 : 1) +
+      |        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:565:9: note: Assuming the condition is false
+  565 |       ((dest_color_type & PNG_COLOR_MASK_ALPHA) ? 1 : 0);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:565:8: note: '?' condition is false
+  565 |       ((dest_color_type & PNG_COLOR_MASK_ALPHA) ? 1 : 0);
+      |        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:571:16: note: Assuming the condition is false
+  571 |    for (k = 0; k < 4 * dest_byte_depth; ++k)
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:571:4: note: Loop condition is false. Execution continues on line 574
+  571 |    for (k = 0; k < 4 * dest_byte_depth; ++k)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:574:47: note: Left side of '&&' is false
+  574 |    if ((reductions & OPNG_REDUCE_RGB_TO_GRAY) &&
+      |                                               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:583:16: note: Assuming 'src_sample_size' is > 'dest_sample_size'
+  583 |    OPNG_ASSERT(src_sample_size > dest_sample_size);
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:34: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                                  ^~~~
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:583:4: note: '?' condition is true
+  583 |    OPNG_ASSERT(src_sample_size > dest_sample_size);
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:27: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                           ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:585:16: note: Assuming 'i' is < 'height'
+  585 |    for (i = 0; i < height; ++i, ++row_ptr)
+      |                ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:585:4: note: Loop condition is true.  Entering loop body
+  585 |    for (i = 0; i < height; ++i, ++row_ptr)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:588:19: note: Assuming 'j' is < 'width'
+  588 |       for (j = 0; j < width; ++j)
+      |                   ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:588:7: note: Loop condition is true.  Entering loop body
+  588 |       for (j = 0; j < width; ++j)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:590:15: note: The value 0 is assigned to 'k'
+  590 |          for (k = 0; k < dest_sample_size; ++k)
+      |               ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:590:22: note: Assuming 'k' is < 'dest_sample_size'
+  590 |          for (k = 0; k < dest_sample_size; ++k)
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:590:10: note: Loop condition is true.  Entering loop body
+  590 |          for (k = 0; k < dest_sample_size; ++k)
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:591:27: note: Array subscript is undefined
+  591 |             dest_ptr[k] = src_ptr[tran_tbl[k]];
+      |                           ^       ~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:975:22: warning: Division by zero [clang-analyzer-core.DivideZero]
+  975 |              / width / height >= 1)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1341:4: note: Taking false branch
+ 1341 |    if (!opng_validate_image(png_ptr, info_ptr))
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1356:8: note: Assuming the condition is false
+ 1356 |    if (color_type == PNG_COLOR_TYPE_PALETTE &&
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1356:45: note: Left side of '&&' is false
+ 1356 |    if (color_type == PNG_COLOR_TYPE_PALETTE &&
+      |                                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1364:9: note: Assuming the condition is true
+ 1364 |    if (((color_type & ~PNG_COLOR_MASK_ALPHA) == PNG_COLOR_TYPE_GRAY &&
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1364:9: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1365:10: note: Assuming the condition is true
+ 1365 |         (reductions & OPNG_REDUCE_GRAY_TO_PALETTE)) ||
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1365:53: note: Left side of '||' is true
+ 1365 |         (reductions & OPNG_REDUCE_GRAY_TO_PALETTE)) ||
+      |                                                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1369:7: note: Taking true branch
+ 1369 |       if (!(result & OPNG_REDUCE_PALETTE_TO_GRAY))
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1370:20: note: Calling 'opng_reduce_to_palette'
+ 1370 |          result |= opng_reduce_to_palette(png_ptr, info_ptr, reductions);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:846:4: note: Value assigned to 'height'
+  846 |    png_get_IHDR(png_ptr, info_ptr, &width, &height, &src_bit_depth,
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  847 |       &color_type, &interlace_type, &compression_type, &filter_type);
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:848:8: note: Assuming 'src_bit_depth' is equal to 8
+  848 |    if (src_bit_depth != 8)
+      |        ^~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:848:4: note: Taking false branch
+  848 |    if (src_bit_depth != 8)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:850:16: note: Assuming the condition is true
+  850 |    OPNG_ASSERT(!(color_type & PNG_COLOR_MASK_PALETTE));
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:34: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                           ~~~~~~~^~~~~
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:850:4: note: '?' condition is true
+  850 |    OPNG_ASSERT(!(color_type & PNG_COLOR_MASK_PALETTE));
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:27: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                           ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:869:16: note: Assuming 'i' is >= 'height'
+  869 |    for (i = 0; i < height; ++i, ++row_ptr)
+      |                ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:869:4: note: Loop condition is false. Execution continues on line 924
+  869 |    for (i = 0; i < height; ++i, ++row_ptr)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:924:9: note: 'num_palette' is >= 0
+  924 |    if ((num_palette >= 0) && png_get_bKGD(png_ptr, info_ptr, &background))
+      |         ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:924:8: note: Left side of '&&' is true
+  924 |    if ((num_palette >= 0) && png_get_bKGD(png_ptr, info_ptr, &background))
+      |        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:924:30: note: Assuming the condition is true
+  924 |    if ((num_palette >= 0) && png_get_bKGD(png_ptr, info_ptr, &background))
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:924:4: note: Taking true branch
+  924 |    if ((num_palette >= 0) && png_get_bKGD(png_ptr, info_ptr, &background))
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:927:11: note: Assuming the condition is false
+  927 |       if (color_type & PNG_COLOR_MASK_COLOR)
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:927:7: note: Taking false branch
+  927 |       if (color_type & PNG_COLOR_MASK_COLOR)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:935:11: note: Assuming 'red' is <= 255
+  935 |       if (red > 255 || green > 255 || blue > 255)
+      |           ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:935:11: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:935:24: note: 'green' is <= 255
+  935 |       if (red > 255 || green > 255 || blue > 255)
+      |                        ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:935:11: note: Left side of '||' is false
+  935 |       if (red > 255 || green > 255 || blue > 255)
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:935:39: note: 'blue' is <= 255
+  935 |       if (red > 255 || green > 255 || blue > 255)
+      |                                       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:935:7: note: Taking false branch
+  935 |       if (red > 255 || green > 255 || blue > 255)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:945:14: note: Assuming 'index' is < 0
+  945 |          if (index >= 0)
+      |              ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:945:10: note: Taking false branch
+  945 |          if (index >= 0)
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:960:8: note: Assuming 'num_palette' is >= 0
+  960 |    if (num_palette >= 0)
+      |        ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:960:4: note: Taking true branch
+  960 |    if (num_palette >= 0)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:962:19: note: Assuming 'num_palette' is > 0
+  962 |       OPNG_ASSERT(num_palette > 0 && num_palette <= 256);
+      |                   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:34: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                                  ^~~~
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:962:19: note: Left side of '&&' is true
+  962 |       OPNG_ASSERT(num_palette > 0 && num_palette <= 256);
+      |                   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:962:38: note: Assuming 'num_palette' is <= 256
+  962 |       OPNG_ASSERT(num_palette > 0 && num_palette <= 256);
+      |                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:34: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                                  ^~~~
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:962:7: note: '?' condition is true
+  962 |       OPNG_ASSERT(num_palette > 0 && num_palette <= 256);
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:27: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                           ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:963:19: note: Assuming 'num_trans' is >= 0
+  963 |       OPNG_ASSERT(num_trans >= 0 && num_trans <= num_palette);
+      |                   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:34: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                                  ^~~~
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:963:19: note: Left side of '&&' is true
+  963 |       OPNG_ASSERT(num_trans >= 0 && num_trans <= num_palette);
+      |                   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:963:37: note: Assuming 'num_trans' is <= 'num_palette'
+  963 |       OPNG_ASSERT(num_trans >= 0 && num_trans <= num_palette);
+      |                                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:34: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                                  ^~~~
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:963:7: note: '?' condition is true
+  963 |       OPNG_ASSERT(num_trans >= 0 && num_trans <= num_palette);
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:27:27: note: expanded from macro 'OPNG_ASSERT'
+   27 | #define OPNG_ASSERT(cond) assert(cond)
+      |                           ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:964:11: note: Assuming 'num_palette' is <= 2
+  964 |       if (num_palette <= 2)
+      |           ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:964:7: note: Taking true branch
+  964 |       if (num_palette <= 2)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:973:11: note: Assuming the condition is false
+  973 |       if (channels * 8 == dest_bit_depth ||
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:973:11: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:975:22: note: Division by zero
+  974 |           (3 * num_palette + num_trans) * 8 / (channels * 8 - dest_bit_depth)
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  975 |              / width / height >= 1)
+      |              ~~~~~~~~^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1188:14: warning: Dereference of null pointer [clang-analyzer-core.NullDereference]
+ 1188 |          if (palette[k].red != palette[k].green ||
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1341:4: note: Taking false branch
+ 1341 |    if (!opng_validate_image(png_ptr, info_ptr))
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1356:8: note: Assuming the condition is true
+ 1356 |    if (color_type == PNG_COLOR_TYPE_PALETTE &&
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1356:8: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1357:9: note: Assuming the condition is true
+ 1357 |        (reductions &
+      |         ^~~~~~~~~~~~
+ 1358 |         (OPNG_REDUCE_PALETTE_TO_GRAY |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1359 |          OPNG_REDUCE_PALETTE_FAST |
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1360 |          OPNG_REDUCE_8_TO_4_2_1)))
+      |          ~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1356:4: note: Taking true branch
+ 1356 |    if (color_type == PNG_COLOR_TYPE_PALETTE &&
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1361:17: note: Calling 'opng_reduce_palette'
+ 1361 |       result |= opng_reduce_palette(png_ptr, info_ptr, reductions);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1163:8: note: Assuming the condition is true
+ 1163 |    if (!png_get_PLTE(png_ptr, info_ptr, &palette, &num_palette))
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1163:4: note: Taking true branch
+ 1163 |    if (!png_get_PLTE(png_ptr, info_ptr, &palette, &num_palette))
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1165:7: note: Null pointer value stored to 'palette'
+ 1165 |       palette = NULL;
+      |       ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1168:8: note: Assuming the condition is true
+ 1168 |    if (!png_get_tRNS(png_ptr, info_ptr, &trans_alpha, &num_trans, NULL))
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1168:4: note: Taking true branch
+ 1168 |    if (!png_get_tRNS(png_ptr, info_ptr, &trans_alpha, &num_trans, NULL))
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1178:15: note: Assuming the condition is true
+ 1178 |    is_gray = (reductions & OPNG_REDUCE_PALETTE_TO_GRAY) && (bit_depth == 8);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1178:14: note: Left side of '&&' is true
+ 1178 |    is_gray = (reductions & OPNG_REDUCE_PALETTE_TO_GRAY) && (bit_depth == 8);
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1178:61: note: Assuming 'bit_depth' is equal to 8
+ 1178 |    is_gray = (reductions & OPNG_REDUCE_PALETTE_TO_GRAY) && (bit_depth == 8);
+      |                                                             ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1180:4: note: Loop condition is true.  Entering loop body
+ 1180 |    for (k = 0; k < 256; ++k)
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1182:11: note: Assuming the condition is false
+ 1182 |       if (!is_used[k])
+      |           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1182:7: note: Taking false branch
+ 1182 |       if (!is_used[k])
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1185:11: note: 'k' is >= 'num_trans'
+ 1185 |       if (k < num_trans && trans_alpha[k] < 255)
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1185:25: note: Left side of '&&' is false
+ 1185 |       if (k < num_trans && trans_alpha[k] < 255)
+      |                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1187:11: note: 'is_gray' is 1
+ 1187 |       if (is_gray)
+      |           ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1187:7: note: Taking true branch
+ 1187 |       if (is_gray)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/opngreduc/opngreduc.c:1188:14: note: Dereference of null pointer
+ 1188 |          if (palette[k].red != palette[k].green ||
+      |              ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ioutil.c:318:15: error: call to undeclared function 'fileno'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  318 |     if (fstat(fileno(stream), &sbuf) != 0)
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ioutil.c:554:36: error: use of undeclared identifier 'S_IFDIR' [clang-diagnostic-error]
+  554 |             return (sbuf.st_mode & S_IFDIR) ? 0 : -1;
+      |                                    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ioutil.c:712:38: error: use of undeclared identifier 'S_IFREG' [clang-diagnostic-error]
+  712 |         if (freg && ((sbuf.st_mode & S_IFREG) != S_IFREG))
+      |                                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ioutil.c:712:50: error: use of undeclared identifier 'S_IFREG' [clang-diagnostic-error]
+  712 |         if (freg && ((sbuf.st_mode & S_IFREG) != S_IFREG))
+      |                                                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/optim.c:20:10: error: 'opngreduc.h' file not found [clang-diagnostic-error]
+   20 | #include <opngreduc.h>
+      |          ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/optipng.c:32:10: error: 'pngxutil.h' file not found [clang-diagnostic-error]
+   32 | #include <pngxutil.h>
+      |          ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ratio.c:53:14: warning: Function 'vsnprintf' is called with an uninitialized va_list argument [clang-analyzer-valist.Uninitialized]
+   53 |     result = OPNG_VSNPRINTF(buffer, buffer_size, format, arg_ptr);
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ratio.c:46:24: note: expanded from macro 'OPNG_VSNPRINTF'
+   46 | #define OPNG_VSNPRINTF vsnprintf
+      |                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ratio.c:53:14: note: Function 'vsnprintf' is called with an uninitialized va_list argument
+   53 |     result = OPNG_VSNPRINTF(buffer, buffer_size, format, arg_ptr);
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/optipng/ratio.c:46:24: note: expanded from macro 'OPNG_VSNPRINTF'
+   46 | #define OPNG_VSNPRINTF vsnprintf
+      |                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrgif.c:8:10: error: 'gifread.h' file not found [clang-diagnostic-error]
+    8 | #include "gifread.h"
+      |          ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrpnm.c:8:10: error: 'pnmio.h' file not found [clang-diagnostic-error]
+    8 | #include "pnmio.h"
+      |          ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/optipng-0.7.8/src/pngxtern/pngxrtif.c:8:10: error: 'minitiff.h' file not found [clang-diagnostic-error]
+    8 | #include "minitiff.h"
+      |          ^~~~~~~~~~~~
+Found compiler error(s).

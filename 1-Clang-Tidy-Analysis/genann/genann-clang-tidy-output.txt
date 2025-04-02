@@ -1,0 +1,6 @@
+[1/6] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/genann/repo/example1.c.
+[2/6] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/genann/repo/example2.c.
+[3/6] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/genann/repo/example3.c.
+[4/6] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/genann/repo/example4.c.
+[5/6] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/genann/repo/genann.c.
+[6/6] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/genann/repo/test.c.

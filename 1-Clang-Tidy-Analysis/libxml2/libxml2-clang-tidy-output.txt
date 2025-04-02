@@ -1,0 +1,307 @@
+[1/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/DOCBparser.c.
+1 error generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/DOCBparser.c.
+[2/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/HTMLparser.c.
+2 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/HTMLparser.c.
+[3/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/HTMLtree.c.
+3 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/HTMLtree.c.
+[4/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/SAX.c.
+4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/SAX.c.
+[5/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/SAX2.c.
+5 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/SAX2.c.
+[6/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/buf.c.
+6 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/buf.c.
+[7/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/c14n.c.
+7 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/c14n.c.
+[8/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/catalog.c.
+8 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/catalog.c.
+[9/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/chvalid.c.
+9 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/chvalid.c.
+[10/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/debugXML.c.
+10 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/debugXML.c.
+[11/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/dict.c.
+11 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/dict.c.
+[12/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/encoding.c.
+12 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/encoding.c.
+[13/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/entities.c.
+13 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/entities.c.
+[14/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/error.c.
+14 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/error.c.
+[15/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/globals.c.
+15 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/globals.c.
+[16/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/hash.c.
+16 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/hash.c.
+[17/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/legacy.c.
+17 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/legacy.c.
+[18/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/list.c.
+18 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/list.c.
+[19/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/nanoftp.c.
+19 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/nanoftp.c.
+[20/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/nanohttp.c.
+20 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/nanohttp.c.
+[21/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/parser.c.
+21 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/parser.c.
+[22/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/parserInternals.c.
+22 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/parserInternals.c.
+[23/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/pattern.c.
+23 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/pattern.c.
+[24/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/relaxng.c.
+24 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/relaxng.c.
+[25/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/rngparser.c.
+25 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/rngparser.c.
+[26/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/schematron.c.
+26 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/schematron.c.
+[27/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/threads.c.
+27 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/threads.c.
+[28/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/tree.c.
+28 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/tree.c.
+[29/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c.
+15 warnings and 29 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c.
+[30/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trionan.c.
+15 warnings and 29 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trionan.c.
+[31/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/triostr.c.
+15 warnings and 31 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/triostr.c.
+[32/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/uri.c.
+15 warnings and 32 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/uri.c.
+[33/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/valid.c.
+15 warnings and 33 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/valid.c.
+[34/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/variadic.c.
+15 warnings and 34 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/variadic.c.
+[35/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xinclude.c.
+15 warnings and 35 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xinclude.c.
+[36/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xlink.c.
+15 warnings and 36 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xlink.c.
+[37/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlIO.c.
+15 warnings and 37 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlIO.c.
+[38/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlcatalog.c.
+15 warnings and 38 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlcatalog.c.
+[39/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmllint.c.
+15 warnings and 39 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmllint.c.
+[40/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlmemory.c.
+15 warnings and 40 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlmemory.c.
+[41/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlmodule.c.
+15 warnings and 41 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlmodule.c.
+[42/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlreader.c.
+15 warnings and 42 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlreader.c.
+[43/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlregexp.c.
+15 warnings and 43 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlregexp.c.
+[44/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlsave.c.
+15 warnings and 44 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlsave.c.
+[45/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlschemas.c.
+15 warnings and 45 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlschemas.c.
+[46/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlschemastypes.c.
+15 warnings and 46 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlschemastypes.c.
+[47/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlstring.c.
+15 warnings and 47 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlstring.c.
+[48/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlunicode.c.
+15 warnings and 48 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlunicode.c.
+[49/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlwriter.c.
+15 warnings and 49 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xmlwriter.c.
+[50/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xpath.c.
+15 warnings and 50 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xpath.c.
+[51/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xpointer.c.
+15 warnings and 51 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xpointer.c.
+[52/52] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xzlib.c.
+15 warnings and 52 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/xzlib.c.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/libxml.h:12:10: error: 'libxml/xmlstring.h' file not found [clang-diagnostic-error]
+   12 | #include <libxml/xmlstring.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/rngparser.c:16:10: error: 'libxml/parser.h' file not found [clang-diagnostic-error]
+   16 | #include <libxml/parser.h>
+      |          ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:1230:16: error: use of undeclared identifier 'errno' [clang-diagnostic-error]
+ 1230 |   save_errno = errno;
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3677:59: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 3677 |   return TrioFormat(stdout, 0, TrioOutStreamFile, format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3747:57: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 3747 |   return TrioFormat(file, 0, TrioOutStreamFile, format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3818:66: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 3818 |   return TrioFormat(&fd, 0, TrioOutStreamFileDescriptor, format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                                                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3882:60: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 3882 |   return TrioFormat(&data, 0, TrioOutStreamCustom, format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3955:64: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 3955 |   status = TrioFormat(&buffer, 0, TrioOutStreamString, format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                                                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:4044:41: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 4044 |                       TrioOutStreamStringMax, format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:4128:41: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 4128 |                       TrioOutStreamStringMax, format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:4181:18: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 4181 |                        format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:4247:14: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 4247 |                           format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3431:22: note: passing argument to parameter 'arglist' here
+ 3431 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:4966:57: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 4966 |   return TrioFormatRef((trio_reference_t *)ref, format, TRIO_VA_LIST_ADDR(arglist), NULL);
+      |                                                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:3403:22: note: passing argument to parameter 'arglist' here
+ 3403 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6626:13: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 6626 |                   format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6393:22: note: passing argument to parameter 'arglist' here
+ 6393 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6678:13: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 6678 |                   format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6393:22: note: passing argument to parameter 'arglist' here
+ 6393 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6730:13: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 6730 |                   format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6393:22: note: passing argument to parameter 'arglist' here
+ 6393 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6788:57: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 6788 |   return TrioScan(&data, 0, TrioInStreamCustom, format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                                                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6393:22: note: passing argument to parameter 'arglist' here
+ 6393 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6845:13: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [clang-diagnostic-incompatible-pointer-types]
+ 6845 |                   format, TRIO_VA_LIST_ADDR(args), NULL);
+      |                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:131:30: note: expanded from macro 'TRIO_VA_LIST_ADDR'
+  131 | #define TRIO_VA_LIST_ADDR(l)    (&(l))
+      |                                 ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/trio.c:6393:22: note: passing argument to parameter 'arglist' here
+ 6393 |            TRIO_VA_LIST_PTR arglist,
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/triostr.c:411:20: error: call to undeclared function 'strcasecmp'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  411 |       return (0 == strcasecmp(first, second));
+      |                    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/libxml2/repo/triostr.c:534:20: error: call to undeclared function 'strncasecmp'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  534 |       return (0 == strncasecmp(first, second, max));
+      |                    ^
+Found compiler error(s).

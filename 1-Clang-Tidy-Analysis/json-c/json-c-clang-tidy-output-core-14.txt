@@ -1,0 +1,186 @@
+[1/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/arraylist.c.
+[2/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c.
+3 warnings generated.
+[3/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_c_version.c.
+3 warnings generated.
+[4/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c.
+6 warnings generated.
+[5/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object_iterator.c.
+6 warnings generated.
+[6/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_pointer.c.
+6 warnings generated.
+[7/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_tokener.c.
+7 warnings generated.
+[8/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_util.c.
+8 warnings generated.
+[9/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_visit.c.
+8 warnings generated.
+[10/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/linkhash.c.
+9 warnings generated.
+[11/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/printbuf.c.
+10 warnings generated.
+[12/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/random_seed.c.
+10 warnings generated.
+[13/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/strerror_override.c.
+10 warnings generated.
+[14/14] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/libjson.c.
+10 warnings generated.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:54:3: warning: Function 'vprintf' is called with an uninitialized va_list argument [clang-analyzer-valist.Uninitialized]
+   54 |                 vprintf(msg, ap);
+      |                 ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:47:6: note: Assuming '_debug' is not equal to 0
+   47 |   if(_debug) {
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:47:3: note: Taking true branch
+   47 |   if(_debug) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:50:8: note: Assuming '_syslog' is 0
+   50 |     if(_syslog) {
+      |        ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:50:5: note: Taking false branch
+   50 |     if(_syslog) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:54:3: note: Function 'vprintf' is called with an uninitialized va_list argument
+   54 |                 vprintf(msg, ap);
+      |                 ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:68:3: warning: Function 'vfprintf' is called with an uninitialized va_list argument [clang-analyzer-valist.Uninitialized]
+   68 |                 vfprintf(stderr, msg, ap);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:64:8: note: Assuming '_syslog' is 0
+   64 |     if(_syslog) {
+      |        ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:64:5: note: Taking false branch
+   64 |     if(_syslog) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:68:3: note: Function 'vfprintf' is called with an uninitialized va_list argument
+   68 |                 vfprintf(stderr, msg, ap);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:81:3: warning: Function 'vfprintf' is called with an uninitialized va_list argument [clang-analyzer-valist.Uninitialized]
+   81 |                 vfprintf(stderr, msg, ap);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:77:8: note: Assuming '_syslog' is 0
+   77 |     if(_syslog) {
+      |        ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:77:5: note: Taking false branch
+   77 |     if(_syslog) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/debug.c:81:3: note: Function 'vfprintf' is called with an uninitialized va_list argument
+   81 |                 vfprintf(stderr, msg, ap);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:845:4: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+  845 |                         strcat(buf, ".0");
+      |                         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:845:4: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+  845 |                         strcat(buf, ".0");
+      |                         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1335:20: warning: Null pointer passed to 1st parameter expecting 'nonnull' [clang-analyzer-core.NonNullParamChecker]
+ 1335 |                 dst->_userdata = strdup(src->_userdata);
+      |                                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1477:6: note: Assuming 'src' is non-null
+ 1477 |         if (!src || !dst || *dst) {
+      |             ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1477:6: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1477:14: note: Assuming 'dst' is non-null
+ 1477 |         if (!src || !dst || *dst) {
+      |                     ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1477:6: note: Left side of '||' is false
+ 1477 |         if (!src || !dst || *dst) {
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1477:22: note: Assuming the condition is false
+ 1477 |         if (!src || !dst || *dst) {
+      |                             ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1477:2: note: Taking false branch
+ 1477 |         if (!src || !dst || *dst) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1482:6: note: Assuming 'shallow_copy' is not equal to NULL
+ 1482 |         if (shallow_copy == NULL)
+      |             ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1482:2: note: Taking false branch
+ 1482 |         if (shallow_copy == NULL)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1485:7: note: Calling 'json_object_deep_copy_recursive'
+ 1485 |         rc = json_object_deep_copy_recursive(src, NULL, NULL, -1, dst, shallow_copy);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1409:20: note: Value assigned to field '_userdata'
+ 1409 |         shallow_copy_rc = shallow_copy(src, parent, key_in_parent, index_in_parent, dst);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1411:6: note: Assuming 'shallow_copy_rc' is >= 1
+ 1411 |         if (shallow_copy_rc < 1)
+      |             ^~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1411:2: note: Taking false branch
+ 1411 |         if (shallow_copy_rc < 1)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1416:9: note: Assuming the condition is true
+ 1416 |         assert(*dst != NULL);
+      |                ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)
+    \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1416:2: note: '?' condition is true
+ 1416 |         assert(*dst != NULL);
+      |         ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)
+    \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1418:2: note: Control jumps to the 'default' case at line 1461
+ 1418 |         switch (src->o_type) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1462:3: note:  Execution continues on line 1466
+ 1462 |                 break;
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1466:6: note: Assuming 'shallow_copy_rc' is not equal to 2
+ 1466 |         if (shallow_copy_rc != 2)
+      |             ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1466:2: note: Taking true branch
+ 1466 |         if (shallow_copy_rc != 2)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1467:10: note: Calling 'json_object_copy_serializer_data'
+ 1467 |                 return json_object_copy_serializer_data(src, *dst);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1330:6: note: Assuming field '_userdata' is null
+ 1330 |         if (!src->_userdata && !src->_user_delete)
+      |             ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1330:6: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1330:25: note: Assuming field '_user_delete' is non-null
+ 1330 |         if (!src->_userdata && !src->_user_delete)
+      |                                ^~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1330:2: note: Taking false branch
+ 1330 |         if (!src->_userdata && !src->_user_delete)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1333:6: note: Assuming field '_to_json_string' is equal to json_object_userdata_to_json_string
+ 1333 |         if (dst->_to_json_string == json_object_userdata_to_json_string)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1333:2: note: Taking true branch
+ 1333 |         if (dst->_to_json_string == json_object_userdata_to_json_string)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_object.c:1335:20: note: Null pointer passed to 1st parameter expecting 'nonnull'
+ 1335 |                 dst->_userdata = strdup(src->_userdata);
+      |                                  ^      ~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_tokener.c:610:19: warning: Value stored to 'got_hi_surrogate' is never read [clang-analyzer-deadcode.DeadStores]
+  610 |                   got_hi_surrogate = 0;
+      |                   ^                  ~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_tokener.c:610:19: note: Value stored to 'got_hi_surrogate' is never read
+  610 |                   got_hi_surrogate = 0;
+      |                   ^                  ~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_util.c:81:8: warning: Function 'vsnprintf' is called with an uninitialized va_list argument [clang-analyzer-valist.Uninitialized]
+   81 |         (void)vsnprintf(_last_err, sizeof(_last_err), err_fmt, ap);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/json_util.c:81:8: note: Function 'vsnprintf' is called with an uninitialized va_list argument
+   81 |         (void)vsnprintf(_last_err, sizeof(_last_err), err_fmt, ap);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/linkhash.c:59:2: warning: Function 'vprintf' is called with an uninitialized va_list argument [clang-analyzer-valist.Uninitialized]
+   59 |         vprintf(msg, ap);
+      |         ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/linkhash.c:59:2: note: Function 'vprintf' is called with an uninitialized va_list argument
+   59 |         vprintf(msg, ap);
+      |         ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/printbuf.c:125:10: warning: Function 'vsnprintf' is called with an uninitialized va_list argument [clang-analyzer-valist.Uninitialized]
+  125 |   size = vsnprintf(buf, 128, msg, ap);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/json-c/repo/printbuf.c:125:10: note: Function 'vsnprintf' is called with an uninitialized va_list argument
+  125 |   size = vsnprintf(buf, 128, msg, ap);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Suppressed 1 warnings (1 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

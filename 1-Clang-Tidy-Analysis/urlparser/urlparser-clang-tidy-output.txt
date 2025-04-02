@@ -1,0 +1,2424 @@
+32 warnings generated.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:3: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |   ^
+/usr/include/assert.h:110:28: note: expanded from macro 'assert'
+  110 |      ? __ASSERT_VOID_CAST (0)                                           \
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:15:10: note: 'parsed' is non-null
+   15 |   assert(parsed);
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:15:3: note: '?' condition is true
+   15 |   assert(parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:16:3: note: Assuming 'gh_parsed' is non-null
+   16 |   assert(gh_parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:16:3: note: '?' condition is true
+   16 |   assert(gh_parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:21:18: note: Field 'href' is non-null
+   21 |   assert(parsed->href);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:21:3: note: '?' condition is true
+   21 |   assert(parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:22:3: note: Assuming field 'auth' is non-null
+   22 |   assert(parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:22:3: note: '?' condition is true
+   22 |   assert(parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:23:18: note: Field 'protocol' is non-null
+   23 |   assert(parsed->protocol);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:23:3: note: '?' condition is true
+   23 |   assert(parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:24:18: note: Field 'port' is non-null
+   24 |   assert(parsed->port);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:24:3: note: '?' condition is true
+   24 |   assert(parsed->port);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:25:18: note: Field 'hostname' is non-null
+   25 |   assert(parsed->hostname);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:25:3: note: '?' condition is true
+   25 |   assert(parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:26:18: note: Field 'host' is non-null
+   26 |   assert(parsed->host);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:26:3: note: '?' condition is true
+   26 |   assert(parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:27:18: note: Field 'pathname' is non-null
+   27 |   assert(parsed->pathname);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:27:3: note: '?' condition is true
+   27 |   assert(parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:28:18: note: Field 'path' is non-null
+   28 |   assert(parsed->path);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:28:3: note: '?' condition is true
+   28 |   assert(parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:29:18: note: Field 'hash' is non-null
+   29 |   assert(parsed->hash);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:29:3: note: '?' condition is true
+   29 |   assert(parsed->hash);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:30:18: note: Field 'search' is non-null
+   30 |   assert(parsed->search);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:30:3: note: '?' condition is true
+   30 |   assert(parsed->search);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:31:18: note: Field 'query' is non-null
+   31 |   assert(parsed->query);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:31:3: note: '?' condition is true
+   31 |   assert(parsed->query);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:33:3: note: Assuming field 'href' is non-null
+   33 |   assert(gh_parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:33:3: note: '?' condition is true
+   33 |   assert(gh_parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:34:3: note: Assuming field 'protocol' is non-null
+   34 |   assert(gh_parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:34:3: note: '?' condition is true
+   34 |   assert(gh_parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:35:3: note: Assuming field 'host' is non-null
+   35 |   assert(gh_parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:35:3: note: '?' condition is true
+   35 |   assert(gh_parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:36:3: note: Assuming field 'auth' is non-null
+   36 |   assert(gh_parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:36:3: note: '?' condition is true
+   36 |   assert(gh_parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:37:3: note: Assuming field 'hostname' is non-null
+   37 |   assert(gh_parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:37:3: note: '?' condition is true
+   37 |   assert(gh_parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:38:3: note: Assuming field 'pathname' is non-null
+   38 |   assert(gh_parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:38:3: note: '?' condition is true
+   38 |   assert(gh_parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:39:3: note: Assuming field 'path' is non-null
+   39 |   assert(gh_parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:39:3: note: '?' condition is true
+   39 |   assert(gh_parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:41:3: note: Assuming the condition is true
+   41 |   assert(url_is_protocol("http"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:41:3: note: '?' condition is true
+   41 |   assert(url_is_protocol("http"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:42:3: note: Assuming the condition is true
+   42 |   assert(url_is_protocol("https"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:42:3: note: '?' condition is true
+   42 |   assert(url_is_protocol("https"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:43:3: note: Assuming the condition is true
+   43 |   assert(url_is_protocol("git"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:43:3: note: '?' condition is true
+   43 |   assert(url_is_protocol("git"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:44:3: note: Assuming the condition is true
+   44 |   assert(url_is_protocol("ssh"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:44:3: note: '?' condition is true
+   44 |   assert(url_is_protocol("ssh"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:45:3: note: Assuming the condition is true
+   45 |   assert(url_is_protocol("sftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:45:3: note: '?' condition is true
+   45 |   assert(url_is_protocol("sftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:46:3: note: Assuming the condition is true
+   46 |   assert(url_is_protocol("ftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:46:3: note: '?' condition is true
+   46 |   assert(url_is_protocol("ftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:47:3: note: Assuming the condition is true
+   47 |   assert(url_is_protocol("javascript"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:47:3: note: '?' condition is true
+   47 |   assert(url_is_protocol("javascript"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:49:10: note: Assuming the condition is true
+   49 |   assert(0 == strcmp("http",                       url_get_protocol(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:49:3: note: '?' condition is true
+   49 |   assert(0 == strcmp("http",                       url_get_protocol(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:52: note: Calling 'url_get_auth'
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |                                                    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:364:8: note: 'protocol' is non-null
+  364 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:364:3: note: Taking false branch
+  364 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:366:10: note: Calling 'get_part'
+  366 |   return get_part(url, "%[^@]", l);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:16: note: 'tmp_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:28: note: 'fmt_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                            ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:39: note: Assuming 'ret' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                                       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:3: note: Taking false branch
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:7: note: Assuming the condition is true
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:3: note: Taking true branch
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:212:11: note: Calling 'strdup'
+  212 |     ret = strdup(tmp);
+      |           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:212:11: note: Returned allocated memory
+  212 |     ret = strdup(tmp);
+      |           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:223:10: note: 'has' is true
+  223 |   return has? ret : NULL;
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:223:10: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:366:10: note: Returned allocated memory
+  366 |   return get_part(url, "%[^@]", l);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:52: note: Returned allocated memory
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |                                                    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:10: note: Assuming the condition is true
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:3: note: '?' condition is true
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:3: note: Potential memory leak
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |   ^
+/usr/include/assert.h:110:28: note: expanded from macro 'assert'
+  110 |      ? __ASSERT_VOID_CAST (0)                                           \
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:3: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |   ^
+/usr/include/assert.h:110:28: note: expanded from macro 'assert'
+  110 |      ? __ASSERT_VOID_CAST (0)                                           \
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:15:10: note: 'parsed' is non-null
+   15 |   assert(parsed);
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:15:3: note: '?' condition is true
+   15 |   assert(parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:16:3: note: Assuming 'gh_parsed' is non-null
+   16 |   assert(gh_parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:16:3: note: '?' condition is true
+   16 |   assert(gh_parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:21:18: note: Field 'href' is non-null
+   21 |   assert(parsed->href);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:21:3: note: '?' condition is true
+   21 |   assert(parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:22:18: note: Field 'auth' is non-null
+   22 |   assert(parsed->auth);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:22:3: note: '?' condition is true
+   22 |   assert(parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:23:18: note: Field 'protocol' is non-null
+   23 |   assert(parsed->protocol);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:23:3: note: '?' condition is true
+   23 |   assert(parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:24:18: note: Field 'port' is non-null
+   24 |   assert(parsed->port);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:24:3: note: '?' condition is true
+   24 |   assert(parsed->port);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:25:18: note: Field 'hostname' is non-null
+   25 |   assert(parsed->hostname);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:25:3: note: '?' condition is true
+   25 |   assert(parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:26:18: note: Field 'host' is non-null
+   26 |   assert(parsed->host);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:26:3: note: '?' condition is true
+   26 |   assert(parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:27:18: note: Field 'pathname' is non-null
+   27 |   assert(parsed->pathname);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:27:3: note: '?' condition is true
+   27 |   assert(parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:28:18: note: Field 'path' is non-null
+   28 |   assert(parsed->path);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:28:3: note: '?' condition is true
+   28 |   assert(parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:29:18: note: Field 'hash' is non-null
+   29 |   assert(parsed->hash);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:29:3: note: '?' condition is true
+   29 |   assert(parsed->hash);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:30:18: note: Field 'search' is non-null
+   30 |   assert(parsed->search);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:30:3: note: '?' condition is true
+   30 |   assert(parsed->search);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:31:18: note: Field 'query' is non-null
+   31 |   assert(parsed->query);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:31:3: note: '?' condition is true
+   31 |   assert(parsed->query);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:33:3: note: Assuming field 'href' is non-null
+   33 |   assert(gh_parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:33:3: note: '?' condition is true
+   33 |   assert(gh_parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:34:3: note: Assuming field 'protocol' is non-null
+   34 |   assert(gh_parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:34:3: note: '?' condition is true
+   34 |   assert(gh_parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:35:3: note: Assuming field 'host' is non-null
+   35 |   assert(gh_parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:35:3: note: '?' condition is true
+   35 |   assert(gh_parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:36:3: note: Assuming field 'auth' is non-null
+   36 |   assert(gh_parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:36:3: note: '?' condition is true
+   36 |   assert(gh_parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:37:3: note: Assuming field 'hostname' is non-null
+   37 |   assert(gh_parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:37:3: note: '?' condition is true
+   37 |   assert(gh_parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:38:3: note: Assuming field 'pathname' is non-null
+   38 |   assert(gh_parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:38:3: note: '?' condition is true
+   38 |   assert(gh_parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:39:3: note: Assuming field 'path' is non-null
+   39 |   assert(gh_parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:39:3: note: '?' condition is true
+   39 |   assert(gh_parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:41:3: note: Assuming the condition is true
+   41 |   assert(url_is_protocol("http"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:41:3: note: '?' condition is true
+   41 |   assert(url_is_protocol("http"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:42:3: note: Assuming the condition is true
+   42 |   assert(url_is_protocol("https"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:42:3: note: '?' condition is true
+   42 |   assert(url_is_protocol("https"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:43:3: note: Assuming the condition is true
+   43 |   assert(url_is_protocol("git"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:43:3: note: '?' condition is true
+   43 |   assert(url_is_protocol("git"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:44:3: note: Assuming the condition is true
+   44 |   assert(url_is_protocol("ssh"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:44:3: note: '?' condition is true
+   44 |   assert(url_is_protocol("ssh"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:45:3: note: Assuming the condition is true
+   45 |   assert(url_is_protocol("sftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:45:3: note: '?' condition is true
+   45 |   assert(url_is_protocol("sftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:46:3: note: Assuming the condition is true
+   46 |   assert(url_is_protocol("ftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:46:3: note: '?' condition is true
+   46 |   assert(url_is_protocol("ftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:47:3: note: Assuming the condition is true
+   47 |   assert(url_is_protocol("javascript"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:47:3: note: '?' condition is true
+   47 |   assert(url_is_protocol("javascript"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:49:10: note: Assuming the condition is true
+   49 |   assert(0 == strcmp("http",                       url_get_protocol(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:49:3: note: '?' condition is true
+   49 |   assert(0 == strcmp("http",                       url_get_protocol(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:10: note: Assuming the condition is true
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:3: note: '?' condition is true
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:52: note: Calling 'url_get_hostname'
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |                                                    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:376:8: note: 'protocol' is non-null
+  376 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:376:3: note: Taking false branch
+  376 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:377:7: note: 'auth' is null
+  377 |   if (auth) l += strlen(auth) + 1; // add one @ symbol
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:377:3: note: Taking false branch
+  377 |   if (auth) l += strlen(auth) + 1; // add one @ symbol
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:378:7: note: 'auth' is null
+  378 |   if (auth) free(auth);
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:378:3: note: Taking false branch
+  378 |   if (auth) free(auth);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:384:21: note: '?' condition is true
+  384 |   char * hostname = url_is_ssh(tmp_protocol)
+      |                     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:385:14: note: Calling 'get_part'
+  385 |            ? get_part(url, "%[^:]", l)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:16: note: 'tmp_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:28: note: 'fmt_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                            ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:39: note: Assuming 'ret' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                                       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:3: note: Taking false branch
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:7: note: Assuming the condition is true
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:3: note: Taking true branch
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:212:11: note: Calling 'strdup'
+  212 |     ret = strdup(tmp);
+      |           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:212:11: note: Returned allocated memory
+  212 |     ret = strdup(tmp);
+      |           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:223:10: note: 'has' is true
+  223 |   return has? ret : NULL;
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:223:10: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:385:14: note: Returned allocated memory
+  385 |            ? get_part(url, "%[^:]", l)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:52: note: Returned allocated memory
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |                                                    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:10: note: Assuming the condition is true
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:3: note: '?' condition is true
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:3: note: Potential memory leak
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |   ^
+/usr/include/assert.h:110:28: note: expanded from macro 'assert'
+  110 |      ? __ASSERT_VOID_CAST (0)                                           \
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:52:3: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+   52 |   assert(0 == strcmp("subdomain.host.com",         url_get_host(url)));
+      |   ^
+/usr/include/assert.h:110:28: note: expanded from macro 'assert'
+  110 |      ? __ASSERT_VOID_CAST (0)                                           \
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:15:10: note: 'parsed' is non-null
+   15 |   assert(parsed);
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:15:3: note: '?' condition is true
+   15 |   assert(parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:16:3: note: Assuming 'gh_parsed' is non-null
+   16 |   assert(gh_parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:16:3: note: '?' condition is true
+   16 |   assert(gh_parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:21:18: note: Field 'href' is non-null
+   21 |   assert(parsed->href);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:21:3: note: '?' condition is true
+   21 |   assert(parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:22:18: note: Field 'auth' is non-null
+   22 |   assert(parsed->auth);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:22:3: note: '?' condition is true
+   22 |   assert(parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:23:18: note: Field 'protocol' is non-null
+   23 |   assert(parsed->protocol);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:23:3: note: '?' condition is true
+   23 |   assert(parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:24:18: note: Field 'port' is non-null
+   24 |   assert(parsed->port);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:24:3: note: '?' condition is true
+   24 |   assert(parsed->port);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:25:18: note: Field 'hostname' is non-null
+   25 |   assert(parsed->hostname);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:25:3: note: '?' condition is true
+   25 |   assert(parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:26:18: note: Field 'host' is non-null
+   26 |   assert(parsed->host);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:26:3: note: '?' condition is true
+   26 |   assert(parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:27:18: note: Field 'pathname' is non-null
+   27 |   assert(parsed->pathname);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:27:3: note: '?' condition is true
+   27 |   assert(parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:28:18: note: Field 'path' is non-null
+   28 |   assert(parsed->path);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:28:3: note: '?' condition is true
+   28 |   assert(parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:29:18: note: Field 'hash' is non-null
+   29 |   assert(parsed->hash);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:29:3: note: '?' condition is true
+   29 |   assert(parsed->hash);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:30:18: note: Field 'search' is non-null
+   30 |   assert(parsed->search);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:30:3: note: '?' condition is true
+   30 |   assert(parsed->search);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:31:18: note: Field 'query' is non-null
+   31 |   assert(parsed->query);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:31:3: note: '?' condition is true
+   31 |   assert(parsed->query);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:33:3: note: Assuming field 'href' is non-null
+   33 |   assert(gh_parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:33:3: note: '?' condition is true
+   33 |   assert(gh_parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:34:3: note: Assuming field 'protocol' is non-null
+   34 |   assert(gh_parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:34:3: note: '?' condition is true
+   34 |   assert(gh_parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:35:3: note: Assuming field 'host' is non-null
+   35 |   assert(gh_parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:35:3: note: '?' condition is true
+   35 |   assert(gh_parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:36:3: note: Assuming field 'auth' is non-null
+   36 |   assert(gh_parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:36:3: note: '?' condition is true
+   36 |   assert(gh_parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:37:3: note: Assuming field 'hostname' is non-null
+   37 |   assert(gh_parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:37:3: note: '?' condition is true
+   37 |   assert(gh_parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:38:3: note: Assuming field 'pathname' is non-null
+   38 |   assert(gh_parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:38:3: note: '?' condition is true
+   38 |   assert(gh_parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:39:3: note: Assuming field 'path' is non-null
+   39 |   assert(gh_parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:39:3: note: '?' condition is true
+   39 |   assert(gh_parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:41:3: note: Assuming the condition is true
+   41 |   assert(url_is_protocol("http"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:41:3: note: '?' condition is true
+   41 |   assert(url_is_protocol("http"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:42:3: note: Assuming the condition is true
+   42 |   assert(url_is_protocol("https"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:42:3: note: '?' condition is true
+   42 |   assert(url_is_protocol("https"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:43:3: note: Assuming the condition is true
+   43 |   assert(url_is_protocol("git"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:43:3: note: '?' condition is true
+   43 |   assert(url_is_protocol("git"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:44:3: note: Assuming the condition is true
+   44 |   assert(url_is_protocol("ssh"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:44:3: note: '?' condition is true
+   44 |   assert(url_is_protocol("ssh"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:45:3: note: Assuming the condition is true
+   45 |   assert(url_is_protocol("sftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:45:3: note: '?' condition is true
+   45 |   assert(url_is_protocol("sftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:46:3: note: Assuming the condition is true
+   46 |   assert(url_is_protocol("ftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:46:3: note: '?' condition is true
+   46 |   assert(url_is_protocol("ftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:47:3: note: Assuming the condition is true
+   47 |   assert(url_is_protocol("javascript"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:47:3: note: '?' condition is true
+   47 |   assert(url_is_protocol("javascript"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:49:10: note: Assuming the condition is true
+   49 |   assert(0 == strcmp("http",                       url_get_protocol(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:49:3: note: '?' condition is true
+   49 |   assert(0 == strcmp("http",                       url_get_protocol(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:10: note: Assuming the condition is true
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:3: note: '?' condition is true
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:10: note: Assuming the condition is true
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:3: note: '?' condition is true
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:52:52: note: Calling 'url_get_host'
+   52 |   assert(0 == strcmp("subdomain.host.com",         url_get_host(url)));
+      |                                                    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:393:16: note: Memory is allocated
+  393 |   char *host = malloc(sizeof(char));
+      |                ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:396:7: note: Assuming 'host' is non-null
+  396 |   if (!host || !hostname) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:396:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:396:17: note: 'hostname' is non-null
+  396 |   if (!host || !hostname) return NULL;
+      |                 ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:396:3: note: Taking false branch
+  396 |   if (!host || !hostname) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:52:52: note: Returned allocated memory
+   52 |   assert(0 == strcmp("subdomain.host.com",         url_get_host(url)));
+      |                                                    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:52:10: note: Assuming the condition is true
+   52 |   assert(0 == strcmp("subdomain.host.com",         url_get_host(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:52:3: note: '?' condition is true
+   52 |   assert(0 == strcmp("subdomain.host.com",         url_get_host(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:52:3: note: Potential memory leak
+   52 |   assert(0 == strcmp("subdomain.host.com",         url_get_host(url)));
+      |   ^
+/usr/include/assert.h:110:28: note: expanded from macro 'assert'
+  110 |      ? __ASSERT_VOID_CAST (0)                                           \
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:53:3: warning: Potential memory leak [clang-analyzer-unix.Malloc]
+   53 |   assert(0 == strcmp("/p/a/t/h",                   url_get_pathname(url)));
+      |   ^
+/usr/include/assert.h:110:28: note: expanded from macro 'assert'
+  110 |      ? __ASSERT_VOID_CAST (0)                                           \
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:15:10: note: 'parsed' is non-null
+   15 |   assert(parsed);
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:15:3: note: '?' condition is true
+   15 |   assert(parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:16:3: note: Assuming 'gh_parsed' is non-null
+   16 |   assert(gh_parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:16:3: note: '?' condition is true
+   16 |   assert(gh_parsed);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:21:18: note: Field 'href' is non-null
+   21 |   assert(parsed->href);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:21:3: note: '?' condition is true
+   21 |   assert(parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:22:18: note: Field 'auth' is non-null
+   22 |   assert(parsed->auth);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:22:3: note: '?' condition is true
+   22 |   assert(parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:23:18: note: Field 'protocol' is non-null
+   23 |   assert(parsed->protocol);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:23:3: note: '?' condition is true
+   23 |   assert(parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:24:18: note: Field 'port' is non-null
+   24 |   assert(parsed->port);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:24:3: note: '?' condition is true
+   24 |   assert(parsed->port);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:25:18: note: Field 'hostname' is non-null
+   25 |   assert(parsed->hostname);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:25:3: note: '?' condition is true
+   25 |   assert(parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:26:18: note: Field 'host' is non-null
+   26 |   assert(parsed->host);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:26:3: note: '?' condition is true
+   26 |   assert(parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:27:18: note: Field 'pathname' is non-null
+   27 |   assert(parsed->pathname);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:27:3: note: '?' condition is true
+   27 |   assert(parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:28:18: note: Field 'path' is non-null
+   28 |   assert(parsed->path);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:28:3: note: '?' condition is true
+   28 |   assert(parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:29:18: note: Field 'hash' is non-null
+   29 |   assert(parsed->hash);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:29:3: note: '?' condition is true
+   29 |   assert(parsed->hash);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:30:18: note: Field 'search' is non-null
+   30 |   assert(parsed->search);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:30:3: note: '?' condition is true
+   30 |   assert(parsed->search);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:31:18: note: Field 'query' is non-null
+   31 |   assert(parsed->query);
+      |                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:31:3: note: '?' condition is true
+   31 |   assert(parsed->query);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:33:3: note: Assuming field 'href' is non-null
+   33 |   assert(gh_parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:33:3: note: '?' condition is true
+   33 |   assert(gh_parsed->href);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:34:3: note: Assuming field 'protocol' is non-null
+   34 |   assert(gh_parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:34:3: note: '?' condition is true
+   34 |   assert(gh_parsed->protocol);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:35:3: note: Assuming field 'host' is non-null
+   35 |   assert(gh_parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:35:3: note: '?' condition is true
+   35 |   assert(gh_parsed->host);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:36:3: note: Assuming field 'auth' is non-null
+   36 |   assert(gh_parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:36:3: note: '?' condition is true
+   36 |   assert(gh_parsed->auth);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:37:3: note: Assuming field 'hostname' is non-null
+   37 |   assert(gh_parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:37:3: note: '?' condition is true
+   37 |   assert(gh_parsed->hostname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:38:3: note: Assuming field 'pathname' is non-null
+   38 |   assert(gh_parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:38:3: note: '?' condition is true
+   38 |   assert(gh_parsed->pathname);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:39:3: note: Assuming field 'path' is non-null
+   39 |   assert(gh_parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:39:3: note: '?' condition is true
+   39 |   assert(gh_parsed->path);
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:41:3: note: Assuming the condition is true
+   41 |   assert(url_is_protocol("http"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:41:3: note: '?' condition is true
+   41 |   assert(url_is_protocol("http"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:42:3: note: Assuming the condition is true
+   42 |   assert(url_is_protocol("https"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:42:3: note: '?' condition is true
+   42 |   assert(url_is_protocol("https"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:43:3: note: Assuming the condition is true
+   43 |   assert(url_is_protocol("git"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:43:3: note: '?' condition is true
+   43 |   assert(url_is_protocol("git"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:44:3: note: Assuming the condition is true
+   44 |   assert(url_is_protocol("ssh"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:44:3: note: '?' condition is true
+   44 |   assert(url_is_protocol("ssh"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:45:3: note: Assuming the condition is true
+   45 |   assert(url_is_protocol("sftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:45:3: note: '?' condition is true
+   45 |   assert(url_is_protocol("sftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:46:3: note: Assuming the condition is true
+   46 |   assert(url_is_protocol("ftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:46:3: note: '?' condition is true
+   46 |   assert(url_is_protocol("ftp"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:47:3: note: Assuming the condition is true
+   47 |   assert(url_is_protocol("javascript"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:47:3: note: '?' condition is true
+   47 |   assert(url_is_protocol("javascript"));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:49:10: note: Assuming the condition is true
+   49 |   assert(0 == strcmp("http",                       url_get_protocol(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:49:3: note: '?' condition is true
+   49 |   assert(0 == strcmp("http",                       url_get_protocol(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:10: note: Assuming the condition is true
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:50:3: note: '?' condition is true
+   50 |   assert(0 == strcmp("user:pass",                  url_get_auth(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:10: note: Assuming the condition is true
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:51:3: note: '?' condition is true
+   51 |   assert(0 == strcmp("subdomain.host.com:8080",    url_get_hostname(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:52:10: note: Assuming the condition is true
+   52 |   assert(0 == strcmp("subdomain.host.com",         url_get_host(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:52:3: note: '?' condition is true
+   52 |   assert(0 == strcmp("subdomain.host.com",         url_get_host(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:53:52: note: Calling 'url_get_pathname'
+   53 |   assert(0 == strcmp("/p/a/t/h",                   url_get_pathname(url)));
+      |                                                    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:408:20: note: Memory is allocated
+  408 |   char *pathname = malloc(sizeof(char));
+      |                    ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:410:7: note: Assuming 'path' is non-null
+  410 |   if (!path || !pathname) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:410:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:410:16: note: Assuming 'pathname' is non-null
+  410 |   if (!path || !pathname) return NULL;
+      |                ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:410:3: note: Taking false branch
+  410 |   if (!path || !pathname) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:53:52: note: Returned allocated memory
+   53 |   assert(0 == strcmp("/p/a/t/h",                   url_get_pathname(url)));
+      |                                                    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:53:10: note: Assuming the condition is true
+   53 |   assert(0 == strcmp("/p/a/t/h",                   url_get_pathname(url)));
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:53:3: note: '?' condition is true
+   53 |   assert(0 == strcmp("/p/a/t/h",                   url_get_pathname(url)));
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:53:3: note: Potential memory leak
+   53 |   assert(0 == strcmp("/p/a/t/h",                   url_get_pathname(url)));
+      |   ^
+/usr/include/assert.h:110:28: note: expanded from macro 'assert'
+  110 |      ? __ASSERT_VOID_CAST (0)                                           \
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:182:9: warning: Dereference of null pointer [clang-analyzer-core.NullDereference]
+  182 |     y = *ptr--;
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is false
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is false
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:258:17: note: Calling 'get_part'
+  258 |               : get_part(tmp_url, "%[^/]", protocol_len + auth_len);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:16: note: 'tmp_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:28: note: 'fmt_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                            ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:39: note: Assuming 'ret' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                                       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:3: note: Taking false branch
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:7: note: Assuming the condition is false
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:3: note: Taking false branch
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:217:13: note: Calling 'strrwd'
+  217 |   fmt_url = strrwd(fmt_url, l);
+      |             ^~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:181:3: note: Loop condition is true.  Entering loop body
+  181 |   for (int i = 0; i < n; ++i) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:182:10: note: Null pointer value stored to 'ptr'
+  182 |     y = *ptr--;
+      |          ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:182:9: note: Dereference of null pointer
+  182 |     y = *ptr--;
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:197:12: warning: Potential leak of memory pointed to by 'fmt_url' [clang-analyzer-unix.Malloc]
+  197 |     return NULL;
+      |            ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is true
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is true
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:257:17: note: Calling 'get_part'
+  257 |               ? get_part(tmp_url, "%[^:]", protocol_len + auth_len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:193:19: note: Calling 'strdup'
+  193 |   char *fmt_url = strdup(url);
+      |                   ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:193:19: note: Returned allocated memory
+  193 |   char *fmt_url = strdup(url);
+      |                   ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:12: note: Left side of '||' is true
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:197:12: note: Potential leak of memory pointed to by 'fmt_url'
+  197 |     return NULL;
+      |            ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:197:12: warning: Potential leak of memory pointed to by 'ret' [clang-analyzer-unix.Malloc]
+  197 |     return NULL;
+      |            ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is true
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is true
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:257:17: note: Calling 'get_part'
+  257 |               ? get_part(tmp_url, "%[^:]", protocol_len + auth_len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:194:15: note: Memory is allocated
+  194 |   char *ret = malloc(sizeof(char));
+      |               ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:12: note: Left side of '||' is true
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:197:12: note: Potential leak of memory pointed to by 'ret'
+  197 |     return NULL;
+      |            ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:197:12: warning: Potential leak of memory pointed to by 'tmp' [clang-analyzer-unix.Malloc]
+  197 |     return NULL;
+      |            ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is true
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is true
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:257:17: note: Calling 'get_part'
+  257 |               ? get_part(tmp_url, "%[^:]", protocol_len + auth_len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:191:15: note: Memory is allocated
+  191 |   char *tmp = malloc(sizeof(char));
+      |               ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:16: note: 'tmp_url' is null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:24: note: Left side of '||' is true
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:197:12: note: Potential leak of memory pointed to by 'tmp'
+  197 |     return NULL;
+      |            ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:197:12: warning: Potential leak of memory pointed to by 'tmp_url' [clang-analyzer-unix.Malloc]
+  197 |     return NULL;
+      |            ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is true
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is true
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:257:17: note: Calling 'get_part'
+  257 |               ? get_part(tmp_url, "%[^:]", protocol_len + auth_len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:192:19: note: Calling 'strdup'
+  192 |   char *tmp_url = strdup(url);
+      |                   ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:192:19: note: Returned allocated memory
+  192 |   char *tmp_url = strdup(url);
+      |                   ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:12: note: Left side of '||' is true
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:197:12: note: Potential leak of memory pointed to by 'tmp_url'
+  197 |     return NULL;
+      |            ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:219:3: warning: Potential leak of memory pointed to by 'fmt_url' [clang-analyzer-unix.Malloc]
+  219 |   free(tmp);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is false
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is false
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:258:17: note: Calling 'get_part'
+  258 |               : get_part(tmp_url, "%[^/]", protocol_len + auth_len);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:16: note: 'tmp_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:28: note: 'fmt_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                            ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:39: note: Assuming 'ret' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                                       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:3: note: Taking false branch
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:206:13: note: Calling 'strff'
+  206 |   fmt_url = strff(fmt_url, l);
+      |             ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:171:19: note: Assuming 'i' is >= 'n'
+  171 |   for (int i = 0; i < n; ++i) {
+      |                   ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:171:3: note: Loop condition is false. Execution continues on line 175
+  171 |   for (int i = 0; i < n; ++i) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:175:10: note: Calling 'strdup'
+  175 |   return strdup(ptr);
+      |          ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:175:10: note: Returned allocated memory
+  175 |   return strdup(ptr);
+      |          ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:206:13: note: Returned allocated memory
+  206 |   fmt_url = strff(fmt_url, l);
+      |             ^~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:7: note: Assuming the condition is false
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:3: note: Taking false branch
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:219:3: note: Potential leak of memory pointed to by 'fmt_url'
+  219 |   free(tmp);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:25: warning: Potential leak of memory pointed to by 'data' [clang-analyzer-unix.Malloc]
+  237 |   if (!protocol) return NULL;
+      |                         ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:228:22: note: Memory is allocated
+  228 |   url_data_t *data = malloc(sizeof(url_data_t));
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking true branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:25: note: Potential leak of memory pointed to by 'data'
+  237 |   if (!protocol) return NULL;
+      |                         ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:25: warning: Potential leak of memory pointed to by 'tmp_url' [clang-analyzer-unix.Malloc]
+  237 |   if (!protocol) return NULL;
+      |                         ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:233:19: note: Calling 'strdup'
+  233 |   char *tmp_url = strdup(url);
+      |                   ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:233:19: note: Returned allocated memory
+  233 |   char *tmp_url = strdup(url);
+      |                   ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking true branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:25: note: Potential leak of memory pointed to by 'tmp_url'
+  237 |   if (!protocol) return NULL;
+      |                         ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:248:16: warning: Potential leak of memory pointed to by 'auth' [clang-analyzer-unix.Malloc]
+  248 |     auth_len = strlen(auth);
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:244:16: note: Memory is allocated
+  244 |   char *auth = malloc(sizeof(char));
+      |                ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is non-null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking true branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:248:16: note: Potential leak of memory pointed to by 'auth'
+  248 |     auth_len = strlen(auth);
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:267:21: warning: Potential leak of memory pointed to by 'tmp_hostname' [clang-analyzer-unix.Malloc]
+  267 |   if (!host) return NULL;
+      |                     ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is true
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is true
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:260:8: note: 'hostname' is non-null
+  260 |   if (!hostname) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:260:3: note: Taking false branch
+  260 |   if (!hostname) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:262:24: note: Calling 'strdup'
+  262 |   char *tmp_hostname = strdup(hostname);
+      |                        ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:262:24: note: Returned allocated memory
+  262 |   char *tmp_hostname = strdup(hostname);
+      |                        ^~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:267:7: note: Assuming 'host' is null
+  267 |   if (!host) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:267:3: note: Taking true branch
+  267 |   if (!host) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:267:21: note: Potential leak of memory pointed to by 'tmp_hostname'
+  267 |   if (!host) return NULL;
+      |                     ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:278:21: warning: Potential leak of memory pointed to by 'tmp_path' [clang-analyzer-unix.Malloc]
+  278 |   if (!path) return NULL;
+      |                     ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is true
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is true
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:260:8: note: 'hostname' is non-null
+  260 |   if (!hostname) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:260:3: note: Taking false branch
+  260 |   if (!hostname) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:267:7: note: Assuming 'host' is non-null
+  267 |   if (!host) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:267:3: note: Taking false branch
+  267 |   if (!host) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:273:15: note: 'is_ssh' is true
+  273 |   tmp_path = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:273:14: note: '?' condition is true
+  273 |   tmp_path = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:274:17: note: Calling 'get_part'
+  274 |               ? get_part(tmp_url, ":%s", protocol_len + auth_len + hostname_len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Assuming 'tmp' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:16: note: 'tmp_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:28: note: 'fmt_url' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                            ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:7: note: Left side of '||' is false
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:39: note: Assuming 'ret' is non-null
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |                                       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:196:3: note: Taking false branch
+  196 |   if (!tmp || !tmp_url || !fmt_url || !ret)
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:7: note: Assuming the condition is true
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:210:3: note: Taking true branch
+  210 |   if (0 != strcmp(tmp, tmp_url)) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:212:11: note: Calling 'strdup'
+  212 |     ret = strdup(tmp);
+      |           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:212:11: note: Returned allocated memory
+  212 |     ret = strdup(tmp);
+      |           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:223:10: note: 'has' is true
+  223 |   return has? ret : NULL;
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:223:10: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:274:17: note: Returned allocated memory
+  274 |               ? get_part(tmp_url, ":%s", protocol_len + auth_len + hostname_len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:278:7: note: Assuming 'path' is null
+  278 |   if (!path) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:278:3: note: Taking true branch
+  278 |   if (!path) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:278:21: note: Potential leak of memory pointed to by 'tmp_path'
+  278 |   if (!path) return NULL;
+      |                     ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:293:23: warning: Potential leak of memory pointed to by 'tmp_path' [clang-analyzer-unix.Malloc]
+  293 |   if (!search) return NULL;
+      |                       ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:8: note: Assuming 'tmp' is null
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |        ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:246:3: note: Taking false branch
+  246 |   if ((tmp = strstr(tmp_url, "@"))) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:15: note: 'is_ssh' is true
+  256 |   hostname = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:256:14: note: '?' condition is true
+  256 |   hostname = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:260:8: note: 'hostname' is non-null
+  260 |   if (!hostname) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:260:3: note: Taking false branch
+  260 |   if (!hostname) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:267:7: note: Assuming 'host' is non-null
+  267 |   if (!host) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:267:3: note: Taking false branch
+  267 |   if (!host) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:273:15: note: 'is_ssh' is true
+  273 |   tmp_path = (is_ssh)
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:273:14: note: '?' condition is true
+  273 |   tmp_path = (is_ssh)
+      |              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:278:7: note: Assuming 'path' is non-null
+  278 |   if (!path) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:278:3: note: Taking false branch
+  278 |   if (!path) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:279:16: note: 'is_ssh' is true
+  279 |   char *fmt = (is_ssh)? "%s" : "/%s";
+      |                ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:279:15: note: '?' condition is true
+  279 |   char *fmt = (is_ssh)? "%s" : "/%s";
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:285:7: note: Assuming 'pathname' is non-null
+  285 |   if (!pathname) return NULL;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:285:3: note: Taking false branch
+  285 |   if (!pathname) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:287:14: note: Calling 'strdup'
+  287 |   tmp_path = strdup(path);
+      |              ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:287:14: note: Returned allocated memory
+  287 |   tmp_path = strdup(path);
+      |              ^~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:293:7: note: Assuming 'search' is null
+  293 |   if (!search) return NULL;
+      |       ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:293:3: note: Taking true branch
+  293 |   if (!search) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:293:23: note: Potential leak of memory pointed to by 'tmp_path'
+  293 |   if (!search) return NULL;
+      |                       ^
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:348:10: warning: Potential leak of memory pointed to by 'str' [clang-analyzer-unix.Malloc]
+  348 |   return false;
+      |          ^
+/usr/lib/llvm-18/lib/clang/18/include/stdbool.h:22:15: note: expanded from macro 'false'
+   22 | #define false 0
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/test.c:12:24: note: Calling 'url_parse'
+   12 |   url_data_t *parsed = url_parse(url);
+      |                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:7: note: Assuming 'data' is non-null
+  229 |   if (!data) return NULL;
+      |       ^~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:229:3: note: Taking false branch
+  229 |   if (!data) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:8: note: 'protocol' is non-null
+  237 |   if (!protocol) return NULL;
+      |        ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:237:3: note: Taking false branch
+  237 |   if (!protocol) return NULL;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:242:12: note: Calling 'url_is_ssh'
+  242 |   is_ssh = url_is_ssh(protocol);
+      |            ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:340:9: note: Calling 'strdup'
+  340 |   str = strdup(str);
+      |         ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:161:15: note: Memory is allocated
+  161 |   char *dup = malloc(n);
+      |               ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:7: note: Assuming 'dup' is non-null
+  162 |   if (dup) strcpy(dup, str);
+      |       ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:162:3: note: Taking true branch
+  162 |   if (dup) strcpy(dup, str);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:340:9: note: Returned allocated memory
+  340 |   str = strdup(str);
+      |         ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:341:7: note: Assuming the condition is false
+  341 |   if (0 == strcmp(str, "ssh") ||
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:341:7: note: Left side of '||' is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:342:7: note: Assuming the condition is false
+  342 |       0 == strcmp(str, "git")) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:341:3: note: Taking false branch
+  341 |   if (0 == strcmp(str, "ssh") ||
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/urlparser/repo/url.h:348:10: note: Potential leak of memory pointed to by 'str'
+  348 |   return false;
+      |          ^
+/usr/lib/llvm-18/lib/clang/18/include/stdbool.h:22:15: note: expanded from macro 'false'
+   22 | #define false 0
+      |               ^
+Suppressed 14 warnings (14 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

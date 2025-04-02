@@ -1,0 +1,4373 @@
+    Checking libxml2_partial_clippy v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/3-Rust-Clippy-Analysis/libxml2_partial_clippy)
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:13:3
+   |
+13 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+13 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:20:3
+   |
+20 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+20 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:27:3
+   |
+27 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+27 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:34:3
+   |
+34 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+34 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:41:3
+   |
+41 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+41 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:49:3
+   |
+49 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+49 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:57:3
+   |
+57 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+57 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:65:3
+   |
+65 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+65 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:73:3
+   |
+73 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+73 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:81:3
+   |
+81 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+81 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:89:3
+   |
+89 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+89 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/xchecks.rs:97:3
+   |
+97 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+97 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: extern blocks must be unsafe
+  --> src/trio.rs:5:1
+   |
+5  | / extern "C" {
+6  | |     pub type _IO_wide_data;
+7  | |     pub type _IO_codecvt;
+8  | |     pub type _IO_marker;
+...  |
+88 | |     fn localeconv() -> *mut lconv;
+89 | | }
+   | |_^
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2101:3
+     |
+2101 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2101 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2122:3
+     |
+2122 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2122 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2139:3
+     |
+2139 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2139 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2156:3
+     |
+2156 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2156 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2178:3
+     |
+2178 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2178 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2196:3
+     |
+2196 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2196 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2214:3
+     |
+2214 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2214 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2236:3
+     |
+2236 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2236 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2254:3
+     |
+2254 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2254 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2272:3
+     |
+2272 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2272 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2301:3
+     |
+2301 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2301 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2326:3
+     |
+2326 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2326 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2351:3
+     |
+2351 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2351 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2374:3
+     |
+2374 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2374 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2395:3
+     |
+2395 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2395 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2416:3
+     |
+2416 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2416 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2446:3
+     |
+2446 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2446 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2474:3
+     |
+2474 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2474 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2502:3
+     |
+2502 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2502 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2529:3
+     |
+2529 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2529 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2554:3
+     |
+2554 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2554 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2582:3
+     |
+2582 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2582 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2609:3
+     |
+2609 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2609 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2644:3
+     |
+2644 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2644 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2678:3
+     |
+2678 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2678 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2742:3
+     |
+2742 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2742 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2768:3
+     |
+2768 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2768 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2774:3
+     |
+2774 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2774 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2778:3
+     |
+2778 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2778 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2782:3
+     |
+2782 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2782 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2789:3
+     |
+2789 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2789 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2793:3
+     |
+2793 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2793 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2800:3
+     |
+2800 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2800 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2804:3
+     |
+2804 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2804 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2811:3
+     |
+2811 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2811 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2821:3
+     |
+2821 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2821 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2834:3
+     |
+2834 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2834 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2844:3
+     |
+2844 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2844 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2857:3
+     |
+2857 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2857 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2867:3
+     |
+2867 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2867 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2880:3
+     |
+2880 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2880 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2890:3
+     |
+2890 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2890 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2903:3
+     |
+2903 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2903 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2913:3
+     |
+2913 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2913 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2926:3
+     |
+2926 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2926 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2936:3
+     |
+2936 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2936 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2949:3
+     |
+2949 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2949 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2959:3
+     |
+2959 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2959 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2972:3
+     |
+2972 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2972 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2982:3
+     |
+2982 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2982 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:2995:3
+     |
+2995 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2995 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3005:3
+     |
+3005 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3005 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3018:3
+     |
+3018 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3018 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3028:3
+     |
+3028 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3028 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3041:3
+     |
+3041 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3041 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3051:3
+     |
+3051 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3051 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3064:3
+     |
+3064 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3064 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3074:3
+     |
+3074 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3074 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3087:3
+     |
+3087 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3087 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3097:3
+     |
+3097 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3097 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3110:3
+     |
+3110 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3110 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3120:3
+     |
+3120 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3120 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3133:3
+     |
+3133 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3133 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3143:3
+     |
+3143 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3143 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3156:3
+     |
+3156 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3156 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3171:3
+     |
+3171 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3171 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3186:3
+     |
+3186 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3186 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3201:3
+     |
+3201 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3201 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3215:3
+     |
+3215 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3215 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3232:3
+     |
+3232 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3232 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3246:3
+     |
+3246 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3246 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3259:3
+     |
+3259 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3259 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3301:3
+     |
+3301 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3301 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3320:3
+     |
+3320 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3320 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:3335:3
+     |
+3335 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3335 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:4885:3
+     |
+4885 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+4885 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:4906:3
+     |
+4906 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+4906 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:4923:3
+     |
+4923 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+4923 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:4940:3
+     |
+4940 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+4940 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:4962:3
+     |
+4962 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+4962 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:4980:3
+     |
+4980 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+4980 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:4998:3
+     |
+4998 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+4998 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5020:3
+     |
+5020 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5020 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5038:3
+     |
+5038 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5038 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5056:3
+     |
+5056 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5056 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5085:3
+     |
+5085 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5085 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5110:3
+     |
+5110 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5110 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5135:3
+     |
+5135 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5135 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5157:3
+     |
+5157 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5157 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5175:3
+     |
+5175 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5175 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/trio.rs:5193:3
+     |
+5193 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+5193 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: extern blocks must be unsafe
+ --> src/trionan.rs:2:1
+  |
+2 | / extern "C" {
+3 | |     fn nan(_: *const libc::c_char) -> libc::c_double;
+4 | | }
+  | |_^
+
+error: unsafe attribute used without unsafe
+  --> src/trionan.rs:43:3
+   |
+43 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+43 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/trionan.rs:47:3
+   |
+47 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+47 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/trionan.rs:55:3
+   |
+55 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+55 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/trionan.rs:63:3
+   |
+63 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+63 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/trionan.rs:71:3
+   |
+71 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+71 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/trionan.rs:75:3
+   |
+75 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+75 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: unsafe attribute used without unsafe
+  --> src/trionan.rs:88:3
+   |
+88 | #[no_mangle]
+   |   ^^^^^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+88 | #[unsafe(no_mangle)]
+   |   +++++++         +
+
+error: extern blocks must be unsafe
+  --> src/triostr.rs:3:1
+   |
+3  | / extern "C" {
+4  | |     fn __assert_fail(
+5  | |         __assertion: *const libc::c_char,
+6  | |         __file: *const libc::c_char,
+...  |
+63 | |     ) -> size_t;
+64 | | }
+   | |_^
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:107:3
+    |
+107 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+107 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:111:3
+    |
+111 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+111 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:117:3
+    |
+117 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+117 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:121:3
+    |
+121 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+121 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:185:3
+    |
+185 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+185 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:258:3
+    |
+258 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+258 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:321:3
+    |
+321 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+321 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:385:3
+    |
+385 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+385 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:523:3
+    |
+523 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+523 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:529:3
+    |
+529 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+529 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:597:3
+    |
+597 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+597 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:663:3
+    |
+663 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+663 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:729:3
+    |
+729 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+729 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:796:3
+    |
+796 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+796 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:859:3
+    |
+859 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+859 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:926:3
+    |
+926 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+926 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+   --> src/triostr.rs:932:3
+    |
+932 | #[no_mangle]
+    |   ^^^^^^^^^ usage of unsafe attribute
+    |
+help: wrap the attribute in `unsafe(...)`
+    |
+932 | #[unsafe(no_mangle)]
+    |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1069:3
+     |
+1069 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1069 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1152:3
+     |
+1152 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1152 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1187:3
+     |
+1187 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1187 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1222:3
+     |
+1222 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1222 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1258:3
+     |
+1258 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1258 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1351:3
+     |
+1351 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1351 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1443:3
+     |
+1443 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1443 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1546:3
+     |
+1546 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1546 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1609:3
+     |
+1609 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1609 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1690:3
+     |
+1690 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1690 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1725:3
+     |
+1725 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1725 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1896:3
+     |
+1896 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1896 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1903:3
+     |
+1903 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1903 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1910:3
+     |
+1910 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1910 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1974:3
+     |
+1974 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1974 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:1978:3
+     |
+1978 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+1978 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2042:3
+     |
+2042 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2042 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2046:3
+     |
+2046 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2046 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2130:3
+     |
+2130 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2130 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2156:3
+     |
+2156 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2156 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2191:3
+     |
+2191 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2191 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2246:3
+     |
+2246 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2246 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2285:3
+     |
+2285 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2285 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2321:3
+     |
+2321 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2321 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2355:3
+     |
+2355 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2355 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2359:3
+     |
+2359 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2359 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2433:3
+     |
+2433 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2433 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2504:3
+     |
+2504 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2504 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2547:3
+     |
+2547 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2547 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2610:3
+     |
+2610 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2610 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2673:3
+     |
+2673 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2673 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2737:3
+     |
+2737 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2737 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2801:3
+     |
+2801 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2801 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2848:3
+     |
+2848 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2848 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2895:3
+     |
+2895 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2895 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:2958:3
+     |
+2958 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+2958 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3021:3
+     |
+3021 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3021 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3089:3
+     |
+3089 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3089 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3157:3
+     |
+3157 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3157 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3220:3
+     |
+3220 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3220 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3283:3
+     |
+3283 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3283 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3355:3
+     |
+3355 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3355 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3427:3
+     |
+3427 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3427 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3468:3
+     |
+3468 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3468 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3503:3
+     |
+3503 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3503 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3538:3
+     |
+3538 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3538 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3575:3
+     |
+3575 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3575 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3609:3
+     |
+3609 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3609 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3672:3
+     |
+3672 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3672 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3735:3
+     |
+3735 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3735 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3798:3
+     |
+3798 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3798 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3861:3
+     |
+3861 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3861 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3924:3
+     |
+3924 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3924 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+    --> src/triostr.rs:3987:3
+     |
+3987 | #[no_mangle]
+     |   ^^^^^^^^^ usage of unsafe attribute
+     |
+help: wrap the attribute in `unsafe(...)`
+     |
+3987 | #[unsafe(no_mangle)]
+     |   +++++++         +
+
+error: unsafe attribute used without unsafe
+ --> src/DOCBparser.rs:2:3
+  |
+2 | #[no_mangle]
+  |   ^^^^^^^^^ usage of unsafe attribute
+  |
+help: wrap the attribute in `unsafe(...)`
+  |
+2 | #[unsafe(no_mangle)]
+  |   +++++++         +
+
+error[E0432]: unresolved import `libc`
+ --> src/xchecks.rs:1:5
+  |
+1 | use ::libc;
+  |     ^^^^^^ no external crate `libc`
+
+error[E0432]: unresolved import `libc`
+ --> src/trio.rs:1:5
+  |
+1 | use ::libc;
+  |     ^^^^^^ no external crate `libc`
+
+error[E0432]: unresolved import `f128`
+ --> src/trio.rs:2:5
+  |
+2 | use ::f128;
+  |     ^^^^^^ no external crate `f128`
+  |
+help: consider importing this module instead
+  |
+2 | use std::f128;
+  |     ~~~~~~~~~
+
+error[E0432]: unresolved import `num_traits`
+ --> src/trio.rs:3:5
+  |
+3 | use ::num_traits;
+  |     ^^^^^^^^^^^^ no external crate `num_traits`
+
+error[E0432]: unresolved import `libc`
+ --> src/trionan.rs:1:5
+  |
+1 | use ::libc;
+  |     ^^^^^^ no external crate `libc`
+
+error[E0432]: unresolved import `libc`
+ --> src/triostr.rs:1:5
+  |
+1 | use ::libc;
+  |     ^^^^^^ no external crate `libc`
+
+error[E0432]: unresolved import `f128`
+ --> src/triostr.rs:2:5
+  |
+2 | use ::f128;
+  |     ^^^^^^ no external crate `f128`
+  |
+help: consider importing this module instead
+  |
+2 | use std::f128;
+  |     ~~~~~~~~~
+
+error[E0432]: unresolved import `libc`
+ --> src/DOCBparser.rs:1:5
+  |
+1 | use ::libc;
+  |     ^^^^^^ no external crate `libc`
+
+error[E0425]: cannot find function `trio_fpclassify_and_signbit` in this scope
+  --> src/trionan.rs:91:5
+   |
+91 |     trio_fpclassify_and_signbit(number, &mut is_negative);
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+   |
+note: function `crate::trio::trio_fpclassify_and_signbit` exists but is inaccessible
+  --> src/trio.rs:22:5
+   |
+22 | /     fn trio_fpclassify_and_signbit(
+23 | |         number: libc::c_double,
+24 | |         is_negative: *mut libc::c_int,
+25 | |     ) -> libc::c_int;
+   | |_____________________^ not accessible
+
+error[E0658]: extern types are experimental
+ --> src/trio.rs:6:5
+  |
+6 |     pub type _IO_wide_data;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/trio.rs:7:5
+  |
+7 |     pub type _IO_codecvt;
+  |     ^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/trio.rs:8:5
+  |
+8 |     pub type _IO_marker;
+  |     ^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/trio.rs:9:5
+  |
+9 |     pub type _trio_string_t;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2102:1
+     |
+2102 | / pub unsafe extern "C" fn trio_printf(
+2103 | |     mut format: *const libc::c_char,
+2104 | |     mut args: ...
+2105 | | ) -> libc::c_int {
+...    |
+2120 | |     return status;
+2121 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2157:1
+     |
+2157 | / pub unsafe extern "C" fn trio_fprintf(
+2158 | |     mut file: *mut FILE,
+2159 | |     mut format: *const libc::c_char,
+2160 | |     mut args: ...
+...    |
+2176 | |     return status;
+2177 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2215:1
+     |
+2215 | / pub unsafe extern "C" fn trio_dprintf(
+2216 | |     mut fd: libc::c_int,
+2217 | |     mut format: *const libc::c_char,
+2218 | |     mut args: ...
+...    |
+2234 | |     return status;
+2235 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2273:1
+     |
+2273 | / pub unsafe extern "C" fn trio_cprintf(
+2274 | |     mut stream: trio_outstream_t,
+2275 | |     mut closure: trio_pointer_t,
+2276 | |     mut format: *const libc::c_char,
+...    |
+2299 | |     return status;
+2300 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2352:1
+     |
+2352 | / pub unsafe extern "C" fn trio_sprintf(
+2353 | |     mut buffer: *mut libc::c_char,
+2354 | |     mut format: *const libc::c_char,
+2355 | |     mut args: ...
+...    |
+2372 | |     return status;
+2373 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2417:1
+     |
+2417 | / pub unsafe extern "C" fn trio_snprintf(
+2418 | |     mut buffer: *mut libc::c_char,
+2419 | |     mut max: size_t,
+2420 | |     mut format: *const libc::c_char,
+...    |
+2444 | |     return status;
+2445 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2503:1
+     |
+2503 | / pub unsafe extern "C" fn trio_snprintfcat(
+2504 | |     mut buffer: *mut libc::c_char,
+2505 | |     mut max: size_t,
+2506 | |     mut format: *const libc::c_char,
+...    |
+2527 | |     return status;
+2528 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2555:1
+     |
+2555 | / pub unsafe extern "C" fn trio_aprintf(
+2556 | |     mut format: *const libc::c_char,
+2557 | |     mut args: ...
+2558 | | ) -> *mut libc::c_char {
+...    |
+2580 | |     return result;
+2581 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:2610:1
+     |
+2610 | / pub unsafe extern "C" fn trio_asprintf(
+2611 | |     mut result: *mut *mut libc::c_char,
+2612 | |     mut format: *const libc::c_char,
+2613 | |     mut args: ...
+...    |
+2642 | |     return status;
+2643 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:3216:1
+     |
+3216 | / pub unsafe extern "C" fn trio_print_ref(
+3217 | |     mut ref_0: trio_pointer_t,
+3218 | |     mut format: *const libc::c_char,
+3219 | |     mut args: ...
+...    |
+3230 | |     return status;
+3231 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:4886:1
+     |
+4886 | / pub unsafe extern "C" fn trio_scanf(
+4887 | |     mut format: *const libc::c_char,
+4888 | |     mut args: ...
+4889 | | ) -> libc::c_int {
+...    |
+4904 | |     return status;
+4905 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:4941:1
+     |
+4941 | / pub unsafe extern "C" fn trio_fscanf(
+4942 | |     mut file: *mut FILE,
+4943 | |     mut format: *const libc::c_char,
+4944 | |     mut args: ...
+...    |
+4960 | |     return status;
+4961 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:4999:1
+     |
+4999 | / pub unsafe extern "C" fn trio_dscanf(
+5000 | |     mut fd: libc::c_int,
+5001 | |     mut format: *const libc::c_char,
+5002 | |     mut args: ...
+...    |
+5018 | |     return status;
+5019 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:5057:1
+     |
+5057 | / pub unsafe extern "C" fn trio_cscanf(
+5058 | |     mut stream: trio_instream_t,
+5059 | |     mut closure: trio_pointer_t,
+5060 | |     mut format: *const libc::c_char,
+...    |
+5083 | |     return status;
+5084 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: C-variadic functions are unstable
+    --> src/trio.rs:5136:1
+     |
+5136 | / pub unsafe extern "C" fn trio_sscanf(
+5137 | |     mut buffer: *const libc::c_char,
+5138 | |     mut format: *const libc::c_char,
+5139 | |     mut args: ...
+...    |
+5155 | |     return status;
+5156 | | }
+     | |_^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+warning: type `__uint32_t` should have an upper camel case name
+ --> src/xchecks.rs:2:10
+  |
+2 | pub type __uint32_t = libc::c_uint;
+  |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `Uint32T`
+  |
+  = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: type `__uint64_t` should have an upper camel case name
+ --> src/xchecks.rs:3:10
+  |
+3 | pub type __uint64_t = libc::c_ulong;
+  |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `Uint64T`
+
+warning: type `uint32_t` should have an upper camel case name
+ --> src/xchecks.rs:4:10
+  |
+4 | pub type uint32_t = __uint32_t;
+  |          ^^^^^^^^ help: convert the identifier to upper camel case: `Uint32T`
+
+warning: type `uint64_t` should have an upper camel case name
+ --> src/xchecks.rs:5:10
+  |
+5 | pub type uint64_t = __uint64_t;
+  |          ^^^^^^^^ help: convert the identifier to upper camel case: `Uint64T`
+
+warning: type `size_t` should have an upper camel case name
+ --> src/xchecks.rs:6:10
+  |
+6 | pub type size_t = libc::c_ulong;
+  |          ^^^^^^ help: convert the identifier to upper camel case: `SizeT`
+
+warning: operator precedence can trip the unwary
+  --> src/xchecks.rs:46:13
+   |
+46 |       return ((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int
+   |  _____________^
+47 | |         | *(x as *mut uint32_t) as libc::c_ulonglong) as uint64_t;
+   | |____________________________________________________^ help: consider parenthesizing your expression: `((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int) | *(x as *mut uint32_t) as libc::c_ulonglong`
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#precedence
+   = note: `#[warn(clippy::precedence)]` on by default
+
+warning: operator precedence can trip the unwary
+  --> src/xchecks.rs:54:13
+   |
+54 |       return ((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int
+   |  _____________^
+55 | |         | *(x as *mut uint32_t) as libc::c_ulonglong) as uint64_t;
+   | |____________________________________________________^ help: consider parenthesizing your expression: `((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int) | *(x as *mut uint32_t) as libc::c_ulonglong`
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#precedence
+
+warning: operator precedence can trip the unwary
+  --> src/xchecks.rs:62:13
+   |
+62 |       return ((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int
+   |  _____________^
+63 | |         | *(x as *mut uint32_t) as libc::c_ulonglong) as uint64_t;
+   | |____________________________________________________^ help: consider parenthesizing your expression: `((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int) | *(x as *mut uint32_t) as libc::c_ulonglong`
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#precedence
+
+warning: operator precedence can trip the unwary
+  --> src/xchecks.rs:70:13
+   |
+70 |       return ((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int
+   |  _____________^
+71 | |         | *(x as *mut uint32_t) as libc::c_ulonglong) as uint64_t;
+   | |____________________________________________________^ help: consider parenthesizing your expression: `((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int) | *(x as *mut uint32_t) as libc::c_ulonglong`
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#precedence
+
+warning: operator precedence can trip the unwary
+  --> src/xchecks.rs:78:13
+   |
+78 |       return ((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int
+   |  _____________^
+79 | |         | *(x as *mut uint32_t) as libc::c_ulonglong) as uint64_t;
+   | |____________________________________________________^ help: consider parenthesizing your expression: `((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int) | *(x as *mut uint32_t) as libc::c_ulonglong`
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#precedence
+
+warning: operator precedence can trip the unwary
+  --> src/xchecks.rs:86:13
+   |
+86 |       return ((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int
+   |  _____________^
+87 | |         | *(x as *mut uint32_t) as libc::c_ulonglong) as uint64_t;
+   | |____________________________________________________^ help: consider parenthesizing your expression: `((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int) | *(x as *mut uint32_t) as libc::c_ulonglong`
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#precedence
+
+warning: operator precedence can trip the unwary
+  --> src/xchecks.rs:94:13
+   |
+94 |       return ((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int
+   |  _____________^
+95 | |         | *(x as *mut uint32_t) as libc::c_ulonglong) as uint64_t;
+   | |____________________________________________________^ help: consider parenthesizing your expression: `((0xabcd0005 as libc::c_ulonglong) << 32 as libc::c_int) | *(x as *mut uint32_t) as libc::c_ulonglong`
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#precedence
+
+warning: operator precedence can trip the unwary
+   --> src/xchecks.rs:103:13
+    |
+103 |       return ((0xabcd0006 as libc::c_ulonglong) << 32 as libc::c_int
+    |  _____________^
+104 | |         | (*nc).type_0 as libc::c_ulonglong) as uint64_t;
+    | |___________________________________________^ help: consider parenthesizing your expression: `((0xabcd0006 as libc::c_ulonglong) << 32 as libc::c_int) | (*nc).type_0 as libc::c_ulonglong`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#precedence
+
+warning: type `__builtin_va_list` should have an upper camel case name
+  --> src/trio.rs:90:10
+   |
+90 | pub type __builtin_va_list = [__va_list_tag; 1];
+   |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `BuiltinVaList`
+
+warning: type `trio_long_double_t` should have an upper camel case name
+  --> src/trio.rs:99:10
+   |
+99 | pub type trio_long_double_t = f128::f128;
+   |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioLongDoubleT`
+
+warning: type `trio_pointer_t` should have an upper camel case name
+   --> src/trio.rs:100:10
+    |
+100 | pub type trio_pointer_t = *mut libc::c_void;
+    |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioPointerT`
+
+warning: type `size_t` should have an upper camel case name
+   --> src/trio.rs:101:10
+    |
+101 | pub type size_t = libc::c_ulong;
+    |          ^^^^^^ help: convert the identifier to upper camel case: `SizeT`
+
+warning: type `__gnuc_va_list` should have an upper camel case name
+   --> src/trio.rs:102:10
+    |
+102 | pub type __gnuc_va_list = __builtin_va_list;
+    |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `GnucVaList`
+
+warning: type `__int8_t` should have an upper camel case name
+   --> src/trio.rs:103:10
+    |
+103 | pub type __int8_t = libc::c_schar;
+    |          ^^^^^^^^ help: convert the identifier to upper camel case: `Int8T`
+
+warning: type `__int16_t` should have an upper camel case name
+   --> src/trio.rs:104:10
+    |
+104 | pub type __int16_t = libc::c_short;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Int16T`
+
+warning: type `__int32_t` should have an upper camel case name
+   --> src/trio.rs:105:10
+    |
+105 | pub type __int32_t = libc::c_int;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Int32T`
+
+warning: type `__int64_t` should have an upper camel case name
+   --> src/trio.rs:106:10
+    |
+106 | pub type __int64_t = libc::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Int64T`
+
+warning: type `__intmax_t` should have an upper camel case name
+   --> src/trio.rs:107:10
+    |
+107 | pub type __intmax_t = libc::c_long;
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `IntmaxT`
+
+warning: type `__uintmax_t` should have an upper camel case name
+   --> src/trio.rs:108:10
+    |
+108 | pub type __uintmax_t = libc::c_ulong;
+    |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `UintmaxT`
+
+warning: type `__off_t` should have an upper camel case name
+   --> src/trio.rs:109:10
+    |
+109 | pub type __off_t = libc::c_long;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `OffT`
+
+warning: type `__off64_t` should have an upper camel case name
+   --> src/trio.rs:110:10
+    |
+110 | pub type __off64_t = libc::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Off64T`
+
+warning: type `__ssize_t` should have an upper camel case name
+   --> src/trio.rs:111:10
+    |
+111 | pub type __ssize_t = libc::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `SsizeT`
+
+warning: type `_IO_lock_t` should have an upper camel case name
+   --> src/trio.rs:145:10
+    |
+145 | pub type _IO_lock_t = ();
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `IoLockT`
+
+warning: type `va_list` should have an upper camel case name
+   --> src/trio.rs:147:10
+    |
+147 | pub type va_list = __gnuc_va_list;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `VaList`
+
+warning: type `ssize_t` should have an upper camel case name
+   --> src/trio.rs:148:10
+    |
+148 | pub type ssize_t = __ssize_t;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `SsizeT`
+
+warning: type `int8_t` should have an upper camel case name
+   --> src/trio.rs:149:10
+    |
+149 | pub type int8_t = __int8_t;
+    |          ^^^^^^ help: convert the identifier to upper camel case: `Int8T`
+
+warning: type `int16_t` should have an upper camel case name
+   --> src/trio.rs:150:10
+    |
+150 | pub type int16_t = __int16_t;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `Int16T`
+
+warning: type `int32_t` should have an upper camel case name
+   --> src/trio.rs:151:10
+    |
+151 | pub type int32_t = __int32_t;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `Int32T`
+
+warning: type `int64_t` should have an upper camel case name
+   --> src/trio.rs:152:10
+    |
+152 | pub type int64_t = __int64_t;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `Int64T`
+
+warning: type `trio_outstream_t` should have an upper camel case name
+   --> src/trio.rs:163:10
+    |
+163 | pub type trio_outstream_t = Option::<
+    |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioOutstreamT`
+
+warning: type `trio_instream_t` should have an upper camel case name
+   --> src/trio.rs:166:10
+    |
+166 | pub type trio_instream_t = Option::<unsafe extern "C" fn(trio_pointer_t) -> libc::c_int>;
+    |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioInstreamT`
+
+warning: type `trio_class_t` should have an upper camel case name
+   --> src/trio.rs:167:10
+    |
+167 | pub type trio_class_t = _trio_class_t;
+    |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioClassT`
+
+warning: type `trio_uintmax_t` should have an upper camel case name
+   --> src/trio.rs:214:10
+    |
+214 | pub type trio_uintmax_t = uintmax_t;
+    |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioUintmaxT`
+
+warning: type `uintmax_t` should have an upper camel case name
+   --> src/trio.rs:215:10
+    |
+215 | pub type uintmax_t = __uintmax_t;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `UintmaxT`
+
+warning: type `trio_intmax_t` should have an upper camel case name
+   --> src/trio.rs:216:10
+    |
+216 | pub type trio_intmax_t = intmax_t;
+    |          ^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioIntmaxT`
+
+warning: type `intmax_t` should have an upper camel case name
+   --> src/trio.rs:217:10
+    |
+217 | pub type intmax_t = __intmax_t;
+    |          ^^^^^^^^ help: convert the identifier to upper camel case: `IntmaxT`
+
+warning: type `trio_flags_t` should have an upper camel case name
+   --> src/trio.rs:218:10
+    |
+218 | pub type trio_flags_t = libc::c_ulong;
+    |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioFlagsT`
+
+warning: type `trio_reference_t` should have an upper camel case name
+   --> src/trio.rs:219:10
+    |
+219 | pub type trio_reference_t = _trio_reference_t;
+    |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioReferenceT`
+
+warning: type `trio_callback_t` should have an upper camel case name
+   --> src/trio.rs:226:10
+    |
+226 | pub type trio_callback_t = Option::<unsafe extern "C" fn(trio_pointer_t) -> libc::c_int>;
+    |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioCallbackT`
+
+warning: type `trio_userdef_t` should have an upper camel case name
+   --> src/trio.rs:227:10
+    |
+227 | pub type trio_userdef_t = _trio_userdef_t;
+    |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioUserdefT`
+
+warning: type `trio_ulonglong_t` should have an upper camel case name
+   --> src/trio.rs:248:10
+    |
+248 | pub type trio_ulonglong_t = libc::c_ulonglong;
+    |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioUlonglongT`
+
+warning: type `ptrdiff_t` should have an upper camel case name
+   --> src/trio.rs:255:10
+    |
+255 | pub type ptrdiff_t = libc::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `PtrdiffT`
+
+warning: type `trio_longlong_t` should have an upper camel case name
+   --> src/trio.rs:271:10
+    |
+271 | pub type trio_longlong_t = libc::c_longlong;
+    |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioLonglongT`
+
+warning: type `trio_int8_t` should have an upper camel case name
+   --> src/trio.rs:281:10
+    |
+281 | pub type trio_int8_t = int8_t;
+    |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioInt8T`
+
+warning: type `trio_int16_t` should have an upper camel case name
+   --> src/trio.rs:282:10
+    |
+282 | pub type trio_int16_t = int16_t;
+    |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioInt16T`
+
+warning: type `trio_int32_t` should have an upper camel case name
+   --> src/trio.rs:283:10
+    |
+283 | pub type trio_int32_t = int32_t;
+    |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioInt32T`
+
+warning: type `trio_int64_t` should have an upper camel case name
+   --> src/trio.rs:284:10
+    |
+284 | pub type trio_int64_t = int64_t;
+    |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioInt64T`
+
+warning: type `trio_string_t` should have an upper camel case name
+   --> src/trio.rs:334:10
+    |
+334 | pub type trio_string_t = _trio_string_t;
+    |          ^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioStringT`
+
+warning: type `C2RustUnnamed_3` should have an upper camel case name
+   --> src/trio.rs:347:10
+    |
+347 | pub type C2RustUnnamed_3 = libc::c_uint;
+    |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `C2rustUnnamed3`
+
+warning: type `C2RustUnnamed_4` should have an upper camel case name
+   --> src/trio.rs:351:10
+    |
+351 | pub type C2RustUnnamed_4 = libc::c_uint;
+    |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `C2rustUnnamed4`
+
+warning: type `C2RustUnnamed_5` should have an upper camel case name
+   --> src/trio.rs:353:10
+    |
+353 | pub type C2RustUnnamed_5 = libc::c_int;
+    |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `C2rustUnnamed5`
+
+warning: unnecessary parentheses around function argument
+    --> src/trio.rs:4079:13
+     |
+4079 |             (if !target.is_null() {
+     |             ^
+...
+4083 |             }),
+     |              ^
+     |
+     = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+     |
+4079 ~             if !target.is_null() {
+4080 |                 &mut *target.offset(i as isize)
+4081 |             } else {
+4082 |                 0 as *mut libc::c_char
+4083 ~             },
+     |
+
+warning: this `if` statement can be collapsed
+    --> src/trio.rs:4383:12
+     |
+4383 |       } else if TrioReadString(
+     |  ____________^
+4384 | |         self_0,
+4385 | |         if flags & FLAGS_IGNORE as libc::c_int as trio_flags_t != 0 {
+4386 | |             0 as *mut libc::c_char
+...    |
+4401 | |     }
+     | |_____^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#collapsible_if
+     = note: `#[warn(clippy::collapsible_if)]` on by default
+help: collapse nested if block
+     |
+4383 ~     } else if TrioReadString(
+4384 +         self_0,
+4385 +         if flags & FLAGS_IGNORE as libc::c_int as trio_flags_t != 0 {
+4386 +             0 as *mut libc::c_char
+4387 +         } else {
+4388 +             buffer.as_mut_ptr()
+4389 +         },
+4390 +         0 as libc::c_int as trio_flags_t,
+4391 +         (::core::mem::size_of::<[libc::c_char; 6]>() as libc::c_ulong)
+4392 +             .wrapping_sub(1 as libc::c_int as libc::c_ulong) as libc::c_int,
+4393 +     ) != 0 && trio_equal_case(buffer.as_mut_ptr(), internalNullString.as_ptr()) != 0 {
+4394 +         if !target.is_null() {
+4395 +             *target = 0 as *mut libc::c_void;
+4396 +         }
+4397 +         return !(1 as libc::c_int == 0 as libc::c_int) as libc::c_int;
+4398 +     }
+     |
+
+warning: unnecessary parentheses around function argument
+    --> src/trio.rs:4648:29
+     |
+4648 | ...                   (if flags & FLAGS_IGNORE as libc::c_int as trio_flags_t != 0
+     |                       ^
+...
+4653 | ...                   }),
+     |                        ^
+     |
+help: remove these parentheses
+     |
+4648 ~                             if flags & FLAGS_IGNORE as libc::c_int as trio_flags_t != 0
+4649 |                             {
+ ...
+4652 |                                 (*parameters.offset(i as isize)).data.string
+4653 ~                             },
+     |
+
+warning: unnecessary parentheses around function argument
+    --> src/trio.rs:4655:29
+     |
+4655 | ...                   (if width == NO_WIDTH as libc::c_int {
+     |                       ^
+...
+4659 | ...                   }),
+     |                        ^
+     |
+help: remove these parentheses
+     |
+4655 ~                             if width == NO_WIDTH as libc::c_int {
+4656 |                                 1 as libc::c_int
+4657 |                             } else {
+4658 |                                 width
+4659 ~                             },
+     |
+
+warning: type `size_t` should have an upper camel case name
+  --> src/triostr.rs:65:10
+   |
+65 | pub type size_t = libc::c_ulong;
+   |          ^^^^^^ help: convert the identifier to upper camel case: `SizeT`
+
+warning: type `trio_long_double_t` should have an upper camel case name
+  --> src/triostr.rs:79:10
+   |
+79 | pub type trio_long_double_t = f128::f128;
+   |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioLongDoubleT`
+
+warning: type `C2RustUnnamed_0` should have an upper camel case name
+  --> src/triostr.rs:95:10
+   |
+95 | pub type C2RustUnnamed_0 = libc::c_uint;
+   |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `C2rustUnnamed0`
+
+warning: type `trio_string_t` should have an upper camel case name
+   --> src/triostr.rs:106:10
+    |
+106 | pub type trio_string_t = _trio_string_t;
+    |          ^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `TrioStringT`
+
+warning: unused label
+   --> src/triostr.rs:139:5
+    |
+139 |     'c_4668: {
+    |     ^^^^^^^
+    |
+    = note: `#[warn(unused_labels)]` on by default
+
+warning: unused label
+   --> src/triostr.rs:167:5
+    |
+167 |     'c_4635: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:205:5
+    |
+205 |     'c_4780: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:233:5
+    |
+233 |     'c_4748: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:276:5
+    |
+276 |     'c_4864: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:304:5
+    |
+304 |     'c_4831: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:339:5
+    |
+339 |     'c_4951: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:367:5
+    |
+367 |     'c_4918: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:404:5
+    |
+404 |     'c_3219: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:432:5
+    |
+432 |     'c_3186: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:460:5
+    |
+460 |     'c_3143: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:500:5
+    |
+500 |     'c_3345: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:548:5
+    |
+548 |     'c_5058: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:576:5
+    |
+576 |     'c_5019: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:615:5
+    |
+615 |     'c_3454: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:643:5
+    |
+643 |     'c_3421: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:681:5
+    |
+681 |     'c_3560: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:709:5
+    |
+709 |     'c_3528: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:748:5
+    |
+748 |     'c_5167: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:776:5
+    |
+776 |     'c_5134: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:814:5
+    |
+814 |     'c_3639: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:842:5
+    |
+842 |     'c_3606: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:878:5
+    |
+878 |     'c_3750: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:906:5
+    |
+906 |     'c_3717: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:954:5
+    |
+954 |     'c_5327: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/triostr.rs:986:5
+    |
+986 |     'c_5295: {
+    |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1018:5
+     |
+1018 |     'c_5262: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1050:5
+     |
+1050 |     'c_5223: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1089:5
+     |
+1089 |     'c_5448: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1133:13
+     |
+1133 |             'c_5381: {
+     |             ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1170:5
+     |
+1170 |     'c_5494: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1205:5
+     |
+1205 |     'c_5539: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1237:5
+     |
+1237 |     'c_5742: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1276:5
+     |
+1276 |     'c_5928: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1304:5
+     |
+1304 |     'c_5896: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1369:5
+     |
+1369 |     'c_6107: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1397:5
+     |
+1397 |     'c_6075: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1463:5
+     |
+1463 |     'c_5710: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1491:5
+     |
+1491 |     'c_5678: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1519:5
+     |
+1519 |     'c_5645: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1564:5
+     |
+1564 |     'c_6186: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1592:5
+     |
+1592 |     'c_6153: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1631:5
+     |
+1631 |     'c_6331: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1659:5
+     |
+1659 |     'c_6298: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1708:5
+     |
+1708 |     'c_6490: {
+     |     ^^^^^^^
+
+warning: consider removing unnecessary double parentheses
+    --> src/triostr.rs:1776:29
+     |
+1776 | / ...                   (if *(*__ctype_b_loc())
+1777 | | ...                       .offset(*source as libc::c_int as isize) as libc::c_int
+1778 | | ...                       & _ISdigit as libc::c_int as libc::c_ushort as libc::c_int
+1779 | | ...                       != 0
+...    |
+1784 | | ...                           + (trio_to_upper(*source as libc::c_int) - 'A' as i32)
+1785 | | ...                   }),
+     | |________________________^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#double_parens
+     = note: `#[warn(clippy::double_parens)]` on by default
+
+warning: unnecessary parentheses around function argument
+    --> src/triostr.rs:1776:29
+     |
+1776 | ...                   (if *(*__ctype_b_loc())
+     |                       ^
+...
+1785 | ...                   }),
+     |                        ^
+     |
+help: remove these parentheses
+     |
+1776 ~                             if *(*__ctype_b_loc())
+1777 |                                 .offset(*source as libc::c_int as isize) as libc::c_int
+ ...
+1784 |                                     + (trio_to_upper(*source as libc::c_int) - 'A' as i32)
+1785 ~                             },
+     |
+
+warning: unused label
+    --> src/triostr.rs:1929:5
+     |
+1929 |     'c_3877: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1957:5
+     |
+1957 |     'c_3825: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:1997:5
+     |
+1997 |     'c_6445: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2025:5
+     |
+2025 |     'c_6394: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2061:5
+     |
+2061 |     'c_6540: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2171:5
+     |
+2171 |     'c_6607: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2210:5
+     |
+2210 |     'c_7346: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2264:5
+     |
+2264 |     'c_6677: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2303:5
+     |
+2303 |     'c_7405: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2338:5
+     |
+2338 |     'c_6720: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2378:5
+     |
+2378 |     'c_7576: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2406:5
+     |
+2406 |     'c_7543: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2452:5
+     |
+2452 |     'c_8829: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2480:5
+     |
+2480 |     'c_8797: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2522:5
+     |
+2522 |     'c_6925: {
+     |     ^^^^^^^
+
+warning: this `if` statement can be collapsed
+    --> src/triostr.rs:2537:5
+     |
+2537 | /     if (*self_0).length as libc::c_int >= trio_string_size(self_0) {
+2538 | |         if TrioStringGrow(self_0, 0 as libc::c_int as size_t) == 0 {
+2539 | |             return (1 as libc::c_int == 0 as libc::c_int) as libc::c_int;
+2540 | |         }
+2541 | |     }
+     | |_____^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#collapsible_if
+help: collapse nested if block
+     |
+2537 ~     if (*self_0).length as libc::c_int >= trio_string_size(self_0) && TrioStringGrow(self_0, 0 as libc::c_int as size_t) == 0 {
+2538 +         return (1 as libc::c_int == 0 as libc::c_int) as libc::c_int;
+2539 +     }
+     |
+
+warning: unused label
+    --> src/triostr.rs:2565:5
+     |
+2565 |     'c_7661: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2593:5
+     |
+2593 |     'c_7628: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2628:5
+     |
+2628 |     'c_8910: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2656:5
+     |
+2656 |     'c_8878: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2691:5
+     |
+2691 |     'c_7747: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2719:5
+     |
+2719 |     'c_7715: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2755:5
+     |
+2755 |     'c_8997: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2783:5
+     |
+2783 |     'c_8964: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2819:5
+     |
+2819 |     'c_7855: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2866:5
+     |
+2866 |     'c_7080: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2913:5
+     |
+2913 |     'c_7941: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2941:5
+     |
+2941 |     'c_7908: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:2976:5
+     |
+2976 |     'c_9078: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3004:5
+     |
+3004 |     'c_9046: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3040:5
+     |
+3040 |     'c_8030: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3070:5
+     |
+3070 |     'c_7997: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3108:5
+     |
+3108 |     'c_9164: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3138:5
+     |
+3138 |     'c_9131: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3175:5
+     |
+3175 |     'c_8114: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3203:5
+     |
+3203 |     'c_8082: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3238:5
+     |
+3238 |     'c_9245: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3266:5
+     |
+3266 |     'c_9213: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3304:5
+     |
+3304 |     'c_8202: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3336:5
+     |
+3336 |     'c_8169: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3376:5
+     |
+3376 |     'c_9330: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3408:5
+     |
+3408 |     'c_9297: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3449:5
+     |
+3449 |     'c_8257: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3486:5
+     |
+3486 |     'c_8305: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3521:5
+     |
+3521 |     'c_8353: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3555:5
+     |
+3555 |     'c_7299: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3592:5
+     |
+3592 |     'c_8399: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3627:5
+     |
+3627 |     'c_8484: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3655:5
+     |
+3655 |     'c_8452: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3690:5
+     |
+3690 |     'c_9411: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3718:5
+     |
+3718 |     'c_9379: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3753:5
+     |
+3753 |     'c_8568: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3781:5
+     |
+3781 |     'c_8536: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3816:5
+     |
+3816 |     'c_9492: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3844:5
+     |
+3844 |     'c_9460: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3879:5
+     |
+3879 |     'c_8653: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3907:5
+     |
+3907 |     'c_8621: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3942:5
+     |
+3942 |     'c_9574: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:3970:5
+     |
+3970 |     'c_9542: {
+     |     ^^^^^^^
+
+warning: unused label
+    --> src/triostr.rs:4004:5
+     |
+4004 |     'c_8697: {
+     |     ^^^^^^^
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:1899:23
+     |
+1899 |     mut arglist: *mut ::core::ffi::VaList,
+     |                       ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:1938:23
+     |
+1938 |     mut arglist: *mut ::core::ffi::VaList,
+     |                       ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2107:21
+     |
+2107 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2125:15
+     |
+2125 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2135:40
+     |
+2135 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2135:68
+     |
+2135 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2152:19
+     |
+2152 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2163:21
+     |
+2163 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2182:15
+     |
+2182 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2192:40
+     |
+2192 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2192:68
+     |
+2192 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2210:19
+     |
+2210 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2221:21
+     |
+2221 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2240:15
+     |
+2240 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2250:40
+     |
+2250 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2250:68
+     |
+2250 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2268:19
+     |
+2268 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2280:21
+     |
+2280 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2306:15
+     |
+2306 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2322:40
+     |
+2322 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2322:68
+     |
+2322 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2347:19
+     |
+2347 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2358:21
+     |
+2358 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2378:15
+     |
+2378 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2389:40
+     |
+2389 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2389:68
+     |
+2389 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2410:19
+     |
+2410 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2424:21
+     |
+2424 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2451:15
+     |
+2451 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2466:40
+     |
+2466 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2466:68
+     |
+2466 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2494:19
+     |
+2494 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2510:21
+     |
+2510 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2534:15
+     |
+2534 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2548:40
+     |
+2548 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2548:68
+     |
+2548 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2559:21
+     |
+2559 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2585:15
+     |
+2585 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2599:44
+     |
+2599 |             &mut args.as_va_list() as *mut ::core::ffi::VaList
+     |                                            ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2600:25
+     |
+2600 |                 as *mut ::core::ffi::VaList,
+     |                         ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2615:21
+     |
+2615 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2648:15
+     |
+2648 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2666:44
+     |
+2666 |             &mut args.as_va_list() as *mut ::core::ffi::VaList
+     |                                            ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2667:25
+     |
+2667 |                 as *mut ::core::ffi::VaList,
+     |                         ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:3222:22
+     |
+3222 |     let mut arglist: ::core::ffi::VaListImpl;
+     |                      ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:3236:18
+     |
+3236 |     mut arglist: ::core::ffi::VaList,
+     |                  ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:3241:43
+     |
+3241 |         &mut arglist.as_va_list() as *mut ::core::ffi::VaList
+     |                                           ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:3242:21
+     |
+3242 |             as *mut ::core::ffi::VaList,
+     |                     ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:3255:19
+     |
+3255 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4724:23
+     |
+4724 |     mut arglist: *mut ::core::ffi::VaList,
+     |                       ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4891:21
+     |
+4891 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4909:15
+     |
+4909 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4919:40
+     |
+4919 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4919:68
+     |
+4919 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4936:19
+     |
+4936 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4947:21
+     |
+4947 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4966:15
+     |
+4966 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4976:40
+     |
+4976 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4976:68
+     |
+4976 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4994:19
+     |
+4994 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5005:21
+     |
+5005 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5024:15
+     |
+5024 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5034:40
+     |
+5034 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5034:68
+     |
+5034 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5052:19
+     |
+5052 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5064:21
+     |
+5064 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5090:15
+     |
+5090 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5106:40
+     |
+5106 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5106:68
+     |
+5106 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5131:19
+     |
+5131 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5142:21
+     |
+5142 |     let mut args_0: ::core::ffi::VaListImpl;
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5161:15
+     |
+5161 |     mut args: ::core::ffi::VaList,
+     |               ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5171:40
+     |
+5171 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                        ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5171:68
+     |
+5171 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                                                                    ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5189:19
+     |
+5189 |         0 as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0425]: cannot find function, tuple struct or tuple variant `TrioParse` in this scope
+    --> src/trio.rs:1917:14
+     |
+1917 |     status = TrioParse(
+     |              ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `TrioParse` in this scope
+    --> src/trio.rs:1978:14
+     |
+1978 |     status = TrioParse(
+     |              ^^^^^^^^^ not found in this scope
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2117:21
+     |
+2117 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2135:19
+     |
+2135 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2173:21
+     |
+2173 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2192:19
+     |
+2192 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2231:21
+     |
+2231 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2250:19
+     |
+2250 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2296:21
+     |
+2296 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2322:19
+     |
+2322 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2368:21
+     |
+2368 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2389:19
+     |
+2389 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2438:21
+     |
+2438 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2466:19
+     |
+2466 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2523:21
+     |
+2523 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2548:19
+     |
+2548 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2573:25
+     |
+2573 |             &mut args_0.as_va_list(),
+     |                         ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2599:23
+     |
+2599 |             &mut args.as_va_list() as *mut ::core::ffi::VaList
+     |                       ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2633:25
+     |
+2633 |             &mut args_0.as_va_list(),
+     |                         ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:2666:23
+     |
+2666 |             &mut args.as_va_list() as *mut ::core::ffi::VaList
+     |                       ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:3227:22
+     |
+3227 |         &mut arglist.as_va_list(),
+     |                      ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:3241:22
+     |
+3241 |         &mut arglist.as_va_list() as *mut ::core::ffi::VaList
+     |                      ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0425]: cannot find function, tuple struct or tuple variant `TrioParse` in this scope
+    --> src/trio.rs:4764:14
+     |
+4764 |     status = TrioParse(
+     |              ^^^^^^^^^ not found in this scope
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4901:21
+     |
+4901 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4919:19
+     |
+4919 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4957:21
+     |
+4957 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:4976:19
+     |
+4976 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5015:21
+     |
+5015 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5034:19
+     |
+5034 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5080:21
+     |
+5080 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5106:19
+     |
+5106 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5152:21
+     |
+5152 |         &mut args_0.as_va_list(),
+     |                     ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+error[E0658]: use of unstable library feature `c_variadic`: the `c_variadic` feature has not been properly tested on all supported platforms
+    --> src/trio.rs:5171:19
+     |
+5171 |         &mut args.as_va_list() as *mut ::core::ffi::VaList as *mut ::core::ffi::VaList,
+     |                   ^^^^^^^^^^
+     |
+     = note: see issue #44930 <https://github.com/rust-lang/rust/issues/44930> for more information
+
+Some errors have detailed explanations: E0425, E0432, E0658.
+For more information about an error, try `rustc --explain E0425`.
+warning: `libxml2_partial_clippy` (bin "libxml2_partial_clippy") generated 171 warnings
+error: could not compile `libxml2_partial_clippy` (bin "libxml2_partial_clippy") due to 321 previous errors; 171 warnings emitted

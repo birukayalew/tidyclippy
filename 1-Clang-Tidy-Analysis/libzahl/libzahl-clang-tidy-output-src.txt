@@ -1,0 +1,217 @@
+[1/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/allocator.c.
+[2/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zadd.c.
+[3/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zand.c.
+[4/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zbset.c.
+[5/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zdivmod.c.
+[6/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zerror.c.
+[7/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zfree.c.
+[8/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zgcd.c.
+[9/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zload.c.
+[10/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zlsh.c.
+[11/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zmodmul.c.
+[12/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zmodpow.c.
+[13/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zmodpowu.c.
+[14/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zmodsqr.c.
+[15/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zmul.c.
+[16/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/znot.c.
+[17/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zor.c.
+[18/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zperror.c.
+[19/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zpow.c.
+[20/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zpowu.c.
+[21/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zptest.c.
+[22/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c.
+4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c.
+[23/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrsh.c.
+4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrsh.c.
+[24/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zsets.c.
+4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zsets.c.
+[25/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zsetup.c.
+4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zsetup.c.
+[26/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zsqr.c.
+4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zsqr.c.
+[27/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c.
+2 warnings and 4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c.
+[28/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr_length.c.
+2 warnings and 4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr_length.c.
+[29/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zsub.c.
+2 warnings and 4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zsub.c.
+[30/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/ztrunc.c.
+2 warnings and 4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/ztrunc.c.
+[31/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zunsetup.c.
+2 warnings and 4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zunsetup.c.
+[32/32] Processing file /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zxor.c.
+2 warnings and 4 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zxor.c.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c:60:3: error: call to undeclared function 'srand48'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   60 |                 srand48((intptr_t)out | time(NULL));
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c:60:3: note: did you mean 'srand'?
+/usr/include/stdlib.h:575:13: note: 'srand' declared here
+  575 | extern void srand (unsigned int __seed) __THROW;
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c:64:8: error: call to undeclared function 'lrand48'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   64 |                 r0 = lrand48() & 15;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c:82:3: error: call to undeclared function 'srandom'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   82 |                 srandom((unsigned)((intptr_t)out | time(NULL)));
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c:82:3: note: did you mean 'srand'?
+/usr/include/stdlib.h:575:13: note: 'srand' declared here
+  575 | extern void srand (unsigned int __seed) __THROW;
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c:86:8: error: call to undeclared function 'random'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   86 |                 ri = random();
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zrand.c:86:8: note: did you mean 'rand'?
+/usr/include/stdlib.h:573:12: note: 'rand' declared here
+  573 | extern int rand (void) __THROW;
+      |            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:42:8: warning: Assigned value is garbage or undefined [clang-analyzer-core.uninitialized.Assign]
+   42 |                 *d++ = *s++;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:64:2: note: Taking false branch
+   64 |         if (unlikely(zzero(a))) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:72:6: note: Assuming 'n' is not equal to 0
+   72 |         if (!n) {
+      |             ^~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:72:2: note: Taking false branch
+   72 |         if (!n) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:80:15: note: Assuming 'b' is non-null
+   80 |         if (unlikely(!b) && unlikely(!(b = libzahl_temp_allocation = malloc(n + 1))))
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/internals.h:82:52: note: expanded from macro 'unlikely'
+   82 | #define unlikely(expr)               ZAHL_UNLIKELY(expr)
+      |                                                    ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/../zahl/internals.h:14:63: note: expanded from macro 'ZAHL_UNLIKELY'
+   14 | # define ZAHL_UNLIKELY(expr)              __builtin_expect(!!(expr), 0)
+      |                                                               ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:80:19: note: Left side of '&&' is false
+   80 |         if (unlikely(!b) && unlikely(!(b = libzahl_temp_allocation = malloc(n + 1))))
+      |                          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:83:8: note: Assuming the condition is false
+   83 |         neg = znegative(a);
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/internals.h:102:39: note: expanded from macro 'znegative'
+  102 | #define znegative(a)                 (zsignum(a) < 0)
+      |                                       ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:88:6: note: Assuming the condition is false
+   88 |         n = (last = n) > 19 ? (n - 19) : 0;
+      |             ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:88:6: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:90:2: note: Loop condition is true.  Entering loop body
+   90 |         for (;;) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:92:3: note: Taking false branch
+   92 |                 if (likely(!zzero(num))) {
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:99:10: note: Calling 'sprintint_min'
+   99 |                         len = sprintint_min(buf, rem->chars[0]);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:49:2: note: Calling 'sprintint_fix'
+   49 |         sprintint_fix(buf, v);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:49:2: note: Returning from 'sprintint_fix'
+   49 |         sprintint_fix(buf, v);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:9: note: Assuming the condition is true
+   50 |         for (; buf[i] == '0'; i++);
+      |                ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:2: note: Loop condition is true.  Entering loop body
+   50 |         for (; buf[i] == '0'; i++);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:9: note: Assuming the condition is false
+   50 |         for (; buf[i] == '0'; i++);
+      |                ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:2: note: Loop condition is false. Execution continues on line 51
+   50 |         for (; buf[i] == '0'; i++);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:51:2: note: Calling 'cmemmove'
+   51 |         cmemmove(buf, buf + i, j = 19 - i);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:41:2: note: Loop condition is true.  Entering loop body
+   41 |         while (n--)
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:41:2: note: Loop condition is true.  Entering loop body
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:42:8: note: Assigned value is garbage or undefined
+   42 |                 *d++ = *s++;
+      |                      ^ ~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:16: warning: The left operand of '==' is a garbage value [clang-analyzer-core.UndefinedBinaryOperatorResult]
+   50 |         for (; buf[i] == '0'; i++);
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:64:2: note: Taking false branch
+   64 |         if (unlikely(zzero(a))) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:72:6: note: Assuming 'n' is not equal to 0
+   72 |         if (!n) {
+      |             ^~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:72:2: note: Taking false branch
+   72 |         if (!n) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:80:15: note: Assuming 'b' is non-null
+   80 |         if (unlikely(!b) && unlikely(!(b = libzahl_temp_allocation = malloc(n + 1))))
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/internals.h:82:52: note: expanded from macro 'unlikely'
+   82 | #define unlikely(expr)               ZAHL_UNLIKELY(expr)
+      |                                                    ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/../zahl/internals.h:14:63: note: expanded from macro 'ZAHL_UNLIKELY'
+   14 | # define ZAHL_UNLIKELY(expr)              __builtin_expect(!!(expr), 0)
+      |                                                               ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:80:19: note: Left side of '&&' is false
+   80 |         if (unlikely(!b) && unlikely(!(b = libzahl_temp_allocation = malloc(n + 1))))
+      |                          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:83:8: note: Assuming the condition is false
+   83 |         neg = znegative(a);
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/internals.h:102:39: note: expanded from macro 'znegative'
+  102 | #define znegative(a)                 (zsignum(a) < 0)
+      |                                       ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:88:6: note: Assuming the condition is false
+   88 |         n = (last = n) > 19 ? (n - 19) : 0;
+      |             ^~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:88:6: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:90:2: note: Loop condition is true.  Entering loop body
+   90 |         for (;;) {
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:92:3: note: Taking false branch
+   92 |                 if (likely(!zzero(num))) {
+      |                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:99:10: note: Calling 'sprintint_min'
+   99 |                         len = sprintint_min(buf, rem->chars[0]);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:49:2: note: Calling 'sprintint_fix'
+   49 |         sprintint_fix(buf, v);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:49:2: note: Returning from 'sprintint_fix'
+   49 |         sprintint_fix(buf, v);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:9: note: Assuming the condition is true
+   50 |         for (; buf[i] == '0'; i++);
+      |                ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:2: note: Loop condition is true.  Entering loop body
+   50 |         for (; buf[i] == '0'; i++);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:9: note: Assuming the condition is true
+   50 |         for (; buf[i] == '0'; i++);
+      |                ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:2: note: Loop condition is true.  Entering loop body
+   50 |         for (; buf[i] == '0'; i++);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:24: note: The value 2 is assigned to 'i'
+   50 |         for (; buf[i] == '0'; i++);
+      |                               ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libzahl/src/zstr.c:50:16: note: The left operand of '==' is a garbage value
+   50 |         for (; buf[i] == '0'; i++);
+      |                ~~~~~~ ^
+Found compiler error(s).

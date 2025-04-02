@@ -1,0 +1,1595 @@
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:366:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  366 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 1:'  at line 361
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: Assuming 'is_space' is non-null
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |              ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: Assuming the condition is false
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |              ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:71: note: Left side of '&&' is false
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |                                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: Assuming 'is_term' is non-null
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: Assuming the condition is true
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:16: note: Taking true branch
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:365:15: note: 'pstate' is equal to FIELD_NOT_BEGUN
+  365 |           if (pstate == FIELD_NOT_BEGUN) {
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:365:11: note: Taking true branch
+  365 |           if (pstate == FIELD_NOT_BEGUN) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:366:13: note: Assuming 'quoted' is not equal to 0
+  366 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:8: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |        ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:366:13: note: Taking false branch
+  366 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:4: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:366:13: note: Taking true branch
+  366 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:53:4: note: expanded from macro 'SUBMIT_FIELD'
+   53 |    if (p->options & CSV_APPEND_NULL) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:366:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  366 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:376:11: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  376 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 1:'  at line 361
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: Assuming 'is_space' is non-null
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |              ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: Assuming the condition is false
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |              ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:71: note: Left side of '&&' is false
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |                                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: Assuming 'is_term' is non-null
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: Assuming the condition is false
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:16: note: Taking false branch
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:375:20: note: Assuming 'c' is equal to 'delim'
+  375 |         } else if (c == delim) { /* Comma */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:375:16: note: Taking true branch
+  375 |         } else if (c == delim) { /* Comma */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:376:11: note: Assuming 'quoted' is not equal to 0
+  376 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:8: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |        ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:376:11: note: Taking false branch
+  376 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:4: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:376:11: note: Taking true branch
+  376 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:53:4: note: expanded from macro 'SUBMIT_FIELD'
+   53 |    if (p->options & CSV_APPEND_NULL) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:376:11: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  376 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:384:11: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  384 |           SUBMIT_CHAR(p, c);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 1:'  at line 361
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: Assuming 'is_space' is non-null
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |              ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:14: note: Assuming the condition is false
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |              ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:362:71: note: Left side of '&&' is false
+  362 |         if ((is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) && c!=delim) { /* Space or Tab */
+      |                                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: Assuming 'is_term' is non-null
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:20: note: Assuming the condition is false
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:364:16: note: Taking false branch
+  364 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) { /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:375:20: note: Assuming 'c' is not equal to 'delim'
+  375 |         } else if (c == delim) { /* Comma */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:375:16: note: Taking false branch
+  375 |         } else if (c == delim) { /* Comma */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:378:20: note: Assuming 'c' is not equal to 'quote'
+  378 |         } else if (c == quote) { /* Quote */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:378:16: note: Taking false branch
+  378 |         } else if (c == quote) { /* Quote */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:384:11: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  384 |           SUBMIT_CHAR(p, c);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:390:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  390 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 2:'  at line 387
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:13: note: Assuming 'c' is equal to 'quote'
+  388 |         if (c == quote) {         /* Quote */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:9: note: Taking true branch
+  388 |         if (c == quote) {         /* Quote */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:389:15: note: Assuming 'quoted' is not equal to 0
+  389 |           if (quoted) {
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:389:11: note: Taking true branch
+  389 |           if (quoted) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:390:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  390 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:399:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  399 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 2:'  at line 387
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:13: note: Assuming 'c' is equal to 'quote'
+  388 |         if (c == quote) {         /* Quote */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:9: note: Taking true branch
+  388 |         if (c == quote) {         /* Quote */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:389:15: note: Assuming 'quoted' is 0
+  389 |           if (quoted) {
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:389:11: note: Taking false branch
+  389 |           if (quoted) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:394:17: note: Assuming the condition is false
+  394 |             if (p->options & CSV_STRICT) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:394:13: note: Taking false branch
+  394 |             if (p->options & CSV_STRICT) {
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:399:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  399 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:404:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  404 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 2:'  at line 387
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:13: note: Assuming 'c' is not equal to 'quote'
+  388 |         if (c == quote) {         /* Quote */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:9: note: Taking false branch
+  388 |         if (c == quote) {         /* Quote */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:20: note: Assuming 'c' is equal to 'delim'
+  402 |         } else if (c == delim) {  /* Comma */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:16: note: Taking true branch
+  402 |         } else if (c == delim) {  /* Comma */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:403:15: note: Assuming 'quoted' is not equal to 0
+  403 |           if (quoted) {
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:403:11: note: Taking true branch
+  403 |           if (quoted) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:404:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  404 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:406:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  406 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 2:'  at line 387
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:13: note: Assuming 'c' is not equal to 'quote'
+  388 |         if (c == quote) {         /* Quote */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:9: note: Taking false branch
+  388 |         if (c == quote) {         /* Quote */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:20: note: Assuming 'c' is equal to 'delim'
+  402 |         } else if (c == delim) {  /* Comma */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:16: note: Taking true branch
+  402 |         } else if (c == delim) {  /* Comma */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:403:15: note: Assuming 'quoted' is 0
+  403 |           if (quoted) {
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:403:11: note: Taking false branch
+  403 |           if (quoted) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:406:13: note: 'quoted' is 0
+  406 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:9: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:406:13: note: Taking true branch
+  406 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:4: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:406:13: note: Taking true branch
+  406 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:53:4: note: expanded from macro 'SUBMIT_FIELD'
+   53 |    if (p->options & CSV_APPEND_NULL) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:406:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  406 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:410:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  410 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 2:'  at line 387
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:13: note: Assuming 'c' is not equal to 'quote'
+  388 |         if (c == quote) {         /* Quote */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:9: note: Taking false branch
+  388 |         if (c == quote) {         /* Quote */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:20: note: Assuming 'c' is not equal to 'delim'
+  402 |         } else if (c == delim) {  /* Comma */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:16: note: Taking false branch
+  402 |         } else if (c == delim) {  /* Comma */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: Assuming 'is_term' is null
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:43: note: Assuming 'c' is equal to CSV_CR
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                                           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:55: note: Left side of '||' is true
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:16: note: Taking true branch
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:409:15: note: Assuming 'quoted' is 0
+  409 |           if (!quoted) {
+      |               ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:409:11: note: Taking true branch
+  409 |           if (!quoted) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:410:13: note: 'quoted' is 0
+  410 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:9: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |         ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:410:13: note: Taking true branch
+  410 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:4: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:410:13: note: Taking true branch
+  410 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:53:4: note: expanded from macro 'SUBMIT_FIELD'
+   53 |    if (p->options & CSV_APPEND_NULL) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:410:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  410 |             SUBMIT_FIELD(p);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:413:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  413 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 2:'  at line 387
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:13: note: Assuming 'c' is not equal to 'quote'
+  388 |         if (c == quote) {         /* Quote */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:9: note: Taking false branch
+  388 |         if (c == quote) {         /* Quote */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:20: note: Assuming 'c' is not equal to 'delim'
+  402 |         } else if (c == delim) {  /* Comma */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:16: note: Taking false branch
+  402 |         } else if (c == delim) {  /* Comma */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: Assuming 'is_term' is null
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:43: note: Assuming 'c' is equal to CSV_CR
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                                           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:55: note: Left side of '||' is true
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:16: note: Taking true branch
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:409:15: note: Assuming 'quoted' is not equal to 0
+  409 |           if (!quoted) {
+      |               ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:409:11: note: Taking false branch
+  409 |           if (!quoted) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:413:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  413 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:416:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  416 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 2:'  at line 387
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:13: note: Assuming 'c' is not equal to 'quote'
+  388 |         if (c == quote) {         /* Quote */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:9: note: Taking false branch
+  388 |         if (c == quote) {         /* Quote */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:20: note: Assuming 'c' is not equal to 'delim'
+  402 |         } else if (c == delim) {  /* Comma */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:16: note: Taking false branch
+  402 |         } else if (c == delim) {  /* Comma */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: Assuming 'is_term' is non-null
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: Assuming the condition is false
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:16: note: Taking false branch
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:20: note: Assuming 'quoted' is 0
+  415 |         } else if (!quoted && (is_space? is_space(c) : c == CSV_SPACE || c == CSV_TAB)) { /* Tab or space for non-quoted field */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:20: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:32: note: Assuming 'is_space' is null
+  415 |         } else if (!quoted && (is_space? is_space(c) : c == CSV_SPACE || c == CSV_TAB)) { /* Tab or space for non-quoted field */
+      |                                ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:32: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:56: note: Assuming 'c' is equal to CSV_SPACE
+  415 |         } else if (!quoted && (is_space? is_space(c) : c == CSV_SPACE || c == CSV_TAB)) { /* Tab or space for non-quoted field */
+      |                                                        ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:71: note: Left side of '||' is true
+  415 |         } else if (!quoted && (is_space? is_space(c) : c == CSV_SPACE || c == CSV_TAB)) { /* Tab or space for non-quoted field */
+      |                                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:16: note: Taking true branch
+  415 |         } else if (!quoted && (is_space? is_space(c) : c == CSV_SPACE || c == CSV_TAB)) { /* Tab or space for non-quoted field */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:416:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  416 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:419:11: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  419 |           SUBMIT_CHAR(p, c);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 2:'  at line 387
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:13: note: Assuming 'c' is not equal to 'quote'
+  388 |         if (c == quote) {         /* Quote */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:388:9: note: Taking false branch
+  388 |         if (c == quote) {         /* Quote */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:20: note: Assuming 'c' is not equal to 'delim'
+  402 |         } else if (c == delim) {  /* Comma */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:402:16: note: Taking false branch
+  402 |         } else if (c == delim) {  /* Comma */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: Assuming 'is_term' is non-null
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:20: note: Assuming the condition is false
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:408:16: note: Taking false branch
+  408 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:20: note: Assuming 'quoted' is not equal to 0
+  415 |         } else if (!quoted && (is_space? is_space(c) : c == CSV_SPACE || c == CSV_TAB)) { /* Tab or space for non-quoted field */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:415:28: note: Left side of '&&' is false
+  415 |         } else if (!quoted && (is_space? is_space(c) : c == CSV_SPACE || c == CSV_TAB)) { /* Tab or space for non-quoted field */
+      |                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:419:11: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  419 |           SUBMIT_CHAR(p, c);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:427:11: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  427 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 3:'  at line 423
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:13: note: Assuming 'c' is equal to 'delim'
+  425 |         if (c == delim) {  /* Comma */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:9: note: Taking true branch
+  425 |         if (c == delim) {  /* Comma */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:427:11: note: Assuming 'quoted' is not equal to 0
+  427 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:8: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |        ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:427:11: note: Taking false branch
+  427 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:4: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:427:11: note: Taking true branch
+  427 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:53:4: note: expanded from macro 'SUBMIT_FIELD'
+   53 |    if (p->options & CSV_APPEND_NULL) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:427:11: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  427 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:430:11: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  430 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is true
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 3:'  at line 423
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:13: note: Assuming 'c' is not equal to 'delim'
+  425 |         if (c == delim) {  /* Comma */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:9: note: Taking false branch
+  425 |         if (c == delim) {  /* Comma */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: Assuming 'is_term' is null
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:43: note: Assuming 'c' is equal to CSV_CR
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                                           ^~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:55: note: Left side of '||' is true
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                                                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:16: note: Taking true branch
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:430:11: note: Assuming 'quoted' is not equal to 0
+  430 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:8: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |        ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:430:11: note: Taking false branch
+  430 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:51:4: note: expanded from macro 'SUBMIT_FIELD'
+   51 |    if (!quoted) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:430:11: note: Taking true branch
+  430 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:53:4: note: expanded from macro 'SUBMIT_FIELD'
+   53 |    if (p->options & CSV_APPEND_NULL) \
+      |    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:430:11: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  430 |           SUBMIT_FIELD(p);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:54:34: note: expanded from macro 'SUBMIT_FIELD'
+   54 |      ((p)->entry_buf[entry_pos]) = '\0'; \
+      |            ~~~~~~~~~             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:433:11: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  433 |           SUBMIT_CHAR(p, c);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 3:'  at line 423
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:13: note: Assuming 'c' is not equal to 'delim'
+  425 |         if (c == delim) {  /* Comma */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:9: note: Taking false branch
+  425 |         if (c == delim) {  /* Comma */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: Assuming 'is_term' is non-null
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: Assuming the condition is false
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:16: note: Taking false branch
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:20: note: Assuming 'is_space' is null
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                    ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:20: note: '?' condition is false
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:45: note: Assuming 'c' is equal to CSV_SPACE
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                                             ^~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:60: note: Left side of '||' is true
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                                                            ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:16: note: Taking true branch
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:433:11: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  433 |           SUBMIT_CHAR(p, c);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:444:13: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  444 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 3:'  at line 423
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:13: note: Assuming 'c' is not equal to 'delim'
+  425 |         if (c == delim) {  /* Comma */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:9: note: Taking false branch
+  425 |         if (c == delim) {  /* Comma */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: Assuming 'is_term' is non-null
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: Assuming the condition is false
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:16: note: Taking false branch
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:20: note: Assuming 'is_space' is non-null
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                    ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:20: note: Assuming the condition is false
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                    ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:16: note: Taking false branch
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:435:20: note: Assuming 'c' is equal to 'quote'
+  435 |         } else if (c == quote) {  /* Quote */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:435:16: note: Taking true branch
+  435 |         } else if (c == quote) {  /* Quote */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:436:15: note: Assuming 'spaces' is not equal to 0
+  436 |           if (spaces) {
+      |               ^~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:436:11: note: Taking true branch
+  436 |           if (spaces) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:438:17: note: Assuming the condition is false
+  438 |             if (p->options & CSV_STRICT) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:438:13: note: Taking false branch
+  438 |             if (p->options & CSV_STRICT) {
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:444:13: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  444 |             SUBMIT_CHAR(p, c);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:458:11: warning: Array access (via field 'entry_buf') results in a null pointer dereference [clang-analyzer-core.NullDereference]
+  458 |           SUBMIT_CHAR(p, c);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Assuming 'p' is non-null
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |       ^~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:10: note: Left side of '&&' is true
+  321 |   assert(p && "received null csv_parser");
+      |          ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:321:3: note: '?' condition is true
+  321 |   assert(p && "received null csv_parser");
+      |   ^
+/usr/include/assert.h:109:6: note: expanded from macro 'assert'
+  109 |     ((expr)                                                             \
+      |      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:7: note: Assuming 's' is not equal to NULL
+  323 |   if (s == NULL) return 0;
+      |       ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:323:3: note: Taking false branch
+  323 |   if (s == NULL) return 0;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Assuming field 'entry_buf' is null
+  340 |   if (!p->entry_buf && pos < len) {
+      |       ^~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:7: note: Left side of '&&' is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:24: note: Assuming 'pos' is < 'len'
+  340 |   if (!p->entry_buf && pos < len) {
+      |                        ^~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:340:3: note: Taking true branch
+  340 |   if (!p->entry_buf && pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:342:5: note: Taking false branch
+  342 |     if (csv_increase_buffer(p) != 0) { 
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:10: note: 'pos' is < 'len'
+  348 |   while (pos < len) {
+      |          ^~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:348:3: note: Loop condition is true.  Entering loop body
+  348 |   while (pos < len) {
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:24: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:23: note: '?' condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |                       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:9: note: Assuming the condition is false
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:350:5: note: Taking false branch
+  350 |     if (entry_pos == ((p->options & CSV_APPEND_NULL) ? p->entry_size - 1 : p->entry_size) ) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:359:5: note: Control jumps to 'case 3:'  at line 423
+  359 |     switch (pstate) {
+      |     ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:13: note: Assuming 'c' is not equal to 'delim'
+  425 |         if (c == delim) {  /* Comma */
+      |             ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:425:9: note: Taking false branch
+  425 |         if (c == delim) {  /* Comma */
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: Assuming 'is_term' is non-null
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:20: note: Assuming the condition is false
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                    ^~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:428:16: note: Taking false branch
+  428 |         } else if (is_term ? is_term(c) : c == CSV_CR || c == CSV_LF) {  /* Carriage Return or Line Feed */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:20: note: Assuming 'is_space' is non-null
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                    ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:20: note: '?' condition is true
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:20: note: Assuming the condition is false
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                    ^~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:432:16: note: Taking false branch
+  432 |         } else if (is_space ? is_space(c) : c == CSV_SPACE || c == CSV_TAB) {  /* Space or Tab */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:435:20: note: Assuming 'c' is not equal to 'quote'
+  435 |         } else if (c == quote) {  /* Quote */
+      |                    ^~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:435:16: note: Taking false branch
+  435 |         } else if (c == quote) {  /* Quote */
+      |                ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:451:15: note: Assuming the condition is false
+  451 |           if (p->options & CSV_STRICT) {
+      |               ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:451:11: note: Taking false branch
+  451 |           if (p->options & CSV_STRICT) {
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:458:11: note: Array access (via field 'entry_buf') results in a null pointer dereference
+  458 |           SUBMIT_CHAR(p, c);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c:71:56: note: expanded from macro 'SUBMIT_CHAR'
+   71 | #define SUBMIT_CHAR(p, c) ((p)->entry_buf[entry_pos++] = (c))
+      |                                 ~~~~~~~~~              ^

@@ -1,0 +1,63 @@
+8 warnings and 2 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:413:5: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [clang-diagnostic-pointer-sign]
+  413 |                                 &width[DST], &height[DST]);
+      |                                 ^~~~~~~~~~~
+/usr/include/X11/Xlib.h:2875:37: note: passing argument to parameter here
+ 2875 |     unsigned int*       /* width_return */,
+      |                                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:413:18: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [clang-diagnostic-pointer-sign]
+  413 |                                 &width[DST], &height[DST]);
+      |                                              ^~~~~~~~~~~~
+/usr/include/X11/Xlib.h:2877:1: note: passing argument to parameter here
+ 2877 | );
+      | ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:461:5: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [clang-diagnostic-pointer-sign]
+  461 |                                 &width[SRC], &height[SRC]);
+      |                                 ^~~~~~~~~~~
+/usr/include/X11/Xlib.h:2875:37: note: passing argument to parameter here
+ 2875 |     unsigned int*       /* width_return */,
+      |                                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:461:18: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [clang-diagnostic-pointer-sign]
+  461 |                                 &width[SRC], &height[SRC]);
+      |                                              ^~~~~~~~~~~~
+/usr/include/X11/Xlib.h:2877:1: note: passing argument to parameter here
+ 2877 | );
+      | ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:475:5: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [clang-diagnostic-pointer-sign]
+  475 |                                 &width[DST], &height[DST]);
+      |                                 ^~~~~~~~~~~
+/usr/include/X11/Xlib.h:2875:37: note: passing argument to parameter here
+ 2875 |     unsigned int*       /* width_return */,
+      |                                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:475:18: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [clang-diagnostic-pointer-sign]
+  475 |                                 &width[DST], &height[DST]);
+      |                                              ^~~~~~~~~~~~
+/usr/include/X11/Xlib.h:2877:1: note: passing argument to parameter here
+ 2877 | );
+      | ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:711:12: warning: 'XKeycodeToKeysym' is deprecated [clang-diagnostic-deprecated-declarations]
+  711 |                                 switch(XKeycodeToKeysym(dpy, event.xkey.keycode, 0)) {
+      |                                        ^
+/usr/include/X11/Xlib.h:1686:1: note: 'XKeycodeToKeysym' has been explicitly marked deprecated here
+ 1686 | _X_DEPRECATED
+      | ^
+/usr/include/X11/Xfuncproto.h:136:40: note: expanded from macro '_X_DEPRECATED'
+  136 | # define _X_DEPRECATED  __attribute__((deprecated))
+      |                                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:720:12: warning: 'XKeycodeToKeysym' is deprecated [clang-diagnostic-deprecated-declarations]
+  720 |                                 switch(XKeycodeToKeysym(dpy, event.xkey.keycode, 0)) {
+      |                                        ^
+/usr/include/X11/Xlib.h:1686:1: note: 'XKeycodeToKeysym' has been explicitly marked deprecated here
+ 1686 | _X_DEPRECATED
+      | ^
+/usr/include/X11/Xfuncproto.h:136:40: note: expanded from macro '_X_DEPRECATED'
+  136 | # define _X_DEPRECATED  __attribute__((deprecated))
+      |                                        ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:847:6: error: call to undeclared function 'alarm'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  847 |                                         alarm(2);
+      |                                         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/xzoom/repo/xzoom.c:926:4: error: call to undeclared function 'usleep'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+  926 |                         usleep(delay);
+      |                         ^
+Found compiler error(s).

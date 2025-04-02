@@ -1,0 +1,61 @@
+20 errors generated.
+Error while processing /mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/robotfindskitten.c.
+error: too many errors emitted, stopping now [clang-diagnostic-error]
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:1:33: error: unknown type name 'bool' [clang-diagnostic-error]
+    1 | void full_draw(screen_object o, bool in_place)
+      |                                 ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:3:3: error: use of undeclared identifier 'attr_t' [clang-diagnostic-error]
+    3 |   attr_t old;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:5:3: error: use of undeclared identifier 'attr_t' [clang-diagnostic-error]
+    5 |   attr_t new;
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:7:3: error: call to undeclared function 'attr_get'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+    7 |   attr_get(&old,&dummy,0);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:7:13: error: use of undeclared identifier 'old' [clang-diagnostic-error]
+    7 |   attr_get(&old,&dummy,0);
+      |             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:10:3: error: use of undeclared identifier 'new' [clang-diagnostic-error]
+   10 |   new = COLOR_PAIR(o.color);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:10:9: error: call to undeclared function 'COLOR_PAIR'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   10 |   new = COLOR_PAIR(o.color);
+      |         ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:13:27: error: use of undeclared identifier 'new' [clang-diagnostic-error]
+   13 |   if (o.character == '#') new |= A_DIM;
+      |                           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:13:34: error: use of undeclared identifier 'A_DIM' [clang-diagnostic-error]
+   13 |   if (o.character == '#') new |= A_DIM;
+      |                                  ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:14:29: error: use of undeclared identifier 'new' [clang-diagnostic-error]
+   14 |   if (o.character <= '\32') new |= A_ALTCHARSET;  
+      |                             ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:14:36: error: use of undeclared identifier 'A_ALTCHARSET' [clang-diagnostic-error]
+   14 |   if (o.character <= '\32') new |= A_ALTCHARSET;  
+      |                                    ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:15:15: error: use of undeclared identifier 'new' [clang-diagnostic-error]
+   15 |   if (o.bold) new |= A_BOLD;
+      |               ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:15:22: error: use of undeclared identifier 'A_BOLD' [clang-diagnostic-error]
+   15 |   if (o.bold) new |= A_BOLD;
+      |                      ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:17:3: error: call to undeclared function 'attrset'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   17 |   attrset(new);
+      |   ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:17:11: error: use of undeclared identifier 'new' [clang-diagnostic-error]
+   17 |   attrset(new);
+      |           ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:20:7: error: call to undeclared function 'printw'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   20 |       printw("%c",o.character);
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:22:7: error: call to undeclared function 'mvprintw'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   22 |       mvprintw(o.y,o.x,"%c",o.character); 
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/draw.h:23:7: error: call to undeclared function 'move'; ISO C99 and later do not support implicit function declarations [clang-diagnostic-implicit-function-declaration]
+   23 |       move(o.y,o.x);
+      |       ^
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/robotfindskitten/repo/src/robotfindskitten.c:114:3: error: unknown type name 'bool' [clang-diagnostic-error]
+  114 |   bool bold;
+      |   ^
+Found compiler error(s).
