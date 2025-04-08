@@ -1,1 +1,0 @@
-compass.gif: The historical "about:jwz" compass.
