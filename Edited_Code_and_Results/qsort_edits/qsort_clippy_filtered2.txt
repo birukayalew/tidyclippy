@@ -1,0 +1,82 @@
+    Checking qsort_edits v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/qsort_edits)
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:29:30
+   |
+29 |     let mut i: libc::c_int = low - 1 as libc::c_int;
+   |                              ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+   = note: requested on the command line with `-D clippy::arithmetic-side-effects`
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:31:16
+   |
+31 |     while j <= high - 1 as libc::c_int {
+   |                ^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:33:13
+   |
+33 |             i += 1;
+   |             ^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:42:9
+   |
+42 |         j += 1;
+   |         ^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:47:30
+   |
+47 |             &mut *arr.offset((i + 1 as libc::c_int) as isize),
+   |                              ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:51:5
+   |
+51 |     i + 1 as libc::c_int
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:63:33
+   |
+63 |             quickSort(arr, low, i - 1 as libc::c_int);
+   |                                 ^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:64:28
+   |
+64 |             quickSort(arr, i + 1 as libc::c_int, high);
+   |                            ^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+warning: path statement with no effect
+  --> src/main.rs:34:13
+   |
+34 |             i;
+   |             ^^
+   |
+   = note: `#[warn(path_statements)]` on by default
+
+warning: path statement with no effect
+  --> src/main.rs:43:9
+   |
+43 |         j;
+   |         ^^
+
+warning: `qsort_edits` (bin "qsort_edits") generated 2 warnings
+error: could not compile `qsort_edits` (bin "qsort_edits") due to 8 previous errors; 2 warnings emitted

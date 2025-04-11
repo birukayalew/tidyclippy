@@ -1,0 +1,72 @@
+   Compiling xzoom v0.0.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/xzoom_edits)
+warning: type `size_t` should have an upper camel case name
+   --> src/main.rs:140:10
+    |
+140 | pub type size_t = libc::c_ulong;
+    |          ^^^^^^ help: convert the identifier to upper camel case: `SizeT`
+    |
+    = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: type `__off_t` should have an upper camel case name
+   --> src/main.rs:141:10
+    |
+141 | pub type __off_t = libc::c_long;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `OffT`
+
+warning: type `__off64_t` should have an upper camel case name
+   --> src/main.rs:142:10
+    |
+142 | pub type __off64_t = libc::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Off64T`
+
+warning: type `_IO_lock_t` should have an upper camel case name
+   --> src/main.rs:176:10
+    |
+176 | pub type _IO_lock_t = ();
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `IoLockT`
+
+warning: type `__sighandler_t` should have an upper camel case name
+   --> src/main.rs:178:10
+    |
+178 | pub type __sighandler_t = Option::<unsafe extern "C" fn(libc::c_int) -> ()>;
+    |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SighandlerT`
+
+error[E0308]: mismatched types
+    --> src/main.rs:2424:35
+     |
+2424 | ...                   alarm(2 as libc::c_int);
+     |                       ----- ^^^^^^^^^^^^^^^^ expected `u32`, found `i32`
+     |                       |
+     |                       arguments to this function are incorrect
+     |
+note: function defined here
+    --> /home/mazin/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.171/src/unix/mod.rs:944:12
+     |
+944  |     pub fn alarm(seconds: c_uint) -> c_uint;
+     |            ^^^^^
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+     |
+2424 |                             alarm((2 as libc::c_int).try_into().unwrap());
+     |                                   +                +++++++++++++++++++++
+
+error[E0308]: mismatched types
+    --> src/main.rs:2467:20
+     |
+2467 |             usleep(delay);
+     |             ------ ^^^^^ expected `u32`, found `i32`
+     |             |
+     |             arguments to this function are incorrect
+     |
+note: function defined here
+    --> /home/mazin/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.171/src/unix/mod.rs:1395:12
+     |
+1395 |     pub fn usleep(secs: c_uint) -> c_int;
+     |            ^^^^^^
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+     |
+2467 |             usleep(delay.try_into().unwrap());
+     |                         ++++++++++++++++++++
+
+For more information about this error, try `rustc --explain E0308`.
+warning: `xzoom` (bin "xzoom") generated 5 warnings
+error: could not compile `xzoom` due to 2 previous errors; 5 warnings emitted

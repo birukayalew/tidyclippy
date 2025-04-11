@@ -1,0 +1,367 @@
+    Checking qsort_edits v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/qsort_edits)
+warning: this import is redundant
+  --> src/main.rs:11:1
+   |
+11 | use libc;
+   | ^^^^^^^^^ help: remove it entirely
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#single_component_path_imports
+   = note: `#[warn(clippy::single_component_path_imports)]` on by default
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:15:30
+   |
+15 |     let mut t: libc::c_int = *a;
+   |                              ^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+note: an unsafe function restricts its caller, but its body is safe by default
+  --> src/main.rs:14:1
+   |
+14 | pub unsafe extern "C" fn swap(mut a: *mut libc::c_int, mut b: *mut libc::c_int) {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: `#[warn(unsafe_op_in_unsafe_fn)]` on by default
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:16:5
+   |
+16 |     *a = *b;
+   |     ^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:16:10
+   |
+16 |     *a = *b;
+   |          ^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:17:5
+   |
+17 |     *b = t;
+   |     ^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:25:34
+   |
+25 |     let mut pivot: libc::c_int = *arr.offset(high as isize);
+   |                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+note: an unsafe function restricts its caller, but its body is safe by default
+  --> src/main.rs:20:1
+   |
+20 | / pub unsafe extern "C" fn partition(
+21 | |     mut arr: *mut libc::c_int,
+22 | |     mut low: libc::c_int,
+23 | |     mut high: libc::c_int,
+24 | | ) -> libc::c_int {
+   | |________________^
+
+warning[E0133]: call to unsafe function `std::ptr::mut_ptr::<impl *mut T>::offset` is unsafe and requires unsafe block
+  --> src/main.rs:25:35
+   |
+25 |     let mut pivot: libc::c_int = *arr.offset(high as isize);
+   |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:29:12
+   |
+29 |         if *arr.offset(j as isize) <= pivot {
+   |            ^^^^^^^^^^^^^^^^^^^^^^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+
+warning[E0133]: call to unsafe function `std::ptr::mut_ptr::<impl *mut T>::offset` is unsafe and requires unsafe block
+  --> src/main.rs:29:13
+   |
+29 |         if *arr.offset(j as isize) <= pivot {
+   |             ^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: call to unsafe function `swap` is unsafe and requires unsafe block
+  --> src/main.rs:32:13
+   |
+32 |             swap(&mut *arr.offset(i as isize), &mut *arr.offset(j as isize));
+   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:32:23
+   |
+32 |             swap(&mut *arr.offset(i as isize), &mut *arr.offset(j as isize));
+   |                       ^^^^^^^^^^^^^^^^^^^^^^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+
+warning[E0133]: call to unsafe function `std::ptr::mut_ptr::<impl *mut T>::offset` is unsafe and requires unsafe block
+  --> src/main.rs:32:24
+   |
+32 |             swap(&mut *arr.offset(i as isize), &mut *arr.offset(j as isize));
+   |                        ^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:32:53
+   |
+32 |             swap(&mut *arr.offset(i as isize), &mut *arr.offset(j as isize));
+   |                                                     ^^^^^^^^^^^^^^^^^^^^^^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+
+warning[E0133]: call to unsafe function `std::ptr::mut_ptr::<impl *mut T>::offset` is unsafe and requires unsafe block
+  --> src/main.rs:32:54
+   |
+32 |             swap(&mut *arr.offset(i as isize), &mut *arr.offset(j as isize));
+   |                                                      ^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: call to unsafe function `swap` is unsafe and requires unsafe block
+  --> src/main.rs:37:5
+   |
+37 | /     swap(
+38 | |         &mut *arr.offset((i + 1 as libc::c_int) as isize),
+39 | |         &mut *arr.offset(high as isize),
+40 | |     );
+   | |_____^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:38:14
+   |
+38 |         &mut *arr.offset((i + 1 as libc::c_int) as isize),
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+
+warning[E0133]: call to unsafe function `std::ptr::mut_ptr::<impl *mut T>::offset` is unsafe and requires unsafe block
+  --> src/main.rs:38:15
+   |
+38 |         &mut *arr.offset((i + 1 as libc::c_int) as isize),
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: dereference of raw pointer is unsafe and requires unsafe block
+  --> src/main.rs:39:14
+   |
+39 |         &mut *arr.offset(high as isize),
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^ dereference of raw pointer
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+
+warning[E0133]: call to unsafe function `std::ptr::mut_ptr::<impl *mut T>::offset` is unsafe and requires unsafe block
+  --> src/main.rs:39:15
+   |
+39 |         &mut *arr.offset(high as isize),
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: call to unsafe function `partition` is unsafe and requires unsafe block
+  --> src/main.rs:50:34
+   |
+50 |         let mut i: libc::c_int = partition(arr, low, high);
+   |                                  ^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+note: an unsafe function restricts its caller, but its body is safe by default
+  --> src/main.rs:44:1
+   |
+44 | / pub unsafe extern "C" fn quickSort(
+45 | |     mut arr: *mut libc::c_int,
+46 | |     mut low: libc::c_int,
+47 | |     mut high: libc::c_int,
+48 | | ) {
+   | |_^
+
+warning[E0133]: call to unsafe function `quickSort` is unsafe and requires unsafe block
+  --> src/main.rs:51:9
+   |
+51 |         quickSort(arr, low, i - 1 as libc::c_int);
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning[E0133]: call to unsafe function `quickSort` is unsafe and requires unsafe block
+  --> src/main.rs:52:9
+   |
+52 |         quickSort(arr, i + 1 as libc::c_int, high);
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+warning: unsafe function's docs are missing a `# Safety` section
+  --> src/main.rs:14:1
+   |
+14 | pub unsafe extern "C" fn swap(mut a: *mut libc::c_int, mut b: *mut libc::c_int) {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+   = note: `#[warn(clippy::missing_safety_doc)]` on by default
+
+warning: this looks like you are swapping `*a` and `*b` manually
+  --> src/main.rs:15:5
+   |
+15 | /     let mut t: libc::c_int = *a;
+16 | |     *a = *b;
+17 | |     *b = t;
+   | |___________^ help: try: `std::mem::swap(&mut (*a), &mut (*b));`
+   |
+   = note: or maybe you should use `std::mem::replace`?
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#manual_swap
+   = note: `#[warn(clippy::manual_swap)]` on by default
+
+warning: unsafe function's docs are missing a `# Safety` section
+  --> src/main.rs:20:1
+   |
+20 | / pub unsafe extern "C" fn partition(
+21 | |     mut arr: *mut libc::c_int,
+22 | |     mut low: libc::c_int,
+23 | |     mut high: libc::c_int,
+24 | | ) -> libc::c_int {
+   | |________________^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+error: unneeded `return` statement
+  --> src/main.rs:41:5
+   |
+41 |     return i + 1 as libc::c_int;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+   = note: requested on the command line with `-D clippy::needless-return`
+help: remove `return`
+   |
+41 -     return i + 1 as libc::c_int;
+41 +     i + 1 as libc::c_int
+   |
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:26:30
+   |
+26 |     let mut i: libc::c_int = low - 1 as libc::c_int;
+   |                              ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+   = note: requested on the command line with `-D clippy::arithmetic-side-effects`
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:28:16
+   |
+28 |     while j <= high - 1 as libc::c_int {
+   |                ^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:30:13
+   |
+30 |             i += 1;
+   |             ^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:34:9
+   |
+34 |         j += 1;
+   |         ^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:38:26
+   |
+38 |         &mut *arr.offset((i + 1 as libc::c_int) as isize),
+   |                          ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:41:12
+   |
+41 |     return i + 1 as libc::c_int;
+   |            ^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+warning: unsafe function's docs are missing a `# Safety` section
+  --> src/main.rs:44:1
+   |
+44 | / pub unsafe extern "C" fn quickSort(
+45 | |     mut arr: *mut libc::c_int,
+46 | |     mut low: libc::c_int,
+47 | |     mut high: libc::c_int,
+48 | | ) {
+   | |_^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:51:29
+   |
+51 |         quickSort(arr, low, i - 1 as libc::c_int);
+   |                             ^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+error: arithmetic operation that can potentially result in unexpected side-effects
+  --> src/main.rs:52:24
+   |
+52 |         quickSort(arr, i + 1 as libc::c_int, high);
+   |                        ^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#arithmetic_side_effects
+
+warning: path statement with no effect
+  --> src/main.rs:31:13
+   |
+31 |             i;
+   |             ^^
+   |
+   = note: `#[warn(path_statements)]` on by default
+
+warning: path statement with no effect
+  --> src/main.rs:35:9
+   |
+35 |         j;
+   |         ^^
+
+For more information about this error, try `rustc --explain E0133`.
+warning: `qsort_edits` (bin "qsort_edits") generated 28 warnings
+error: could not compile `qsort_edits` (bin "qsort_edits") due to 9 previous errors; 28 warnings emitted

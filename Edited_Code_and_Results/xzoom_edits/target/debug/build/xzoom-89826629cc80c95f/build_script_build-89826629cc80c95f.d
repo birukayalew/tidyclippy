@@ -1,0 +1,7 @@
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/xzoom_edits/target/debug/build/xzoom-89826629cc80c95f/build_script_build-89826629cc80c95f: build.rs
+
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/xzoom_edits/target/debug/build/xzoom-89826629cc80c95f/build_script_build-89826629cc80c95f.d: build.rs
+
+build.rs:
+
+# env-dep:CLIPPY_ARGS=-A__CLIPPY_HACKERY__clippy::all__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::self_assignment__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::invalid_null_ptr_usage__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::arithmetic_side_effects__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::uninit_assumed_init__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::mem_forget__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::needless_return__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unnecessary_cast__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unreachable__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unsafe_removed_from_name__CLIPPY_HACKERY__

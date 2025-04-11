@@ -1,0 +1,9 @@
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/qsort_edits/target/debug/deps/libqsort_edits-2e24804c68488ba2.rmeta: src/main.rs Cargo.toml
+
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/qsort_edits/target/debug/deps/qsort_edits-2e24804c68488ba2.d: src/main.rs Cargo.toml
+
+src/main.rs:
+Cargo.toml:
+
+# env-dep:CLIPPY_ARGS=-A__CLIPPY_HACKERY__clippy::all__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::self_assignment__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::invalid_null_ptr_usage__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::arithmetic_side_effects__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::uninit_assumed_init__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::mem_forget__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::needless_return__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unnecessary_cast__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unreachable__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unsafe_removed_from_name__CLIPPY_HACKERY__
+# env-dep:CLIPPY_CONF_DIR

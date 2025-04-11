@@ -1,0 +1,62 @@
+   Compiling xzoom v0.0.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/xzoom_edits)
+error[E0425]: cannot find function `alarm` in this scope
+    --> src/main.rs:2424:29
+     |
+2424 | ...                   alarm(2 as libc::c_int);
+     |                       ^^^^^ not found in this scope
+     |
+help: consider importing one of these items
+     |
+3    | use crate::libc::alarm;
+     |
+3    | use libc::alarm;
+     |
+
+error[E0425]: cannot find function `usleep` in this scope
+    --> src/main.rs:2467:13
+     |
+2467 |             usleep(delay);
+     |             ^^^^^^ not found in this scope
+     |
+help: consider importing one of these items
+     |
+3    | use crate::libc::usleep;
+     |
+3    | use libc::usleep;
+     |
+
+warning: type `size_t` should have an upper camel case name
+   --> src/main.rs:140:10
+    |
+140 | pub type size_t = libc::c_ulong;
+    |          ^^^^^^ help: convert the identifier to upper camel case: `SizeT`
+    |
+    = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: type `__off_t` should have an upper camel case name
+   --> src/main.rs:141:10
+    |
+141 | pub type __off_t = libc::c_long;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `OffT`
+
+warning: type `__off64_t` should have an upper camel case name
+   --> src/main.rs:142:10
+    |
+142 | pub type __off64_t = libc::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Off64T`
+
+warning: type `_IO_lock_t` should have an upper camel case name
+   --> src/main.rs:176:10
+    |
+176 | pub type _IO_lock_t = ();
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `IoLockT`
+
+warning: type `__sighandler_t` should have an upper camel case name
+   --> src/main.rs:178:10
+    |
+178 | pub type __sighandler_t = Option::<unsafe extern "C" fn(libc::c_int) -> ()>;
+    |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SighandlerT`
+
+For more information about this error, try `rustc --explain E0425`.
+warning: `xzoom` (bin "xzoom") generated 5 warnings
+error: could not compile `xzoom` due to 2 previous errors; 5 warnings emitted
