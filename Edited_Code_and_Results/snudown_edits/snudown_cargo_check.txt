@@ -1,0 +1,11 @@
+    Updating crates.io index
+   Compiling libc v0.2.171
+    Checking snudown v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/snudown_edits)
+error[E0601]: `main` function not found in crate `snudown`
+    --> src/snudown.rs:1108:2
+     |
+1108 | }
+     |  ^ consider adding a `main` function to `src/snudown.rs`
+
+For more information about this error, try `rustc --explain E0601`.
+error: could not compile `snudown` due to previous error

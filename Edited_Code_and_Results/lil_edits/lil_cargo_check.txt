@@ -1,0 +1,500 @@
+warning: crate-level attribute should be in the root module
+  --> src/lil.rs:10:1
+   |
+10 | #![feature(extern_types)]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_attributes)]` on by default
+
+warning: unused variable: `lil`
+   --> src/main.rs:136:34
+    |
+136 | unsafe extern "C" fn do_exit(mut lil: lil_t, mut val: lil_value_t) {
+    |                                  ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `lil`
+   --> src/main.rs:214:9
+    |
+214 |     mut lil: lil_t,
+    |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+   --> src/main.rs:229:9
+    |
+229 |     mut lil: lil_t,
+    |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+   --> src/main.rs:261:9
+    |
+261 |     mut lil: lil_t,
+    |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `argc`
+   --> src/main.rs:262:9
+    |
+262 |     mut argc: size_t,
+    |         ^^^^ help: if this is intentional, prefix it with an underscore: `_argc`
+
+warning: unused variable: `argv`
+   --> src/main.rs:263:9
+    |
+263 |     mut argv: *mut lil_value_t,
+    |         ^^^^ help: if this is intentional, prefix it with an underscore: `_argv`
+
+warning: unused variable: `lil`
+   --> src/lil.rs:687:9
+    |
+687 |     mut lil: lil_t,
+    |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `flags`
+    --> src/lil.rs:3248:9
+     |
+3248 |     mut flags: libc::c_uint,
+     |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_flags`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:3741:9
+     |
+3741 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4271:9
+     |
+4271 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4705:9
+     |
+4705 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4720:9
+     |
+4720 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4740:9
+     |
+4740 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4757:9
+     |
+4757 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4797:9
+     |
+4797 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4824:9
+     |
+4824 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4892:9
+     |
+4892 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4911:9
+     |
+4911 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4930:9
+     |
+4930 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4949:9
+     |
+4949 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4964:9
+     |
+4964 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:4984:9
+     |
+4984 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:5047:9
+     |
+5047 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `lil`
+    --> src/lil.rs:5228:9
+     |
+5228 |     mut lil: lil_t,
+     |         ^^^ help: if this is intentional, prefix it with an underscore: `_lil`
+
+warning: unused variable: `argc`
+    --> src/lil.rs:5229:9
+     |
+5229 |     mut argc: size_t,
+     |         ^^^^ help: if this is intentional, prefix it with an underscore: `_argc`
+
+warning: unused variable: `argv`
+    --> src/lil.rs:5230:9
+     |
+5230 |     mut argv: *mut lil_value_t,
+     |         ^^^^ help: if this is intentional, prefix it with an underscore: `_argv`
+
+warning: path statement with no effect
+   --> src/main.rs:169:9
+    |
+169 |         i;
+    |         ^^
+    |
+    = note: `#[warn(path_statements)]` on by default
+
+warning: path statement with no effect
+   --> src/main.rs:248:9
+    |
+248 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/main.rs:402:9
+    |
+402 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:292:13
+    |
+292 |             j;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:296:9
+    |
+296 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:316:9
+    |
+316 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:345:9
+    |
+345 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:363:9
+    |
+363 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:538:9
+    |
+538 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:598:9
+    |
+598 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:645:17
+    |
+645 |                 j;
+    |                 ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:652:9
+    |
+652 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:681:9
+    |
+681 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:762:13
+    |
+762 |             i;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/lil.rs:783:9
+    |
+783 |         i;
+    |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:1055:13
+     |
+1055 |             cnt;
+     |             ^^^^
+
+warning: path statement with no effect
+    --> src/lil.rs:1107:17
+     |
+1107 |                 cnt;
+     |                 ^^^^
+
+warning: path statement with no effect
+    --> src/lil.rs:1450:29
+     |
+1450 | ...                   i;
+     |                       ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:1537:21
+     |
+1537 |                     i;
+     |                     ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:1562:21
+     |
+1562 |                     i;
+     |                     ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3114:9
+     |
+3114 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3163:9
+     |
+3163 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3212:9
+     |
+3212 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3378:13
+     |
+3378 |             head;
+     |             ^^^^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3504:13
+     |
+3504 |             i;
+     |             ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3521:17
+     |
+3521 |                 i;
+     |                 ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3538:13
+     |
+3538 |             i;
+     |             ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3583:13
+     |
+3583 |             i;
+     |             ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3758:9
+     |
+3758 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3810:9
+     |
+3810 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3828:9
+     |
+3828 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3866:13
+     |
+3866 |             i;
+     |             ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3954:13
+     |
+3954 |             i;
+     |             ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3975:13
+     |
+3975 |             i;
+     |             ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:3993:17
+     |
+3993 |                 i;
+     |                 ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4003:17
+     |
+4003 |                 i;
+     |                 ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4020:17
+     |
+4020 |                 i;
+     |                 ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4033:17
+     |
+4033 |                 i;
+     |                 ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4075:13
+     |
+4075 |             i;
+     |             ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4145:13
+     |
+4145 |             index;
+     |             ^^^^^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4179:9
+     |
+4179 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4224:9
+     |
+4224 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4263:9
+     |
+4263 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4282:9
+     |
+4282 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4319:9
+     |
+4319 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4359:9
+     |
+4359 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4421:13
+     |
+4421 |             i;
+     |             ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4792:9
+     |
+4792 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4834:13
+     |
+4834 |             total;
+     |             ^^^^^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4840:9
+     |
+4840 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4857:13
+     |
+4857 |             base;
+     |             ^^^^^
+
+warning: path statement with no effect
+    --> src/lil.rs:4883:13
+     |
+4883 |             len;
+     |             ^^^^
+
+warning: path statement with no effect
+    --> src/lil.rs:5077:9
+     |
+5077 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:5222:9
+     |
+5222 |         i;
+     |         ^^
+
+warning: path statement with no effect
+    --> src/lil.rs:5289:9
+     |
+5289 |         i;
+     |         ^^
+
+warning: `lil` (bin "lil") generated 82 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.14s

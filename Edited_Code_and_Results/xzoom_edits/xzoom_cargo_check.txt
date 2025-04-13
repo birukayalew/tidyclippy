@@ -1,0 +1,427 @@
+   Compiling libc v0.2.171
+   Compiling xzoom v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/xzoom_edits)
+error[E0425]: cannot find function `alarm` in this scope
+    --> src/main.rs:2422:29
+     |
+2422 | ...                   alarm(2 as libc::c_int);
+     |                       ^^^^^ not found in this scope
+     |
+help: consider importing one of these functions
+     |
+1    + use crate::libc::alarm;
+     |
+1    + use libc::alarm;
+     |
+
+error[E0425]: cannot find function `usleep` in this scope
+    --> src/main.rs:2465:13
+     |
+2465 |             usleep(delay);
+     |             ^^^^^^ not found in this scope
+     |
+help: consider importing one of these functions
+     |
+1    + use crate::libc::usleep;
+     |
+1    + use libc::usleep;
+     |
+
+error[E0658]: extern types are experimental
+ --> src/main.rs:3:5
+  |
+3 |     pub type _IO_wide_data;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/main.rs:4:5
+  |
+4 |     pub type _IO_codecvt;
+  |     ^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/main.rs:5:5
+  |
+5 |     pub type _IO_marker;
+  |     ^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/main.rs:6:5
+  |
+6 |     pub type _XGC;
+  |     ^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/main.rs:7:5
+  |
+7 |     pub type _XDisplay;
+  |     ^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/main.rs:8:5
+  |
+8 |     pub type _XPrivate;
+  |     ^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+error[E0658]: extern types are experimental
+ --> src/main.rs:9:5
+  |
+9 |     pub type _XrmHashBucketRec;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #43467 <https://github.com/rust-lang/rust/issues/43467> for more information
+
+warning: type `size_t` should have an upper camel case name
+   --> src/main.rs:138:10
+    |
+138 | pub type size_t = libc::c_ulong;
+    |          ^^^^^^ help: convert the identifier to upper camel case: `SizeT`
+    |
+    = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: type `__off_t` should have an upper camel case name
+   --> src/main.rs:139:10
+    |
+139 | pub type __off_t = libc::c_long;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `OffT`
+
+warning: type `__off64_t` should have an upper camel case name
+   --> src/main.rs:140:10
+    |
+140 | pub type __off64_t = libc::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Off64T`
+
+warning: type `_IO_lock_t` should have an upper camel case name
+   --> src/main.rs:174:10
+    |
+174 | pub type _IO_lock_t = ();
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `IoLockT`
+
+warning: type `__sighandler_t` should have an upper camel case name
+   --> src/main.rs:176:10
+    |
+176 | pub type __sighandler_t = Option::<unsafe extern "C" fn(libc::c_int) -> ()>;
+    |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SighandlerT`
+
+warning: value assigned to `signum` is never read
+    --> src/main.rs:1015:5
+     |
+1015 |     signum = signum;
+     |     ^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+     = note: `#[warn(unused_assignments)]` on by default
+
+warning: value assigned to `i` is never read
+    --> src/main.rs:1019:13
+     |
+1019 |     let mut i: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `data` is never read
+    --> src/main.rs:1022:17
+     |
+1022 |         let mut data: *mut libc::c_char = 0 as *mut libc::c_char;
+     |                 ^^^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `i` is never read
+    --> src/main.rs:1051:13
+     |
+1051 |     let mut i: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1081:5
+     |
+1081 |     mut new_width: libc::c_int,
+     |     ----^^^^^^^^^
+     |     |
+     |     help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1082:5
+     |
+1082 |     mut new_height: libc::c_int,
+     |     ----^^^^^^^^^^
+     |     |
+     |     help: remove this `mut`
+
+warning: value assigned to `i` is never read
+    --> src/main.rs:1122:13
+     |
+1122 |     let mut i: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `j` is never read
+    --> src/main.rs:1123:13
+     |
+1123 |     let mut j: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `k` is never read
+    --> src/main.rs:1124:13
+     |
+1124 |     let mut k: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p1` is never read
+    --> src/main.rs:1131:17
+     |
+1131 |         let mut p1: *mut libc::c_uchar = 0 as *mut libc::c_uchar;
+     |                 ^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p2` is never read
+    --> src/main.rs:1132:17
+     |
+1132 |         let mut p2: *mut libc::c_uchar = 0 as *mut libc::c_uchar;
+     |                 ^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p2step` is never read
+    --> src/main.rs:1133:17
+     |
+1133 |         let mut p2step: libc::c_int = 0;
+     |                 ^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p1_save` is never read
+    --> src/main.rs:1134:17
+     |
+1134 |         let mut p1_save: *mut libc::c_uchar = 0 as *mut libc::c_uchar;
+     |                 ^^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1200:21
+     |
+1200 |                 let mut c: libc::c_uchar = *p2;
+     |                     ----^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1222:21
+     |
+1222 |                 let mut c_0: libc::c_uchar = *p2;
+     |                     ----^^^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1243:21
+     |
+1243 |                 let mut c_1: libc::c_uchar = *fresh2;
+     |                     ----^^^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: value assigned to `i` is never read
+    --> src/main.rs:1325:13
+     |
+1325 |     let mut i: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `j` is never read
+    --> src/main.rs:1326:13
+     |
+1326 |     let mut j: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `k` is never read
+    --> src/main.rs:1327:13
+     |
+1327 |     let mut k: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p1` is never read
+    --> src/main.rs:1334:17
+     |
+1334 |         let mut p1: *mut libc::c_ushort = 0 as *mut libc::c_ushort;
+     |                 ^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p2` is never read
+    --> src/main.rs:1335:17
+     |
+1335 |         let mut p2: *mut libc::c_ushort = 0 as *mut libc::c_ushort;
+     |                 ^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p2step` is never read
+    --> src/main.rs:1336:17
+     |
+1336 |         let mut p2step: libc::c_int = 0;
+     |                 ^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p1_save` is never read
+    --> src/main.rs:1337:17
+     |
+1337 |         let mut p1_save: *mut libc::c_ushort = 0 as *mut libc::c_ushort;
+     |                 ^^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1403:21
+     |
+1403 |                 let mut c: libc::c_ushort = *p2;
+     |                     ----^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1425:21
+     |
+1425 |                 let mut c_0: libc::c_ushort = *p2;
+     |                     ----^^^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1446:21
+     |
+1446 |                 let mut c_1: libc::c_ushort = *fresh7;
+     |                     ----^^^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: value assigned to `i` is never read
+    --> src/main.rs:1528:13
+     |
+1528 |     let mut i: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `j` is never read
+    --> src/main.rs:1529:13
+     |
+1529 |     let mut j: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `k` is never read
+    --> src/main.rs:1530:13
+     |
+1530 |     let mut k: libc::c_int = 0;
+     |             ^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p1` is never read
+    --> src/main.rs:1537:17
+     |
+1537 |         let mut p1: *mut libc::c_uint = 0 as *mut libc::c_uint;
+     |                 ^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p2` is never read
+    --> src/main.rs:1538:17
+     |
+1538 |         let mut p2: *mut libc::c_uint = 0 as *mut libc::c_uint;
+     |                 ^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p2step` is never read
+    --> src/main.rs:1539:17
+     |
+1539 |         let mut p2step: libc::c_int = 0;
+     |                 ^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: value assigned to `p1_save` is never read
+    --> src/main.rs:1540:17
+     |
+1540 |         let mut p1_save: *mut libc::c_uint = 0 as *mut libc::c_uint;
+     |                 ^^^^^^^
+     |
+     = help: maybe it is overwritten before being read?
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1606:21
+     |
+1606 |                 let mut c: libc::c_uint = *p2;
+     |                     ----^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1628:21
+     |
+1628 |                 let mut c_0: libc::c_uint = *p2;
+     |                     ----^^^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1649:21
+     |
+1649 |                 let mut c_1: libc::c_uint = *fresh12;
+     |                     ----^^^
+     |                     |
+     |                     help: remove this `mut`
+
+warning: unused variable: `buttonpressed`
+    --> src/main.rs:1726:36
+     |
+1726 | pub unsafe extern "C" fn xzoom(mut buttonpressed: libc::c_int) {
+     |                                    ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_buttonpressed`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: variable does not need to be mutable
+    --> src/main.rs:1726:32
+     |
+1726 | pub unsafe extern "C" fn xzoom(mut buttonpressed: libc::c_int) {
+     |                                ----^^^^^^^^^^^^^
+     |                                |
+     |                                help: remove this `mut`
+
+Some errors have detailed explanations: E0425, E0658.
+For more information about an error, try `rustc --explain E0425`.
+warning: `xzoom` (bin "xzoom") generated 43 warnings
+error: could not compile `xzoom` (bin "xzoom") due to 9 previous errors; 43 warnings emitted

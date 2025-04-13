@@ -1,0 +1,281 @@
+    Checking urlparser v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/urlparser_edits)
+warning: variable `y` is assigned to, but never used
+   --> src/test.rs:238:13
+    |
+238 |     let mut y: libc::c_int = 0 as libc::c_int;
+    |             ^
+    |
+    = note: consider using `_y` instead
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: variable `y` is assigned to, but never used
+   --> src/test.rs:253:13
+    |
+253 |     let mut y: libc::c_int = 0 as libc::c_int;
+    |             ^
+    |
+    = note: consider using `_y` instead
+
+error: unneeded `return` statement
+   --> src/test.rs:232:5
+    |
+232 |     return dup;
+    |     ^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+    = note: requested on the command line with `-D clippy::needless-return`
+help: remove `return`
+    |
+232 -     return dup;
+232 +     dup
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:247:5
+    |
+247 |     return strdup(ptr);
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+247 -     return strdup(ptr);
+247 +     strdup(ptr)
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:262:5
+    |
+262 |     return strdup(ptr);
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+262 -     return strdup(ptr);
+262 +     strdup(ptr)
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:293:5
+    |
+293 |     return if has as libc::c_int != 0 { ret } else { 0 as *mut libc::c_char };
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+293 -     return if has as libc::c_int != 0 { ret } else { 0 as *mut libc::c_char };
+293 +     if has as libc::c_int != 0 { ret } else { 0 as *mut libc::c_char }
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:444:5
+    |
+444 |     return data;
+    |     ^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+444 -     return data;
+444 +     data
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:460:5
+    |
+460 |     return 0 as libc::c_int != 0;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+460 -     return 0 as libc::c_int != 0;
+460 +     0 as libc::c_int != 0
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:471:5
+    |
+471 |     return 0 as libc::c_int != 0;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+471 -     return 0 as libc::c_int != 0;
+471 +     0 as libc::c_int != 0
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:488:5
+    |
+488 |     return 0 as *mut libc::c_char;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+488 -     return 0 as *mut libc::c_char;
+488 +     0 as *mut libc::c_char
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:497:5
+    |
+497 |     return get_part(url, b"%[^@]\0" as *const u8 as *const libc::c_char, l);
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+497 -     return get_part(url, b"%[^@]\0" as *const u8 as *const libc::c_char, l);
+497 +     get_part(url, b"%[^@]\0" as *const u8 as *const libc::c_char, l)
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:527:5
+    |
+527 |     return hostname;
+    |     ^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+527 -     return hostname;
+527 +     hostname
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:540:5
+    |
+540 |     return host;
+    |     ^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+540 -     return host;
+540 +     host
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:556:5
+    |
+556 |     return pathname;
+    |     ^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+556 -     return pathname;
+556 +     pathname
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:594:5
+    |
+594 |     return path;
+    |     ^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+594 -     return path;
+594 +     path
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:614:5
+    |
+614 |     return search;
+    |     ^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+614 -     return search;
+614 +     search
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:627:5
+    |
+627 |     return query;
+    |     ^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+627 -     return query;
+627 +     query
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:658:5
+    |
+658 |     return hash;
+    |     ^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+658 -     return hash;
+658 +     hash
+    |
+
+error: unneeded `return` statement
+   --> src/test.rs:677:5
+    |
+677 |     return port;
+    |     ^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+677 -     return port;
+677 +     port
+    |
+
+error: unneeded `return` statement
+    --> src/test.rs:1365:5
+     |
+1365 |     return 0 as libc::c_int;
+     |     ^^^^^^^^^^^^^^^^^^^^^^^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+     |
+1365 -     return 0 as libc::c_int;
+1365 +     0 as libc::c_int
+     |
+
+warning: path statement with no effect
+   --> src/test.rs:245:9
+    |
+245 |         i;
+    |         ^^
+    |
+    = note: `#[warn(path_statements)]` on by default
+
+warning: path statement with no effect
+   --> src/test.rs:260:9
+    |
+260 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/test.rs:329:13
+    |
+329 |             auth_len;
+    |             ^^^^^^^^^
+
+warning: path statement with no effect
+   --> src/test.rs:458:9
+    |
+458 |         i;
+    |         ^^
+
+warning: `urlparser` (bin "urlparser") generated 6 warnings
+error: could not compile `urlparser` (bin "urlparser") due to 18 previous errors; 6 warnings emitted

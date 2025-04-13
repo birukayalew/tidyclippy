@@ -1,0 +1,58 @@
+    Checking snudown v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/snudown_edits)
+warning: unused variable: `link`
+   --> src/snudown.rs:822:9
+    |
+822 |     mut link: *const buf,
+    |         ^^^^ help: if this is intentional, prefix it with an underscore: `_link`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `self_0`
+   --> src/snudown.rs:931:9
+    |
+931 |     mut self_0: *mut PyObject,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_self_0`
+
+error: unneeded `return` statement
+   --> src/snudown.rs:873:5
+    |
+873 | /     return sd_markdown_new(
+874 | |         markdownflags,
+875 | |         16 as libc::c_int as size_t,
+876 | |         64 as libc::c_int as size_t,
+877 | |         &mut (*state).callbacks,
+878 | |         &mut (*state).options as *mut snudown_renderopt as *mut libc::c_void,
+879 | |     );
+    | |______^
+    |
+    = note: requested on the command line with `-D clippy::needless-return`
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+873 ~     sd_markdown_new(
+874 +         markdownflags,
+875 +         16 as libc::c_int as size_t,
+876 +         64 as libc::c_int as size_t,
+877 +         &mut (*state).callbacks,
+878 +         &mut (*state).options as *mut snudown_renderopt as *mut libc::c_void,
+879 +     )
+    |
+
+error: unneeded `return` statement
+    --> src/snudown.rs:1019:5
+     |
+1019 |     return py_result;
+     |     ^^^^^^^^^^^^^^^^^ help: remove `return`: `py_result`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+error: unneeded `return` statement
+    --> src/snudown.rs:1107:5
+     |
+1107 |     return module;
+     |     ^^^^^^^^^^^^^^ help: remove `return`: `module`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `snudown` (bin "snudown") generated 2 warnings
+error: could not compile `snudown` due to 3 previous errors; 2 warnings emitted

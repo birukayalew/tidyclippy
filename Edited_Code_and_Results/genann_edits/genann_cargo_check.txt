@@ -1,0 +1,31 @@
+   Compiling libc v0.2.171
+    Checking genann v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/genann_edits)
+warning: unused label
+   --> src/genann.rs:373:5
+    |
+373 |     'c_1500: {
+    |     ^^^^^^^
+    |
+    = note: `#[warn(unused_labels)]` on by default
+
+warning: unused label
+   --> src/genann.rs:405:5
+    |
+405 |     'c_1435: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/genann.rs:576:5
+    |
+576 |     'c_1988: {
+    |     ^^^^^^^
+
+error[E0601]: `main` function not found in crate `genann`
+   --> src/genann.rs:668:2
+    |
+668 | }
+    |  ^ consider adding a `main` function to `src/genann.rs`
+
+For more information about this error, try `rustc --explain E0601`.
+warning: `genann` (bin "genann") generated 3 warnings
+error: could not compile `genann` due to previous error; 3 warnings emitted
