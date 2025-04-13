@@ -1,2 +1,0 @@
-    Checking qsort_edits v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/qsort_edits)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.96s
