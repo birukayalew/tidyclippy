@@ -1,3 +1,6 @@
+
+#![feature(extern_types)]
+
 #![allow(
     dead_code,
     mutable_transmutes,
@@ -7,7 +10,6 @@
     unused_assignments,
     unused_mut
 )]
-#![feature(extern_types)]
 extern "C" {
     pub type _IO_wide_data;
     pub type _IO_codecvt;

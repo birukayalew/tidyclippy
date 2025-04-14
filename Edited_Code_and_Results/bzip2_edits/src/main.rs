@@ -1,3 +1,6 @@
+#![feature(extern_types)]
+
+
 // Importing necessary modules from other files
 mod blocksort;
 mod compress;

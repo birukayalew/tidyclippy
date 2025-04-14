@@ -1,3 +1,5 @@
+#![feature(extern_types)]
+
 #![allow(
     dead_code,
     mutable_transmutes,
@@ -7,7 +9,6 @@
     unused_assignments,
     unused_mut
 )]
-#![feature(extern_types)]
 extern "C" {
     pub type _IO_wide_data;
     pub type _IO_codecvt;
@@ -403,7 +404,7 @@ unsafe fn main_0(mut argc: Int32, mut argv: *mut *mut Char) -> Int32 {
     currBlock = 0 as libc::c_int;
     bStart[currBlock as usize] = 0 as libc::c_int as MaybeUInt64;
     rbCtr = 0 as libc::c_int;
-    while 1 as libc::c_int as Bool != 0 {
+    loop {
         b = bsGetBit(bsIn);
         bitsRead = bitsRead.wrapping_add(1);
         bitsRead;
@@ -504,7 +505,7 @@ unsafe fn main_0(mut argc: Int32, mut argv: *mut *mut Char) -> Int32 {
     bitsRead = 0 as libc::c_int as MaybeUInt64;
     outFile = 0 as *mut FILE;
     wrBlock = 0 as libc::c_int;
-    while 1 as libc::c_int as Bool != 0 {
+    loop {
         b = bsGetBit(bsIn);
         if b == 2 as libc::c_int {
             break;

@@ -8,7 +8,7 @@
     unused_assignments,
     unused_mut
 )]
-#![feature(extern_types)]
+
 extern "C" {
     pub type _IO_wide_data;
     pub type _IO_codecvt;
@@ -234,7 +234,7 @@ unsafe extern "C" fn generateMTFValues(mut s: *mut EState) {
             if zPend > 0 as libc::c_int {
                 zPend -= 1;
                 zPend;
-                while 1 as libc::c_int as Bool != 0 {
+                loop {
                     if zPend & 1 as libc::c_int != 0 {
                         *mtfv.offset(wr as isize) = 1 as libc::c_int as UInt16;
                         wr += 1;
@@ -288,7 +288,7 @@ unsafe extern "C" fn generateMTFValues(mut s: *mut EState) {
     if zPend > 0 as libc::c_int {
         zPend -= 1;
         zPend;
-        while 1 as libc::c_int as Bool != 0 {
+        loop {
             if zPend & 1 as libc::c_int != 0 {
                 *mtfv.offset(wr as isize) = 1 as libc::c_int as UInt16;
                 wr += 1;
@@ -478,7 +478,7 @@ unsafe extern "C" fn sendMTFValues(mut s: *mut EState) {
         nSelectors = 0 as libc::c_int;
         totc = 0 as libc::c_int;
         gs = 0 as libc::c_int;
-        while 1 as libc::c_int as Bool != 0 {
+        loop {
             if gs >= (*s).nMTF {
                 break;
             }
@@ -1776,7 +1776,7 @@ unsafe extern "C" fn sendMTFValues(mut s: *mut EState) {
     nBytes = (*s).numZ;
     selCtr = 0 as libc::c_int;
     gs = 0 as libc::c_int;
-    while 1 as libc::c_int as Bool != 0 {
+    loop {
         if gs >= (*s).nMTF {
             break;
         }

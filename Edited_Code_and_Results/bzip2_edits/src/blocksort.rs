@@ -8,7 +8,7 @@
     unused_assignments,
     unused_mut
 )]
-#![feature(extern_types)]
+
 extern "C" {
     pub type _IO_wide_data;
     pub type _IO_codecvt;
@@ -853,7 +853,7 @@ unsafe extern "C" fn mainSimpleSort(
     while hp >= 0 as libc::c_int {
         h = incs[hp as usize];
         i = lo + h;
-        while 1 as libc::c_int as Bool != 0 {
+        loop {
             if i > hi {
                 break;
             }
@@ -1014,8 +1014,11 @@ unsafe extern "C" fn mainQSort3(
             unLo = ltLo;
             gtHi = hi;
             unHi = gtHi;
-            while 1 as libc::c_int as Bool != 0 {
-                while 1 as libc::c_int as Bool != 0 {
+            loop {
+                if unLo > unHi {
+                    break;
+                }
+                loop {
                     if unLo > unHi {
                         break;
                     }
@@ -1040,7 +1043,7 @@ unsafe extern "C" fn mainQSort3(
                         unLo;
                     }
                 }
-                while 1 as libc::c_int as Bool != 0 {
+                loop {
                     if unLo > unHi {
                         break;
                     }
@@ -1065,9 +1068,8 @@ unsafe extern "C" fn mainQSort3(
                         unHi;
                     }
                 }
-                if unLo > unHi {
-                    break;
-                }
+                
+                
                 let mut zztmp_1: Int32 = *ptr.offset(unLo as isize) as Int32;
                 *ptr.offset(unLo as isize) = *ptr.offset(unHi as isize);
                 *ptr.offset(unHi as isize) = zztmp_1 as UInt32;

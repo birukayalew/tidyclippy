@@ -1,6 +1,8 @@
 #![feature(linkage)]
-use libc::{fileno, srandom, setbuffer, random, fdopen};
-#![allow(
+#![feature(extern_types, linkage)]
+use libc::{fileno, fdopen};
+
+#[allow(
     dead_code,
     mutable_transmutes,
     non_camel_case_types,
@@ -9,7 +11,7 @@ use libc::{fileno, srandom, setbuffer, random, fdopen};
     unused_assignments,
     unused_mut
 )]
-#![feature(extern_types, linkage)]
+
 extern "C" {
     pub type _IO_wide_data;
     pub type _IO_codecvt;
@@ -541,7 +543,7 @@ unsafe extern "C" fn flush_RL(mut s: *mut EState) {
 unsafe extern "C" fn copy_input_until_stop(mut s: *mut EState) -> Bool {
     let mut progress_in: Bool = 0 as libc::c_int as Bool;
     if (*s).mode == 2 as libc::c_int {
-        while 1 as libc::c_int as Bool != 0 {
+        loop {
             if (*s).nblock >= (*s).nblockMAX {
                 break;
             }
@@ -585,7 +587,7 @@ unsafe extern "C" fn copy_input_until_stop(mut s: *mut EState) -> Bool {
             }
         }
     } else {
-        while 1 as libc::c_int as Bool != 0 {
+        loop {
             if (*s).nblock >= (*s).nblockMAX {
                 break;
             }
@@ -639,7 +641,7 @@ unsafe extern "C" fn copy_input_until_stop(mut s: *mut EState) -> Bool {
 }
 unsafe extern "C" fn copy_output_until_stop(mut s: *mut EState) -> Bool {
     let mut progress_out: Bool = 0 as libc::c_int as Bool;
-    while 1 as libc::c_int as Bool != 0 {
+    loop {
         if (*(*s).strm).avail_out == 0 as libc::c_int as libc::c_uint {
             break;
         }
@@ -669,7 +671,7 @@ unsafe extern "C" fn handle_compress(mut strm: *mut bz_stream) -> Bool {
     let mut progress_in: Bool = 0 as libc::c_int as Bool;
     let mut progress_out: Bool = 0 as libc::c_int as Bool;
     let mut s: *mut EState = (*strm).state as *mut EState;
-    while 1 as libc::c_int as Bool != 0 {
+    loop {
         if (*s).state == 1 as libc::c_int {
             progress_out = (progress_out as libc::c_int
                 | copy_output_until_stop(s) as libc::c_int) as Bool;
@@ -894,8 +896,8 @@ unsafe extern "C" fn unRLE_obuf_to_output_FAST(mut s: *mut DState) -> Bool {
     let mut current_block: u64;
     let mut k1: UChar = 0;
     if (*s).blockRandomised != 0 {
-        while 1 as libc::c_int as Bool != 0 {
-            while 1 as libc::c_int as Bool != 0 {
+        loop {
+            loop {
                 if (*(*s).strm).avail_out == 0 as libc::c_int as libc::c_uint {
                     return 0 as libc::c_int as Bool;
                 }
@@ -1103,9 +1105,9 @@ unsafe extern "C" fn unRLE_obuf_to_output_FAST(mut s: *mut DState) -> Bool {
         let mut avail_out_INIT: UInt32 = cs_avail_out;
         let mut s_save_nblockPP: Int32 = (*s).save_nblock + 1 as libc::c_int;
         let mut total_out_lo32_old: libc::c_uint = 0;
-        's_453: while 1 as libc::c_int as Bool != 0 {
+        's_453: loop {
             if c_state_out_len > 0 as libc::c_int {
-                while 1 as libc::c_int as Bool != 0 {
+                loop {
                     if cs_avail_out == 0 as libc::c_int as libc::c_uint {
                         break 's_453;
                     }
@@ -1273,7 +1275,7 @@ unsafe extern "C" fn unRLE_obuf_to_output_FAST(mut s: *mut DState) -> Bool {
 }
 #[no_mangle]
 #[inline]
-#[linkage = "external"]
+// #[linkage = "external"]
 pub unsafe extern "C" fn BZ2_indexIntoF(
     mut indx: Int32,
     mut cftab: *mut Int32,
@@ -1299,8 +1301,8 @@ pub unsafe extern "C" fn BZ2_indexIntoF(
 unsafe extern "C" fn unRLE_obuf_to_output_SMALL(mut s: *mut DState) -> Bool {
     let mut k1: UChar = 0;
     if (*s).blockRandomised != 0 {
-        while 1 as libc::c_int as Bool != 0 {
-            while 1 as libc::c_int as Bool != 0 {
+        loop {
+            loop {
                 if (*(*s).strm).avail_out == 0 as libc::c_int as libc::c_uint {
                     return 0 as libc::c_int as Bool;
                 }
@@ -1524,8 +1526,8 @@ unsafe extern "C" fn unRLE_obuf_to_output_SMALL(mut s: *mut DState) -> Bool {
             }
         }
     } else {
-        while 1 as libc::c_int as Bool != 0 {
-            while 1 as libc::c_int as Bool != 0 {
+        loop {
+            loop {
                 if (*(*s).strm).avail_out == 0 as libc::c_int as libc::c_uint {
                     return 0 as libc::c_int as Bool;
                 }
@@ -1685,7 +1687,7 @@ pub unsafe extern "C" fn BZ2_bzDecompress(mut strm: *mut bz_stream) -> libc::c_i
     if (*s).strm != strm {
         return -(2 as libc::c_int);
     }
-    while 1 as libc::c_int as Bool != 0 {
+    loop {
         if (*s).state == 1 as libc::c_int {
             return -(1 as libc::c_int);
         }
@@ -1930,7 +1932,7 @@ pub unsafe extern "C" fn BZ2_bzWrite(
     }
     (*bzf).strm.avail_in = len as libc::c_uint;
     (*bzf).strm.next_in = buf as *mut libc::c_char;
-    while 1 as libc::c_int as Bool != 0 {
+    loop {
         (*bzf).strm.avail_out = 5000 as libc::c_int as libc::c_uint;
         (*bzf).strm.next_out = ((*bzf).buf).as_mut_ptr();
         ret = BZ2_bzCompress(&mut (*bzf).strm, 0 as libc::c_int);
@@ -2045,7 +2047,7 @@ pub unsafe extern "C" fn BZ2_bzWriteClose64(
         *nbytes_out_hi32 = 0 as libc::c_int as libc::c_uint;
     }
     if abandon == 0 && (*bzf).lastErr == 0 as libc::c_int {
-        while 1 as libc::c_int as Bool != 0 {
+        loop {
             (*bzf).strm.avail_out = 5000 as libc::c_int as libc::c_uint;
             (*bzf).strm.next_out = ((*bzf).buf).as_mut_ptr();
             ret = BZ2_bzCompress(&mut (*bzf).strm, 2 as libc::c_int);
@@ -2283,7 +2285,7 @@ pub unsafe extern "C" fn BZ2_bzRead(
     }
     (*bzf).strm.avail_out = len as libc::c_uint;
     (*bzf).strm.next_out = buf as *mut libc::c_char;
-    while 1 as libc::c_int as Bool != 0 {
+    loop {
         if ferror((*bzf).handle) != 0 {
             if !bzerror.is_null() {
                 *bzerror = -(6 as libc::c_int);
@@ -2535,10 +2537,7 @@ unsafe extern "C" fn bzopen_or_bzdopen(
     let mut unused: [libc::c_char; 5000] = [0; 5000];
     let mut blockSize100k: libc::c_int = 9 as libc::c_int;
     let mut writing: libc::c_int = 0 as libc::c_int;
-    let mut mode2: [libc::c_char; 10] = *::core::mem::transmute::<
-        &[u8; 10],
-        &mut [libc::c_char; 10],
-    >(b"\0\0\0\0\0\0\0\0\0\0");
+    let mut mode2: [libc::c_char; 10] = [0; 10];
     let mut fp: *mut FILE = 0 as *mut FILE;
     let mut bzfp: *mut libc::c_void = 0 as *mut libc::c_void;
     let mut verbosity: libc::c_int = 0 as libc::c_int;
@@ -2582,11 +2581,7 @@ unsafe extern "C" fn bzopen_or_bzdopen(
     if open_mode == 0 as libc::c_int {
         strcat(
             mode2.as_mut_ptr(),
-            if writing != 0 {
-                b"e\0" as *const u8 as *const libc::c_char
-            } else {
-                b"e\0" as *const u8 as *const libc::c_char
-            },
+            b"e\0" as *const u8 as *const libc::c_char
         );
     }
     if open_mode == 0 as libc::c_int {

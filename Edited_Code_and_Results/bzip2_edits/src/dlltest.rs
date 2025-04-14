@@ -1,5 +1,7 @@
-use libc::{fileno, srandom, setbuffer, random, fdopen};
-#![allow(
+#![feature(extern_types)]
+use libc::{FILE, fileno};
+
+#[allow(
     dead_code,
     mutable_transmutes,
     non_camel_case_types,
@@ -8,13 +10,15 @@ use libc::{fileno, srandom, setbuffer, random, fdopen};
     unused_assignments,
     unused_mut
 )]
-#![feature(extern_types)]
+
+
+
 extern "C" {
     pub type _IO_wide_data;
     pub type _IO_codecvt;
     pub type _IO_marker;
     static mut stdin: *mut FILE;
-    static mut stdout: *mut FILE;
+    static mut stdout: *mut libc::FILE;
     fn fclose(__stream: *mut FILE) -> libc::c_int;
     fn fopen(_: *const libc::c_char, _: *const libc::c_char) -> *mut FILE;
     fn printf(_: *const libc::c_char, _: ...) -> libc::c_int;
@@ -87,7 +91,7 @@ pub struct _IO_FILE {
     pub _unused2: [libc::c_char; 20],
 }
 pub type _IO_lock_t = ();
-pub type FILE = _IO_FILE;
+// pub type FILE = _IO_FILE;
 pub type BZFILE = ();
 #[no_mangle]
 pub unsafe extern "C" fn usage() {
