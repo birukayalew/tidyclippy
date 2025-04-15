@@ -34,7 +34,8 @@ pub unsafe extern "C" fn ti_msw(
     if size <= ti_msw_start(options) {
         return 0 as libc::c_int;
     }
-    let pi: libc::c_double = 3.1415926f64;
+    let pi: libc::c_double = std::f64::consts::PI;
+
     let tpi: libc::c_double = 2 as libc::c_int as libc::c_double * pi;
     let mut weight: libc::c_double = 0 as libc::c_int as libc::c_double;
     let mut phase: libc::c_double = 0.;

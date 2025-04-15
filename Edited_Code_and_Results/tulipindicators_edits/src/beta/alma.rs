@@ -1,3 +1,5 @@
+#![feature(label_break_value)]
+
 use ::libc;
 extern "C" {
     fn exp(_: libc::c_double) -> libc::c_double;

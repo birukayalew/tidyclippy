@@ -1,3 +1,5 @@
+#![feature(label_break_value)]
+
 use ::libc;
 extern "C" {
     fn __assert_fail(
@@ -76,13 +78,13 @@ pub unsafe extern "C" fn ti_kst(
     let mut per4: libc::c_double = 2.0f64 / (ma4 + 1 as libc::c_int) as libc::c_double;
     let mut per_signal: libc::c_double = 2.0f64 / (9.0f64 + 1.0f64);
     let mut _1: libc::c_double = (*real.offset(roc1 as isize)
-        - *real.offset((roc1 - roc1) as isize)) / *real.offset((roc1 - roc1) as isize);
+        - *real.offset((roc1 - roc2) as isize)) / *real.offset((roc1 - roc2) as isize);
     let mut _2: libc::c_double = (*real.offset(roc2 as isize)
-        - *real.offset((roc2 - roc2) as isize)) / *real.offset((roc2 - roc2) as isize);
+        - *real.offset((roc3 - roc2) as isize)) / *real.offset((roc3 - roc2) as isize);
     let mut _3: libc::c_double = (*real.offset(roc3 as isize)
-        - *real.offset((roc3 - roc3) as isize)) / *real.offset((roc3 - roc3) as isize);
+        - *real.offset((roc3 - roc2) as isize)) / *real.offset((roc3 - roc2) as isize);
     let mut _4: libc::c_double = (*real.offset(roc4 as isize)
-        - *real.offset((roc4 - roc4) as isize)) / *real.offset((roc4 - roc4) as isize);
+        - *real.offset((roc4 - roc3) as isize)) / *real.offset((roc4 - roc3) as isize);
     let mut i_0: libc::c_int = roc1 + 1 as libc::c_int;
     while i_0 < roc4 + 1 as libc::c_int && i_0 < size {
         _1 = ((*real.offset(i_0 as isize) - *real.offset((i_0 - roc1) as isize))

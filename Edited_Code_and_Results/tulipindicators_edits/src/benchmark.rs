@@ -1,10 +1,12 @@
+#![feature(extern_types)]
+
 use ::libc;
 extern "C" {
-    pub type ti_stream = libc::c_void;
-    pub type _IO_wide_data = libc::c_void;
-    pub type _IO_codecvt = libc::c_void;
-    pub type _IO_marker = libc::c_void;
-    pub type tc_result = libc::c_void;
+    pub type ti_stream;
+    pub type _IO_wide_data;
+    pub type _IO_codecvt;
+    pub type _IO_marker;
+    pub type tc_result;
     fn memset(
         _: *mut libc::c_void,
         _: libc::c_int,
@@ -196,13 +198,13 @@ pub static mut fails: libc::c_int = 0 as libc::c_int;
 #[export_name = "in"]
 pub static mut in_0: [[libc::c_double; 4000]; 5] = [[0.; 4000]; 5];
 #[no_mangle]
-pub static mut out: [[libc::c_double; 4000]; 3] = [[0.; 4000]; 3];
+pub static mut out: [[libc::c_double; 4000]; 5] = [[0.; 4000]; 5];
 #[no_mangle]
-pub static mut outref: [[libc::c_double; 4000]; 3] = [[0.; 4000]; 3];
+pub static mut outref: [[libc::c_double; 4000]; 5] = [[0.; 4000]; 5];
 #[no_mangle]
-pub static mut outstream1: [[libc::c_double; 4000]; 3] = [[0.; 4000]; 3];
+pub static mut outstream1: [[libc::c_double; 4000]; 5] = [[0.; 4000]; 5];
 #[no_mangle]
-pub static mut outstreamall: [[libc::c_double; 4000]; 3] = [[0.; 4000]; 3];
+pub static mut outstreamall: [[libc::c_double; 4000]; 5] = [[0.; 4000]; 5];
 #[no_mangle]
 pub static mut outcnd: *mut tc_result = 0 as *const tc_result as *mut tc_result;
 #[no_mangle]
@@ -391,46 +393,31 @@ pub unsafe extern "C" fn ti_setup(
         if strcmp(
             (*info).input_names[j as usize],
             b"open\0" as *const u8 as *const libc::c_char,
-        ) == 0 as libc::c_int
+        ) == 0 as libc::c_int 
+        || (strcmp(
+            (*info).input_names[j as usize],
+            b"high\0" as *const u8 as *const libc::c_char,
+        ) == 0 as libc::c_int)
+        || (strcmp(
+            (*info).input_names[j as usize],
+            b"low\0" as *const u8 as *const libc::c_char,
+        ) == 0 as libc::c_int)
+        || (strcmp(
+            (*info).input_names[j as usize],
+            b"close\0" as *const u8 as *const libc::c_char,
+        ) == 0 as libc::c_int)
+        || (strcmp(
+            (*info).input_names[j as usize],
+            b"real\0" as *const u8 as *const libc::c_char,
+        ) == 0 as libc::c_int)
+        || (strcmp(
+            (*info).input_names[j as usize],
+            b"volume\0" as *const u8 as *const libc::c_char,
+        ) == 0 as libc::c_int)
         {
             let ref mut fresh0 = *inputs.offset(j as isize);
             *fresh0 = (in_0[0 as libc::c_int as usize]).as_mut_ptr();
-        } else if strcmp(
-            (*info).input_names[j as usize],
-            b"high\0" as *const u8 as *const libc::c_char,
-        ) == 0 as libc::c_int
-        {
-            let ref mut fresh1 = *inputs.offset(j as isize);
-            *fresh1 = (in_0[1 as libc::c_int as usize]).as_mut_ptr();
-        } else if strcmp(
-            (*info).input_names[j as usize],
-            b"low\0" as *const u8 as *const libc::c_char,
-        ) == 0 as libc::c_int
-        {
-            let ref mut fresh2 = *inputs.offset(j as isize);
-            *fresh2 = (in_0[2 as libc::c_int as usize]).as_mut_ptr();
-        } else if strcmp(
-            (*info).input_names[j as usize],
-            b"close\0" as *const u8 as *const libc::c_char,
-        ) == 0 as libc::c_int
-        {
-            let ref mut fresh3 = *inputs.offset(j as isize);
-            *fresh3 = (in_0[3 as libc::c_int as usize]).as_mut_ptr();
-        } else if strcmp(
-            (*info).input_names[j as usize],
-            b"real\0" as *const u8 as *const libc::c_char,
-        ) == 0 as libc::c_int
-        {
-            let ref mut fresh4 = *inputs.offset(j as isize);
-            *fresh4 = (in_0[3 as libc::c_int as usize]).as_mut_ptr();
-        } else if strcmp(
-            (*info).input_names[j as usize],
-            b"volume\0" as *const u8 as *const libc::c_char,
-        ) == 0 as libc::c_int
-        {
-            let ref mut fresh5 = *inputs.offset(j as isize);
-            *fresh5 = (in_0[4 as libc::c_int as usize]).as_mut_ptr();
-        } else {
+        }  else {
             if 0 as libc::c_int != 0 {} else {
                 __assert_fail(
                     b"0\0" as *const u8 as *const libc::c_char,
@@ -1085,7 +1072,7 @@ pub unsafe extern "C" fn check_outputs(
                     ))[(4000 as libc::c_int - 1 as libc::c_int - i - ind_offset)
                     as usize];
                 let mut diff: libc::c_double = fabs(a - b);
-                if diff > 0.0001f64 || nanok == 0 && diff != diff {
+                if diff > 0.0001f64 || nanok == 0{
                     fails += 1;
                     fails;
                     printf(b"Results disagree.\n\0" as *const u8 as *const libc::c_char);

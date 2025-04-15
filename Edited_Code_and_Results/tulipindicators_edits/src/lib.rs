@@ -1,3 +1,6 @@
+#![feature(extern_types)]
+#![feature(label_break_value)]
+
 pub mod benchmark;
 pub mod cli;
 pub mod fuzzer;

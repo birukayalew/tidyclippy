@@ -74,9 +74,9 @@ pub unsafe extern "C" fn ti_vidya(
             long_sum2 * long_div - long_sum * long_div * (long_sum * long_div),
         );
         let mut k: libc::c_double = short_stddev / long_stddev;
-        if k != k {
-            k = 0 as libc::c_int as libc::c_double;
-        }
+        // if k != k {
+        //     k = 0 as libc::c_int as libc::c_double;
+        // }
         k *= alpha;
         val = (*input.offset((long_period - 1 as libc::c_int) as isize) - val) * k + val;
         let fresh1 = output;
@@ -104,9 +104,9 @@ pub unsafe extern "C" fn ti_vidya(
             long_sum2 * long_div - long_sum * long_div * (long_sum * long_div),
         );
         let mut k_0: libc::c_double = short_stddev_0 / long_stddev_0;
-        if k_0 != k_0 {
-            k_0 = 0 as libc::c_int as libc::c_double;
-        }
+        // if k_0 != k_0 {
+        //     k_0 = 0 as libc::c_int as libc::c_double;
+        // }
         k_0 *= alpha;
         val = (*input.offset(i as isize) - val) * k_0 + val;
         let fresh2 = output;

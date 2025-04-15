@@ -1,3 +1,5 @@
+#![feature(label_break_value)]
+
 use ::libc;
 extern "C" {
     fn __assert_fail(

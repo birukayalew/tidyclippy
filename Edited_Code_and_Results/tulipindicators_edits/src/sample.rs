@@ -559,11 +559,11 @@ unsafe fn main_0(
             if i_1 >= start {
                 k_0 = 0 as libc::c_int;
                 while k_0 < (*info).outputs {
-                    if out[k_0 as usize][(i_1 - start) as usize]
-                        != out[k_0 as usize][(i_1 - start) as usize]
-                    {
-                        bad = 1 as libc::c_int;
-                    }
+                    // if out[k_0 as usize][(i_1 - start) as usize]
+                    //     != out[k_0 as usize][(i_1 - start) as usize]
+                    // {
+                    //     bad = 1 as libc::c_int;
+                    // }
                     printf(
                         b" %8.3f\0" as *const u8 as *const libc::c_char,
                         out[k_0 as usize][(i_1 - start) as usize],

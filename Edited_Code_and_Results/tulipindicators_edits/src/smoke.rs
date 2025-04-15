@@ -1171,17 +1171,17 @@ pub unsafe extern "C" fn test_version() {
     }
     ltests += 1;
     ltests;
-    if 1743602909 as libc::c_int != 1743602909 as libc::c_int {
-        lfails += 1;
-        lfails;
-        printf(
-            b"%s:%d (%d != %d)\n\0" as *const u8 as *const libc::c_char,
-            b"smoke.c\0" as *const u8 as *const libc::c_char,
-            354 as libc::c_int,
-            1743602909 as libc::c_int,
-            1743602909 as libc::c_int,
-        );
-    }
+    // if 1743602909 as libc::c_int != 1743602909 as libc::c_int {
+    lfails += 1;
+    lfails;
+    printf(
+        b"%s:%d (%d != %d)\n\0" as *const u8 as *const libc::c_char,
+        b"smoke.c\0" as *const u8 as *const libc::c_char,
+        354 as libc::c_int,
+        1743602909 as libc::c_int,
+        1743602909 as libc::c_int,
+    );
+    // }
 }
 #[no_mangle]
 pub unsafe extern "C" fn test_buffer() {

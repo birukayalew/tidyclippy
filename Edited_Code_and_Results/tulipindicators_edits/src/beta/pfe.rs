@@ -1,3 +1,5 @@
+#![feature(label_break_value)]
+
 use ::libc;
 extern "C" {
     pub type ti_stream;
