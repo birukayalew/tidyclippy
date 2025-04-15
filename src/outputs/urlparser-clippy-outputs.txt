@@ -1,0 +1,693 @@
+   Compiling libc v0.2.172
+    Checking urlparser v0.1.0 (/mnt/c/Users/sebir/Documents/Research/tidyclippy/Edited_Code_and_Results/urlparser_edits)
+warning: variable `y` is assigned to, but never used
+   --> src/test.rs:238:13
+    |
+238 |     let mut y: libc::c_int = 0 as libc::c_int;
+    |             ^
+    |
+    = note: `#[warn(unused_variables)]` on by default
+    = note: consider using `_y` instead
+
+warning: variable `y` is assigned to, but never used
+   --> src/test.rs:253:13
+    |
+253 |     let mut y: libc::c_int = 0 as libc::c_int;
+    |             ^
+    |
+    = note: consider using `_y` instead
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:225:1
+    |
+225 | / pub unsafe extern "C" fn strdup(mut str: *const libc::c_char) -> *mut libc::c_char {
+226 | |     let mut n: libc::c_int = (strlen(str))
+227 | |         .wrapping_add(1 as libc::c_int as libc::c_ulong) as libc::c_int;
+228 | |     let mut dup: *mut libc::c_char = malloc(n as libc::c_ulong) as *mut libc::c_char;
+...   |
+232 | |     return dup;
+233 | | }
+    | |_^
+    |
+    = note: `#[warn(clippy::missing_safety_doc)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:232:5
+    |
+232 |     return dup;
+    |     ^^^^^^^^^^^ help: remove `return`: `dup`
+    |
+    = note: `#[warn(clippy::needless_return)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unneeded `return` statement
+   --> src/test.rs:247:5
+    |
+247 |     return strdup(ptr);
+    |     ^^^^^^^^^^^^^^^^^^^ help: remove `return`: `strdup(ptr)`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: statement with no effect
+   --> src/test.rs:245:9
+    |
+245 |         i;
+    |         ^^
+    |
+    = note: `#[warn(clippy::no_effect)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unneeded `return` statement
+   --> src/test.rs:262:5
+    |
+262 |     return strdup(ptr);
+    |     ^^^^^^^^^^^^^^^^^^^ help: remove `return`: `strdup(ptr)`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: statement with no effect
+   --> src/test.rs:260:9
+    |
+260 |         i;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unneeded `return` statement
+   --> src/test.rs:293:5
+    |
+293 |     return if has as libc::c_int != 0 { ret } else { 0 as *mut libc::c_char };
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `if has as libc::c_int != 0 { ret } else { 0 as *mut libc::c_char }`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:279:16
+    |
+279 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = note: `#[warn(clippy::zero_ptr)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:293:54
+    |
+293 |     return if has as libc::c_int != 0 { ret } else { 0 as *mut libc::c_char };
+    |                                                      ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:296:1
+    |
+296 | / pub unsafe extern "C" fn url_parse(mut url: *mut libc::c_char) -> *mut url_data_t {
+297 | |     let mut data: *mut url_data_t = malloc(
+298 | |         ::core::mem::size_of::<url_data_t>() as libc::c_ulong,
+299 | |     ) as *mut url_data_t;
+...   |
+444 | |     return data;
+445 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:444:5
+    |
+444 |     return data;
+    |     ^^^^^^^^^^^^ help: remove `return`: `data`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:301:16
+    |
+301 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:304:38
+    |
+304 |     let mut tmp: *mut libc::c_char = 0 as *mut libc::c_char;
+    |                                      ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:309:16
+    |
+309 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: statement with no effect
+   --> src/test.rs:329:13
+    |
+329 |             auth_len;
+    |             ^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:333:43
+    |
+333 |     let mut hostname: *mut libc::c_char = 0 as *mut libc::c_char;
+    |                                           ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:348:16
+    |
+348 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:359:16
+    |
+359 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:363:43
+    |
+363 |     let mut tmp_path: *mut libc::c_char = 0 as *mut libc::c_char;
+    |                                           ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:382:16
+    |
+382 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:396:16
+    |
+396 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:407:16
+    |
+407 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:419:16
+    |
+419 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:427:16
+    |
+427 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:438:16
+    |
+438 |         return 0 as *mut url_data_t;
+    |                ^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<url_data_t>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:447:1
+    |
+447 | / pub unsafe extern "C" fn url_is_protocol(mut str: *mut libc::c_char) -> bool {
+448 | |     let mut count: libc::c_int = (::core::mem::size_of::<[*mut libc::c_char; 177]>()
+449 | |         as libc::c_ulong)
+450 | |         .wrapping_div(::core::mem::size_of::<*mut libc::c_char>() as libc::c_ulong)
+...   |
+460 | |     return 0 as libc::c_int != 0;
+461 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:460:5
+    |
+460 |     return 0 as libc::c_int != 0;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int != 0`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: statement with no effect
+   --> src/test.rs:458:9
+    |
+458 |         i;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:463:1
+    |
+463 | / pub unsafe extern "C" fn url_is_ssh(mut str: *mut libc::c_char) -> bool {
+464 | |     str = strdup(str);
+465 | |     if 0 as libc::c_int == strcmp(str, b"ssh\0" as *const u8 as *const libc::c_char)
+466 | |         || 0 as libc::c_int == strcmp(str, b"git\0" as *const u8 as *const libc::c_char)
+...   |
+471 | |     return 0 as libc::c_int != 0;
+472 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:471:5
+    |
+471 |     return 0 as libc::c_int != 0;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int != 0`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:474:1
+    |
+474 | / pub unsafe extern "C" fn url_get_protocol(
+475 | |     mut url: *mut libc::c_char,
+476 | | ) -> *mut libc::c_char {
+477 | |     let mut protocol: *mut libc::c_char = malloc(
+...   |
+488 | |     return 0 as *mut libc::c_char;
+489 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:488:5
+    |
+488 |     return 0 as *mut libc::c_char;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as *mut libc::c_char`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:482:16
+    |
+482 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:488:12
+    |
+488 |     return 0 as *mut libc::c_char;
+    |            ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:491:1
+    |
+491 | / pub unsafe extern "C" fn url_get_auth(mut url: *mut libc::c_char) -> *mut libc::c_char {
+492 | |     let mut protocol: *mut libc::c_char = url_get_protocol(url);
+493 | |     if protocol.is_null() {
+494 | |         return 0 as *mut libc::c_char;
+...   |
+497 | |     return get_part(url, b"%[^@]\0" as *const u8 as *const libc::c_char, l);
+498 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:497:5
+    |
+497 |     return get_part(url, b"%[^@]\0" as *const u8 as *const libc::c_char, l);
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `get_part(url, b"%[^@]\0" as *const u8 as *const libc::c_char, l)`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:494:16
+    |
+494 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:500:1
+    |
+500 | / pub unsafe extern "C" fn url_get_hostname(
+501 | |     mut url: *mut libc::c_char,
+502 | | ) -> *mut libc::c_char {
+503 | |     let mut l: libc::c_int = 3 as libc::c_int;
+...   |
+527 | |     return hostname;
+528 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:527:5
+    |
+527 |     return hostname;
+    |     ^^^^^^^^^^^^^^^^ help: remove `return`: `hostname`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:508:16
+    |
+508 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:530:1
+    |
+530 | / pub unsafe extern "C" fn url_get_host(mut url: *mut libc::c_char) -> *mut libc::c_char {
+531 | |     let mut host: *mut libc::c_char = malloc(
+532 | |         ::core::mem::size_of::<libc::c_char>() as libc::c_ulong,
+533 | |     ) as *mut libc::c_char;
+...   |
+540 | |     return host;
+541 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:540:5
+    |
+540 |     return host;
+    |     ^^^^^^^^^^^^ help: remove `return`: `host`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:536:16
+    |
+536 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:543:1
+    |
+543 | / pub unsafe extern "C" fn url_get_pathname(
+544 | |     mut url: *mut libc::c_char,
+545 | | ) -> *mut libc::c_char {
+546 | |     let mut path: *mut libc::c_char = url_get_path(url);
+...   |
+556 | |     return pathname;
+557 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:556:5
+    |
+556 |     return pathname;
+    |     ^^^^^^^^^^^^^^^^ help: remove `return`: `pathname`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:551:16
+    |
+551 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:559:1
+    |
+559 | / pub unsafe extern "C" fn url_get_path(mut url: *mut libc::c_char) -> *mut libc::c_char {
+560 | |     let mut l: libc::c_int = 3 as libc::c_int;
+561 | |     let mut tmp_path: *mut libc::c_char = 0 as *mut libc::c_char;
+562 | |     let mut protocol: *mut libc::c_char = url_get_protocol(url);
+...   |
+594 | |     return path;
+595 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:594:5
+    |
+594 |     return path;
+    |     ^^^^^^^^^^^^ help: remove `return`: `path`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:561:43
+    |
+561 |     let mut tmp_path: *mut libc::c_char = 0 as *mut libc::c_char;
+    |                                           ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:566:16
+    |
+566 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:597:1
+    |
+597 | / pub unsafe extern "C" fn url_get_search(
+598 | |     mut url: *mut libc::c_char,
+599 | | ) -> *mut libc::c_char {
+600 | |     let mut path: *mut libc::c_char = url_get_path(url);
+...   |
+614 | |     return search;
+615 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:614:5
+    |
+614 |     return search;
+    |     ^^^^^^^^^^^^^^ help: remove `return`: `search`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:606:16
+    |
+606 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:617:1
+    |
+617 | / pub unsafe extern "C" fn url_get_query(mut url: *mut libc::c_char) -> *mut libc::c_char {
+618 | |     let mut search: *mut libc::c_char = url_get_search(url);
+619 | |     let mut query: *mut libc::c_char = malloc(
+620 | |         ::core::mem::size_of::<libc::c_char>() as libc::c_ulong,
+...   |
+627 | |     return query;
+628 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:627:5
+    |
+627 |     return query;
+    |     ^^^^^^^^^^^^^ help: remove `return`: `query`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:623:16
+    |
+623 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:630:1
+    |
+630 | / pub unsafe extern "C" fn url_get_hash(mut url: *mut libc::c_char) -> *mut libc::c_char {
+631 | |     let mut hash: *mut libc::c_char = malloc(
+632 | |         ::core::mem::size_of::<libc::c_char>() as libc::c_ulong,
+633 | |     ) as *mut libc::c_char;
+...   |
+658 | |     return hash;
+659 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:658:5
+    |
+658 |     return hash;
+    |     ^^^^^^^^^^^^ help: remove `return`: `hash`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:635:16
+    |
+635 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:639:16
+    |
+639 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:643:16
+    |
+643 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:661:1
+    |
+661 | / pub unsafe extern "C" fn url_get_port(mut url: *mut libc::c_char) -> *mut libc::c_char {
+662 | |     let mut port: *mut libc::c_char = malloc(
+663 | |         ::core::mem::size_of::<libc::c_char>() as libc::c_ulong,
+664 | |     ) as *mut libc::c_char;
+...   |
+677 | |     return port;
+678 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/test.rs:677:5
+    |
+677 |     return port;
+    |     ^^^^^^^^^^^^ help: remove `return`: `port`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/test.rs:668:16
+    |
+668 |         return 0 as *mut libc::c_char;
+    |                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:680:1
+    |
+680 | / pub unsafe extern "C" fn url_inspect(mut url: *mut libc::c_char) {
+681 | |     url_data_inspect(url_parse(url));
+682 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:684:1
+    |
+684 | / pub unsafe extern "C" fn url_data_inspect(mut data: *mut url_data_t) {
+685 | |     printf(b"#url =>\n\0" as *const u8 as *const libc::c_char);
+686 | |     printf(b"    .href: \"%s\"\n\0" as *const u8 as *const libc::c_char, (*data).href);
+687 | |     printf(
+...   |
+708 | |     printf(b"    .port: \"%s\"\n\0" as *const u8 as *const libc::c_char, (*data).port);
+709 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/test.rs:711:1
+    |
+711 | / pub unsafe extern "C" fn url_free(mut data: *mut url_data_t) {
+712 | |     if data.is_null() {
+713 | |         return;
+714 | |     }
+...   |
+741 | |     }
+742 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+    --> src/test.rs:1365:5
+     |
+1365 |     return 0 as libc::c_int;
+     |     ^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: path statement with no effect
+   --> src/test.rs:245:9
+    |
+245 |         i;
+    |         ^^
+    |
+    = note: `#[warn(path_statements)]` on by default
+
+warning: path statement with no effect
+   --> src/test.rs:260:9
+    |
+260 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/test.rs:329:13
+    |
+329 |             auth_len;
+    |             ^^^^^^^^^
+
+warning: path statement with no effect
+   --> src/test.rs:458:9
+    |
+458 |         i;
+    |         ^^
+
+warning: `urlparser` (bin "urlparser") generated 74 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 4.11s

@@ -4633,28 +4633,34 @@ unsafe extern "C" fn fnc_while(
     if argc < (base as size_t).wrapping_add(2 as libc::c_int as size_t) {
         return 0 as lil_value_t;
     }
-    while (*lil).error == 0 && (*(*lil).env).breakrun == 0 {
-        val = lil_eval_expr(lil, *argv.offset(base as isize));
-        if val.is_null() || (*lil).error != 0 {
-            return 0 as lil_value_t;
-        }
-        v = lil_to_boolean(val);
-        if not != 0 {
-            v = (v == 0) as libc::c_int;
-        }
-        if v == 0 {
-            lil_free_value(val);
-            break;
-        } else {
-            if !r.is_null() {
-                lil_free_value(r);
+    if (*lil).error == 0 && (*(*lil).env).breakrun == 0 {
+        loop {
+            val = lil_eval_expr(lil, *argv.offset(base as isize));
+            if val.is_null() || (*lil).error != 0 {
+                return 0 as lil_value_t;
             }
-            r = lil_parse_value(
-                lil,
-                *argv.offset((base + 1 as libc::c_int) as isize),
-                0 as libc::c_int,
-            );
-            lil_free_value(val);
+            v = lil_to_boolean(val);
+            if not != 0 {
+                v = (v == 0) as libc::c_int;
+            }
+            if v == 0 {
+                lil_free_value(val);
+                break;
+            } else {
+                if !r.is_null() {
+                    lil_free_value(r);
+                }
+                r = lil_parse_value(
+                    lil,
+                    *argv.offset((base + 1 as libc::c_int) as isize),
+                    0 as libc::c_int,
+                );
+                lil_free_value(val);
+            }
+
+            if (*lil).error != 0 || (*(*lil).env).breakrun != 0 {
+                break;
+            }
         }
     }
     return r;
@@ -4672,7 +4678,8 @@ unsafe extern "C" fn fnc_for(
     lil_free_value(
         lil_parse_value(lil, *argv.offset(0 as libc::c_int as isize), 0 as libc::c_int),
     );
-    while (*lil).error == 0 && (*(*lil).env).breakrun == 0 {
+    if (*lil).error == 0 && (*(*lil).env).breakrun == 0 {
+        loop {
         val = lil_eval_expr(lil, *argv.offset(1 as libc::c_int as isize));
         if val.is_null() || (*lil).error != 0 {
             return 0 as lil_value_t;
@@ -4695,8 +4702,9 @@ unsafe extern "C" fn fnc_for(
                     lil,
                     *argv.offset(2 as libc::c_int as isize),
                     0 as libc::c_int,
-                ),
-            );
+                    ),
+                );
+            }
         }
     }
     return r;

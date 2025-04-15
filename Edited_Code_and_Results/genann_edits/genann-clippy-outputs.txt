@@ -1,0 +1,763 @@
+   Compiling libc v0.2.171
+    Checking genann v0.1.0 (/mnt/c/Users/sebir/Documents/Research/tidyclippy/Edited_Code_and_Results/genann_edits)
+warning: unused label
+   --> src/genann.rs:373:5
+    |
+373 |     'c_1500: {
+    |     ^^^^^^^
+    |
+    = note: `#[warn(unused_labels)]` on by default
+
+warning: unused label
+   --> src/genann.rs:405:5
+    |
+405 |     'c_1435: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/genann.rs:576:5
+    |
+576 |     'c_1988: {
+    |     ^^^^^^^
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:92:1
+    |
+92  | / pub unsafe extern "C" fn genann_act_sigmoid(mut a: libc::c_double) -> libc::c_double {
+93  | |     if a < -45.0f64 {
+94  | |         return 0 as libc::c_int as libc::c_double;
+95  | |     }
+...   |
+99  | |     return 1.0f64 / (1 as libc::c_int as libc::c_double + exp(-a));
+100 | | }
+    | |_^
+    |
+    = note: `#[warn(clippy::missing_safety_doc)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+  --> src/genann.rs:99:5
+   |
+99 |     return 1.0f64 / (1 as libc::c_int as libc::c_double + exp(-a));
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `1.0f64 / (1 as libc::c_int as libc::c_double + exp(-a))`
+   |
+   = note: `#[warn(clippy::needless_return)]` on by default
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:102:1
+    |
+102 | / pub unsafe extern "C" fn genann_act_sigmoid_cached(
+103 | |     mut a: libc::c_double,
+104 | | ) -> libc::c_double {
+105 | |     let min: libc::c_double = -15.0f64;
+...   |
+130 | |     return lookup[i_0 as usize];
+131 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/genann.rs:130:5
+    |
+130 |     return lookup[i_0 as usize];
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `lookup[i_0 as usize]`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: statement with no effect
+   --> src/genann.rs:118:13
+    |
+118 |             i;
+    |             ^^
+    |
+    = note: `#[warn(clippy::no_effect)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:133:1
+    |
+133 | / pub unsafe extern "C" fn genann_act_threshold(mut a: libc::c_double) -> libc::c_double {
+134 | |     return (a > 0 as libc::c_int as libc::c_double) as libc::c_int as libc::c_double;
+135 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/genann.rs:134:5
+    |
+134 |     return (a > 0 as libc::c_int as libc::c_double) as libc::c_int as libc::c_double;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(a > 0 as libc::c_int as libc::c_double) as libc::c_int as libc::c_double`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:137:1
+    |
+137 | / pub unsafe extern "C" fn genann_act_linear(mut a: libc::c_double) -> libc::c_double {
+138 | |     return a;
+139 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/genann.rs:138:5
+    |
+138 |     return a;
+    |     ^^^^^^^^^ help: remove `return`: `a`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:141:1
+    |
+141 | / pub unsafe extern "C" fn genann_init(
+142 | |     mut inputs: libc::c_int,
+143 | |     mut hidden_layers: libc::c_int,
+144 | |     mut hidden: libc::c_int,
+...   |
+207 | |     return ret;
+208 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/genann.rs:207:5
+    |
+207 |     return ret;
+    |     ^^^^^^^^^^^ help: remove `return`: `ret`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/genann.rs:148:16
+    |
+148 |         return 0 as *mut genann;
+    |                ^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<genann>()`
+    |
+    = note: `#[warn(clippy::zero_ptr)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/genann.rs:151:16
+    |
+151 |         return 0 as *mut genann;
+    |                ^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<genann>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/genann.rs:154:16
+    |
+154 |         return 0 as *mut genann;
+    |                ^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<genann>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/genann.rs:157:16
+    |
+157 |         return 0 as *mut genann;
+    |                ^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<genann>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/genann.rs:182:16
+    |
+182 |         return 0 as *mut genann;
+    |                ^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<genann>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:210:1
+    |
+210 | / pub unsafe extern "C" fn genann_read(mut in_0: *mut FILE) -> *mut genann {
+211 | |     let mut inputs: libc::c_int = 0;
+212 | |     let mut hidden_layers: libc::c_int = 0;
+213 | |     let mut hidden: libc::c_int = 0;
+...   |
+247 | |     return ann;
+248 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/genann.rs:247:5
+    |
+247 |     return ann;
+    |     ^^^^^^^^^^^ help: remove `return`: `ann`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/genann.rs:227:16
+    |
+227 |         return 0 as *mut genann;
+    |                ^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<genann>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/genann.rs:242:20
+    |
+242 |             return 0 as *mut genann;
+    |                    ^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<genann>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: statement with no effect
+   --> src/genann.rs:245:9
+    |
+245 |         i;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:250:1
+    |
+250 | / pub unsafe extern "C" fn genann_copy(mut ann: *const genann) -> *mut genann {
+251 | |     let size: libc::c_int = (::core::mem::size_of::<genann>() as libc::c_ulong)
+252 | |         .wrapping_add(
+253 | |             (::core::mem::size_of::<libc::c_double>() as libc::c_ulong)
+...   |
+270 | |     return ret;
+271 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/genann.rs:270:5
+    |
+270 |     return ret;
+    |     ^^^^^^^^^^^ help: remove `return`: `ret`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/genann.rs:261:16
+    |
+261 |         return 0 as *mut genann;
+    |                ^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<genann>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:273:1
+    |
+273 | / pub unsafe extern "C" fn genann_randomize(mut ann: *mut genann) {
+274 | |     let mut i: libc::c_int = 0;
+275 | |     i = 0 as libc::c_int;
+276 | |     while i < (*ann).total_weights {
+...   |
+282 | |     }
+283 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: statement with no effect
+   --> src/genann.rs:281:9
+    |
+281 |         i;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:285:1
+    |
+285 | / pub unsafe extern "C" fn genann_free(mut ann: *mut genann) {
+286 | |     free(ann as *mut libc::c_void);
+287 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:289:1
+    |
+289 | / pub unsafe extern "C" fn genann_run(
+290 | |     mut ann: *const genann,
+291 | |     mut inputs: *const libc::c_double,
+292 | | ) -> *const libc::c_double {
+...   |
+422 | |     return ret;
+423 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/genann.rs:422:5
+    |
+422 |     return ret;
+    |     ^^^^^^^^^^^ help: remove `return`: `ret`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: statement with no effect
+   --> src/genann.rs:321:17
+    |
+321 |                 k;
+    |                 ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:327:13
+    |
+327 |             j;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:335:9
+    |
+335 |         h;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:350:13
+    |
+350 |             k;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:356:9
+    |
+356 |         j;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unnecessary operation
+   --> src/genann.rs:373:5
+    |
+373 | /     'c_1500: {
+374 | |         if w.offset_from((*ann).weight) as libc::c_long
+375 | |             == (*ann).total_weights as libc::c_long
+376 | |         {} else {
+...   |
+388 | |         }
+389 | |     };
+    | |______^
+    |
+    = note: `#[warn(clippy::unnecessary_operation)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_operation
+help: statement can be reduced to
+    |
+373 ~     if w.offset_from((*ann).weight) as libc::c_long
+374 +             == (*ann).total_weights as libc::c_long
+375 +         {} else {
+376 +             __assert_fail(
+377 +                 b"w - ann->weight == ann->total_weights\0" as *const u8
+378 +                     as *const libc::c_char,
+379 +                 b"genann.c\0" as *const u8 as *const libc::c_char,
+380 +                 225 as libc::c_int as libc::c_uint,
+381 +                 (*::core::mem::transmute::<
+382 +                     &[u8; 57],
+383 +                     &[libc::c_char; 57],
+384 +                 >(b"const double *genann_run(const genann *, const double *)\0"))
+385 +                     .as_ptr(),
+386 +             );
+387 +         };
+    |
+
+warning: unnecessary operation
+   --> src/genann.rs:405:5
+    |
+405 | /     'c_1435: {
+406 | |         if o.offset_from((*ann).output) as libc::c_long
+407 | |             == (*ann).total_neurons as libc::c_long
+408 | |         {} else {
+...   |
+420 | |         }
+421 | |     };
+    | |______^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_operation
+help: statement can be reduced to
+    |
+405 ~     if o.offset_from((*ann).output) as libc::c_long
+406 +             == (*ann).total_neurons as libc::c_long
+407 +         {} else {
+408 +             __assert_fail(
+409 +                 b"o - ann->output == ann->total_neurons\0" as *const u8
+410 +                     as *const libc::c_char,
+411 +                 b"genann.c\0" as *const u8 as *const libc::c_char,
+412 +                 226 as libc::c_int as libc::c_uint,
+413 +                 (*::core::mem::transmute::<
+414 +                     &[u8; 57],
+415 +                     &[libc::c_char; 57],
+416 +                 >(b"const double *genann_run(const genann *, const double *)\0"))
+417 +                     .as_ptr(),
+418 +             );
+419 +         };
+    |
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:425:1
+    |
+425 | / pub unsafe extern "C" fn genann_train(
+426 | |     mut ann: *const genann,
+427 | |     mut inputs: *const libc::c_double,
+428 | |     mut desired_outputs: *const libc::c_double,
+...   |
+645 | |     }
+646 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: statement with no effect
+   --> src/genann.rs:456:13
+    |
+456 |             j;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:465:13
+    |
+465 |             o;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:467:13
+    |
+467 |             t;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:469:13
+    |
+469 |             j;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:501:17
+    |
+501 |                 k;
+    |                 ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:505:13
+    |
+505 |             d_0;
+    |             ^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:507:13
+    |
+507 |             o_0;
+    |             ^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:509:13
+    |
+509 |             j;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:512:9
+    |
+512 |         h;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:552:13
+    |
+552 |             k;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:555:9
+    |
+555 |         d_1;
+    |         ^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:557:9
+    |
+557 |         j;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unnecessary operation
+   --> src/genann.rs:576:5
+    |
+576 | /     'c_1988: {
+577 | |         if w.offset_from((*ann).weight) as libc::c_long
+578 | |             == (*ann).total_weights as libc::c_long
+579 | |         {} else {
+...   |
+593 | |         }
+594 | |     };
+    | |______^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_operation
+help: statement can be reduced to
+    |
+576 ~     if w.offset_from((*ann).weight) as libc::c_long
+577 +             == (*ann).total_weights as libc::c_long
+578 +         {} else {
+579 +             __assert_fail(
+580 +                 b"w - ann->weight == ann->total_weights\0" as *const u8
+581 +                     as *const libc::c_char,
+582 +                 b"genann.c\0" as *const u8 as *const libc::c_char,
+583 +                 318 as libc::c_int as libc::c_uint,
+584 +                 (*::core::mem::transmute::<
+585 +                     &[u8; 74],
+586 +                     &[libc::c_char; 74],
+587 +                 >(
+588 +                     b"void genann_train(const genann *, const double *, const double *, double)\0",
+589 +                 ))
+590 +                     .as_ptr(),
+591 +             );
+592 +         };
+    |
+
+warning: statement with no effect
+   --> src/genann.rs:636:17
+    |
+636 |                 k;
+    |                 ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:639:13
+    |
+639 |             d_2;
+    |             ^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:641:13
+    |
+641 |             j;
+    |             ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/genann.rs:644:9
+    |
+644 |         h;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/genann.rs:648:1
+    |
+648 | / pub unsafe extern "C" fn genann_write(mut ann: *const genann, mut out: *mut FILE) {
+649 | |     fprintf(
+650 | |         out,
+651 | |         b"%d %d %d %d\0" as *const u8 as *const libc::c_char,
+...   |
+667 | |     }
+668 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: statement with no effect
+   --> src/genann.rs:666:9
+    |
+666 |         i;
+    |         ^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: path statement with no effect
+   --> src/genann.rs:118:13
+    |
+118 |             i;
+    |             ^^
+    |
+    = note: `#[warn(path_statements)]` on by default
+
+warning: path statement with no effect
+   --> src/genann.rs:245:9
+    |
+245 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:281:9
+    |
+281 |         i;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:321:17
+    |
+321 |                 k;
+    |                 ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:327:13
+    |
+327 |             j;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:335:9
+    |
+335 |         h;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:350:13
+    |
+350 |             k;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:356:9
+    |
+356 |         j;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:456:13
+    |
+456 |             j;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:465:13
+    |
+465 |             o;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:467:13
+    |
+467 |             t;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:469:13
+    |
+469 |             j;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:501:17
+    |
+501 |                 k;
+    |                 ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:505:13
+    |
+505 |             d_0;
+    |             ^^^^
+
+warning: path statement with no effect
+   --> src/genann.rs:507:13
+    |
+507 |             o_0;
+    |             ^^^^
+
+warning: path statement with no effect
+   --> src/genann.rs:509:13
+    |
+509 |             j;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:512:9
+    |
+512 |         h;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:552:13
+    |
+552 |             k;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:555:9
+    |
+555 |         d_1;
+    |         ^^^^
+
+warning: path statement with no effect
+   --> src/genann.rs:557:9
+    |
+557 |         j;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:636:17
+    |
+636 |                 k;
+    |                 ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:639:13
+    |
+639 |             d_2;
+    |             ^^^^
+
+warning: path statement with no effect
+   --> src/genann.rs:641:13
+    |
+641 |             j;
+    |             ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:644:9
+    |
+644 |         h;
+    |         ^^
+
+warning: path statement with no effect
+   --> src/genann.rs:666:9
+    |
+666 |         i;
+    |         ^^
+
+warning: `genann` (bin "genann") generated 84 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 12.10s

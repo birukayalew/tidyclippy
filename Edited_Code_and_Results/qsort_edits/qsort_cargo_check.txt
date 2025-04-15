@@ -1,9 +1,0 @@
-    Checking qsort v0.1.0 (/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/qsort_edits)
-error[E0601]: `main` function not found in crate `qsort`
-  --> src/main.rs:51:2
-   |
-51 | }
-   |  ^ consider adding a `main` function to `src/main.rs`
-
-For more information about this error, try `rustc --explain E0601`.
-error: could not compile `qsort` due to previous error

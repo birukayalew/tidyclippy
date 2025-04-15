@@ -1,0 +1,408 @@
+   Compiling libc v0.2.171
+    Checking snudown v0.1.0 (/mnt/c/Users/sebir/Documents/Research/tidyclippy/Edited_Code_and_Results/snudown_edits)
+warning: unused variable: `link`
+   --> src/snudown.rs:822:9
+    |
+822 |     mut link: *const buf,
+    |         ^^^^ help: if this is intentional, prefix it with an underscore: `_link`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `self_0`
+   --> src/snudown.rs:931:9
+    |
+931 |     mut self_0: *mut PyObject,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_self_0`
+
+warning: unneeded `return` statement
+   --> src/snudown.rs:873:5
+    |
+873 | /     return sd_markdown_new(
+874 | |         markdownflags,
+875 | |         16 as libc::c_int as size_t,
+876 | |         64 as libc::c_int as size_t,
+877 | |         &mut (*state).callbacks,
+878 | |         &mut (*state).options as *mut snudown_renderopt as *mut libc::c_void,
+879 | |     );
+    | |______^
+    |
+    = note: `#[warn(clippy::needless_return)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+873 ~     sd_markdown_new(
+874 +         markdownflags,
+875 +         16 as libc::c_int as size_t,
+876 +         64 as libc::c_int as size_t,
+877 +         &mut (*state).callbacks,
+878 +         &mut (*state).options as *mut snudown_renderopt as *mut libc::c_void,
+879 +     )
+    |
+
+warning: the function `sd_markdown_new` doesn't need a mutable reference
+   --> src/snudown.rs:877:9
+    |
+877 |         &mut (*state).callbacks,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(clippy::unnecessary_mut_passed)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_mut_passed
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/snudown.rs:882:1
+    |
+882 | / pub unsafe extern "C" fn init_default_renderer(mut module: *mut PyObject) {
+883 | |     PyModule_AddIntConstant(
+884 | |         module,
+885 | |         b"RENDERER_USERTEXT\0" as *const u8 as *const libc::c_char,
+...   |
+904 | |         .toc_state = &mut usertext_toc_state;
+905 | | }
+    | |_^
+    |
+    = note: `#[warn(clippy::missing_safety_doc)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/snudown.rs:907:1
+    |
+907 | / pub unsafe extern "C" fn init_wiki_renderer(mut module: *mut PyObject) {
+908 | |     PyModule_AddIntConstant(
+909 | |         module,
+910 | |         b"RENDERER_WIKI\0" as *const u8 as *const libc::c_char,
+...   |
+928 | |     sundown[RENDERER_WIKI as libc::c_int as usize].toc_state = &mut wiki_toc_state;
+929 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+    --> src/snudown.rs:1019:5
+     |
+1019 |     return py_result;
+     |     ^^^^^^^^^^^^^^^^^ help: remove `return`: `py_result`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/snudown.rs:945:15
+    |
+945 |         data: 0 as *mut uint8_t,
+    |               ^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<uint8_t>()`
+    |
+    = note: `#[warn(clippy::zero_ptr)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/snudown.rs:950:28
+    |
+950 |     let mut ob: *mut buf = 0 as *mut buf;
+    |                            ^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<buf>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/snudown.rs:951:40
+    |
+951 |     let mut py_result: *mut PyObject = 0 as *mut PyObject;
+    |                                        ^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<PyObject>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *const _` detected
+   --> src/snudown.rs:952:48
+    |
+952 |     let mut result_text: *const libc::c_char = 0 as *const libc::c_char;
+    |                                                ^^^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *const _` detected
+   --> src/snudown.rs:956:24
+    |
+956 |         main_renderer: 0 as *const sd_markdown as *mut sd_markdown,
+    |                        ^^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null::<sd_markdown>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *const _` detected
+   --> src/snudown.rs:957:23
+    |
+957 |         toc_renderer: 0 as *const sd_markdown as *mut sd_markdown,
+    |                       ^^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null::<sd_markdown>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *const _` detected
+   --> src/snudown.rs:958:16
+    |
+958 |         state: 0 as *const module_state as *mut module_state,
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null::<module_state>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *const _` detected
+   --> src/snudown.rs:959:20
+    |
+959 |         toc_state: 0 as *const module_state as *mut module_state,
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null::<module_state>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/snudown.rs:962:41
+    |
+962 |     let mut target: *mut libc::c_char = 0 as *mut libc::c_char;
+    |                                         ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/snudown.rs:963:48
+    |
+963 |     let mut toc_id_prefix: *mut libc::c_char = 0 as *mut libc::c_char;
+    |                                                ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/snudown.rs:984:16
+    |
+984 |         return 0 as *mut PyObject;
+    |                ^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<PyObject>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/snudown.rs:991:16
+    |
+991 |         return 0 as *mut PyObject;
+    |                ^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<PyObject>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+    --> src/snudown.rs:1002:60
+     |
+1002 |         (*_snudown.toc_state).options.html.toc_id_prefix = 0 as *mut libc::c_char;
+     |                                                            ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+    --> src/snudown.rs:1007:37
+     |
+1007 |     (*options).html.toc_id_prefix = 0 as *mut libc::c_char;
+     |                                     ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_char>()`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: returning the result of a `let` binding from a block
+    --> src/snudown.rs:1048:13
+     |
+1024 | /             let mut init = PyMethodDef {
+1025 | |                 ml_name: b"markdown\0" as *const u8 as *const libc::c_char,
+1026 | |                 ml_meth: ::core::mem::transmute::<
+1027 | |                     Option::<
+...    |
+1046 | |                 ml_doc: snudown_md__doc__.as_ptr(),
+1047 | |             };
+     | |______________- unnecessary `let` binding
+1048 |               init
+     |               ^^^^
+     |
+     = note: `#[warn(clippy::let_and_return)]` on by default
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#let_and_return
+help: return the expression directly
+     |
+1024 ~             
+1025 ~             PyMethodDef {
+1026 +                 ml_name: b"markdown\0" as *const u8 as *const libc::c_char,
+1027 +                 ml_meth: ::core::mem::transmute::<
+1028 +                     Option::<
+1029 +                         unsafe extern "C" fn(
+1030 +                             *mut PyObject,
+1031 +                             *mut PyObject,
+1032 +                             *mut PyObject,
+1033 +                         ) -> *mut PyObject,
+1034 +                     >,
+1035 +                     PyCFunction,
+1036 +                 >(
+1037 +                     Some(
+1038 +                         snudown_md
+1039 +                             as unsafe extern "C" fn(
+1040 +                                 *mut PyObject,
+1041 +                                 *mut PyObject,
+1042 +                                 *mut PyObject,
+1043 +                             ) -> *mut PyObject,
+1044 +                     ),
+1045 +                 ),
+1046 +                 ml_flags: 0x1 as libc::c_int | 0x2 as libc::c_int,
+1047 +                 ml_doc: snudown_md__doc__.as_ptr(),
+1048 +             }
+     |
+
+warning: returning the result of a `let` binding from a block
+    --> src/snudown.rs:1057:13
+     |
+1051 | /             let mut init = PyMethodDef {
+1052 | |                 ml_name: 0 as *const libc::c_char,
+1053 | |                 ml_meth: None,
+1054 | |                 ml_flags: 0 as libc::c_int,
+1055 | |                 ml_doc: 0 as *const libc::c_char,
+1056 | |             };
+     | |______________- unnecessary `let` binding
+1057 |               init
+     |               ^^^^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#let_and_return
+help: return the expression directly
+     |
+1051 ~             
+1052 ~             PyMethodDef {
+1053 +                 ml_name: 0 as *const libc::c_char,
+1054 +                 ml_meth: None,
+1055 +                 ml_flags: 0 as libc::c_int,
+1056 +                 ml_doc: 0 as *const libc::c_char,
+1057 +             }
+     |
+
+warning: unsafe function's docs miss `# Safety` section
+    --> src/snudown.rs:1062:1
+     |
+1062 | / pub unsafe extern "C" fn PyInit_snudown() -> *mut PyObject {
+1063 | |     let mut module: *mut PyObject = 0 as *mut PyObject;
+1064 | |     static mut moduledef: PyModuleDef = unsafe {
+1065 | |         {
+...    |
+1107 | |     return module;
+1108 | | }
+     | |_^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+    --> src/snudown.rs:1107:5
+     |
+1107 |     return module;
+     |     ^^^^^^^^^^^^^^ help: remove `return`: `module`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+    --> src/snudown.rs:1063:37
+     |
+1063 |     let mut module: *mut PyObject = 0 as *mut PyObject;
+     |                                     ^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<PyObject>()`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: returning the result of a `let` binding from a block
+    --> src/snudown.rs:1093:13
+     |
+1066 | /             let mut init = PyModuleDef {
+1067 | |                 m_base: {
+1068 | |                     let mut init = PyModuleDef_Base {
+1069 | |                         ob_base: {
+...    |
+1091 | |                 m_free: None,
+1092 | |             };
+     | |______________- unnecessary `let` binding
+1093 |               init
+     |               ^^^^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#let_and_return
+help: return the expression directly
+     |
+1066 ~             
+1067 ~             PyModuleDef {
+1068 +                 m_base: {
+1069 +                     let mut init = PyModuleDef_Base {
+1070 +                         ob_base: {
+1071 +                             let mut init = _object {
+1072 +                                 c2rust_unnamed: C2RustUnnamed {
+1073 +                                     ob_refcnt: 1 as libc::c_int as Py_ssize_t,
+1074 +                                 },
+1075 +                                 ob_type: 0 as *const PyTypeObject as *mut PyTypeObject,
+1076 +                             };
+1077 +                             init
+1078 +                         },
+1079 +                         m_init: None,
+1080 +                         m_index: 0 as libc::c_int as Py_ssize_t,
+1081 +                         m_copy: 0 as *const PyObject as *mut PyObject,
+1082 +                     };
+1083 +                     init
+1084 +                 },
+1085 +                 m_name: b"snudown\0" as *const u8 as *const libc::c_char,
+1086 +                 m_doc: snudown_module__doc__.as_ptr(),
+1087 +                 m_size: -(1 as libc::c_int) as Py_ssize_t,
+1088 +                 m_methods: snudown_methods.as_ptr() as *mut _,
+1089 +                 m_slots: 0 as *const PyModuleDef_Slot as *mut PyModuleDef_Slot,
+1090 +                 m_traverse: None,
+1091 +                 m_clear: None,
+1092 +                 m_free: None,
+1093 +             }
+     |
+
+warning: returning the result of a `let` binding from a block
+    --> src/snudown.rs:1082:21
+     |
+1068 | /                     let mut init = PyModuleDef_Base {
+1069 | |                         ob_base: {
+1070 | |                             let mut init = _object {
+1071 | |                                 c2rust_unnamed: C2RustUnnamed {
+...    |
+1080 | |                         m_copy: 0 as *const PyObject as *mut PyObject,
+1081 | |                     };
+     | |______________________- unnecessary `let` binding
+1082 |                       init
+     |                       ^^^^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#let_and_return
+help: return the expression directly
+     |
+1068 ~                     
+1069 ~                     PyModuleDef_Base {
+1070 +                         ob_base: {
+1071 +                             let mut init = _object {
+1072 +                                 c2rust_unnamed: C2RustUnnamed {
+1073 +                                     ob_refcnt: 1 as libc::c_int as Py_ssize_t,
+1074 +                                 },
+1075 +                                 ob_type: 0 as *const PyTypeObject as *mut PyTypeObject,
+1076 +                             };
+1077 +                             init
+1078 +                         },
+1079 +                         m_init: None,
+1080 +                         m_index: 0 as libc::c_int as Py_ssize_t,
+1081 +                         m_copy: 0 as *const PyObject as *mut PyObject,
+1082 +                     }
+     |
+
+warning: returning the result of a `let` binding from a block
+    --> src/snudown.rs:1076:29
+     |
+1070 | / ...                   let mut init = _object {
+1071 | | ...                       c2rust_unnamed: C2RustUnnamed {
+1072 | | ...                           ob_refcnt: 1 as libc::c_int as Py_ssize_t,
+1073 | | ...                       },
+1074 | | ...                       ob_type: 0 as *const PyTypeObject as *mut PyTypeObject,
+1075 | | ...                   };
+     | |________________________- unnecessary `let` binding
+1076 |   ...                   init
+     |                         ^^^^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#let_and_return
+help: return the expression directly
+     |
+1070 ~                             
+1071 ~                             _object {
+1072 +                                 c2rust_unnamed: C2RustUnnamed {
+1073 +                                     ob_refcnt: 1 as libc::c_int as Py_ssize_t,
+1074 +                                 },
+1075 +                                 ob_type: 0 as *const PyTypeObject as *mut PyTypeObject,
+1076 +                             }
+     |
+
+warning: `snudown` (bin "snudown") generated 29 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 10.51s

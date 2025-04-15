@@ -1016,7 +1016,7 @@ pub static mut delay: libc::c_int = 200000 as libc::c_int;
 #[no_mangle]
 pub unsafe extern "C" fn timeout_func(mut signum: libc::c_int) {
     set_title = 1 as libc::c_int;
-    signum = signum;
+    // signum = signum;
 }
 #[no_mangle]
 pub unsafe extern "C" fn allocate_images() {

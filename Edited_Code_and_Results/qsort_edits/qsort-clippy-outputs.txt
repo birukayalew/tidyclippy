@@ -1,0 +1,97 @@
+   Compiling libc v0.2.171
+    Checking qsort v0.1.0 (/mnt/c/Users/sebir/Documents/Research/tidyclippy/Edited_Code_and_Results/qsort_edits)
+warning: unsafe function's docs miss `# Safety` section
+  --> src/main.rs:11:1
+   |
+11 | / pub unsafe extern "C" fn swap(mut a: *mut libc::c_int, mut b: *mut libc::c_int) {
+12 | |     let mut t: libc::c_int = *a;
+13 | |     *a = *b;
+14 | |     *b = t;
+15 | | }
+   | |_^
+   |
+   = note: `#[warn(clippy::missing_safety_doc)]` on by default
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: this looks like you are swapping `*a` and `*b` manually
+  --> src/main.rs:12:5
+   |
+12 | /     let mut t: libc::c_int = *a;
+13 | |     *a = *b;
+14 | |     *b = t;
+   | |__________^ help: try: `std::mem::swap(&mut (*a), &mut (*b))`
+   |
+   = note: `#[warn(clippy::manual_swap)]` on by default
+   = note: or maybe you should use `std::mem::replace`?
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#manual_swap
+
+warning: unsafe function's docs miss `# Safety` section
+  --> src/main.rs:17:1
+   |
+17 | / pub unsafe extern "C" fn partition(
+18 | |     mut arr: *mut libc::c_int,
+19 | |     mut low: libc::c_int,
+20 | |     mut high: libc::c_int,
+...  |
+38 | |     return i + 1 as libc::c_int;
+39 | | }
+   | |_^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+  --> src/main.rs:38:5
+   |
+38 |     return i + 1 as libc::c_int;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `i + 1 as libc::c_int`
+   |
+   = note: `#[warn(clippy::needless_return)]` on by default
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: statement with no effect
+  --> src/main.rs:28:13
+   |
+28 |             i;
+   |             ^^
+   |
+   = note: `#[warn(clippy::no_effect)]` on by default
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+  --> src/main.rs:32:9
+   |
+32 |         j;
+   |         ^^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unsafe function's docs miss `# Safety` section
+  --> src/main.rs:41:1
+   |
+41 | / pub unsafe extern "C" fn quickSort(
+42 | |     mut arr: *mut libc::c_int,
+43 | |     mut low: libc::c_int,
+44 | |     mut high: libc::c_int,
+...  |
+50 | |     }
+51 | | }
+   | |_^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: path statement with no effect
+  --> src/main.rs:28:13
+   |
+28 |             i;
+   |             ^^
+   |
+   = note: `#[warn(path_statements)]` on by default
+
+warning: path statement with no effect
+  --> src/main.rs:32:9
+   |
+32 |         j;
+   |         ^^
+
+warning: `qsort` (bin "qsort") generated 9 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 14.02s

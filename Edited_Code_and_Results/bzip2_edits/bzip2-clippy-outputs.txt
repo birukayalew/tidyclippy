@@ -1,3 +1,4 @@
+   Compiling libc v0.2.171
     Checking bzip2 v0.1.0 (/mnt/c/Users/sebir/Documents/Research/tidyclippy/Edited_Code_and_Results/bzip2_edits)
 warning: type `size_t` should have an upper camel case name
   --> src/dlltest.rs:57:10
@@ -12694,4 +12695,4 @@ warning: path statement with no effect
     |         ^^^^
 
 warning: `bzip2` (bin "bzip2") generated 1491 warnings
-    Finished dev [unoptimized + debuginfo] target(s) in 4.26s
+    Finished dev [unoptimized + debuginfo] target(s) in 14.94s

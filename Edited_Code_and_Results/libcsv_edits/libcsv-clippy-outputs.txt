@@ -1,0 +1,1185 @@
+   Compiling libc v0.2.171
+    Checking libcsv v0.1.0 (/mnt/c/Users/sebir/Documents/Research/tidyclippy/Edited_Code_and_Results/libcsv_edits)
+warning: unused label
+   --> src/libcsv.rs:111:5
+    |
+111 |     'c_2142: {
+    |     ^^^^^^^
+    |
+    = note: `#[warn(unused_labels)]` on by default
+
+warning: unused label
+   --> src/libcsv.rs:314:5
+    |
+314 |     'c_4379: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/libcsv.rs:352:5
+    |
+352 |     'c_4427: {
+    |     ^^^^^^^
+
+warning: unused label
+   --> src/libcsv.rs:487:5
+    |
+487 |     'c_3937: {
+    |     ^^^^^^^
+
+warning: this `if` statement can be collapsed
+   --> src/libcsv.rs:524:5
+    |
+524 | /     if ((*p).entry_buf).is_null() && pos < len {
+525 | |         if csv_increase_buffer(p) != 0 as libc::c_int {
+526 | |             (*p).quoted = quoted;
+527 | |             (*p).pstate = pstate;
+...   |
+531 | |         }
+532 | |     }
+    | |_____^
+    |
+    = note: `#[warn(clippy::collapsible_if)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#collapsible_if
+help: collapse nested if block
+    |
+524 ~     if ((*p).entry_buf).is_null() && pos < len && csv_increase_buffer(p) != 0 as libc::c_int {
+525 +         (*p).quoted = quoted;
+526 +         (*p).pstate = pstate;
+527 +         (*p).spaces = spaces;
+528 +         (*p).entry_pos = entry_pos;
+529 +         return pos;
+530 +     }
+    |
+
+warning: this `if` statement can be collapsed
+   --> src/libcsv.rs:534:9
+    |
+534 | /         if entry_pos
+535 | |             == (if (*p).options as libc::c_int & 8 as libc::c_int != 0 {
+536 | |                 ((*p).entry_size).wrapping_sub(1 as libc::c_int as size_t)
+537 | |             } else {
+...   |
+547 | |             }
+548 | |         }
+    | |_________^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#collapsible_if
+help: collapse nested if block
+    |
+534 ~         if entry_pos == (if (*p).options as libc::c_int & 8 as libc::c_int != 0 {
+535 +                 ((*p).entry_size).wrapping_sub(1 as libc::c_int as size_t)
+536 +             } else {
+537 +                 (*p).entry_size
+538 +             }) && csv_increase_buffer(p) != 0 as libc::c_int {
+539 +             (*p).quoted = quoted;
+540 +             (*p).pstate = pstate;
+541 +             (*p).spaces = spaces;
+542 +             (*p).entry_pos = entry_pos;
+543 +             return pos;
+544 +         }
+    |
+
+warning: this `if` statement can be collapsed
+    --> src/libcsv.rs:997:9
+     |
+997  | /         if *csrc as libc::c_int == quote as libc::c_int {
+998  | |             if fputc(quote as libc::c_int, fp) == -(1 as libc::c_int) {
+999  | |                 return -(1 as libc::c_int);
+1000 | |             }
+1001 | |         }
+     | |_________^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#collapsible_if
+help: collapse nested if block
+     |
+997  ~         if *csrc as libc::c_int == quote as libc::c_int && fputc(quote as libc::c_int, fp) == -(1 as libc::c_int) {
+998  +             return -(1 as libc::c_int);
+999  +         }
+     |
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:95:1
+    |
+95  | / pub unsafe extern "C" fn csv_error(mut p: *const csv_parser) -> libc::c_int {
+96  | |     if !p.is_null()
+97  | |         && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char).is_null()
+98  | |     {} else {
+...   |
+130 | |     return (*p).status;
+131 | | }
+    | |_^
+    |
+    = note: `#[warn(clippy::missing_safety_doc)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:130:5
+    |
+130 |     return (*p).status;
+    |     ^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(*p).status`
+    |
+    = note: `#[warn(clippy::needless_return)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unnecessary operation
+   --> src/libcsv.rs:111:5
+    |
+111 | /     'c_2142: {
+112 | |         if !p.is_null()
+113 | |             && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char)
+114 | |                 .is_null()
+...   |
+128 | |         }
+129 | |     };
+    | |______^
+    |
+    = note: `#[warn(clippy::unnecessary_operation)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_operation
+help: statement can be reduced to
+    |
+111 ~     if !p.is_null()
+112 +             && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char)
+113 +                 .is_null()
+114 +         {} else {
+115 +             __assert_fail(
+116 +                 b"p && \"received null csv_parser\"\0" as *const u8
+117 +                     as *const libc::c_char,
+118 +                 b"/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c\0"
+119 +                     as *const u8 as *const libc::c_char,
+120 +                 82 as libc::c_int as libc::c_uint,
+121 +                 (*::core::mem::transmute::<
+122 +                     &[u8; 41],
+123 +                     &[libc::c_char; 41],
+124 +                 >(b"int csv_error(const struct csv_parser *)\0"))
+125 +                     .as_ptr(),
+126 +             );
+127 +         };
+    |
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:133:1
+    |
+133 | / pub unsafe extern "C" fn csv_strerror(mut status: libc::c_int) -> *const libc::c_char {
+134 | |     if status >= 4 as libc::c_int || status < 0 as libc::c_int {
+135 | |         return csv_errors[4 as libc::c_int as usize]
+136 | |     } else {
+137 | |         return csv_errors[status as usize]
+138 | |     };
+139 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:135:9
+    |
+135 |         return csv_errors[4 as libc::c_int as usize]
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `csv_errors[4 as libc::c_int as usize]`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:137:9
+    |
+137 |         return csv_errors[status as usize]
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `csv_errors[status as usize]`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:141:1
+    |
+141 | / pub unsafe extern "C" fn csv_get_opts(mut p: *const csv_parser) -> libc::c_int {
+142 | |     if p.is_null() {
+143 | |         return -(1 as libc::c_int);
+144 | |     }
+145 | |     return (*p).options as libc::c_int;
+146 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:145:5
+    |
+145 |     return (*p).options as libc::c_int;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(*p).options as libc::c_int`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:148:1
+    |
+148 | / pub unsafe extern "C" fn csv_set_opts(
+149 | |     mut p: *mut csv_parser,
+150 | |     mut options: libc::c_uchar,
+151 | | ) -> libc::c_int {
+...   |
+156 | |     return 0 as libc::c_int;
+157 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:156:5
+    |
+156 |     return 0 as libc::c_int;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:159:1
+    |
+159 | / pub unsafe extern "C" fn csv_init(
+160 | |     mut p: *mut csv_parser,
+161 | |     mut options: libc::c_uchar,
+162 | | ) -> libc::c_int {
+...   |
+189 | |     return 0 as libc::c_int;
+190 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:189:5
+    |
+189 |     return 0 as libc::c_int;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:166:22
+    |
+166 |     (*p).entry_buf = 0 as *mut libc::c_uchar;
+    |                      ^^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_uchar>()`
+    |
+    = note: `#[warn(clippy::zero_ptr)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:192:1
+    |
+192 | / pub unsafe extern "C" fn csv_free(mut p: *mut csv_parser) {
+193 | |     if p.is_null() {
+194 | |         return;
+195 | |     }
+...   |
+201 | |     (*p).entry_size = 0 as libc::c_int as size_t;
+202 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:200:22
+    |
+200 |     (*p).entry_buf = 0 as *mut libc::c_uchar;
+    |                      ^^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_uchar>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:204:1
+    |
+204 | / pub unsafe extern "C" fn csv_fini(
+205 | |     mut p: *mut csv_parser,
+206 | |     mut cb1: Option::<
+207 | |         unsafe extern "C" fn(*mut libc::c_void, size_t, *mut libc::c_void) -> (),
+...   |
+283 | |     return 0 as libc::c_int;
+284 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+   --> src/libcsv.rs:254:17
+    |
+251 |               if cb1.is_some() && (*p).options as libc::c_int & 16 as libc::c_int != 0
+    |                  ------------- the check is happening here
+...
+254 | /                 cb1
+255 | |                     .expect(
+256 | |                         "non-null function pointer",
+257 | |                     )(0 as *mut libc::c_void, entry_pos, data);
+    | |_____________________^
+    |
+    = note: `#[warn(clippy::unnecessary_unwrap)]` on by default
+    = help: try using `if let` or `match`
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+   --> src/libcsv.rs:269:17
+    |
+268 |             if cb2.is_some() {
+    |             ---------------- help: try: `if let Some(..) = cb2`
+269 |                 cb2.expect("non-null function pointer")(-(1 as libc::c_int), data);
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:283:5
+    |
+283 |     return 0 as libc::c_int;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: wildcard pattern covers any other pattern as it will match anyway
+   --> src/libcsv.rs:238:9
+    |
+238 |         0 | _ => {
+    |         ^^^^^
+    |
+    = note: `#[warn(clippy::wildcard_in_or_patterns)]` on by default
+    = help: consider handling `_` separately
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#wildcard_in_or_patterns
+
+warning: you seem to be trying to use `match` for an equality check. Consider using `if`
+   --> src/libcsv.rs:242:5
+    |
+242 | /     match current_block_26 {
+243 | |         15225788259906368840 => {
+244 | |             if quoted == 0 {
+245 | |                 entry_pos = entry_pos.wrapping_sub(spaces);
+...   |
+276 | |         _ => {}
+277 | |     }
+    | |_____^
+    |
+    = note: `#[warn(clippy::single_match)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#single_match
+help: try this
+    |
+242 ~     if current_block_26 == 15225788259906368840 {
+243 +         if quoted == 0 {
+244 +             entry_pos = entry_pos.wrapping_sub(spaces);
+245 +         }
+246 +         if (*p).options as libc::c_int & 8 as libc::c_int != 0 {
+247 +             *((*p).entry_buf)
+248 +                 .offset(entry_pos as isize) = '\0' as i32 as libc::c_uchar;
+249 +         }
+250 +         if cb1.is_some() && (*p).options as libc::c_int & 16 as libc::c_int != 0
+251 +             && quoted == 0 && entry_pos == 0 as libc::c_int as size_t
+252 +         {
+253 +             cb1
+254 +                 .expect(
+255 +                     "non-null function pointer",
+256 +                 )(0 as *mut libc::c_void, entry_pos, data);
+257 +         } else if cb1.is_some() {
+258 +             cb1
+259 +                 .expect(
+260 +                     "non-null function pointer",
+261 +                 )((*p).entry_buf as *mut libc::c_void, entry_pos, data);
+262 +         }
+263 +         pstate = 1 as libc::c_int;
+264 +         spaces = 0 as libc::c_int as size_t;
+265 +         quoted = spaces as libc::c_int;
+266 +         entry_pos = quoted as size_t;
+267 +         if cb2.is_some() {
+268 +             cb2.expect("non-null function pointer")(-(1 as libc::c_int), data);
+269 +         }
+270 +         pstate = 0 as libc::c_int;
+271 +         spaces = 0 as libc::c_int as size_t;
+272 +         quoted = spaces as libc::c_int;
+273 +         entry_pos = quoted as size_t;
+274 +     }
+    |
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:257:23
+    |
+257 |                     )(0 as *mut libc::c_void, entry_pos, data);
+    |                       ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_void>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:286:1
+    |
+286 | / pub unsafe extern "C" fn csv_set_delim(mut p: *mut csv_parser, mut c: libc::c_uchar) {
+287 | |     if !p.is_null() {
+288 | |         (*p).delim_char = c;
+289 | |     }
+290 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:292:1
+    |
+292 | / pub unsafe extern "C" fn csv_set_quote(mut p: *mut csv_parser, mut c: libc::c_uchar) {
+293 | |     if !p.is_null() {
+294 | |         (*p).quote_char = c;
+295 | |     }
+296 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:298:1
+    |
+298 | / pub unsafe extern "C" fn csv_get_delim(mut p: *const csv_parser) -> libc::c_uchar {
+299 | |     if !p.is_null()
+300 | |         && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char).is_null()
+301 | |     {} else {
+...   |
+333 | |     return (*p).delim_char;
+334 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:333:5
+    |
+333 |     return (*p).delim_char;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(*p).delim_char`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unnecessary operation
+   --> src/libcsv.rs:314:5
+    |
+314 | /     'c_4379: {
+315 | |         if !p.is_null()
+316 | |             && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char)
+317 | |                 .is_null()
+...   |
+331 | |         }
+332 | |     };
+    | |______^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_operation
+help: statement can be reduced to
+    |
+314 ~     if !p.is_null()
+315 +             && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char)
+316 +                 .is_null()
+317 +         {} else {
+318 +             __assert_fail(
+319 +                 b"p && \"received null csv_parser\"\0" as *const u8
+320 +                     as *const libc::c_char,
+321 +                 b"/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c\0"
+322 +                     as *const u8 as *const libc::c_char,
+323 +                 222 as libc::c_int as libc::c_uint,
+324 +                 (*::core::mem::transmute::<
+325 +                     &[u8; 55],
+326 +                     &[libc::c_char; 55],
+327 +                 >(b"unsigned char csv_get_delim(const struct csv_parser *)\0"))
+328 +                     .as_ptr(),
+329 +             );
+330 +         };
+    |
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:336:1
+    |
+336 | / pub unsafe extern "C" fn csv_get_quote(mut p: *const csv_parser) -> libc::c_uchar {
+337 | |     if !p.is_null()
+338 | |         && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char).is_null()
+339 | |     {} else {
+...   |
+371 | |     return (*p).quote_char;
+372 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:371:5
+    |
+371 |     return (*p).quote_char;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(*p).quote_char`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unnecessary operation
+   --> src/libcsv.rs:352:5
+    |
+352 | /     'c_4427: {
+353 | |         if !p.is_null()
+354 | |             && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char)
+355 | |                 .is_null()
+...   |
+369 | |         }
+370 | |     };
+    | |______^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_operation
+help: statement can be reduced to
+    |
+352 ~     if !p.is_null()
+353 +             && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char)
+354 +                 .is_null()
+355 +         {} else {
+356 +             __assert_fail(
+357 +                 b"p && \"received null csv_parser\"\0" as *const u8
+358 +                     as *const libc::c_char,
+359 +                 b"/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c\0"
+360 +                     as *const u8 as *const libc::c_char,
+361 +                 231 as libc::c_int as libc::c_uint,
+362 +                 (*::core::mem::transmute::<
+363 +                     &[u8; 55],
+364 +                     &[libc::c_char; 55],
+365 +                 >(b"unsigned char csv_get_quote(const struct csv_parser *)\0"))
+366 +                     .as_ptr(),
+367 +             );
+368 +         };
+    |
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:374:1
+    |
+374 | / pub unsafe extern "C" fn csv_set_space_func(
+375 | |     mut p: *mut csv_parser,
+376 | |     mut f: Option::<unsafe extern "C" fn(libc::c_uchar) -> libc::c_int>,
+377 | | ) {
+...   |
+380 | |     }
+381 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:383:1
+    |
+383 | / pub unsafe extern "C" fn csv_set_term_func(
+384 | |     mut p: *mut csv_parser,
+385 | |     mut f: Option::<unsafe extern "C" fn(libc::c_uchar) -> libc::c_int>,
+386 | | ) {
+...   |
+389 | |     }
+390 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:392:1
+    |
+392 | / pub unsafe extern "C" fn csv_set_realloc_func(
+393 | |     mut p: *mut csv_parser,
+394 | |     mut f: Option::<unsafe extern "C" fn(*mut libc::c_void, size_t) -> *mut libc::c_void>,
+395 | | ) {
+...   |
+398 | |     }
+399 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:401:1
+    |
+401 | / pub unsafe extern "C" fn csv_set_free_func(
+402 | |     mut p: *mut csv_parser,
+403 | |     mut f: Option::<unsafe extern "C" fn(*mut libc::c_void) -> ()>,
+404 | | ) {
+...   |
+407 | |     }
+408 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:410:1
+    |
+410 | / pub unsafe extern "C" fn csv_set_blk_size(mut p: *mut csv_parser, mut size: size_t) {
+411 | |     if !p.is_null() {
+412 | |         (*p).blk_size = size;
+413 | |     }
+414 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:416:1
+    |
+416 | / pub unsafe extern "C" fn csv_get_buffer_size(mut p: *const csv_parser) -> size_t {
+417 | |     if !p.is_null() {
+418 | |         return (*p).entry_size;
+419 | |     }
+420 | |     return 0 as libc::c_int as size_t;
+421 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:420:5
+    |
+420 |     return 0 as libc::c_int as size_t;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int as size_t`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:457:5
+    |
+457 |     return 0 as libc::c_int;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:430:37
+    |
+430 |     let mut vp: *mut libc::c_void = 0 as *mut libc::c_void;
+    |                                     ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_void>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: manual implementation of an assign operation
+   --> src/libcsv.rs:449:9
+    |
+449 |         to_add = to_add / 2 as libc::c_int as size_t;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: replace it with: `to_add /= 2 as libc::c_int as size_t`
+    |
+    = note: `#[warn(clippy::assign_op_pattern)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#assign_op_pattern
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:460:1
+    |
+460 | / pub unsafe extern "C" fn csv_parse(
+461 | |     mut p: *mut csv_parser,
+462 | |     mut s: *const libc::c_void,
+463 | |     mut len: size_t,
+...   |
+898 | |     return pos;
+899 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: called `expect` on `is_space` after checking its variant with `is_some`
+   --> src/libcsv.rs:555:21
+    |
+554 |                 if (if is_space.is_some() {
+    |                    ---------------------- help: try: `if let Some(..) = is_space`
+555 |                     is_space.expect("non-null function pointer")(c)
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `is_term` after checking its variant with `is_some`
+   --> src/libcsv.rs:564:21
+    |
+563 |                 if if is_term.is_some() {
+    |                    -------------------- help: try: `if let Some(..) = is_term`
+564 |                     is_term.expect("non-null function pointer")(c)
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+   --> src/libcsv.rs:582:29
+    |
+578 |                           if cb1.is_some()
+    |                              ------------- the check is happening here
+...
+582 | /                             cb1
+583 | |                                 .expect(
+584 | |                                     "non-null function pointer",
+585 | |                                 )(0 as *mut libc::c_void, entry_pos, data);
+    | |_________________________________^
+    |
+    = help: try using `if let` or `match`
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+   --> src/libcsv.rs:597:29
+    |
+596 |                           if cb2.is_some() {
+    |                           ---------------- help: try: `if let Some(..) = cb2`
+597 | /                             cb2
+598 | |                                 .expect(
+599 | |                                     "non-null function pointer",
+600 | |                                 )(c as libc::c_int, data);
+    | |_________________________________^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+   --> src/libcsv.rs:608:29
+    |
+607 |                           if cb2.is_some() {
+    |                           ---------------- help: try: `if let Some(..) = cb2`
+608 | /                             cb2
+609 | |                                 .expect(
+610 | |                                     "non-null function pointer",
+611 | |                                 )(c as libc::c_int, data);
+    | |_________________________________^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+   --> src/libcsv.rs:630:25
+    |
+626 |                       if cb1.is_some()
+    |                          ------------- the check is happening here
+...
+630 | /                         cb1
+631 | |                             .expect(
+632 | |                                 "non-null function pointer",
+633 | |                             )(0 as *mut libc::c_void, entry_pos, data);
+    | |_____________________________^
+    |
+    = help: try using `if let` or `match`
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+   --> src/libcsv.rs:693:29
+    |
+689 |                           if cb1.is_some()
+    |                              ------------- the check is happening here
+...
+693 | /                             cb1
+694 | |                                 .expect(
+695 | |                                     "non-null function pointer",
+696 | |                                 )(0 as *mut libc::c_void, entry_pos, data);
+    | |_________________________________^
+    |
+    = help: try using `if let` or `match`
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `is_term` after checking its variant with `is_some`
+   --> src/libcsv.rs:709:21
+    |
+708 |                 } else if if is_term.is_some() {
+    |                           -------------------- help: try: `if let Some(..) = is_term`
+709 |                     is_term.expect("non-null function pointer")(c)
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+   --> src/libcsv.rs:727:29
+    |
+723 |                           if cb1.is_some()
+    |                              ------------- the check is happening here
+...
+727 | /                             cb1
+728 | |                                 .expect(
+729 | |                                     "non-null function pointer",
+730 | |                                 )(0 as *mut libc::c_void, entry_pos, data);
+    | |_________________________________^
+    |
+    = help: try using `if let` or `match`
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+   --> src/libcsv.rs:742:29
+    |
+741 |                           if cb2.is_some() {
+    |                           ---------------- help: try: `if let Some(..) = cb2`
+742 | /                             cb2
+743 | |                                 .expect(
+744 | |                                     "non-null function pointer",
+745 | |                                 )(c as libc::c_int, data);
+    | |_________________________________^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+   --> src/libcsv.rs:791:25
+    |
+787 |                       if cb1.is_some()
+    |                          ------------- the check is happening here
+...
+791 | /                         cb1
+792 | |                             .expect(
+793 | |                                 "non-null function pointer",
+794 | |                             )(0 as *mut libc::c_void, entry_pos, data);
+    | |_____________________________^
+    |
+    = help: try using `if let` or `match`
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb1` after checking its variant with `is_some`
+   --> src/libcsv.rs:825:25
+    |
+821 |                       if cb1.is_some()
+    |                          ------------- the check is happening here
+...
+825 | /                         cb1
+826 | |                             .expect(
+827 | |                                 "non-null function pointer",
+828 | |                             )(0 as *mut libc::c_void, entry_pos, data);
+    | |_____________________________^
+    |
+    = help: try using `if let` or `match`
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `cb2` after checking its variant with `is_some`
+   --> src/libcsv.rs:840:25
+    |
+839 |                     if cb2.is_some() {
+    |                     ---------------- help: try: `if let Some(..) = cb2`
+840 |                         cb2.expect("non-null function pointer")(c as libc::c_int, data);
+    |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: called `expect` on `is_space` after checking its variant with `is_some`
+   --> src/libcsv.rs:847:21
+    |
+846 |                 } else if if is_space.is_some() {
+    |                           --------------------- help: try: `if let Some(..) = is_space`
+847 |                     is_space.expect("non-null function pointer")(c)
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_unwrap
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:898:5
+    |
+898 |     return pos;
+    |     ^^^^^^^^^^^ help: remove `return`: `pos`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unnecessary operation
+   --> src/libcsv.rs:487:5
+    |
+487 | /     'c_3937: {
+488 | |         if !p.is_null()
+489 | |             && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char)
+490 | |                 .is_null()
+...   |
+506 | |         }
+507 | |     };
+    | |______^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_operation
+help: statement can be reduced to
+    |
+487 ~     if !p.is_null()
+488 +             && !(b"received null csv_parser\0" as *const u8 as *const libc::c_char)
+489 +                 .is_null()
+490 +         {} else {
+491 +             __assert_fail(
+492 +                 b"p && \"received null csv_parser\"\0" as *const u8
+493 +                     as *const libc::c_char,
+494 +                 b"/mnt/c/Users/mazin/Downloads/School/Research/datasets/libcsv/libcsv.c\0"
+495 +                     as *const u8 as *const libc::c_char,
+496 +                 321 as libc::c_int as libc::c_uint,
+497 +                 (*::core::mem::transmute::<
+498 +                     &[u8; 125],
+499 +                     &[libc::c_char; 125],
+500 +                 >(
+501 +                     b"size_t csv_parse(struct csv_parser *, const void *, size_t, void (*)(void *, size_t, void *), void (*)(int, void *), void *)\0",
+502 +                 ))
+503 +                     .as_ptr(),
+504 +             );
+505 +         };
+    |
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:585:35
+    |
+585 | ...                   )(0 as *mut libc::c_void, entry_pos, data);
+    |                         ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_void>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:633:31
+    |
+633 | ...                   )(0 as *mut libc::c_void, entry_pos, data);
+    |                         ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_void>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:696:35
+    |
+696 | ...                   )(0 as *mut libc::c_void, entry_pos, data);
+    |                         ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_void>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:730:35
+    |
+730 | ...                   )(0 as *mut libc::c_void, entry_pos, data);
+    |                         ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_void>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: statement with no effect
+   --> src/libcsv.rs:768:21
+    |
+768 |                     spaces;
+    |                     ^^^^^^^
+    |
+    = note: `#[warn(clippy::no_effect)]` on by default
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:794:31
+    |
+794 | ...                   )(0 as *mut libc::c_void, entry_pos, data);
+    |                         ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_void>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: `0 as *mut _` detected
+   --> src/libcsv.rs:828:31
+    |
+828 | ...                   )(0 as *mut libc::c_void, entry_pos, data);
+    |                         ^^^^^^^^^^^^^^^^^^^^^^ help: try: `std::ptr::null_mut::<libc::c_void>()`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#zero_ptr
+
+warning: statement with no effect
+   --> src/libcsv.rs:857:21
+    |
+857 |                     spaces;
+    |                     ^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:901:1
+    |
+901 | / pub unsafe extern "C" fn csv_write(
+902 | |     mut dest: *mut libc::c_void,
+903 | |     mut dest_size: size_t,
+904 | |     mut src: *const libc::c_void,
+...   |
+913 | |     );
+914 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:907:5
+    |
+907 | /     return csv_write2(
+908 | |         dest,
+909 | |         dest_size,
+910 | |         src,
+911 | |         src_size,
+912 | |         0x22 as libc::c_int as libc::c_uchar,
+913 | |     );
+    | |______^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+help: remove `return`
+    |
+907 ~     csv_write2(
+908 +         dest,
+909 +         dest_size,
+910 +         src,
+911 +         src_size,
+912 +         0x22 as libc::c_int as libc::c_uchar,
+913 +     )
+    |
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:916:1
+    |
+916 | / pub unsafe extern "C" fn csv_fwrite(
+917 | |     mut fp: *mut FILE,
+918 | |     mut src: *const libc::c_void,
+919 | |     mut src_size: size_t,
+920 | | ) -> libc::c_int {
+921 | |     return csv_fwrite2(fp, src, src_size, 0x22 as libc::c_int as libc::c_uchar);
+922 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:921:5
+    |
+921 |     return csv_fwrite2(fp, src, src_size, 0x22 as libc::c_int as libc::c_uchar);
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `csv_fwrite2(fp, src, src_size, 0x22 as libc::c_int as libc::c_uchar)`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: unsafe function's docs miss `# Safety` section
+   --> src/libcsv.rs:924:1
+    |
+924 | / pub unsafe extern "C" fn csv_write2(
+925 | |     mut dest: *mut libc::c_void,
+926 | |     mut dest_size: size_t,
+927 | |     mut src: *const libc::c_void,
+...   |
+980 | |     return chars;
+981 | | }
+    | |_^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+   --> src/libcsv.rs:980:5
+    |
+980 |     return chars;
+    |     ^^^^^^^^^^^^^ help: remove `return`: `chars`
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: statement with no effect
+   --> src/libcsv.rs:946:5
+    |
+946 |     chars;
+    |     ^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/libcsv.rs:956:17
+    |
+956 |                 chars;
+    |                 ^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/libcsv.rs:966:13
+    |
+966 |             chars;
+    |             ^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/libcsv.rs:969:9
+    |
+969 |         src_size;
+    |         ^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/libcsv.rs:971:9
+    |
+971 |         csrc;
+    |         ^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+   --> src/libcsv.rs:978:9
+    |
+978 |         chars;
+    |         ^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: unsafe function's docs miss `# Safety` section
+    --> src/libcsv.rs:983:1
+     |
+983  | / pub unsafe extern "C" fn csv_fwrite2(
+984  | |     mut fp: *mut FILE,
+985  | |     mut src: *const libc::c_void,
+986  | |     mut src_size: size_t,
+...    |
+1013 | |     return 0 as libc::c_int;
+1014 | | }
+     | |_^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#missing_safety_doc
+
+warning: unneeded `return` statement
+    --> src/libcsv.rs:1013:5
+     |
+1013 |     return 0 as libc::c_int;
+     |     ^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `0 as libc::c_int`
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
+
+warning: statement with no effect
+    --> src/libcsv.rs:1006:9
+     |
+1006 |         src_size;
+     |         ^^^^^^^^^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: statement with no effect
+    --> src/libcsv.rs:1008:9
+     |
+1008 |         csrc;
+     |         ^^^^^
+     |
+     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#no_effect
+
+warning: path statement with no effect
+   --> src/libcsv.rs:768:21
+    |
+768 |                     spaces;
+    |                     ^^^^^^^
+    |
+    = note: `#[warn(path_statements)]` on by default
+
+warning: path statement with no effect
+   --> src/libcsv.rs:857:21
+    |
+857 |                     spaces;
+    |                     ^^^^^^^
+
+warning: path statement with no effect
+   --> src/libcsv.rs:946:5
+    |
+946 |     chars;
+    |     ^^^^^^
+
+warning: path statement with no effect
+   --> src/libcsv.rs:956:17
+    |
+956 |                 chars;
+    |                 ^^^^^^
+
+warning: path statement with no effect
+   --> src/libcsv.rs:966:13
+    |
+966 |             chars;
+    |             ^^^^^^
+
+warning: path statement with no effect
+   --> src/libcsv.rs:969:9
+    |
+969 |         src_size;
+    |         ^^^^^^^^^
+
+warning: path statement with no effect
+   --> src/libcsv.rs:971:9
+    |
+971 |         csrc;
+    |         ^^^^^
+
+warning: path statement with no effect
+   --> src/libcsv.rs:978:9
+    |
+978 |         chars;
+    |         ^^^^^^
+
+warning: path statement with no effect
+    --> src/libcsv.rs:1006:9
+     |
+1006 |         src_size;
+     |         ^^^^^^^^^
+
+warning: path statement with no effect
+    --> src/libcsv.rs:1008:9
+     |
+1008 |         csrc;
+     |         ^^^^^
+
+warning: `libcsv` (bin "libcsv") generated 98 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 12.17s

@@ -1,7 +1,0 @@
-/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/snudown_edits/target/debug/deps/snudown-2123c6eaac3076d7.rmeta: src/snudown.rs
-
-/mnt/c/Users/mazin/Downloads/School/Research/datasets/2-C2Rust-Translation/snudown_edits/target/debug/deps/snudown-2123c6eaac3076d7.d: src/snudown.rs
-
-src/snudown.rs:
-
-# env-dep:CLIPPY_ARGS=-A__CLIPPY_HACKERY__clippy::all__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::self_assignment__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::invalid_null_ptr_usage__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::uninit_assumed_init__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::mem_forget__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::needless_return__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unnecessary_cast__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unreachable__CLIPPY_HACKERY__-D__CLIPPY_HACKERY__clippy::unsafe_removed_from_name__CLIPPY_HACKERY__
