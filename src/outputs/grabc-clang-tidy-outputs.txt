@@ -1,0 +1,7 @@
+1 warning generated.
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/grabc/repo/grabc.c:268:5: warning: Value stored to 'root_window' is never read [clang-analyzer-deadcode.DeadStores]
+  268 |     root_window=XRootWindow(display,XDefaultScreen(display));
+      |     ^           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/mazin/Downloads/School/Research/datasets/c2rust/examples/grabc/repo/grabc.c:268:5: note: Value stored to 'root_window' is never read
+  268 |     root_window=XRootWindow(display,XDefaultScreen(display));
+      |     ^           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

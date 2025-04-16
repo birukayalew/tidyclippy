@@ -10,8 +10,12 @@ def categorize(message):
     # Use predefined keywords.
     for category, keywords in CLANG_CATEGORY_MAP.items():
         for keyword in keywords:
-            if keyword in message_lower:
-                return category
+            if keyword.startswith("regex:"):
+                regex = keyword[6:]
+                if re.search(regex, message):
+                    return category
+            elif keyword in message_lower:
+                    return category
 
     uncategorized_log.append(message)
     return "Uncategorized"

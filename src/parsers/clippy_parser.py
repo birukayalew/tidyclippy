@@ -10,8 +10,12 @@ def categorize_clippy(message):
     # Use predefined keywords.
     for category, keywords in CLIPPY_CATEGORY_MAP.items():
         for keyword in keywords:
-            if keyword in message_lower:
-                return category
+            if keyword.startswith("regex:"):
+                regex = keyword[6:]
+                if re.search(regex, message):
+                    return category
+            elif keyword in message_lower:
+                    return category
     uncategorized_log.append(message)
     return "Uncategorized"
 
@@ -38,13 +42,13 @@ def parse_clippy_output(lines):
             current_line = int(line_no)
             continue
 
+        # Skipping summary lines.
+        if re.match(r"^warning: `.+` \((bin \".+\"|lib)\) generated \d+ warnings?$", line):
+            continue
+
         lint_match = lint_pattern.match(line)
         if lint_match and current_file:
             level, message = lint_match.group(1), lint_match.group(3)
-            # Skipping summary lines.
-            if re.match(r"^`(.+)` \(bin \"(.+)\"\) generated (\d+) (warning|warnings)$"
-, message):
-                continue
             if re.match(r'^could not compile', message):
                 continue
             category = categorize_clippy(message)

@@ -1,8 +1,9 @@
 CLIPPY_CATEGORY_MAP = {
     "Dead Code": [
         "unused",
+        "never used",
         "unreachable",
-        "is never read",
+        "never read",
     ],
     "Undefined Behavior": [
         "panic",
@@ -12,6 +13,7 @@ CLIPPY_CATEGORY_MAP = {
         "unwrap",
         "unsafe",
         "manual memory management",
+        r"regex:0 as \*(const|mut)",
     ],
     "Null Pointer Dereference": [
         "null",
@@ -32,6 +34,8 @@ CLIPPY_CATEGORY_MAP = {
     ],
     "Redundant Operations": [
         "redundant",
+       "unnecessary operation",
+       "called `expect` on",
     ],
     "Security/Insecure APIs": [
         "security",
@@ -42,8 +46,22 @@ CLIPPY_CATEGORY_MAP = {
         "unnecessary double parentheses",
         "unnecessary parentheses",
         "branch is empty",
-        "should have an upper camel case name",
+        "regex:should have (an|a) [a-z ]+ case name",
         "variable does not need to be mutable",
+        "statement with no effect",
+        "trying to use `match` for an equality check",
+        "manual implementation",
+        "this boolean expression can be simplified",
+        "unneeded `return` statement",
+        "contains a capitalized acronym", 
+        "wildcard pattern covers any other pattern",
+        "can be rewritten with",
+        "excessive precision",
+        "module has the same name",
+        "more descriptive name",
+        "returning the result of a `let` binding from a block",
+        r"regex:^manual.*implementation$",
+        r"regex:swapping [`'\"]?\*?[a-zA-Z_]+[`'\"]? and [`'\"]?\*?[a-zA-Z_]+[`'\"]? manually"
     ],
     "Build Configuration Error": [
         "#![feature]",
@@ -55,5 +73,6 @@ CLIPPY_CATEGORY_MAP = {
         "cannot find function",
         "c-variadic functions are unstable",
         "use of unstable library feature",
+        "redeclared with a different signature",
     ],
 }
